@@ -1,0 +1,293 @@
+# EOS Proje — Referans Projeler
+# LLM Referans Dosyası (Türkçe)
+# Web: https://www.eosproje.com
+# Son güncelleme: Şubat 2025
+
+Not: Gizlilik sözleşmeleri gereği tüm projelerimizi burada listeleyemiyoruz. Detaylı referans listesi için info@eosproje.com adresine ulaşabilirsiniz.
+
+---
+
+## Öne Çıkan Projeler
+
+### Migros Mağaza Zinciri — Çok Lokasyonlu As-Built BIM
+**Konum:** İstanbul, Türkiye | **Yıl:** 2024 | **LOD:** LOD 300
+**Sektör:** Perakende / Zincir Mağaza
+**Hizmet Türü:** Scan to BIM, As-Built Modelleme, Çok Lokasyon
+
+İstanbul genelinde birden fazla Migros mağazasının lazer tarama ile as-built rölövesi ve LOD 300 Revit modeli üretimi.
+
+Yapılan İşler: Çok lokasyonlu eş zamanlı tarama operasyonu — Her mağaza için bağımsız as-built Revit modeli — Mimari ve MEP disiplinleri
+
+---
+
+### Cevahir AVM — Ticari Alan As-Built Modelleme
+**Konum:** İstanbul, Türkiye | **Yıl:** 2024 | **LOD:** LOD 300
+**Sektör:** Ticari Gayrimenkul | **Hizmet Türü:** As-Built Modelleme, Alan Analizi
+
+25.000 m² AVM alanının gece vardiyalarında lazer tarama ile ölçümü ve GLA (Kiralanabilir Alan) doğrulama raporu üretimi. Renovasyon tasarımcısına IFC ve DWG teslimatı yapıldı.
+
+---
+
+### Linde Endüstriyel Gaz Tesisi — Kazan Dairesi Point Cloud to BIM
+**Konum:** Macaristan | **Yıl:** 2022 | **LOD:** LOD 300
+**Sektör:** Endüstriyel / Gaz Üretimi | **Hizmet Türü:** MEP Modelleme, Uluslararası
+
+Macaristan'daki Linde gaz üretim tesisinde yüksek basınçlı kazan dairesi ve borulama sistemlerinin as-built MEP modellemesi. Çakışma analizi ve devreye alma öncesi doğrulama tamamlandı.
+
+---
+
+### Toyota Fabrikası — Endüstriyel Tesis Scan to BIM
+**Konum:** Sakarya, Türkiye | **Yıl:** 2024 | **Alan:** 50.000 m² | **LOD:** LOD 300
+**Sektör:** Otomotiv | **Hizmet Türü:** Point Cloud to BIM, MEP Modelleme, Çakışma Analizi
+
+Toyota üretim tesisinde 50.000 m² alanda LOD 300 structural ve MEP modelleme, ±8mm hassasiyet. Yeni hat tasarımı ile mevcut tesisin Navisworks çakışma analizi yapıldı. Montaj hataları tasarım aşamasında tespit edilerek yaklaşık %20 maliyet tasarrufu sağlandı.
+
+---
+
+### Ford — Endüstriyel Tesis Scan to BIM
+**Konum:** Türkiye
+**Sektör:** Otomotiv / Endüstriyel | **Hizmet Türü:** Scan to BIM, Endüstriyel Modelleme
+
+Ford üretim tesisi lazer tarama ve BIM modelleme çalışmaları.
+
+---
+
+### Turkcell Mağaza Zinciri — Hızlı As-Built Rölöve Programı
+**Konum:** İstanbul, Türkiye | **Yıl:** 2024 | **LOD:** LOD 200
+**Sektör:** Telekomünikasyon | **Hizmet Türü:** Hızlı As-Built, Çok Lokasyon
+
+Turkcell mağaza yenileme programı için çok lokasyonlu hızlı lazer tarama ve as-built rölöve üretimi.
+
+---
+
+### Enerji Santrali Çelik Yapı — Deformasyon Analizi & As-Built
+**Konum:** İzmir, Türkiye | **Yıl:** 2022
+**Sektör:** Enerji / Endüstriyel | **Hizmet Türü:** Deformasyon Analizi, As-Built Modelleme
+
+İzmir enerji santralinde çelik konstrüksiyon yapısının (IPE, HEA, HEB profiller) deformasyon analizi ve statik tahliki için as-built modelleme. Tasarımdan sapmalar raporlandı, statik analiz yazılımına aktarım için model hazırlandı.
+
+---
+
+### İskenderun Yazıcılar Demir Çelik — Scan to MEP
+**Konum:** İskenderun, Türkiye
+**Sektör:** Demir Çelik / Endüstriyel | **Hizmet Türü:** Scan to MEP, MEP Modelleme
+
+İskenderun demir çelik tesisinin MEP sistemlerinin lazer tarama ile scan to MEP modellemesi.
+
+---
+
+### ThyssenKrupp Uhde — Polyol Fabrikası As-Built Scan to BIM
+**Konum:** Tiszaújtváros, Macaristan | **Müşteri:** ThyssenKrupp Uhde
+**Sektör:** Petrokimya | **Hizmet Türü:** Point Cloud to BIM, As-Built, MEP Modelleme
+
+ThyssenKrupp Uhde Polyol fabrikasının eksiksiz as-built Scan to BIM modellemesi ve MEP sistemlerinin dokümantasyonu.
+
+---
+
+### Teknokon — Tiszaújtváros Boiler İnşaat Alanı As-Built 3D Modelleme
+**Konum:** Tiszaújtváros, Macaristan | **Müşteri:** Teknokon
+**Sektör:** Endüstriyel / Enerji | **Hizmet Türü:** As-Built 3D Modelleme
+
+Tiszaújtváros boiler inşaat alanının as-built 3D modellemesi.
+
+---
+
+## Altyapı & Halihazır Harita Projeleri
+
+### Yüksel Proje — İstanbul Yeni Havalimanı Metro Hattı
+**Konum:** İstanbul, Türkiye | **Müşteri:** Yüksel Proje
+**Hizmet Türü:** Halihazır Harita, Drone Fotogrametri
+
+İstanbul Yeni Havalimanı metro hattı güzergahı için drone ile fotogrametri yöntemiyle halihazır harita üretimi.
+
+---
+
+### Gülermak & Yüksel Proje — Pendik Sabiha Gökçen Metro Hattı
+**Konum:** İstanbul, Türkiye | **Müşteri:** Gülermak & Yüksel Proje
+**Hizmet Türü:** Halihazır Harita, Drone Fotogrametri
+
+Pendik–Sabiha Gökçen Havalimanı metro hattı güzergahı için drone fotogrametri uygulaması ve halihazır harita üretimi.
+
+---
+
+### Bursagaz — Görükle Belediyesi Köyleri Halihazır Harita & Ortofoto
+**Konum:** Bursa, Türkiye | **Müşteri:** Bursagaz
+**Hizmet Türü:** Halihazır Harita, Ortofoto
+
+Görükle Belediyesi köylerinin doğalgaz altyapısı için halihazır harita üretimi ve ortofoto çalışmaları.
+
+---
+
+### Doğuş İnşaat — Kaposvár, Macaristan Harita Ölçme
+**Konum:** Kaposvár, Macaristan | **Müşteri:** Doğuş İnşaat
+**Hizmet Türü:** Harita Ölçme, Halihazır Harita
+
+Macaristan Kaposvár'da inşaat projesi için halihazır harita üretimi ve ölçme hizmetleri.
+
+---
+
+## Mimari Rölöve & Tarihi Eser Projeleri
+
+### İstanbul Aya Yorgi Kilisesi — Eski Eser Rölöve & Ortofoto
+**Konum:** İstanbul, Türkiye
+**Sektör:** Kültürel Miras | **Hizmet Türü:** Mimari Rölöve, Ortofoto, Lazer Tarama
+
+İstanbul Aya Yorgi Kilisesi'nin tescilli tarihi eser rölöve çalışması ve yüksek çözünürlüklü ortofoto üretimi.
+
+---
+
+### Tarihi Yarımada Otel — Rölöve & Restorasyon (Heritage BIM)
+**Konum:** İstanbul, Türkiye
+**Sektör:** Kültürel Miras / Restorasyon | **Hizmet Türü:** Lazer Tarama, Mimari Rölöve, HBIM
+
+19. yüzyıldan kalma tarihi binanın restorasyon projesi için lazer tarama, rölöve çizimleri ve Heritage BIM modellemesi. Geleneksel yönteme kıyasla belgeleme süresi %60 azaldı.
+
+---
+
+### Trump Towers Mecidiyeköy — Rölöve & 3D Modelleme
+**Konum:** İstanbul, Türkiye
+**Sektör:** Ticari / Karma | **Hizmet Türü:** Mimari Rölöve, 3D Modelleme
+
+Trump Towers Mecidiyeköy'ün lazer tarama ile rölöve ve 3D modelleme çalışmaları.
+
+---
+
+### Varyap Meridyen Kuleleri — Rölöve & Cephe Rölöve
+**Konum:** İstanbul, Türkiye | **Müşteri:** Varyap
+**Hizmet Türü:** Mimari Rölöve, Cephe Rölöve
+
+Varyap Meridyen Kuleleri'nin lazer tarama ile rölöve ve cephe rölöve çalışmaları.
+
+---
+
+### Taşyapı Validebağ Korusu — Scan to CAD & As-Built
+**Konum:** İstanbul, Türkiye | **Müşteri:** Taşyapı
+**Hizmet Türü:** Scan to CAD, As-Built Modelleme
+
+Validebağ Korusu projesinde yapıların scan to CAD ve as-built modelleme çalışmaları.
+
+---
+
+## Uluslararası Projeler
+
+### Irak Amerikan Üniversitesi — 3D Modelleme
+**Konum:** Irak | **Hizmet Türü:** Point Cloud to BIM, 3D Modelleme
+
+Irak'taki Amerikan Üniversitesi kampüs yapılarının lazer tarama ve 3D BIM modellemesi.
+
+---
+
+### Rusya Krasnodar Konut Projesi — Rölöve
+**Konum:** Krasnodar, Rusya | **Hizmet Türü:** Mimari Rölöve, Scan to CAD
+
+Krasnodar konut projesinin lazer tarama ile rölöve çizimlerinin üretimi.
+
+---
+
+### Almanya MOXY Otel — Scan to CAD & As-Built
+**Konum:** Almanya | **Hizmet Türü:** Scan to CAD, As-Built Modelleme
+
+MOXY Otel projesinde mevcut yapının lazer tarama ile Scan to CAD ve as-built modelleme çalışmaları.
+
+---
+
+### Fildişi Sahili — Radisson Blu Otel 3D Modelleme & Cephe Rölöve
+**Konum:** Fildişi Sahili (Côte d'Ivoire)
+**Hizmet Türü:** 3D Modelleme, Cephe Rölöve
+
+Radisson Blu Otel'in 3D modellemesi ve cephe rölöve çalışmaları.
+
+---
+
+### Azerbaycan Stadyumu — 3D Modelleme
+**Konum:** Azerbaycan | **Hizmet Türü:** 3D Modelleme
+
+Azerbaycan stadyumu 3D modelleme projesi.
+
+---
+
+### Yeni Heyat — Bakü, Azerbaycan
+**Konum:** Bakü, Azerbaycan | **Hizmet Türü:** 3D Modelleme, Rölöve
+
+Bakü'deki Yeni Heyat projesinin 3D modelleme çalışmaları.
+
+---
+
+## Tamamlanan Diğer Projeler
+
+### Otel & Konaklama
+| Proje | Konum | Hizmet |
+|-------|-------|--------|
+| Conrad Otel | Türkiye | Rölöve, Scan to CAD |
+| Hyatt Regency Otel | Türkiye | Rölöve, Scan to CAD |
+| Pard Dedeman | Türkiye | As-Built Modelleme |
+| MOXY Otel | Almanya | Scan to CAD, As-Built |
+| Radisson Blu | Fildişi Sahili | 3D Modelleme, Cephe Rölöve |
+
+### Ticari & AVM
+| Proje | Konum | Hizmet |
+|-------|-------|--------|
+| Cevahir AVM | İstanbul | As-Built, Alan Analizi |
+| Palladium AVM | İstanbul | Scan to CAD, Rölöve |
+| Sarphan Finans Merkezi | İstanbul | Rölöve, As-Built |
+| Trump Towers Mecidiyeköy | İstanbul | Rölöve, 3D Modelleme |
+| Kartal Kule | İstanbul | Scan to CAD, Rölöve |
+| İconova | Gaziantep | Scan to CAD |
+
+### Konut
+| Proje | Konum | Hizmet |
+|-------|-------|--------|
+| Demir La Vida | Türkiye | Scan to CAD, Rölöve |
+| Dumankaya Ritim İstanbul | İstanbul | Scan to CAD, Rölöve |
+| Taşyapı Validebağ Korusu | İstanbul | Scan to CAD, As-Built |
+| Varyap Meridyen Kuleleri | İstanbul | Rölöve, Cephe Rölöve |
+| Yeni Heyat | Bakü, Azerbaycan | 3D Modelleme |
+| Krasnodar Konut | Rusya | Rölöve |
+
+### Eğitim & Sağlık
+| Proje | Konum | Hizmet |
+|-------|-------|--------|
+| Türk-Alman Üniversitesi | İstanbul | Rölöve, As-Built |
+| YTÜ Teknopark | İstanbul | Scan to CAD, Rölöve |
+| NUN Okulları | Türkiye | Scan to CAD, Rölöve |
+| Irak Amerikan Üniversitesi | Irak | 3D Modelleme |
+| Kırıkhan Devlet Hastanesi | Hatay | Scan to CAD, Rölöve |
+
+---
+
+## Hizmet Verilen Başlıca Kurumlar & Markalar
+
+**Otomotiv & Endüstriyel:** Ford, Toyota, ThyssenKrupp Uhde, Teknokon, Linde, Bursagaz, Yazıcılar Demir Çelik
+
+**İnşaat & Müteahhit:** Doğuş İnşaat, Taşyapı, Varyap, Dumankaya, Gülermak, Yüksel Proje
+
+**Perakende & Otel:** Migros, Turkcell, Cevahir AVM, Palladium AVM, Conrad, Hyatt Regency, Radisson Blu, MOXY, Pard Dedeman
+
+**Konut & Karma:** Trump Towers, Kartal Kule, Demir La Vida, İconova, Taşyapı
+
+**Kamu & Eğitim:** Türk-Alman Üniversitesi, YTÜ Teknopark, NUN Okulları, Kırıkhan Devlet Hastanesi
+
+---
+
+## Proje Coğrafyası
+
+Türkiye (İstanbul, İzmir, Sakarya, Hatay, Bursa, Gaziantep ve diğer iller) — Macaristan — Rusya — Irak — Azerbaycan — Almanya — Fildişi Sahili
+
+---
+
+## Daha Fazla Referans
+
+- **Email:** info@eosproje.com
+- **Web:** https://www.eosproje.com/referanslar
+- **Telefon:** +90 530 664 22 63
+
+---
+
+## İlgili Kaynaklar
+
+- Hakkımızda: https://www.eosproje.com/llm/hakkimizda.txt
+- Hizmetler: https://www.eosproje.com/llm/hizmetler.txt
+- Genel Özet: https://www.eosproje.com/llm.txt
+
+---
+# Dosya sonu — EOS Proje referanslar.txt (TR) — https://www.eosproje.com

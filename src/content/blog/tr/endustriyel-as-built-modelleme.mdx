@@ -1,0 +1,288 @@
+---
+title: "Endüstriyel Tesislerde As-Built Modelleme: Süreç ve Zorluklar | Eos Proje"
+description: "Fabrika ve enerji santrallerinde mevcut durum tespiti için lazer tarama ve BIM entegrasyonu. MEP yoğunluğu, safety protocols ve proje yönetimi."
+keywords: ["endustriyel tesis bim", "as-built modelleme", "fabrika 3d modelleme", "process plant modeling", "endüstriyel modelleme hizmeti"]
+author: "Kamil Serin"
+authorLinkedIn: "https://linkedin.com/in/ugur-bilen"
+date: "2026-01-12"
+lastUpdated: "2026-01-25"
+category: "Sektörel Uygulamalar"
+tags: ["As-Built Modeling", "Industrial Facilities", "Point Cloud to BIM", "MEP Modeling"]
+featured: true
+locale: "tr"
+alternates:
+  en: "/en/blog/industrial-as-built-modeling"
+schema:
+  type: "Article"
+  faq: true
+images:
+  hero: "/images/blog/industrial-as-built.jpg"
+---
+
+# Endüstriyel Tesislerde As-Built Modelleme
+
+<Callout type="summary">
+**TL;DR:** [Endüstriyel tesislerde](/sektorler/endustriyel-tesis) (fabrika, rafineri, enerji santrali) as-built BIM modelleme, standart binalardan %300 daha karmaşıktır: Yoğun MEP sistemleri (pipe density 15-25 m/m²), active production ortamında çalışma, safety protocols. [Toyota Fabrikası](/referanslar/toyota-fabrikasi) projemizde 50,000 m² tesiste 2,500+ MEP element, LOD 300, 8 hafta. Başarı anahtarı: Detaylı planlama + experienced team + phased approach.
+</Callout>
+
+## Endüstriyel Tesislerin Özgün Zorlukları
+
+### 1. M EP Sistemleri Yoğunluğu
+
+**Standart Ofis Binası:** 3-5 metre boru/m²  
+**Endüstriyel Tesis:** 15-25 metre boru/m² (5-8x daha yoğun!)
+
+Toyota projemizde sadece process area'da:
+- 800+ boru hattı (DN25-DN800)
+- 350+ vana
+- 150+ equipment (tanks, pumps, heat exchangers)
+- 200+ instrumentation points
+
+<Callout type="warning">
+**Pipe Complexity:** Bir process unit'te 6 farklı sistem bir arada: Process fluid, cooling water, steam, compressed air, chemical drain, fire fighting. Her biri farklı materyal, pressure rating, insulation requirement.
+</Callout>
+
+---
+
+### 2. Active Production Ortamında Çalışma
+
+Fabrikalar 7/24 üretim yapıyor - laser scanning nasıl yapılır?
+
+#### Stratejiler:
+
+**A. Vardiya Saatleri Dışı:**
+- Gece 00:00-06:00 arası
+- Production downtime minimize
+- Safety risk azaltma
+
+**B. Modüler Approach:**
+- Fabrika zone by zone taranır
+- Critical production areas weekend'de
+- Non-critical areas normal saatlerde
+
+**C. Remote Scanning:**
+- Tehlikeli alanlarda (yüksek sıcaklık, kimyasal risk)
+- Drone-based scanning (outdoor areas)
+
+---
+
+### 3. Safety Protocols
+
+Endüstriyel tesislerde safety paramount:
+
+| Requirement | Detail |
+|-------------|--------|
+| HSE Training | Minimum 8 saat site-specific |
+| PPE | Helmet, safety shoes, goggles, earplugs |
+| Gas Detection | Personal H2S, LEL detectors |
+| Permits | Work permit, hot work permit (if required) |
+| Escorts | Production team escort mandatory |
+
+---
+
+## Endüstriyel As-Built Modelleme Süreci
+
+### Faz 1: Pre-Project Planning (1-2 hafta)
+
+- Client briefing + site visit
+- Existing documentation review (P&IDs, isometrics)
+- Safety training
+- Scan planning (zone division)
+- **Deliverable:** Project Execution Plan (PEP)
+
+---
+
+### Faz 2: Laser Scanning (3-7 gün)
+
+**Scan Density Requirements:**
+- Process piping areas: 3-5mm
+- Structural steel: 5-10mm
+- General areas: 10-15mm
+
+**Toyota Project Stats:**
+- 250+ scan positions
+- 45 TB raw data
+- 5 billion points
+- Accuracy: ±3mm global registration
+
+---
+
+### Faz 3: Point Cloud Processing (1 hafta)
+
+Endüstriyel tesislerde unique challenges:
+
+**Hot Equipment:** Lazer beamlar hot surfaces'den (300°C+) scatter eder → noise  
+**Çözüm:** Shutdown planlarken değerlendirin veya cold areas öncelik
+
+**Reflective Surfaces:** Stainless steel tanks, polished pipes → multiple reflections  
+**Çözüm:** Target-based registration + overlap increase
+
+**Vibration:** Rotating equipment vibration → blurred points  
+**Çözüm:** Equipment shutdown veya multiple scans average
+
+---
+
+### Faz 4: BIM Modelleme (4-6 hafta)
+
+#### Modelleme Öncelikleri:
+
+**Week 1-2: Structural & Equipment**
+- Steel structure (columns, beams, platforms)
+- Major equipment (tanks, vessels, pumps)
+- Equipment foundations
+
+**Week 3-4: Piping Systems**
+- Main process lines (critical diameters DN150+)
+- Headers and risers
+- Pipe supports
+
+**Week 5-6: Secondary Systems & Details**
+- Small bore piping (DN50 altı)
+- Instrumentation
+- Cable ways
+- Fire fighting system
+
+---
+
+### Faz 5: QA/QC (1 hafta)
+
+**Critical Checks:**
+- [ ] Pipe connectivity (inlet/outlet match)
+- [ ] Elevation verification (±10mm)
+- [ ] Flange-to-flange dimensions
+- [ ] Equipment nozzle orientations
+- [ ] Clash detection (hard clashes = 0)
+- [ ] P&ID reconciliation
+
+<ExpertQuote author="Uğur Bilen" role="Eos Proje">
+Polyol Thyssenkrupp projesinde 450+ pipe connections'ı P&ID ile reconcile ettik. 12 discrepancy bulduk - field verification sonrası P&ID updated etti. BIM model, P&ID hatası yakaladı.
+</ExpertQuote>
+
+---
+
+## Sector-Specific Considerations
+
+### Petrokimya / Rafineri
+
+**Özellikler:**
+- High pressure/temperature lines
+- Exotic materials (Hastelloy, Inconel)
+- Complex instrumentation
+- Flare systems
+
+**LOD:** 350-400 (fabrication required)
+
+---
+
+### Enerji Santrali (Linde Tiszaujvaros)
+
+**Özellikler:**
+- Large diameter piping (DN600-DN1200)
+- Insulation modeling (100-200mm thick)
+- Cable tray networks
+- HVAC systems (büyük duct sizes)
+
+**LOD:** 300-350
+
+---
+
+### Üretim Tesisi (Toyota, Şişecam)
+
+**Özellikler:**
+- Process equipment chains
+- Conveyor systems
+- Utility distribution
+- Clean room requirements (varsa)
+
+**LOD:** 300
+
+---
+
+## Sıkça Sorulan Sorular
+
+<FAQSection>
+
+<FAQ question="Endüstriyel tesis as-built modelleme normal binadan ne kadar pahalıdır?">
+**%150-250 daha pahalıdır** çünkü:
+- MEP density 5-8x fazla
+- Safety requirements & training
+- Complex geometry (pipe routing)
+- Specialized expertise (process knowledge)
+- QA/QC more intensive
+
+m² başına maliyet: 45-75 TL/m² (LOD 300, MEP dahil) vs. ofis binası 25-35 TL/m²
+</FAQ>
+
+<FAQ question="Active production devam ederken tarama yapılabilir mi?">
+Evet, mümkündür ancak:
+- HSE protocols strict compliance
+- Production team coordination critical
+- Phased approach (zone by zone)
+- Night shifts veya weekend çalışma
+- Some areas shutdown gerektirebilir
+
+Toyota projesinde %80 areas active production altında tarandı, %20 planned shutdown.
+</FAQ>
+
+<FAQ question="Pipe routing accuracy ne olmalı?">
+LOD 300 için tolerance levels:
+- **Horizontal position:** ±10-15mm
+- **Elevation:** ±10mm
+- **Pipe diameter:** Nominal (accurate)
+- **Flange-to-flange:** ±5mm
+
+Critical tie-in points (existing+new) için ±5mm recommended.
+</FAQ>
+
+<FAQ question="P&ID reconciliation nedir, neden gerekli?">
+**P&ID (Piping & Instrumentation Diagram):** Process flow şeması
+
+**Reconciliation:** BIM model ile P&ID'yi karşılaştırma
+- As-built gerçekten P&ID'ye uygun mu?
+- Modifications capture edilmiş mi?
+- Instrumentation tam mı?
+
+**Neden Önemli:** P&ID, operational critical document. As-built BIM ile sync olmalı. Bizim projelerde %5-10 discrepancy bulunuyor (genellikle P&ID outdated).
+</FAQ>
+
+<FAQ question="Hangi BIM yazılımları endüstriyel tesisler için uygundur?">
+| Yazılım | Best For | Strengths |
+|---------|----------|-----------|
+| **Revit** | General industrial | Yaygın, IFC export |
+| **AutoCAD Plant 3D** | Process plants | P&ID integration |
+| **PDMS/E3D** | Large refineries | Advanced piping tools |
+| **Navisworks** | Coordination | Clash detection |
+
+Eos Proje uses: **Revit (modeling) + Navisworks (QA/QC)** combo.
+</FAQ>
+
+</FAQSection>
+
+---
+
+## Best Practices: Endüstriyel As-Built Modelleme
+
+1. **Detailed scan planning** - Zone mapping, safety briefing
+2. **Phased scanning** - Minimize production impact
+3. **High overlap** - %40-50 overlap (vs. %30 normal)
+4. **P&ID as reference** - Process understanding critical
+5. **Modular modeling** - Workset strategy for large data
+6. **Regular client review** - Weekly progress check
+7. **Safety documentation** - Risk assessment, work permits
+8. **Specialized team** - Industrial experience mandatory
+9. **Equipment data sheets** - Vendor data integration
+10. **Flexible timeline** - Production delays happen, plan buffer
+
+---
+
+**İlgili Vaka Analizleri:**
+- [Toyota Fabrikası Point Cloud to BIM Projesi](/referanslar/toyota-fabrikasi)
+- [Polyol Thyssenkrupp Kimya Tesisi](#)
+- [Linde Tiszaujvaros Endüstriyel Gaz Tesisi](/referanslar/linde-endustriyel-gaz-tesisi)
+
+---
+
+**Son Güncelleme:** 25 Ocak 2026  
+**Yazar:** [Kamil Serin](https://linkedin.com/in/kamilserin) - Veri & Kalite Koordinatörü, Eos Proje  Uygulamalar | **Okuma Süresi:** ~8 dakika
+
+Karmaşık endüstriyel tesislerinizin dijital ikizini oluşturmak için [uzman mühendislerimizle görüşün](/iletisim).

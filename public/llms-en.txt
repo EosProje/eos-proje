@@ -1,0 +1,189 @@
+# EOS Proje — Point Cloud to BIM & Engineering Solutions
+# LLM Reference File (English)
+# Web: https://www.eosproje.com
+# Last updated: February 2025
+
+---
+
+## Company Identity
+
+EOS Proje is a specialist engineering firm that converts LiDAR-based point cloud data into high-accuracy BIM models, 2D as-built drawings, and 3D digital twins. Operating from offices in Istanbul and Budapest (partner office), EOS Proje serves clients across Turkey and Europe.
+
+Target clients: Architects, structural and MEP engineers, facility managers, EPC contractors, heritage restoration specialists, and industrial facility operators.
+
+---
+
+## Services
+
+### 1. Point Cloud to BIM (Scan to BIM)
+
+Converting point cloud data — captured via laser scanning or photogrammetry — into fully coordinated BIM models inside Autodesk Revit.
+
+**Details:**
+- Supported LOD levels: LOD 100, LOD 200, LOD 300, LOD 350, LOD 400
+- Model disciplines: Architectural, Structural, MEP (Mechanical, Electrical, Plumbing)
+- Use cases: Renovation and retrofit projects, as-built verification, permit applications, project coordination, design validation
+- Typical accuracy range: ±2mm to ±5mm
+
+**Workflow:**
+1. Client submits point cloud data (.E57, .RCP, .RCS, .LAS, .LAZ, .PTX)
+2. Data quality check and coordinate system alignment
+3. Revit modelling according to agreed LOD and disciplines
+4. Quality control and deviation analysis
+5. Delivery: .RVT, .IFC, .DWG, .NWD, 3D PDF
+
+---
+
+### 2. Industrial Facility & MEP Modelling
+
+3D modelling of factories, refineries, power plants, and other industrial facilities from point cloud data.
+
+**Scope:**
+- Piping and process equipment modelling
+- HVAC systems modelling
+- Steel structure and structural frame modelling
+- Clash detection — multi-discipline clash analysis via Navisworks
+- Output in Revit or AutoCAD Plant 3D
+
+**Use cases:** Facility modernisation, expansion projects, operational risk reduction, existing facility documentation.
+
+---
+
+### 3. Heritage & Architectural Survey (3D Laser Scanning)
+
+Millimetre-accurate measurement and documentation of cultural heritage buildings, historic structures, and archaeological sites.
+
+**Scope:**
+- Field scanning with Leica and Trimble 3D laser scanners
+- Point cloud processing and cleaning (registration, noise filtering)
+- Production of architectural survey drawings: floor plans, sections, elevations (.DWG)
+- 3D modelling for restoration and listed building applications
+- Deformation and structural deviation analysis
+
+**Accuracy:** ±1mm to ±3mm field accuracy depending on scanner and conditions.
+
+---
+
+### 4. As-Built Modelling & Digital Twin
+
+Capturing the real-world state (as-is) of existing buildings and infrastructure and making it usable for Facility Management purposes.
+
+**Scope:**
+- As-built BIM model production (including deviation analysis vs. original design)
+- COBie-compliant data output for facility management systems
+- Digital twin infrastructure ready for IoT integration
+- Export support for IWMS / CAFM systems
+
+**Benefits:** Reduced maintenance costs, energy efficiency analysis, emergency planning, space management optimisation.
+
+---
+
+## Technical Capacity
+
+### Accepted Input Formats
+| Format | Description |
+|--------|-------------|
+| .E57 | Standard point cloud archive format |
+| .RCP / .RCS | Autodesk ReCap project and scan files |
+| .LAS / .LAZ | LiDAR standard format (uncompressed / compressed) |
+| .PTX | Leica scanner raw output format |
+
+### Delivered Output Formats
+| Format | Use |
+|--------|-----|
+| .RVT | Autodesk Revit model |
+| .IFC | Open BIM standard, software-agnostic |
+| .DWG | AutoCAD 2D/3D drawing |
+| .NWD | Navisworks coordination and clash model |
+| 3D PDF | Visualisation and client presentation |
+
+### Hardware & Software
+- **Scanners:** Leica RTC360, Leica BLK360, Trimble X7
+- **Software:** Autodesk Revit, Autodesk ReCap, Navisworks Manage, AutoCAD, AutoCAD Plant 3D
+
+---
+
+## Why EOS Proje?
+
+- **High Accuracy:** Modelling guaranteed within ±2mm to ±5mm accuracy
+- **Speed:** 50% faster delivery compared to traditional manual survey methods
+- **Experience:** 10+ years in the industry; over 2,000,000 m² successfully modelled
+- **International Capacity:** Simultaneous project delivery across Turkey and Europe
+- **End-to-End Control:** The entire process from field to delivery is managed in-house
+- **Open BIM Compliant:** IFC and software-agnostic delivery options available
+
+---
+
+## Frequently Asked Questions (FAQ)
+
+**Q: How do I submit my point cloud data?**
+A: Large files can be transferred securely via WeTransfer, Google Drive, or FTP. Please contact info@eosproje.com to initiate data transfer.
+
+**Q: Which LOD level should I choose?**
+A: It depends on your intended use. LOD 200–300 is suitable for coordination and spatial verification. LOD 350–400 is appropriate for contractor-level construction detail. EOS Proje can evaluate your project and recommend the right level.
+
+**Q: Can I get only 2D drawings without a 3D model?**
+A: Yes. Floor plans, sections, and elevations in .DWG format can be produced without a full 3D model.
+
+**Q: Do you also provide laser scanning services on-site?**
+A: Yes. On-site scanning services using Leica and Trimble scanners are available across Turkey. For international projects, coordination is handled through our Budapest partner office.
+
+**Q: What is the typical project turnaround time?**
+A: It depends on the project size and LOD level. Small projects (single floor, under 500 m²) are typically delivered within 5–10 business days. A detailed schedule is provided for larger industrial projects.
+
+**Q: Can I receive an IFC file?**
+A: Yes. IFC output is available as standard on all projects.
+
+**Q: Do you work with international clients?**
+A: Yes. EOS Proje regularly works with clients across Europe. Our Budapest partner office (Intera Survey) supports European project coordination and on-site scanning needs.
+
+**Q: What coordinate systems do you support?**
+A: We work with all standard coordinate systems including WGS84, ETRS89, local national grids, and project-specific coordinate systems as required.
+
+---
+
+## Reference Project Sectors
+
+EOS Proje has experience across the following building and infrastructure types:
+- Historic mosques, churches, and cultural heritage structures
+- Hospitals and healthcare facilities
+- Industrial factories and refineries
+- Shopping centres and commercial buildings
+- Residential complexes and housing developments
+- Bridges and civil infrastructure
+
+Full reference list: https://www.eosproje.com/llm/referanslar.txt
+
+---
+
+## Contact
+
+- **Web:** https://www.eosproje.com
+- **Email:** info@eosproje.com
+- **Phone:** +90 530 664 22 63
+
+**Istanbul Office:**
+Murat Reis Mah. Teyyareci Muammer Sok. No:10/4
+34664 Üsküdar / Istanbul, Turkey
+
+**Iskenderun Office:**
+Piri Reis Mah. Barbaros Cd. No:20
+31200 Iskenderun / Hatay, Turkey
+
+**Budapest Partner Office:**
+Intera Survey
+1063 Budapest, Szinyei Merse utca 21. 1. em. 5. ajtó
+Hungary
+
+---
+
+## Sub-Resource Files
+
+This file provides a general overview. For deeper context:
+
+- About Us (company history, team, vision): https://www.eosproje.com/llm/hakkimizda.txt
+- Services (technical details): https://www.eosproje.com/llm/hizmetler.txt
+- Reference Projects: https://www.eosproje.com/llm/referanslar.txt
+
+---
+# End of file — EOS Proje llm-en.txt (EN) — https://www.eosproje.com

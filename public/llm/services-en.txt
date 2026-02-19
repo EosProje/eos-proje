@@ -1,0 +1,175 @@
+# EOS Proje — Services & Solutions
+# LLM Reference File (English)
+# Web: https://www.eosproje.com
+# Last updated: February 2025
+
+---
+
+## Overview
+
+EOS Proje provides end-to-end engineering services — from point cloud data all the way through to BIM modelling, 2D drawing production, clash detection, and digital twin setup. All services are delivered from the Istanbul head office in coordination with the Budapest partner office.
+
+---
+
+## Service 1: Point Cloud to BIM (Scan to BIM)
+
+Converting 3D point cloud data captured by laser scanners into intelligent, object-based BIM models.
+
+**Software:** Autodesk Revit, ArchiCAD
+
+**Supported LOD Levels:**
+- LOD 100: Massing model (site and area analysis)
+- LOD 200: Generic geometry (schematic design)
+- LOD 300: Precise geometry and dimensions (construction documentation)
+- LOD 350: Assembly and coordination detail
+- LOD 400: Fabrication and installation detail
+
+**Model Disciplines:** Architectural, Structural, MEP (Mechanical, Electrical, Plumbing)
+
+**Use Cases:**
+- Renovation and retrofit projects
+- As-built condition analysis and verification
+- Permit and approval processes
+- Project coordination and clash control
+
+**Workflow:**
+1. Client submits point cloud data (.E57, .RCP, .RCS, .LAS, .LAZ, .PTX)
+2. Data quality check and coordinate system alignment
+3. Revit modelling according to agreed LOD and disciplines
+4. Quality control and deviation analysis
+5. Delivery: .RVT, .IFC, .DWG, .NWD, 3D PDF
+
+**Accuracy:** ±2mm to ±5mm
+
+---
+
+## Service 2: Industrial Facility & MEP Modelling
+
+3D modelling of factories, refineries, power plants, and other complex industrial facilities from point cloud data.
+
+**Scope:**
+- Piping and process equipment modelling
+- HVAC ducting and mechanical systems
+- Cable trays and electrical routing
+- Steel structure and load-bearing frame modelling
+- P&ID diagram integration with 3D model
+
+**Clash Detection:**
+Multi-discipline clash analysis (MEP × Structural × Architectural) and reporting using Navisworks Manage and Solibri.
+
+**Output Software:** Autodesk Revit, AutoCAD Plant 3D
+
+**Use Cases:**
+- Facility modernisation and expansion projects
+- Pre-installation clash check for new equipment or pipelines
+- Operational risk reduction
+- Existing facility documentation
+
+---
+
+## Service 3: Heritage & Architectural Survey (Heritage BIM)
+
+Millimetre-accurate measurement, documentation, and modelling of cultural heritage buildings, historic structures, and archaeological sites.
+
+**Scope:**
+- Field scanning with Leica and Trimble laser scanners
+- Millimetre-accurate capture of deformations, curvatures, and decorative elements
+- Production of 2D survey drawings: floor plans, sections, elevations (.DWG)
+- 3D restitution models
+- Heritage BIM (HBIM) modelling
+- Structural deviation and deformation analysis
+
+**Accuracy:** ±1mm to ±3mm field accuracy
+
+**Use Cases:**
+- Restoration and conservation projects
+- Listed building applications and technical documentation
+- Archaeological site documentation
+- Museum and exhibition applications
+
+---
+
+## Service 4: Scan to CAD (2D Drawing Production)
+
+Direct production of traditional 2D CAD drawings from point cloud data, without creating a full 3D BIM model.
+
+**Output Formats:** .DWG, .DXF
+
+**Drawing Types Produced:**
+- Floor plans
+- Reflected ceiling plans
+- Sections
+- Elevations
+
+**When to Choose This Service:**
+A cost-effective solution for projects that require only scaled 2D drawings without a BIM model.
+
+---
+
+## Service 5: Clash Detection
+
+Pre-construction identification of conflicts between a new design and the actual existing condition of a building or facility.
+
+**Software:** Navisworks Manage, Solibri Model Checker
+
+**Workflow:**
+1. Existing condition point cloud or BIM model is combined with the new design model
+2. Inter-discipline clash rules are defined
+3. Clashes are detected, prioritised, and reported
+4. Revision recommendations are submitted
+
+**Benefit:** Eliminating potential installation errors and revision costs before reaching the construction phase.
+
+---
+
+## Service 6: As-Built Modelling & Digital Twin
+
+Modelling the current state of a completed building and integrating it into facility management and operational processes.
+
+**Scope:**
+- As-built Revit model production
+- Deviation analysis between original design and current condition
+- COBie-compliant data output for facility management systems
+- Digital twin infrastructure ready for IoT integration
+- Export support for IWMS / CAFM systems
+
+**Use Cases:**
+- Facility Management (FM)
+- Maintenance and repair planning
+- Energy efficiency analysis
+- Space management and lease area calculations
+
+---
+
+## Technical Capacity Summary
+
+**Accepted Input Formats:**
+.E57 / .RCP / .RCS / .LAS / .LAZ / .PTX
+
+**Delivered Output Formats:**
+.RVT (Revit) / .IFC / .DWG / .DXF / .NWD (Navisworks) / 3D PDF
+
+**Hardware:**
+Leica RTC360, Leica BLK360, Trimble X7
+
+**Software:**
+Autodesk Revit, Autodesk ReCap, Navisworks Manage, AutoCAD, AutoCAD Plant 3D, Leica Cyclone, FARO Scene, Solibri
+
+---
+
+## Quote & Contact
+
+- **Web:** https://www.eosproje.com/cozumler
+- **Email:** info@eosproje.com
+- **Phone:** +90 530 664 22 63
+
+---
+
+## Related Resources
+
+- About Us: https://www.eosproje.com/llm/hakkimizda.txt
+- Reference Projects: https://www.eosproje.com/llm/referanslar.txt
+- General Overview: https://www.eosproje.com/llm-en.txt
+
+---
+# End of file — EOS Proje services-en.txt (EN) — https://www.eosproje.com

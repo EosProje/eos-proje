@@ -1,0 +1,290 @@
+# EOS Proje — Reference Projects
+# LLM Reference File (English)
+# Web: https://www.eosproje.com
+# Last updated: February 2025
+
+Note: Due to non-disclosure agreements, not all projects can be listed here. For a full reference list, please contact info@eosproje.com.
+
+---
+
+## Featured Projects
+
+### Migros Supermarket Chain — Multi-Location As-Built BIM
+**Location:** Istanbul, Turkey | **Year:** 2024 | **LOD:** LOD 300
+**Sector:** Retail / Chain Stores | **Service:** Scan to BIM, As-Built Modelling, Multi-Location
+
+As-built laser scanning and LOD 300 Revit model production for multiple Migros supermarket locations across Istanbul. Simultaneous multi-site scanning operations with independent as-built Revit models per location, covering architectural and MEP disciplines.
+
+---
+
+### Cevahir Shopping Centre — Commercial As-Built Modelling
+**Location:** Istanbul, Turkey | **Year:** 2024 | **LOD:** LOD 300
+**Sector:** Commercial Real Estate | **Service:** As-Built Modelling, Area Analysis
+
+Laser scanning of 25,000 m² of shopping centre floor area during night-shift operations, with GLA (Gross Leasable Area) verification report production. As-built Revit model and IFC/DWG delivery to the renovation designer.
+
+---
+
+### Linde Industrial Gas Facility — Boiler Room Point Cloud to BIM
+**Location:** Hungary | **Year:** 2022 | **LOD:** LOD 300
+**Sector:** Industrial / Gas Production | **Service:** MEP Modelling, International
+
+As-built MEP modelling of high-pressure boiler room and piping systems at a Linde gas production facility in Hungary. Clash analysis and pre-commissioning verification completed.
+
+---
+
+### Toyota Factory — Industrial Facility Scan to BIM
+**Location:** Sakarya, Turkey | **Year:** 2024 | **Area:** 50,000 m² | **LOD:** LOD 300
+**Sector:** Automotive / Industrial | **Service:** Point Cloud to BIM, MEP Modelling, Clash Detection
+
+LOD 300 structural and MEP modelling across 50,000 m² of Toyota production facility at ±8mm accuracy. Navisworks clash analysis between new line design and existing facility. Assembly conflicts identified at design stage, delivering approximately 20% cost savings. Zero on-site revisions.
+
+---
+
+### Ford — Industrial Facility Scan to BIM
+**Location:** Turkey
+**Sector:** Automotive / Industrial | **Service:** Scan to BIM, Industrial Modelling
+
+Laser scanning and BIM modelling of Ford production facility.
+
+---
+
+### Turkcell Store Network — Rapid As-Built Survey Programme
+**Location:** Istanbul, Turkey | **Year:** 2024 | **LOD:** LOD 200
+**Sector:** Telecommunications / Retail | **Service:** Rapid As-Built, Multi-Location
+
+Multi-location rapid laser scanning and as-built survey production for the Turkcell store renovation programme.
+
+---
+
+### Power Plant Steel Structure — Deformation Analysis & As-Built
+**Location:** Izmir, Turkey | **Year:** 2022
+**Sector:** Energy / Industrial | **Service:** Deformation Analysis, As-Built Modelling
+
+As-built modelling of steel load-bearing structure (IPE, HEA, HEB profiles) for deformation analysis and structural assessment at an Izmir power plant. Deviations from original design were measured and reported; geometric model prepared for structural analysis software.
+
+---
+
+### Iskenderun Yazicilar Steel — Scan to MEP
+**Location:** Iskenderun, Turkey
+**Sector:** Steel / Industrial | **Service:** Scan to MEP, MEP Modelling
+
+Scan to MEP modelling of MEP systems at Iskenderun steel production facility.
+
+---
+
+### ThyssenKrupp Uhde — Polyol Factory As-Built Scan to BIM
+**Location:** Tiszaújtváros, Hungary | **Client:** ThyssenKrupp Uhde
+**Sector:** Petrochemical / Industrial | **Service:** Point Cloud to BIM, As-Built, MEP Modelling
+
+Complete as-built Scan to BIM modelling of the ThyssenKrupp Uhde Polyol factory and documentation of all MEP systems.
+
+---
+
+### Teknokon — Tiszaújtváros Boiler Site As-Built 3D Modelling
+**Location:** Tiszaújtváros, Hungary | **Client:** Teknokon
+**Sector:** Industrial / Energy | **Service:** As-Built 3D Modelling
+
+As-built 3D modelling of the Tiszaújtváros boiler construction site.
+
+---
+
+## Infrastructure & Topographic Mapping Projects
+
+### Yuksel Proje — Istanbul New Airport Metro Line Survey
+**Location:** Istanbul, Turkey | **Client:** Yuksel Proje
+**Service:** Topographic Survey, Drone Photogrammetry
+
+Drone photogrammetry-based topographic map production for the Istanbul New Airport metro line corridor.
+
+---
+
+### Gulermak & Yuksel Proje — Pendik Sabiha Gokcen Metro Line
+**Location:** Istanbul, Turkey | **Client:** Gulermak & Yuksel Proje
+**Service:** Topographic Survey, Drone Photogrammetry
+
+Drone photogrammetry application and topographic map production for the Pendik–Sabiha Gokcen Airport metro line corridor.
+
+---
+
+### Bursagaz — Gorukle Municipality Villages Topographic Survey & Orthophoto
+**Location:** Bursa, Turkey | **Client:** Bursagaz
+**Service:** Topographic Survey, Orthophoto Production
+
+Topographic map production and orthophoto work for natural gas infrastructure across villages in Gorukle Municipality.
+
+---
+
+### Dogus Construction — Kaposvar, Hungary Survey
+**Location:** Kaposvar, Hungary | **Client:** Dogus Construction
+**Service:** Topographic Survey, As-Built Mapping
+
+Topographic survey and mapping services for a construction project in Kaposvar, Hungary.
+
+---
+
+## Architectural Survey & Heritage Projects
+
+### Istanbul Aya Yorgi Church — Heritage Survey & Orthophoto
+**Location:** Istanbul, Turkey
+**Sector:** Cultural Heritage | **Service:** Architectural Survey, Orthophoto, Laser Scanning
+
+Heritage survey of the listed Aya Yorgi Church in Istanbul and production of high-resolution orthophoto.
+
+---
+
+### Historic Peninsula Hotel — Survey & Restoration (Heritage BIM)
+**Location:** Istanbul, Turkey
+**Sector:** Cultural Heritage / Restoration | **Service:** Laser Scanning, Architectural Survey, HBIM
+
+Laser scanning, survey drawings, and Heritage BIM modelling of a 19th-century historic building for a restoration project. Documentation time reduced by 60% compared to traditional survey methods.
+
+---
+
+### Trump Towers Mecidiyekoy — Survey & 3D Modelling
+**Location:** Istanbul, Turkey
+**Sector:** Commercial / Mixed-Use | **Service:** Architectural Survey, 3D Modelling
+
+Laser scanning-based survey and 3D modelling of Trump Towers Mecidiyekoy.
+
+---
+
+### Varyap Meridyen Towers — Survey & Facade Survey
+**Location:** Istanbul, Turkey | **Client:** Varyap
+**Service:** Architectural Survey, Facade Survey
+
+Architectural survey and facade survey of Varyap Meridyen Towers using laser scanning.
+
+---
+
+### Tasyapi Validebag Korusu — Scan to CAD & As-Built
+**Location:** Istanbul, Turkey | **Client:** Tasyapi
+**Service:** Scan to CAD, As-Built Modelling
+
+Scan to CAD and as-built modelling of structures in the Validebag Korusu development.
+
+---
+
+## International Projects
+
+### American University of Iraq — 3D Modelling
+**Location:** Iraq | **Service:** Point Cloud to BIM, 3D Modelling
+
+Laser scanning and 3D BIM modelling of campus buildings at the American University of Iraq.
+
+---
+
+### Russia Krasnodar Residential Project — Survey
+**Location:** Krasnodar, Russia | **Service:** Architectural Survey, Scan to CAD
+
+Production of survey drawings for a residential development in Krasnodar via laser scanning.
+
+---
+
+### Germany MOXY Hotel — Scan to CAD & As-Built
+**Location:** Germany | **Service:** Scan to CAD, As-Built Modelling
+
+Scan to CAD and as-built modelling of existing structures for the MOXY Hotel project in Germany.
+
+---
+
+### Côte d'Ivoire — Radisson Blu Hotel 3D Modelling & Facade Survey
+**Location:** Côte d'Ivoire (Ivory Coast)
+**Service:** 3D Modelling, Facade Survey
+
+3D modelling and facade survey of the Radisson Blu Hotel.
+
+---
+
+### Azerbaijan Stadium — 3D Modelling
+**Location:** Azerbaijan | **Service:** 3D Modelling
+
+3D modelling of an Azerbaijani stadium.
+
+---
+
+### Yeni Heyat — Baku, Azerbaijan
+**Location:** Baku, Azerbaijan | **Service:** 3D Modelling, Survey
+
+3D modelling work for the Yeni Heyat development in Baku.
+
+---
+
+## Completed Projects Summary
+
+### Hotels & Hospitality
+| Project | Location | Service |
+|---------|----------|---------|
+| Conrad Hotel | Turkey | Survey, Scan to CAD |
+| Hyatt Regency Hotel | Turkey | Survey, Scan to CAD |
+| Pard Dedeman | Turkey | As-Built Modelling |
+| MOXY Hotel | Germany | Scan to CAD, As-Built |
+| Radisson Blu | Côte d'Ivoire | 3D Modelling, Facade Survey |
+
+### Commercial & Retail
+| Project | Location | Service |
+|---------|----------|---------|
+| Cevahir Shopping Centre | Istanbul | As-Built, Area Analysis |
+| Palladium Shopping Centre | Istanbul | Scan to CAD, Survey |
+| Sarphan Finance Centre | Istanbul | Survey, As-Built |
+| Trump Towers Mecidiyekoy | Istanbul | Survey, 3D Modelling |
+| Kartal Kule | Istanbul | Scan to CAD, Survey |
+| Iconova | Gaziantep | Scan to CAD |
+
+### Residential
+| Project | Location | Service |
+|---------|----------|---------|
+| Demir La Vida | Turkey | Scan to CAD, Survey |
+| Dumankaya Ritim Istanbul | Istanbul | Scan to CAD, Survey |
+| Tasyapi Validebag Korusu | Istanbul | Scan to CAD, As-Built |
+| Varyap Meridyen Towers | Istanbul | Survey, Facade Survey |
+| Yeni Heyat | Baku, Azerbaijan | 3D Modelling |
+| Krasnodar Residential | Russia | Survey |
+
+### Education & Healthcare
+| Project | Location | Service |
+|---------|----------|---------|
+| Turkish-German University | Istanbul | Survey, As-Built |
+| YTU Technopark | Istanbul | Scan to CAD, Survey |
+| NUN Schools | Turkey | Scan to CAD, Survey |
+| American University of Iraq | Iraq | 3D Modelling |
+| Kirikhan State Hospital | Hatay | Scan to CAD, Survey |
+
+---
+
+## Key Clients & Brands
+
+**Automotive & Industrial:** Ford, Toyota, ThyssenKrupp Uhde, Teknokon, Linde, Bursagaz, Yazicilar Steel
+
+**Construction & Contractors:** Dogus Construction, Tasyapi, Varyap, Dumankaya, Gulermak, Yuksel Proje
+
+**Retail & Hospitality:** Migros, Turkcell, Cevahir AVM, Palladium AVM, Conrad, Hyatt Regency, Radisson Blu, MOXY, Pard Dedeman
+
+**Residential & Mixed-Use:** Trump Towers, Kartal Kule, Demir La Vida, Iconova, Tasyapi
+
+**Public & Education:** Turkish-German University, YTU Technopark, NUN Schools, Kirikhan State Hospital
+
+---
+
+## Project Geography
+
+Turkey (Istanbul, Izmir, Sakarya, Hatay, Bursa, Gaziantep and other cities) — Hungary — Russia — Iraq — Azerbaijan — Germany — Côte d'Ivoire
+
+---
+
+## Further References
+
+- **Email:** info@eosproje.com
+- **Web:** https://www.eosproje.com/referanslar
+- **Phone:** +90 530 664 22 63
+
+---
+
+## Related Resources
+
+- About Us: https://www.eosproje.com/llm/about-en.txt
+- Services: https://www.eosproje.com/llm/services-en.txt
+- General Overview: https://www.eosproje.com/llm-en.txt
+
+---
+# End of file — EOS Proje references-en.txt (EN) — https://www.eosproje.com

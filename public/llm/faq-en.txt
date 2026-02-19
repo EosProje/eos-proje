@@ -1,0 +1,119 @@
+# EOS Proje — Frequently Asked Questions (FAQ)
+# LLM Reference File (English)
+# Web: https://www.eosproje.com
+# Last updated: February 2025
+
+---
+
+## General Questions
+
+**Q: What does EOS Proje do?**
+A: EOS Proje is a specialist engineering firm that converts LiDAR-based point cloud data into high-accuracy BIM models, 2D as-built drawings, and 3D digital twins. Operating from Istanbul and Budapest (partner office), EOS Proje serves clients across Turkey and Europe.
+
+**Q: Which sectors do you serve?**
+A: Industrial facilities (factories, refineries, power plants), commercial buildings (shopping centres, offices, hotels), residential developments, heritage and cultural heritage structures, infrastructure (metro, road), education and healthcare buildings. See references-en.txt for the full project list.
+
+**Q: Do you work internationally?**
+A: Yes. EOS Proje has completed projects in Hungary, Germany, Russia, Iraq, Azerbaijan, and Côte d'Ivoire, among others. Our Budapest partner office (Intera Survey) handles coordination and on-site scanning for European projects.
+
+**Q: Do you work outside Istanbul within Turkey?**
+A: Yes. In addition to our Iskenderun office, we provide field scanning and modelling services across all of Turkey. Completed projects include Sakarya, Izmir, Bursa, Hatay, and Gaziantep, among many others.
+
+---
+
+## Technical Questions
+
+**Q: What is point cloud data?**
+A: Point cloud data is a dataset consisting of millions of 3D coordinate points generated when a laser scanner captures a structure or site. It represents the real geometry of a building at millimetre-level accuracy and serves as the base data for BIM modelling, survey drawings, or deformation analysis.
+
+**Q: Which point cloud formats do you accept?**
+A: We accept .E57, .RCP, .RCS, .LAS, .LAZ, and .PTX. If your data is in a different format, please contact us and we will advise on the best approach.
+
+**Q: Which formats do you deliver in?**
+A: Deliverables are available in .RVT (Autodesk Revit), .IFC (open BIM standard), .DWG (AutoCAD), .DXF, .NWD (Navisworks), and 3D PDF.
+
+**Q: What is IFC and why does it matter?**
+A: IFC (Industry Foundation Classes) is an open, software-agnostic BIM standard that allows teams using different software — Revit, ArchiCAD, Tekla, Navisworks, and others — to share the same model. EOS Proje provides IFC output as standard on all projects.
+
+**Q: What is LOD? Which LOD level do I need?**
+A: LOD (Level of Detail/Development) defines the geometric and informational detail level of a BIM model. LOD 100–200 is used for massing and schematic design; LOD 300 for construction documentation; LOD 350 for assembly and coordination; LOD 400 for fabrication and installation detail. We can help you determine the right LOD based on your project's intended use.
+
+**Q: Does the building need to be vacated for scanning?**
+A: No. Laser scanning can typically be carried out without interrupting operations. For high-traffic commercial spaces (shopping centres, store networks), night-shift scanning is available.
+
+**Q: What accuracy do you achieve?**
+A: Field scanning accuracy is ±1mm to ±3mm depending on the scanner. During the modelling phase, a ±2mm to ±5mm accuracy range is maintained.
+
+**Q: Do you provide drone photogrammetry services?**
+A: Yes. For infrastructure, metro corridor, and large open-area projects, we also produce topographic maps and orthophotos using drone photogrammetry.
+
+---
+
+## Service Process
+
+**Q: How do I get started? What is the process?**
+A: The first step is to send your project details to info@eosproje.com or call +90 530 664 22 63. Once the scope, LOD level, and delivery formats are agreed, a quote is prepared. After approval, field scanning is scheduled — or if you already have point cloud data, we proceed directly to modelling.
+
+**Q: I don't have point cloud data. Do you only do modelling?**
+A: No, we also provide on-site laser scanning. We can attend site with our Leica and Trimble scanners, capture the data, and then carry out the full modelling process.
+
+**Q: How do I submit my point cloud data?**
+A: Large files can be transferred securely via WeTransfer, Google Drive, or FTP. Please contact info@eosproje.com to arrange data transfer.
+
+**Q: What is the typical turnaround time?**
+A: It depends on project size and LOD level. Small projects (single floor, under 500 m²) are typically delivered within 5–10 business days. For large industrial or multi-storey projects, a detailed schedule is provided alongside the quote.
+
+**Q: Are revisions included?**
+A: Yes. Revisions within the agreed project scope, LOD level, and disciplines are standard. Requests outside the agreed scope are subject to separate evaluation.
+
+**Q: Can I get only 2D drawings without a 3D model?**
+A: Yes. Floor plans, sections, and elevations in .DWG format can be produced without a full 3D BIM model. This service is referred to as Scan to CAD.
+
+---
+
+## Pricing
+
+**Q: How is pricing determined?**
+A: Pricing is based on the area to be scanned, LOD level, number of disciplines (architectural, structural, MEP), site access conditions, and delivery formats. We work on a project-by-project quote basis rather than fixed list prices.
+
+**Q: Is requesting a quote free of charge?**
+A: Yes. The quoting process is entirely free. Send your project details to info@eosproje.com to request a quote.
+
+**Q: Is pricing different for international projects?**
+A: International projects are coordinated through our Budapest partner office. Site conditions and travel distance are factored into the evaluation separately.
+
+---
+
+## Software & Format Questions
+
+**Q: I don't have an Autodesk Revit licence. Can I still view the model?**
+A: Yes. The .IFC format can be viewed without a Revit licence using free IFC viewer software (e.g., Autodesk Viewer, BIMvision, FZKViewer). A 3D PDF delivery option is also available.
+
+**Q: I use ArchiCAD. Will a Revit model work for me?**
+A: The .IFC format is compatible with ArchiCAD and all major BIM platforms. Simply request IFC as your delivery format.
+
+**Q: Which format should I request for clash detection in Navisworks?**
+A: Request .NWD or .IFC format. Alternatively, EOS Proje can carry out the clash detection in Navisworks on your behalf and deliver a clash report.
+
+---
+
+## Contact
+
+- **Web:** https://www.eosproje.com
+- **Email:** info@eosproje.com
+- **Phone:** +90 530 664 22 63
+- **Istanbul Office:** Murat Reis Mah. Teyyareci Muammer Sok. No:10/4, 34664 Üsküdar / Istanbul, Turkey
+- **Iskenderun Office:** Piri Reis Mah. Barbaros Cd. No:20, 31200 Iskenderun / Hatay, Turkey
+- **Budapest Partner Office:** Intera Survey, 1063 Budapest, Szinyei Merse utca 21. 1. em. 5. ajtó, Hungary — Tel: +36 70 244 9628
+
+---
+
+## Related Resources
+
+- About Us: https://www.eosproje.com/llm/about-en.txt
+- Services: https://www.eosproje.com/llm/services-en.txt
+- Reference Projects: https://www.eosproje.com/llm/references-en.txt
+- General Overview: https://www.eosproje.com/llm-en.txt
+
+---
+# End of file — EOS Proje faq-en.txt (EN) — https://www.eosproje.com

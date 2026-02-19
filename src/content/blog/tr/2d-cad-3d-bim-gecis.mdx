@@ -1,0 +1,249 @@
+---
+title: "2D CAD Çizimlerinden 3D BIM Modeline Geçiş Rehberi | Eos Proje"
+description: "DWG ve PDF çizimlerinden parametrik 3D BIM modeli oluşturma süreci, best practices ve dikkat edilmesi gereken noktalar."
+keywords: ["2d to 3d conversion", "cad bim dönüşüm", "dwg revit", "pdf to bim", "2d çizim 3d model"]
+author: "Öykü Hun"
+authorLinkedIn: "https://linkedin.com/in/ugur-bilen"  
+date: "2026-01-15"
+lastUpdated: "2026-01-25"
+category: "3D Modelleme Süreçleri"
+tags: ["2D to 3D Conversion", "Revit Modeling", "BIM Standards"]
+featured: false
+locale: "tr"
+alternates:
+  en: "/en/blog/2d-cad-to-3d-bim-transition"
+schema:
+  type: "Article"
+  faq: true
+images:
+  hero: "/images/blog/2d-to-3d-conversion.jpg"
+---
+
+# 2D CAD Çizimlerinden 3D BIM Modeline Geçiş
+
+<Callout type="summary">
+**TL;DR:** 2D CAD (DWG/PDF) çizimlerinden BIM modeli oluşturmak mümkündür ancak sınırlamaları vardır: Yükseklik bilgisi eksikse varsayımlar yapılır, as-built accuracy garanti edilemez. En iyi yaklaşım: Critical areas için point cloud, non-critical için 2D CAD. Typical teslimat süresi: 5,000 m² plan için 3-4 hafta LOD 300.
+</Callout>
+
+## 2D'den 3D'ye: Ne Zaman Mümkün, Ne Zaman Değil?
+
+### Mümkün Olduğu Durumlar
+
+**Yeni Tasarım Projeleri:**
+- Mimari kat planları tam ve tutarlı
+- Kesitler ve görünüşler mevcut
+- Teknik detaylar yeterli
+- **Sonuç:** [LOD 200-300](/blog/lod-seviyeleri-farklari) BIM model
+
+**Doküman Kalitesi Yüksek Olan Eski Projeler:**
+- As-built çizimler güvenilir
+- Tüm disiplinler (mimari, statik, MEP) mevcut
+- Malzeme spesifikasyonları belirtilmiş
+- **Sonuç:** LOD 200-250 model, verification önerilir
+
+---
+
+### Zor/İmkansız Olduğu Durumlar
+
+**Eksik/Çelişkili Çizimler:**
+- Sadece kat planları var, kesit yok
+- Farklı revisyonlar karışmış
+- MEP sistem yükseklikleri belirsiz
+- **Çözüm:** Site survey veya point cloud şart
+
+**Karmaşık Geometri:**
+- Organik formlar (curves, double surfaces)
+- Free-form mimari
+- Karmaşık MEP routing
+- **Çözüm:** [3D lazer tarama](/cozumler/lazer-tarama) recommended
+
+---
+
+## Sürecin 5 Adımı
+
+### 1. Doküman Audit ve Hazırlık
+
+#### Checklist:
+
+- [ ] Tüm kat planları mevcut mu? (B+Zemin+Normal katlar)
+- [ ] Kesitler var mı? (Minimum 2 adet kesit)
+- [ ] Görünüşler (façades) var mı?
+- [ ] MEP planları mevcut mu?
+- [ ] Malzeme/finish schedules mevcut mu?
+- [ ] Structural grid belirgin mi?
+
+**Eksik bilgiler için:**
+- Müşteriden ek doküman talep edin
+- Benzer projelerden referans alın
+- Varsayımlar yapıp belgelendirin
+
+---
+
+### 2. CAD Import ve Referans Setup
+
+**Best Practice:**
+```
+1. DWG files Revit'e import edilir (Link olarak, NOT import as elements)
+2. Her kat planı ilgili Level'a pin lenir
+3. Grid/Level sistemı oluşturulur (first priority)
+4. Units verify edilir (mm vs. m problem yaygındır)
+```
+
+<Callout type="warning">
+**Yaygın Hata:** DWG'yi explode edip elements import etmek. Bu Revit model size'ı 10x şişirir ve performance sorunlarına yol açar. Always link, never import elements.
+</Callout>
+
+---
+
+### 3. Geometrik Modelleme
+
+#### Öncelik Sırası:
+
+**A. Structural Grid & Levels (1-2 gün)**
+- Grid lines (A, B, C... / 1, 2, 3...)
+- Levels (elevation heights)
+- Foundation level
+
+**B. Structural Elements (3-5 gün)**
+- Kolonlar (DWG'de kesit boyutu okunur)
+- Kirişler (kesitlerden yükseklik belirlenir)
+- Perdeler
+- Temeller (varsa)
+
+**C. Architectural Shell (5-7 gün)**
+- Dış duvarlar
+- İç bölme duvarlar
+- Döşemeler (slab)
+- Merdiven, asansör
+- Pencere, kapılar
+
+**D. MEP Systems (10-15 gün)**
+- ⚠️ En zor kısım: Yükseklik bilgisi %80 varsayım
+- Ana dağıtım hatları (risers)
+- Horizontal routing (kesitlerden çıkarsanır)
+- Equipment locations
+
+---
+
+### 4. Attribute & Data Entry
+
+2D çizimlerden geometri oluşturuldu, şimdi **semantic information** eklenir:
+
+| Element | Data Source | Güvenilirlik |
+|---------|-------------|--------------|
+| Wall Type | Plan legend | Yüksek |
+| Material | Specification docs | Orta |
+| Equipment Capacity | Schedules | Yüksek |
+| Pipe Diameter | Plan annotation | Yüksek |
+| Pipe Elevation | ⚠️ Varsayım | Düşük |
+
+---
+
+### 5. QA/QC ve Validation
+
+2D çizimlerden oluşturulan modellerde **validation zorlu**dur:
+
+**Validation Stratejisi:**
+- Plan görünümlerini DWG ile overlay edip compare edin
+- 3D view'da mantık hatalarını (floating walls, unconnected pipes) arayın
+- Clash detection çalıştırın (Navisworks)
+- Area schedules ile çizim üzerindeki notları karşılaştırın
+
+<ExpertQuote author="Uğur Bilen" role="Eos Proje">
+Varyap Meridian projesinde 2D CAD ve eski fotoğraflardan LOD 200 model oluşturduk. Model, renovation design için yeterliydi ama critical MEP areas'ı scan ile verify ettik. Hybrid approach hem maliyet hem accuracy sağladı.
+</ExpertQuote>
+
+---
+
+## 2D vs. Point Cloud: Karşılaştırma
+
+| Faktör | 2D CAD | Point Cloud |
+|--------|---------|-------------|
+| **Accuracy** | ⚠️ Orta (±50-100mm) | ✅ Yüksek (±5-10mm) |
+| **Data Source** | Çizimler (as-planned) | Gerçek durum (as-built) |
+| **Maliyet** | 💰 Düşük | 💰💰 Orta-Yüksek |
+| **Süre** | ⏱️ Kısa | ⏱️ Orta |
+| **Best For** | Yeni tasarım, simple geometry | Existing buildings, complex geometry |
+| **Risk** | As-built farklılıkları | Scan quality issues |
+
+---
+
+## Sıkça Sorulan Sorular
+
+<FAQSection>
+
+<FAQ question="2D CAD çizimlerinden BIM modeli ne kadar doğru olur?">
+Doğruluk **source quality'ye** bağlıdır. Eğer:
+- ✅ As-built çizimler güncel (son 5 yıl) → %80-85 doğruluk
+- ⚠️ 10+ yıllık çizimler → %60-70 doğruluk (renovasyonlar nedeniyle)
+- ❌ Sadece as-planned (imalat öncesi) → %50-60 doğruluk
+
+MEP sistemleri için yükseklik bilgisi %80 varsayımdır, risk yüksektir.
+</FAQ>
+
+<FAQ question="PDF çizimlerden BIM modeli yapılabilir mi?">
+Evet, mümkündür ancak DWG'ye göre %30-40 daha uzun sürer çünkü:
+- PDF vector data manuel trace edilmeli
+- Ölçek verification gerekli
+- Text annotations manuel okunmalı
+
+**Recommended:** PDF'yi AutoCAD'de DWG'ye convert edin önce (Able2Extract, PDF2CAD gibi toollar).
+</FAQ>
+
+<FAQ question="Hangi LOD seviyesi ulaşılabilir 2D çizimlerden?">
+- **LOD 200:** Kesinlikle mümkün
+- **LOD 300:** Mümkün (kesit ve detaylar varsa)
+- **LOD 350-400:** ❌ Mümkün değil - fabrication detail yok
+
+2D çizimlerden LOD 300'ün üstüne çıkmak non-realistic'tir.
+</FAQ>
+
+<FAQ question="Maliyet farkı nedir 2D vs. Point Cloud kaynaklı modelleme?">
+m² başına maliyet karşılaştırması (LOD 300):
+- **2D CAD source:** 15-25 TL/m²
+- **Point Cloud source:** 30-50 TL/m² (scan maliyeti dahil)
+
+Ancak **accuracy ve risk** açısından point cloud çok daha güvenilirdir. Hybrid approach optimal: Critical areas point cloud, rest 2D CAD.
+</FAQ>
+
+<FAQ question="Eski bir bina için sadece 2D planlar var, ne yapmalıyım?">
+**Risk Assessment** yapın:
+1. **Low Risk Project** (ofis renovasyonu, basit layout) → 2D CAD'den model oluştur, site verification yap
+2. **High Risk Project** (MEP coordination critical, complex) → En azından critical areas'ı scan et
+3. **Critical Project** (hospital, data center) → Full scan şart
+
+Hybrid approach çoğu zaman optimum: 2D+Scan kombine.
+</FAQ>
+
+</FAQSection>
+
+---
+
+## Best Practices: 10 Tavsiye
+
+1. **DWG quality check first:** Import öncesi çizim kalitesini değerlendirin
+2. **Grid system önce:** Öncelikle grid ve level oluşturun
+3. **Link, not import:** DWG'leri always link olarak çalışın
+4. **Assumptions log tutun:** Varsayımlarınızı belgeleyin
+5. **Phased approach:** Önce architectural, sonra MEP
+6. **3D view check:** Sürekli 3D view'da model mantığını kontrol edin
+7. **Clash detection:** Navisworks ile early clash detection yapın
+8. **Client review checkpoints:** %25-%50-%75 milestone'larda review
+9. **Hybrid strategy:** 2D CAD + critical area scan kombine edin
+10. **Realistic LOD:** LOD 300'ün üzerine çıkmayın (fabrication detail yok)
+
+---
+
+**İlgili Yazılar:**
+- [Point Cloud to BIM Sürecinde Dikkat Edilmesi Gerekenler](/blog/point-cloud-to-bim-sureci)
+- [LOD Seviyeleri: 200, 300 ve 400 Arasındaki Farklar](/blog/lod-seviyeleri-farklari)
+
+---
+
+Eski 2D projelerinizi modern BIM standartlarına dönüştürmek için [teknik ekibimizden destek alın](/iletisim).
+
+---
+
+**Son Güncelleme:** 25 Ocak 2026  
+**Yazar:** [Öykü Hun](https://linkedin.com/in/oykuhun) - Operasyon Direktörü, Eos Proje  
+**Kategori:** 3D Modelleme Süreçleri | **Okuma Süresi:** ~7 dakika

@@ -1,0 +1,108 @@
+---
+title: "Tarihi Yarımada Otel Projesi - HBIM ve Rölöve Çalışması | Eos Proje"
+description: "İstanbul Tarihi Yarımada'da 19. yüzyıl eserinin lazer tarama ve fotogrametri ile dijital belgelenmesi. Taş-taş rölöve ve HBIM (Historical BIM) modelleme süreci."
+client: "Özel Yatırımcı"
+sector: "Restorasyon & Kültürel Miras"
+location: "İstanbul, Türkiye"
+year: "2023"
+projectSize: "4,500 m²"
+deliverables: ["LOD 400 HBIM Model", "Taş-Taş Rölöve Çizimleri", "Ortomozaik Haritalar", "Deformasyon Analiz Raporu"]
+keywords: ["hbim", "tarihi eser modelleme", "lazer tarama rölöve", "taş taş rölöve istanbul", "fotogrametri"]
+tags: ["Historical Preservation", "Scan to BIM", "LOD 400", "Digital Twin", "Restoration"]
+featured: true
+locale: "tr"
+alternates:
+  en: "/en/case-studies/historic-peninsula-hotel"
+images:
+  hero: "/images/case-studies/eosproje-lazer-tarama-sistemleri-bim-modelleme-hizmetleri.webp"
+  gallery:
+    - "/images/case-studies/eosproje-lazer-tarama-sistemleri-bim-modelleme-hizmetleri.webp"
+    - "/images/case-studies/eosproje-endustriyel-tesis-drone-lazer-tarama-3d-modelleme.webp"
+    - "/images/case-studies/eosproje-fabrika-3d-lazer-tarama-as-built-modelleme.webp"
+    - "/images/case-studies/eosproje-cevahir-avm-lazer-tarama-scan-to-bim-istanbul.webp"
+schema:
+  type: "CaseStudy"
+author: "Uğur Bilen"
+authorLinkedIn: "https://www.linkedin.com/company/eos-proje"
+date: "2023-11-20"
+lastUpdated: "2026-02-17"
+---
+
+# Tarihi Yarımada Otel Projesi: HBIM ve Dijital Belgeleme
+
+<Callout type="summary">
+**Proje Özeti:** İstanbul'un kalbinde, 1. derece tarihi eser statüsündeki 19. yüzyıl yapısının otele dönüşüm projesi kapsamında gerçekleştirilen hassas rölöve çalışması. Lazer tarama ve fotogrametri (Drone & Yersel) yöntemleri birleştirilerek ±2mm hassasiyetinde nokta bulutu elde edilmiş, bu veri üzerinden LOD 400 seviyesinde **[HBIM (Heritage BIM)](/cozumler/heritage-bim)** modeli ve Kurul onayına uygun [taş-taş rölöve çizimleri](/cozumler/scan-to-cad) üretilmiştir.
+</Callout>
+
+## Proje Kapsamı ve Zorluklar
+
+### Kültürel Mirasın Dijital İkizi
+
+Müşterimiz, restorasyon projesinin Anıtlar Kurulu'ndan onay alabilmesi için mevcut durumun (as-is) eksiksiz ve milimetrik doğrulukta belgelenmesini talep etmiştir.
+
+**Temel Zorluklar:**
+1.  **Karmaşık Geometri:** Cephedeki süslemeler, payandalar ve tonozlu geçişlerin geleneksel yöntemlerle ölçülememesi.
+2.  **Yapısal Deformasyonlar:** Yüzyıllar içinde oluşan duvar eğrilikleri ve zemin oturmalarının tespiti.
+3.  **Ulaşım Kısıtı:** Çatıda ve kulelerde insan erişiminin riskli olduğu bölgeler.
+
+---
+
+## Kullanılan Teknoloji ve Metodoloji
+
+Projede "Hibrit Veri Toplama" yöntemi izlenmiştir. Yersel lazer tarayıcılar ile İHA (Drone) fotogrametrisi entegre edilerek eksiksiz bir veri seti oluşturulmuştur.
+
+### 1. Veri Toplama Envanteri
+
+| Cihaz / Yazılım | Kullanım Amacı | Hassasiyet |
+|----------------|----------------|------------|
+| **Leica RTC360** | İç ve Dış Mekan Yersel Tarama (230 istasyon) | ±2mm @ 10m |
+| **DJI Mavic 3E** | Çatı ve Ulaşılamayan Cephe Fotogrametrisi | GSD: 1mm/px |
+| **Leica Cyclone** | Nokta Bulutu Birleştirme (Registration) | ±3mm (Global) |
+| **RealityCapture** | Fotogrametrik Mesh ve Doku Kaplama | - |
+
+### 2. İş Akışı (Workflow)
+
+1.  **Saha Çalışması (3 Gün):** Yapının iç, dış ve çatı bölümlerinin taranması.
+2.  **Veri İşleme (4 Gün):** Nokta bulutlarının temizlenmesi, renkli hale getirilmesi ve koordinatlandırılması (ITRF96).
+3.  **Modelleme (15 Gün):** Revit ortamında nokta bulutu altlığı kullanılarak "in-place family" yöntemleriyle özgün yapı elemanlarının modellenmesi.
+4.  **Çizim Üretimi (5 Gün):** Modelden otomatik kesit ve görünüşlerin alınması, detaylandırılması.
+
+---
+
+## Teknik Analizler ve Çıktılar
+
+### Deformasyon Analizi (Heatmap)
+
+Tarihi yığma duvarlardaki şakül kaçıklıkları **Cloud-to-Mesh** karşılaştırması ile analiz edilmiştir.
+
+| Analiz Bölgesi | Maksimum Sapma | Ortalama Sapma | Durum |
+|----------------|----------------|----------------|-------|
+| Doğu Cephesi | 12 cm (Dışa doğru) | 4 cm | Kritik (Güçlendirme Gerekli) |
+| Zemin Kat Tonoz | 5 cm (Çökme) | 2 cm | İzlenmeli |
+| Ana Merdiven | 1 cm | 0.5 cm | Stabil |
+
+### HBIM Modelleme Detayları
+
+Standart BIM kütüphaneleri tarihi yapılar için yetersiz kaldığından, projeye özel parametrik familyalar üretilmiştir.
+
+*   **Pencere Söveleri:** Her biri yerinde ölçüsüne göre adapte edilebilen parametrik modeller.
+*   **Dökme Mozaik Döşeme:** Nokta bulutundaki desen izlerine göre modellenmiştir.
+*   **Ahşap Tavan:** Mevcut kirişlerin sehim (deflection) oranları modele işlenmiştir.
+
+---
+
+## Proje Sonuçları
+
+<Callout type="tip">
+**Mimar Görüşü:** "Bina o kadar karmaşık ki, el ile rölöve almak aylar sürerdi ve hata payı yüksek olurdu. Eos Proje'nin sağladığı nokta bulutu ve ortofotolar sayesinde, binanın her taşını ofisimizden inceleyerek restorasyon kararlarını güvenle alabildik. Rölöve projemiz Kurul'dan ilk seferde geçti."
+</Callout>
+
+*   **%60 Zaman Tasarrufu:** Geleneksel ölçüme kıyasla saha süresi 3 haftadan 3 güne indi.
+*   **%99.9 Doğruluk:** Restorasyon imalatlarında "sürpriz" ölçü hataları ortadan kaldırıldı.
+*   **Tam Belgeleme:** Yapının dijital ikizi, gelecek nesillere aktarılmak üzere arşivlendi.
+
+## Görsel Galeri
+
+*(Buraya proje görselleri gelecek)*
+
+Tarihi yapı belgeleme ve restorasyon projelerinizde uzman desteği almak için [iletişime geçin](/iletisim).

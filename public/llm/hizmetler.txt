@@ -1,0 +1,175 @@
+# EOS Proje — Hizmetler ve Çözümler
+# LLM Referans Dosyası (Türkçe)
+# Web: https://www.eosproje.com
+# Son güncelleme: Şubat 2025
+
+---
+
+## Genel Bakış
+
+EOS Proje, nokta bulutu verisinden başlayarak BIM modelleme, 2D çizim üretimi, çakışma analizi ve dijital ikiz kurulumuna kadar uçtan uca mühendislik hizmetleri sunmaktadır. Tüm hizmetler İstanbul merkez ofis bünyesinde ve Budapeşte partner ofisi koordinasyonuyla yürütülmektedir.
+
+---
+
+## Hizmet 1: Point Cloud to BIM (Nokta Bulutundan BIM Modelleme)
+
+Lazer tarayıcılarla elde edilen 3 boyutlu nokta bulutu verilerini akıllı, nesne bazlı BIM modellerine dönüştürme hizmetidir.
+
+**Kullanılan Yazılımlar:** Autodesk Revit, ArchiCAD
+
+**Desteklenen LOD Seviyeleri:**
+- LOD 100: Kütlesel model (yer ve alan analizi)
+- LOD 200: Genel geometri (şematik tasarım)
+- LOD 300: Kesin geometri ve boyutlar (uygulama projesi)
+- LOD 350: Montaj ve koordinasyon detayı
+- LOD 400: İmalat ve uygulama detayı
+
+**Model Disiplinleri:** Mimari, Yapısal / Statik, MEP (Mekanik, Elektrik, Tesisat)
+
+**Kullanım Alanları:**
+- Renovasyon ve yenileme projeleri
+- Mevcut durum (as-built) analizi ve doğrulaması
+- Ruhsat ve onay süreçleri
+- Proje koordinasyonu ve çakışma kontrolü
+
+**Süreç:**
+1. Müşteri nokta bulutu verisini iletir (.E57, .RCP, .RCS, .LAS, .LAZ, .PTX)
+2. Veri kalite kontrolü ve koordinat sistemine yerleştirme
+3. Revit'te LOD ve disipline göre modelleme
+4. Kalite kontrol ve sapma analizi
+5. Teslimat: .RVT, .IFC, .DWG, .NWD, 3D PDF
+
+**Doğruluk:** ±2mm ila ±5mm
+
+---
+
+## Hizmet 2: Endüstriyel Tesis ve MEP Modelleme
+
+Fabrika, rafineri, enerji santrali ve benzeri karmaşık endüstriyel yapıların nokta bulutu verilerinden 3D modele dönüştürülmesidir.
+
+**Kapsam:**
+- Borulama (Piping) ve proses ekipman modelleme
+- HVAC kanalları ve mekanik sistemler
+- Elektrik taşıyıcıları (kablo tavaları, tesisat güzergahları)
+- Çelik konstrüksiyon ve taşıyıcı sistem modelleme
+- P&ID diyagramlarıyla 3D modelin eşleştirilmesi
+
+**Çakışma Tespiti (Clash Detection):**
+Navisworks Manage ve Solibri ile disiplinlerarası (MEP × Yapısal × Mimari) çakışma analizi ve raporlaması.
+
+**Çıktı Yazılımları:** Autodesk Revit, AutoCAD Plant 3D
+
+**Kullanım Alanları:**
+- Tesis modernizasyonu ve genişletme projeleri
+- Yeni ekipman veya hat ilavesi öncesi çakışma kontrolü
+- Operasyonel risk azaltma
+- Mevcut tesis dokümantasyonu
+
+---
+
+## Hizmet 3: Tarihi Eser ve Mimari Rölöve (Heritage BIM)
+
+Kültürel miras yapıları, tarihi binalar ve arkeolojik alanların milimetrik hassasiyette ölçülmesi, belgelenmesi ve modellenmesidir.
+
+**Kapsam:**
+- Leica ve Trimble lazer tarayıcılarla saha taraması
+- Deformasyonlar, eğrilikler ve süslemelerin mm hassasiyetinde aktarımı
+- 2D rölöve çizimlerinin üretimi: plan, kesit, görünüş (.DWG)
+- 3D restitüsyon modelleri
+- HBIM (Heritage BIM) modelleme
+- Yapısal sapma ve deformasyon analizi
+
+**Hassasiyet:** ±1mm ila ±3mm saha doğruluğu
+
+**Kullanım Alanları:**
+- Restorasyon uygulama projeleri
+- Tescil başvuruları için teknik belgeleme
+- Arkeolojik alan dokümantasyonu
+- Müze ve sergi uygulamaları
+
+---
+
+## Hizmet 4: Scan to CAD (2D Çizim Üretimi)
+
+Nokta bulutu verilerinden BIM modeli oluşturmaksızın doğrudan geleneksel 2D CAD çizimlerinin üretilmesidir.
+
+**Çıktı Formatları:** .DWG, .DXF
+
+**Üretilen Çizim Türleri:**
+- Kat planları
+- Tavan planları
+- Kesitler
+- Cephe görünüşleri
+
+**Ne Zaman Tercih Edilir:**
+BIM modeline ihtiyaç duyulmayan, yalnızca ölçekli 2D çizim gerektiren projeler için uygun maliyetli çözümdür.
+
+---
+
+## Hizmet 5: Çakışma Analizi (Clash Detection)
+
+Tasarlanan yeni projeler ile mevcut yapı veya tesisin gerçek durumu arasındaki olası çakışmaların önceden tespit edilmesidir.
+
+**Kullanılan Yazılımlar:** Navisworks Manage, Solibri Model Checker
+
+**Süreç:**
+1. Mevcut durum nokta bulutu veya BIM modeli ile yeni tasarım modeli birleştirilir
+2. Disiplinlerarası çakışma kuralları tanımlanır
+3. Çakışmalar tespit edilir, önceliklendirilir ve raporlanır
+4. Revizyon önerileri sunulur
+
+**Faydası:** Şantiye aşamasına girmeden olası montaj hatalarının ve revizyon maliyetlerinin engellenmesi.
+
+---
+
+## Hizmet 6: As-Built Modelleme ve Dijital İkiz
+
+İnşaatı tamamlanmış yapıların mevcut durumunun modellenerek tesis yönetimi ve işletme süreçlerine entegre edilmesidir.
+
+**Kapsam:**
+- As-built Revit modeli üretimi
+- Tasarım projesiyle mevcut durum arasındaki sapma analizi
+- COBie uyumlu veri çıktısı (tesis yönetim sistemleri için)
+- IoT entegrasyonuna hazır dijital ikiz altyapısı
+- IWMS / CAFM sistemlerine aktarım desteği
+
+**Kullanım Alanları:**
+- Tesis yönetimi (Facility Management)
+- Bakım-onarım planlama
+- Enerji verimliliği analizi
+- Alan yönetimi ve kiralama hesaplamaları
+
+---
+
+## Teknik Kapasite Özeti
+
+**Kabul Edilen Girdi Formatları:**
+.E57 / .RCP / .RCS / .LAS / .LAZ / .PTX
+
+**Üretilen Çıktı Formatları:**
+.RVT (Revit) / .IFC / .DWG / .DXF / .NWD (Navisworks) / 3D PDF
+
+**Donanım:**
+Leica RTC360, Leica BLK360, Trimble X7
+
+**Yazılımlar:**
+Autodesk Revit, Autodesk ReCap, Navisworks Manage, AutoCAD, AutoCAD Plant 3D, Leica Cyclone, FARO Scene, Solibri
+
+---
+
+## Teklif ve İletişim
+
+- **Web:** https://www.eosproje.com/cozumler
+- **Email:** info@eosproje.com
+- **Telefon:** +90 530 664 22 63
+
+---
+
+## İlgili Kaynaklar
+
+- Hakkımızda: https://www.eosproje.com/llm/hakkimizda.txt
+- Referans Projeler: https://www.eosproje.com/llm/referanslar.txt
+- Genel Özet: https://www.eosproje.com/llm.txt
+
+---
+# Dosya sonu — EOS Proje hizmetler.txt (TR) — https://www.eosproje.com

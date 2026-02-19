@@ -1,0 +1,272 @@
+---
+title: "Industrial Facility As-Built Modeling: Process and Challenges | Eos Proje"
+description: "Laser scanning and BIM integration for existing condition documentation in factories and power plants. MEP density, safety protocols, and project management."
+keywords: ["industrial facility bim", "as-built modeling", "factory 3d modeling", "process plant modeling", "industrial modeling service"]
+author: "Uğur Bilen"
+authorLinkedIn: "https://linkedin.com/in/ugur-bilen"
+date: "2026-01-12"
+lastUpdated: "2026-01-25"
+category: "Industry Applications"
+tags: ["As-Built Modeling", "Industrial Facilities", "Point Cloud to BIM", "MEP Modeling"]
+featured: true
+locale: "en"
+alternates:
+  tr: "/blog/endustriyel-as-built-modelleme"
+schema:
+  type: "Article"
+  faq: true
+images:
+  hero: "/images/blog/industrial-as-built.jpg"
+---
+
+# Industrial Facility As-Built Modeling
+
+<Callout type="summary">
+**TL;DR:** As-built BIM modeling in industrial facilities (factories, refineries, power plants) is 300% more complex than standard buildings: Dense MEP systems (pipe density 15-25 m/m²), working in active production environment, safety protocols. Our Toyota Factory project: 50,000 m² facility, 2,500+ MEP elements, LOD 300, 8 weeks. Success keys: Detailed planning + experienced team + phased approach.
+</Callout>
+
+## Unique Challenges of Industrial Facilities
+
+### 1. MEP System Density
+
+**Standard Office Building:** 3-5 meters pipe/m²  
+**Industrial Facility:** 15-25 meters pipe/m² (5-8x denser!)
+
+In our Toyota project, in process area alone:
+- 800+ pipe runs (DN25-DN800)
+- 350+ valves
+- 150+ equipment (tanks, pumps, heat exchangers)
+- 200+ instrumentation points
+
+<Callout type="warning">
+**Pipe Complexity:** In one process unit, 6 different systems together: Process fluid, cooling water, steam, compressed air, chemical drain, fire fighting. Each with different material, pressure rating, insulation requirement.
+</Callout>
+
+---
+
+### 2. Working in Active Production Environment
+
+Factories operate 24/7 - how is laser scanning done?
+
+#### Strategies:
+
+**A. Outside Shift Hours:**
+- Night 00:00-06:00
+- Minimize production downtime
+- Reduce safety risk
+
+**B. Modular Approach:**
+- Factory scanned zone by zone
+- Critical production areas on weekends
+- Non-critical areas during normal hours
+
+**C. Remote Scanning:**
+- Hazardous areas (high temperature, chemical risk)
+- Drone-based scanning (outdoor areas)
+
+---
+
+### 3. Safety Protocols
+
+Safety is paramount in industrial facilities:
+
+| Requirement | Detail |
+|-------------|--------|
+| HSE Training | Minimum 8 hours site-specific |
+| PPE | Helmet, safety shoes, goggles, earplugs |
+| Gas Detection | Personal H2S, LEL detectors |
+| Permits | Work permit, hot work permit (if required) |
+| Escorts | Production team escort mandatory |
+
+---
+
+## Industrial As-Built Modeling Process
+
+### Phase 1: Pre-Project Planning (1-2 weeks)
+
+- Client briefing + site visit
+- Existing documentation review (P&IDs, isometrics)
+- Safety training
+- Scan planning (zone division)
+- **Deliverable:** Project Execution Plan (PEP)
+
+---
+
+### Phase 2: Laser Scanning (3-7 days)
+
+**Scan Density Requirements:**
+- Process piping areas: 3-5mm
+- Structural steel: 5-10mm
+- General areas: 10-15mm
+
+**Toyota Project Stats:**
+- 250+ scan positions
+- 45 TB raw data
+- 5 billion points
+- Accuracy: ±3mm global registration
+
+---
+
+### Phase 3: Point Cloud Processing (1 week)
+
+Unique challenges in industrial facilities:
+
+**Hot Equipment:** Laser beams scatter from hot surfaces (300°C+) → noise  
+**Solution:** Consider shutdown plans or prioritize cold areas
+
+**Reflective Surfaces:** Stainless steel tanks, polished pipes → multiple reflections  
+**Solution:** Target-based registration + increased overlap
+
+**Vibration:** Rotating equipment vibration → blurred points  
+**Solution:** Equipment shutdown or average multiple scans
+
+---
+
+### Phase 4: BIM Modeling (4-6 weeks)
+
+#### Modeling Priorities:
+
+**Week 1-2: Structural & Equipment**
+- Steel structure (columns, beams, platforms)
+- Major equipment (tanks, vessels, pumps)
+- Equipment foundations
+
+**Week 3-4: Piping Systems**
+- Main process lines (critical diameters DN150+)
+- Headers and risers
+- Pipe supports
+
+**Week 5-6: Secondary Systems & Details**
+- Small bore piping (DN50 and below)
+- Instrumentation
+- Cable ways
+- Fire fighting system
+
+---
+
+### Phase 5: QA/QC (1 week)
+
+**Critical Checks:**
+- [ ] Pipe connectivity (inlet/outlet match)
+- [ ] Elevation verification (±10mm)
+- [ ] Flange-to-flange dimensions
+- [ ] Equipment nozzle orientations
+- [ ] Clash detection (hard clashes = 0)
+- [ ] P&ID reconciliation
+
+<ExpertQuote author="Uğur Bilen" role="Eos Proje">
+On the Polyol Thyssenkrupp project, we reconciled 450+ pipe connections with P&ID. Found 12 discrepancies - after field verification, P&ID was updated. BIM model caught P&ID errors.
+</ExpertQuote>
+
+---
+
+## Sector-Specific Considerations
+
+### Petrochemical / Refinery
+
+**Characteristics:**
+- High pressure/temperature lines
+- Exotic materials (Hastelloy, Inconel)
+- Complex instrumentation
+- Flare systems
+
+**LOD:** 350-400 (fabrication required)
+
+---
+
+### Power Plant (Linde Tiszaujvaros)
+
+**Characteristics:**
+- Large diameter piping (DN600-DN1200)
+- Insulation modeling (100-200mm thick)
+- Cable tray networks
+- HVAC systems (large duct sizes)
+
+**LOD:** 300-350
+
+---
+
+### Manufacturing Facility (Toyota, Şişecam)
+
+**Characteristics:**
+- Process equipment chains
+- Conveyor systems
+- Utility distribution
+- Clean room requirements (if applicable)
+
+**LOD:** 300
+
+---
+
+## Frequently Asked Questions
+
+<FAQSection>
+
+<FAQ question="How much more expensive is industrial facility as-built modeling than regular buildings?">
+**150-250% more expensive** because:
+- MEP density 5-8x higher
+- Safety requirements & training
+- Complex geometry (pipe routing)
+- Specialized expertise (process knowledge)
+- More intensive QA/QC
+
+Cost per m²: $2.35-3.90/m² (LOD 300, MEP included) vs. office building $1.30-1.80/m²
+</FAQ>
+
+<FAQ question="Can scanning be done during active production?">
+Yes, possible but:
+- Strict compliance with HSE protocols
+- Critical coordination with production team
+- Phased approach (zone by zone)
+- Night shifts or weekend work
+- Some areas may require shutdown
+
+On Toyota project, 80% of areas scanned under active production, 20% planned shutdown.
+</FAQ>
+
+<FAQ question="What should pipe routing accuracy be?">
+Tolerance levels for LOD 300:
+- **Horizontal position:** ±10-15mm
+- **Elevation:** ±10mm
+- **Pipe diameter:** Nominal (accurate)
+- **Flange-to-flange:** ±5mm
+
+For critical tie-in points (existing+new), ±5mm recommended.
+</FAQ>
+
+<FAQ question="What is P&ID reconciliation and why is it necessary?">
+**P&ID (Piping & Instrumentation Diagram):** Process flow schematic
+
+**Reconciliation:** Comparing BIM model with P&ID
+- Is as-built actually compliant with P&ID?
+- Are modifications captured?
+- Is instrumentation complete?
+
+**Why Important:** P&ID is operational critical document. Must be in sync with as-built BIM. We find 5-10% discrepancies in our projects (P&ID usually outdated).
+</FAQ>
+
+<FAQ question="Which BIM software is suitable for industrial facilities?">
+| Software | Best For | Strengths |
+|---------|----------|-----------|
+| **Revit** | General industrial | Common, IFC export |
+| **AutoCAD Plant 3D** | Process plants | P&ID integration |
+| **PDMS/E3D** | Large refineries | Advanced piping tools |
+| **Navisworks** | Coordination | Clash detection |
+
+Eos Proje uses: **Revit (modeling) + Navisworks (QA/QC)** combo.
+</FAQ>
+
+</FAQSection>
+
+---
+
+**Related Case Studies:**
+- [Toyota Factory Point Cloud to BIM Project](#)
+- [Polyol Thyssenkrupp Chemical Facility](#)
+- [Linde Tiszaujvaros Industrial Gas Facility](#)
+
+---
+
+**Last Updated:** January 25, 2026  
+**Author:** [Uğur Bilen](https://linkedin.com/in/ugur-bilen)  
+**Category:** Industry Applications | **Reading Time:** ~8 minutes

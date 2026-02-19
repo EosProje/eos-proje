@@ -1,0 +1,81 @@
+# EOS Proje — About Us
+# LLM Reference File (English)
+# Web: https://www.eosproje.com
+# Last updated: February 2025
+
+---
+
+## Company Identity
+
+EOS Proje is a specialist engineering firm that converts physical structures and industrial facilities into high-accuracy digital twins. By combining LiDAR laser scanning and BIM (Building Information Modelling) technologies, we make the design, construction, and operational phases of projects faster, more accurate, and more efficient for our clients.
+
+---
+
+## Our Vision
+
+To reduce the margin of error in the construction, engineering, and architecture sectors to zero — by transforming the physical world into digital twins. We apply laser scanning and BIM at the highest level so that our clients can manage their projects without gaps, from design through to operations.
+
+---
+
+## History & Experience
+
+EOS Proje was founded by engineers and architects with over 10 years of industry experience. Having successfully completed prestigious projects across Turkey, Europe, and the Middle East, the firm has delivered laser scanning and BIM modelling services covering more than 2,000,000 m² to date.
+
+Over the years, a broad project portfolio — spanning industrial facilities, heritage structures, shopping centres, and power plants — has established EOS Proje as a trusted technical partner in the sector.
+
+---
+
+## Areas of Expertise
+
+**Laser Scanning (LiDAR)**
+Terrestrial and mobile laser scanning operations. Field accuracy of ±1mm to ±3mm using Leica RTC360, Leica BLK360, and Trimble X7 scanners.
+
+**Point Cloud Processing**
+Cleaning, registration, and coordinate alignment of raw scan data using Autodesk ReCap, Leica Cyclone, and FARO Scene.
+
+**BIM Modelling (Building Information Modelling)**
+Architectural, structural, and MEP modelling from LOD 100 to LOD 400 using Autodesk Revit and ArchiCAD.
+
+**Survey & Restoration**
+Documentation of historic buildings and cultural heritage sites, preparation of restitution project base drawings, and Heritage BIM (HBIM) modelling.
+
+**Clash Detection & Coordination**
+Multi-discipline clash detection and resolution coordination using Navisworks Manage and Solibri.
+
+---
+
+## Our Offices
+
+**Istanbul (Head Office)**
+Murat Reis Mah. Teyyareci Muammer Sok. No:10/4
+34664 Üsküdar / Istanbul, Turkey
+Tel: +90 530 664 22 63
+Email: info@eosproje.com
+
+**Iskenderun Office**
+Piri Reis Mah. Barbaros Cd. No:20
+31200 Iskenderun / Hatay, Turkey
+
+**Budapest Partner Office — Intera Survey**
+1063 Budapest, Szinyei Merse utca 21. 1. em. 5. ajtó
+Hungary
+Tel: +36 70 244 9628
+
+---
+
+## Contact
+
+- **Web:** https://www.eosproje.com
+- **Email:** info@eosproje.com
+- **Phone:** +90 530 664 22 63
+
+---
+
+## Related Resources
+
+- Services: https://www.eosproje.com/llm/hizmetler.txt
+- Reference Projects: https://www.eosproje.com/llm/referanslar.txt
+- General Overview: https://www.eosproje.com/llm-en.txt
+
+---
+# End of file — EOS Proje about-en.txt (EN) — https://www.eosproje.com

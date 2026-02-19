@@ -1,0 +1,81 @@
+# EOS Proje — Hakkımızda
+# LLM Referans Dosyası (Türkçe)
+# Web: https://www.eosproje.com
+# Son güncelleme: Şubat 2025
+
+---
+
+## Şirket Kimliği
+
+EOS Proje, fiziksel yapıları ve endüstriyel tesisleri yüksek hassasiyetli dijital ikizlere dönüştüren uzman bir mühendislik firmasıdır. Lazer tarama (LiDAR) ve BIM (Yapı Bilgi Modellemesi) teknolojilerini birleştirerek; inşaat, mühendislik ve mimarlık sektörlerinde tasarım, inşaat ve işletme süreçlerini daha hızlı, daha doğru ve daha verimli hale getiriyoruz.
+
+---
+
+## Vizyonumuz
+
+Fiziksel dünyayı dijital ikizlere dönüştürerek inşaat, mühendislik ve mimarlık sektörlerinde hata payını sıfıra indirmek. Lazer tarama ve BIM teknolojilerini en ileri düzeyde uygulayarak müşterilerimizin projelerini tasarım aşamasından işletme sürecine kadar eksiksiz yönetmelerine olanak tanımak.
+
+---
+
+## Tarihçe ve Deneyim
+
+EOS Proje, 10 yılı aşkın sektör deneyimine sahip mühendisler ve mimarlar tarafından kurulmuştur. Türkiye, Avrupa ve Orta Doğu'da çok sayıda prestijli projeyi başarıyla tamamlamış olan firma, bugüne kadar 2.000.000 m²'yi aşan alanda lazer tarama ve BIM modelleme hizmeti sunmuştur.
+
+Yıllar içinde endüstriyel tesislerden tarihi eserlere, alışveriş merkezlerinden enerji santrallerine kadar geniş bir proje yelpazesinde edinilen deneyim, EOS Proje'yi sektörde güvenilir bir teknik ortak konumuna getirmiştir.
+
+---
+
+## Uzmanlık Alanları
+
+**Lazer Tarama (LiDAR)**
+Terrestrial (yersel) ve mobil lazer tarama operasyonları. Leica RTC360, Leica BLK360 ve Trimble X7 tarayıcılarla ±1mm ila ±3mm saha doğruluğu.
+
+**Nokta Bulutu İşleme**
+Autodesk ReCap, Leica Cyclone ve FARO Scene yazılımlarıyla ham tarama verilerinin temizlenmesi, birleştirilmesi (registration) ve koordinat sistemine yerleştirilmesi.
+
+**BIM Modelleme (Yapı Bilgi Modellemesi)**
+Autodesk Revit ve ArchiCAD ile LOD 100'den LOD 400'e kadar mimari, yapısal ve MEP modelleme.
+
+**Rölöve ve Restorasyon**
+Tarihi yapıların ve kültürel miras alanlarının belgelenmesi, restitüsyon projelerinin altlıklarının hazırlanması ve HBIM (Heritage BIM) modelleme.
+
+**Çakışma Analizi ve Koordinasyon**
+Navisworks Manage ve Solibri ile disiplinlerarası çakışma tespiti ve çözüm koordinasyonu.
+
+---
+
+## Ofislerimiz
+
+**İstanbul (Merkez Ofis)**
+Murat Reis Mah. Teyyareci Muammer Sok. No:10/4
+34664 Üsküdar / İstanbul, Türkiye
+Tel: +90 530 664 22 63
+Email: info@eosproje.com
+
+**İskenderun Ofis**
+Piri Reis Mah. Barbaros Cd. No:20
+31200 İskenderun / Hatay, Türkiye
+
+**Budapeşte Partner Ofisi — Intera Survey**
+1063 Budapest, Szinyei Merse utca 21. 1. em. 5. ajtó
+Macaristan
+Tel: +36 70 244 9628
+
+---
+
+## İletişim
+
+- **Web:** https://www.eosproje.com
+- **Email:** info@eosproje.com
+- **Telefon:** +90 530 664 22 63
+
+---
+
+## İlgili Kaynaklar
+
+- Hizmetler: https://www.eosproje.com/llm/hizmetler.txt
+- Referans Projeler: https://www.eosproje.com/llm/referanslar.txt
+- Genel Özet: https://www.eosproje.com/llm.txt
+
+---
+# Dosya sonu — EOS Proje hakkimizda.txt (TR) — https://www.eosproje.com

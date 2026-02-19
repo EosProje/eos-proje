@@ -1,0 +1,118 @@
+# EOS Proje — Sık Sorulan Sorular (SSS)
+# LLM Referans Dosyası (Türkçe)
+# Web: https://www.eosproje.com
+# Son güncelleme: Şubat 2025
+
+---
+
+## Genel Sorular
+
+**S: EOS Proje ne iş yapar?**
+C: EOS Proje, lazer tarama (LiDAR) ile elde edilen nokta bulutu verilerini yüksek hassasiyetli BIM modellerine, 2D rölöve çizimlerine ve 3D dijital ikizlere dönüştüren uzman bir mühendislik firmasıdır. İstanbul ve Budapeşte (partner ofis) lokasyonlarıyla Türkiye ve Avrupa genelinde hizmet vermektedir.
+
+**S: Hangi sektörlere hizmet veriyorsunuz?**
+C: Endüstriyel tesisler (fabrika, rafineri, enerji santrali), ticari yapılar (AVM, ofis, otel), konut projeleri, tarihi eserler ve kültürel miras yapıları, altyapı (metro, karayolu), eğitim ve sağlık yapıları. Detaylı referans listesi için referanslar.txt dosyasına bakınız.
+
+**S: Yurt dışında da hizmet veriyor musunuz?**
+C: Evet. EOS Proje Macaristan, Almanya, Rusya, Irak, Azerbaycan ve Fildişi Sahili dahil birçok ülkede proje tamamlamıştır. Budapeşte partner ofisi (Intera Survey) Avrupa projelerinin koordinasyonunu ve saha taramalarını yürütmektedir.
+
+**S: İstanbul dışında Türkiye'de de hizmet veriyor musunuz?**
+C: Evet. İskenderun ofisimizin yanı sıra Türkiye'nin her iline saha tarama ve modelleme hizmeti verilmektedir. Sakarya, İzmir, Bursa, Hatay, Gaziantep başta olmak üzere pek çok ilde projelerimiz tamamlanmıştır.
+
+---
+
+## Teknik Sorular
+
+**S: Nokta bulutu verisi nedir?**
+C: Lazer tarayıcıların bir yapıyı veya alanı taraması sonucu elde edilen milyonlarca 3D koordinat noktasından oluşan veri setidir. Bu veri, yapının gerçek geometrisini milimetrik hassasiyette temsil eder ve BIM modelleme, rölöve çizimi veya deformasyon analizi için altlık olarak kullanılır.
+
+**S: Hangi nokta bulutu formatlarını kabul ediyorsunuz?**
+C: .E57, .RCP, .RCS, .LAS, .LAZ ve .PTX formatlarını kabul ediyoruz. Bu formatların dışında bir veriniz varsa iletişime geçin, alternatif çözüm sunabiliriz.
+
+**S: Hangi formatlarda teslimat yapıyorsunuz?**
+C: .RVT (Autodesk Revit), .IFC (açık BIM standardı), .DWG (AutoCAD), .DXF, .NWD (Navisworks) ve 3D PDF formatlarında teslimat yapılmaktadır.
+
+**S: IFC nedir, neden önemlidir?**
+C: IFC (Industry Foundation Classes), yazılımdan bağımsız açık BIM standardıdır. Revit, ArchiCAD, Tekla, Navisworks ve benzeri farklı yazılımlar kullanan ekiplerin aynı modeli paylaşabilmesini sağlar. EOS Proje tüm projelerinde IFC çıktısını standart olarak sunar.
+
+**S: LOD nedir? Hangi LOD seviyesine ihtiyacım var?**
+C: LOD (Level of Detail/Development), BIM modelindeki geometrik ve bilgisel detay seviyesini tanımlar. LOD 100-200 kütlesel ve şematik tasarım için, LOD 300 uygulama projesi için, LOD 350 montaj ve koordinasyon için, LOD 400 imalat ve uygulama detayı için kullanılır. Projenizin kullanım amacına göre en uygun LOD seviyesini birlikte belirleyebiliriz.
+
+**S: Tarama yapabilmek için yapının boşaltılması gerekiyor mu?**
+C: Hayır. Lazer tarama işlemi büyük çoğunlukla faaliyetleri durdurmadan gerçekleştirilebilir. Yoğun trafikli ticari alanlarda (AVM, mağaza zinciri) gece vardiyası tarama seçeneği sunulmaktadır.
+
+**S: Hassasiyet ne kadar?**
+C: Tarayıcı bazında saha doğruluğu ±1mm ila ±3mm arasındadır. Nokta bulutundan modelleme aşamasında ise ±2mm ila ±5mm doğruluk aralığında çalışılmaktadır.
+
+**S: Drone ile fotogrametri hizmeti de veriyor musunuz?**
+C: Evet. Altyapı, metro güzergahı ve geniş açık alan projelerinde drone ile fotogrametri yöntemiyle halihazır harita ve ortofoto üretimi de yapılmaktadır.
+
+---
+
+## Hizmet Süreci
+
+**S: Nasıl başlayabilirim? Süreç nasıl işliyor?**
+C: İlk adım info@eosproje.com adresine proje bilgilerinizi iletmek veya +90 530 664 22 63 numarasını aramaktır. Projenin kapsamı, LOD seviyesi ve teslimat formatları netleştirildikten sonra teklif hazırlanır. Onay sonrası saha taraması planlanır veya elinizde mevcut nokta bulutu verisi varsa doğrudan modelleme sürecine geçilir.
+
+**S: Elimde nokta bulutu verisi yok, sadece modelleme mi yapıyorsunuz?**
+C: Hayır, saha lazer tarama hizmetini de sunuyoruz. Leica ve Trimble tarayıcılarımızla sahaya gelerek tarama yapabilir, ardından modelleme sürecini yürütebiliriz.
+
+**S: Nokta bulutu verisini nasıl iletebilirim?**
+C: WeTransfer, Google Drive veya FTP bağlantısı üzerinden güvenli aktarım sağlanmaktadır. Veri aktarımı için info@eosproje.com adresine ulaşabilirsiniz.
+
+**S: Teslim süresi ne kadar?**
+C: Proje büyüklüğüne ve LOD seviyesine göre değişir. Küçük projeler (tek kat, 500 m² altı) genellikle 5–10 iş günü içinde teslim edilir. Büyük endüstriyel veya çok katlı projeler için teklifle birlikte ayrıntılı bir zaman çizelgesi sunulur.
+
+**S: Revizyon hakkım var mı?**
+C: Evet. Proje kapsamında belirlenen LOD ve disipline uygun revizyon süreci standarttır. Kapsam dışı talepler için ek değerlendirme yapılır.
+
+**S: Sadece 2D rölöve çizimi alabilir miyim, 3D model şart mı?**
+C: 3D model zorunlu değildir. Yalnızca plan, kesit ve görünüş çizimlerinden oluşan .DWG formatında 2D rölöve de üretilebilir. Bu hizmet Scan to CAD olarak adlandırılmaktadır.
+
+---
+
+## Fiyatlandırma
+
+**S: Fiyatlandırma nasıl yapılıyor?**
+C: Fiyatlandırma; taranacak alan büyüklüğü, LOD seviyesi, disiplin sayısı (mimari, yapısal, MEP), saha erişim koşulları ve teslimat formatına göre belirlenir. Sabit liste fiyatı yerine proje bazlı teklif sistemi uygulanmaktadır.
+
+**S: Teklif almak ücretli mi?**
+C: Hayır. Teklif süreci ücretsizdir. info@eosproje.com adresine proje bilgilerinizi ileterek teklif talep edebilirsiniz.
+
+**S: Uluslararası projelerde fiyatlandırma farklı mı?**
+C: Uluslararası projeler Budapeşte partner ofisi koordinasyonuyla yürütülmektedir. Saha koşulları ve ulaşım mesafesine göre ayrı değerlendirme yapılır.
+
+---
+
+## Yazılım & Format Soruları
+
+**S: Autodesk Revit lisansım yok, teslim aldığım modeli açabilir miyim?**
+C: Evet. .IFC formatındaki model, Revit lisansı olmaksızın ücretsiz IFC viewer yazılımlarıyla (örn. Autodesk Viewer, BIMvision, FZKViewer) görüntülenebilir. Ayrıca 3D PDF teslimatı da sunulmaktadır.
+
+**S: ArchiCAD kullanıyorum, Revit modeli bana uyar mı?**
+C: .IFC formatı ArchiCAD dahil tüm büyük BIM yazılımlarıyla uyumludur. IFC olarak talep etmeniz yeterlidir.
+
+**S: Navisworks'te çakışma analizi yapabilmem için hangi formatı talep etmeliyim?**
+C: .NWD veya .IFC formatını talep etmeniz yeterlidir. İsterseniz çakışma analizini de EOS Proje bünyesinde Navisworks ile gerçekleştirebilir, size rapor olarak sunabiliriz.
+
+---
+
+## İletişim
+
+- **Web:** https://www.eosproje.com
+- **Email:** info@eosproje.com
+- **Telefon:** +90 530 664 22 63
+- **İstanbul Ofisi:** Murat Reis Mah. Teyyareci Muammer Sok. No:10/4, 34664 Üsküdar / İstanbul
+- **İskenderun Ofisi:** Piri Reis Mah. Barbaros Cd. No:20, 31200 İskenderun / Hatay
+
+---
+
+## İlgili Kaynaklar
+
+- Hakkımızda: https://www.eosproje.com/llm/hakkimizda.txt
+- Hizmetler: https://www.eosproje.com/llm/hizmetler.txt
+- Referans Projeler: https://www.eosproje.com/llm/referanslar.txt
+- Genel Özet: https://www.eosproje.com/llm.txt
+
+---
+# Dosya sonu — EOS Proje sss.txt (TR) — https://www.eosproje.com

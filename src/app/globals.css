@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit);
+
+  --color-primary-red: #D32F2F;
+  --color-deep-charcoal: #121212;
+  --color-technical-gray: #455A64;
+  --color-soft-bg: #F8F9FA;
+}
+
+:root {
+  /* Core Palette */
+  --primary-red: 0 63% 51%; /* #D32F2F */
+  --primary-red-glow: 0 63% 51% / 0.15;
+  --charcoal: 0 0% 7%; /* #121212 */
+  --slate-dark: 215 28% 17%;
+  --slate-muted: 215 16% 47%;
+  --soft-bg: 210 20% 98%;
+
+  /* Derived */
+  --background: hsl(var(--soft-bg));
+  --foreground: hsl(var(--charcoal));
+  
+  /* Safe Area Spacing */
+  --section-py: 6rem;
+  --container-px: 1.5rem;
+}
+
+@theme {
+  --font-sans: var(--font-outfit), Inter, system-ui, sans-serif;
+  --color-primary-red: hsl(var(--primary-red));
+  --color-deep-charcoal: hsl(var(--charcoal));
+  --color-technical-gray: #455A64;
+  --color-soft-bg: hsl(var(--soft-bg));
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* Custom Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--soft-bg));
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 20px;
+  border: 2px solid hsl(var(--soft-bg));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Technical Grid Pattern (Graph Paper) */
+.bg-grid-pattern {
+  background-color: var(--background);
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Text Balance Utility */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* MDX & Prose Enhancements */
+.prose {
+  color: hsl(var(--slate-muted));
+  max-width: none;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: hsl(var(--slate-dark));
+  letter-spacing: -0.03em;
+  font-weight: 900;
+}
+
+.prose p {
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.prose strong {
+  color: hsl(var(--charcoal));
+  font-weight: 800;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #F1F5F9;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  margin: 4rem 0;
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.08);
+}
+
+.prose th {
+  background-color: #FFFFFF;
+  padding: 1.75rem 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-align: left;
+  border-bottom: 2px solid #F8FAFC;
+  color: #94A3B8;
+}
+
+.prose td {
+  padding: 1.75rem 2.5rem;
+  border-bottom: 1px solid #F8FAFC;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.prose blockquote {
+  border: none;
+  background: #F8FAFC;
+  border-radius: 3.5rem;
+  padding: 4rem;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #334155;
+  margin: 5rem 0;
+  position: relative;
+}
+
+.prose blockquote::before {
+  content: "“";
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: 6rem;
+  color: rgba(0,0,0,0.05);
+  font-family: serif;
+}
+
+/* Micro-interactions & Premium Utilities */
+.premium-blur {
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+}
+
+.hover-lift {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.15);
+}
+
+.glow-shadow-red {
+  box-shadow: 0 0 40px -10px var(--primary-red-glow);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.text-gradient-red {
+  background: linear-gradient(135deg, hsl(var(--primary-red)), #FF5252);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}

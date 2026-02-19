@@ -1,0 +1,88 @@
+---
+title: "Enerji Santrali Çelik Konstrüksiyon Analizi | Eos Proje"
+description: "İzmir'deki enerji santralinin mevcut çelik yapısının statik analizi için lazer tarama ile modellenmesi. Deformasyon analizi ve birleşim detaylarının (Connection) modellenmesi."
+client: "Global Enerji A.Ş."
+sector: "Enerji & Endüstriyel"
+location: "İzmir, Türkiye"
+year: "2023"
+projectSize: "Doğalgaz Çevrim Santrali Ünitesi"
+deliverables: ["LOD 350 Çelik Model (Tekla/Revit)", "Deformasyon Haritası", "Profil Envanter Listesi", "Connection Detay Çizimleri"]
+keywords: ["çelik yapı modelleme", "statik analiz için model", "deformasyon analizi", "endüstriyel tarama", "tekla structures"]
+tags: ["Industrial", "Structural Engineering", "Deformation Analysis", "Scan to BIM", "Steel Structures"]
+featured: true
+locale: "tr"
+alternates:
+  en: "/en/case-studies/energy-plant"
+images:
+  hero: "/images/case-studies/eosproje-iskenderun-yazici-celik-trafo-bina-scan-to-bim.webp"
+  gallery:
+    - "/images/case-studies/eosproje-iskenderun-yazici-celik-trafo-bina-scan-to-bim.webp"
+    - "/images/case-studies/eosproje-iskenderun-trafo-bina-scan-to-mep-lazer-tarama.webp"
+    - "/images/case-studies/eosproje-endustriyel-tesis-lazer-tarama-scan-to-bim-fabrika.webp"
+schema:
+  type: "CaseStudy"
+author: "Uğur Bilen"
+authorLinkedIn: "https://www.linkedin.com/company/eos-proje"
+date: "2023-08-15"
+lastUpdated: "2026-02-17"
+---
+
+# Enerji Santrali: Mevcut Yapı Güvenliği ve Analiz
+
+<Callout type="summary">
+**Proje Özeti:** İzmir'de faal durumda olan bir enerji santralinin ana kazan dairesini taşıyan çelik konstrüksiyon yapının statik tahkiklerinin yapılabilmesi için mevcut geometrisinin dijitalleştirilmesi projesidir. Yüksek sıcaklık ve vibrasyon altında çalışan yapıda oluşan sehimler (deformasyonlar) [lazer tarama](/cozumler/point-cloud-to-bim) ile tespit edilmiş ve statik analiz yazılımlarına (SAP2000, Tekla) altlık oluşturacak [as-built model](/cozumler/as-built-modelleme) üretilmiştir.
+</Callout>
+
+## Mühendislik Problemi
+
+Santral işletmesi, kazan dairesindeki bazı çelik kolonlarda gözle görülür eğilmeler ve kirişlerde sehimler fark etmiştir. Yapının deprem güvenliğini ve işletme ömrünü belirlemek için statik ofislerinin **"gerçek ve güncel"** geometriye ihtiyacı vardı.
+
+**Eski Projeler Neden Yetersizdi?**
+*   İnşaat sırasındaki yerinde revizyonlar (redline) projelere işlenmemişti.
+*   Yıllar içindeki termal genleşme ve yükler yapıyı deforme etmişti.
+*   Proje paftaları 2D idi ve 3D analiz için yetersizdi.
+
+---
+
+## Çözüm: Tersine Mühendislik (Reverse Engineering)
+
+Yapının her bir düğüm noktası, cıvata grubu ve profil kesiti lazer tarama ile ±2mm hassasiyetle ölçüldü.
+
+### Profil Tanımlama Süreci
+
+Nokta bulutu verisi üzerinden otomatik ve manuel yöntemlerle çelik profillerin kütüphane karşılıkları (HEB, IPE, UPN vb.) tespit edildi.
+
+| Yapı Elemanı | Tespit Edilen Kesit (Örnek) | Nokta Bulutu Eşleşme Hassasiyeti |
+|--------------|-----------------------------|----------------------------------|
+| Ana Kolonlar | HEB 600 (Takviyeli) | %99.5 |
+| Ara Kirişler | IPE 400 | %98.0 |
+| Rüzgar Gergileri | L 100x100x10 | %95.0 |
+
+*Not: Standart dışı veya korozyona uğramış profiller "User Defined" olarak gerçek ölçülerinde modellenmiştir.*
+
+---
+
+## Deformasyon Analizi Sonuçları
+
+Statik analiz öncesinde, yapının "tasarım geometrisi" (şakülünde) ile "mevcut durumu" arasındaki farklar renkli haritalarla raporlanmıştır.
+
+1.  **Kolon Eğrilikleri:** K-4 aksındaki kolonda, +12.50m kotunda **45mm** eksenel kaçıklık tespit edildi.
+2.  **Kiriş Sehimleri:** Ana platform kirişlerinde yük altında **30mm** kalıcı sehim (deflection) ölçüldü.
+3.  **Flanş Dönmeleri:** Bazı bağlantı plakalarında (base plate) 2-3 derecelik açısal bozulmalar raporlandı.
+
+<Callout type="warning">
+**Kritik Bulgular:** Bu veriler, statik analiz modeline "başlangıç kusuru" (imperfection) olarak girilerek, yapının gerçek taşıma kapasitesinin %15 daha düşük olduğu, ancak hala güvenlik sınırları içinde kaldığı hesaplandı. İyileştirme projesi bu verilere göre hazırlandı.
+</Callout>
+
+---
+
+## Neden Lazer Tarama?
+
+Bu proje için geleneksel yöntemler (Total Station veya Metre) neden imkansızdı?
+*   **Erişim:** 30 metre yükseklikteki kirişlere iskele kurmadan ölçmek imkansızdı.
+*   **Hız:** Santral duruşu (shutdown) sadece 2 gün sürdü. Biz 1.5 günde tüm sahayı taradık.
+*   **Veri Yoğunluğu:** Sadece tek bir kolon değil, tüm sistemin 3D davranışı analiz edilmeliydi.
+
+[Eos Proje](/hakkimizda) olarak, endüstriyel tesislerin güvenliği ve sürdürülebilirliği için en ileri ölçüm teknolojilerini mühendislik bilgimizle birleştiriyoruz.
+
+Endüstriyel tesis ölçümleri ve deformasyon analizleri için [hemen teklif alın](/iletisim).
