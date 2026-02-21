@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
+import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/constants";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -11,14 +12,14 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.eosproje.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "EOSPROJE | Lazer Tarama, BIM Modelleme & Dijital İkiz",
     template: "%s | EOSPROJE"
   },
   description: "Lazer tarama (Point Cloud) verilerini yüksek hassasiyetli BIM modellerine, 2D rölöve çizimlerine ve 3D dijital ikizlere dönüştüren mühendislik firması.",
   keywords: ["Point Cloud to BIM", "Lazer Tarama", "Scan to BIM", "3D Modelleme", "Rölöve", "Restorasyon", "Endüstriyel Tesis", "Dijital İkiz", "Revit Modelleme", "As-Built"],
-  authors: [{ name: "EOS Proje", url: "https://www.eosproje.com" }],
+  authors: [{ name: "EOS Proje", url: SITE_URL }],
   creator: "EOS Proje",
   publisher: "EOS Proje",
   robots: {
@@ -38,13 +39,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://www.eosproje.com",
+    url: SITE_URL,
     title: "EOSPROJE | Point Cloud to BIM & Dijital İkiz",
     description: "Nokta bulutu verilerinden milimetrik hassasiyette 3D BIM modelleri ve rölöve projeleri üretiyoruz.",
     siteName: "EOS Proje",
     images: [
       {
-        url: "/images/EosProje-point-cloud-to-bim-modelleme.webp",
+        url: DEFAULT_OG_IMAGE,
         width: 1200,
         height: 630,
         alt: "EOS Proje - Point Cloud to BIM Lazer Tarama ve BIM Modelleme",
@@ -55,13 +56,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "EOSPROJE | Lazer Tarama & BIM Modelleme",
     description: "Lazer tarama ve BIM modelleme çözümleri. İstanbul & Budapeşte.",
-    images: ["/images/EosProje-point-cloud-to-bim-modelleme.webp"],
+    images: [DEFAULT_OG_IMAGE],
   },
   alternates: {
     canonical: "/",
     languages: {
-      'en-US': '/en',
-      'tr-TR': '/',
+      'en': '/en',
+      'tr': '/',
     },
   },
 };
@@ -75,14 +76,14 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "EOS Proje",
-    "url": "https://www.eosproje.com",
+    "url": SITE_URL,
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.eosproje.com/images/EosProje-Lazer-Tarama-Sistemleri.webp",
+      "url": `${SITE_URL}/images/EosProje-Lazer-Tarama-Sistemleri.webp`,
       "width": 800,
       "height": 600
     },
-    "image": "https://www.eosproje.com/images/EosProje-point-cloud-to-bim-modelleme.webp",
+    "image": `${SITE_URL}${DEFAULT_OG_IMAGE}`,
     "priceRange": "$$",
     "description": "Lazer tarama (Point Cloud), Scan to BIM ve dijital ikiz çözümleri sunan mühendislik firması. İstanbul ve Budapeşte ofisleri.",
     "sameAs": [

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://www.eosproje.com/en/solutions/as-built-modeling',
         languages: {
-            "tr": "https://www.eosproje.com/cozumler/as-built-modelleme",
+            "tr": "https://www.eosproje.com/cozumler/as-built-modeling",
             "en": "https://www.eosproje.com/en/solutions/as-built-modeling",
         },
     },

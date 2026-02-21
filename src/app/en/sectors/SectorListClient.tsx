@@ -34,7 +34,7 @@ const sectorsEn = [
         title: "Industrial Facility",
         description: "Complex MEP and equipment modeling in factories, power plants, and process facilities.",
         services: ["MEP Modeling", "Equipment Inventory", "Clash Detection", "As-built Documentation"],
-        precision: "±8mm - ±15mm",
+        precision: "Â±8mm - Â±15mm",
         lod: "350 - 400",
         icon: "factory"
     },
@@ -43,7 +43,7 @@ const sectorsEn = [
         title: "Architecture & Design",
         description: "High-accuracy architectural as-built model production as a design base.",
         services: ["Architectural Modeling", "Existing Condition Analysis", "Deformation Analysis"],
-        precision: "±5mm - ±10mm",
+        precision: "Â±5mm - Â±10mm",
         lod: "200 - 300",
         icon: "building"
     },
@@ -52,7 +52,7 @@ const sectorsEn = [
         title: "Restoration & Heritage",
         description: "Millimetric precision documentation for the preservation of historical structures.",
         services: ["Precise Surface Modeling", "Damage Detection", "Point Cloud Archiving"],
-        precision: "±2mm - ±5mm",
+        precision: "Â±2mm - Â±5mm",
         lod: "300 - 400 (Custom)",
         icon: "landmark"
     },
@@ -61,7 +61,7 @@ const sectorsEn = [
         title: "Renovasyon & Fit-out",
         description: "Digital infrastructure for renovation projects of existing interior spaces.",
         services: ["Interior Modeling", "Existing MEP Detection", "Installation Planning"],
-        precision: "±10mm",
+        precision: "Â±10mm",
         lod: "300",
         icon: "layout"
     },
@@ -70,7 +70,7 @@ const sectorsEn = [
         title: "Construction & Contracting",
         description: "BIM solutions that audit the harmony between the site and the design.",
         services: ["Quality Control (QA/QC)", "Progress Control", "Concrete Tolerance Analysis"],
-        precision: "±20mm (Global)",
+        precision: "Â±20mm (Global)",
         lod: "300 - 350",
         icon: "construction"
     }
@@ -217,7 +217,7 @@ export default function SectorListClient({ relatedProjectsMetadata }: { relatedP
                                             {project.images?.hero && <img src={project.images.hero} alt={project.title} className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" />}
                                         </div>
                                         <div className="p-8 flex-grow">
-                                            <span className="text-[9px] font-black text-[var(--color-primary-red)] uppercase tracking-widest block mb-4">{project.sector} • {project.year}</span>
+                                            <span className="text-[9px] font-black text-[var(--color-primary-red)] uppercase tracking-widest block mb-4">{project.sector} â€¢ {project.year}</span>
                                             <h5 className="text-lg font-black text-slate-900 group-hover:text-[var(--color-primary-red)] transition-colors leading-tight">{project.title.split('|')[0]}</h5>
                                         </div>
                                     </div>

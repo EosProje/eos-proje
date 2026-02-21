@@ -1,0 +1,249 @@
+﻿---
+title: "2D CAD Ãƒâ€¡izimlerinden 3D BIM Modeline GeÃƒÂ§iÃ…Å¸ Rehberi | Eos Proje"
+description: "DWG ve PDF ÃƒÂ§izimlerinden parametrik 3D BIM modeli oluÃ…Å¸turma sÃƒÂ¼reci, best practices ve dikkat edilmesi gereken noktalar."
+keywords: ["2d to 3d conversion", "cad bim dÃƒÂ¶nÃƒÂ¼Ã…Å¸ÃƒÂ¼m", "dwg revit", "pdf to bim", "2d ÃƒÂ§izim 3d model"]
+author: "Ãƒâ€“ykÃƒÂ¼ Hun"
+authorLinkedIn: "https://linkedin.com/in/ugur-bilen"  
+date: "2026-01-15"
+lastUpdated: "2026-01-25"
+category: "3D Modelleme SÃƒÂ¼reÃƒÂ§leri"
+tags: ["2D to 3D Conversion", "Revit Modeling", "BIM Standards"]
+featured: false
+locale: "tr"
+alternates:
+  en: "/en/blog/2d-cad-to-3d-bim-transition"
+schema:
+  type: "Article"
+  faq: true
+images:
+  hero: "/images/EosProje-sokak-siluet-3d-model-calismasi.webp"
+---
+
+# 2D CAD Ãƒâ€¡izimlerinden 3D BIM Modeline GeÃƒÂ§iÃ…Å¸
+
+<Callout type="summary">
+**TL;DR:** 2D CAD (DWG/PDF) ÃƒÂ§izimlerinden BIM modeli oluÃ…Å¸turmak mÃƒÂ¼mkÃƒÂ¼ndÃƒÂ¼r ancak sÃ„Â±nÃ„Â±rlamalarÃ„Â± vardÃ„Â±r: YÃƒÂ¼kseklik bilgisi eksikse varsayÃ„Â±mlar yapÃ„Â±lÃ„Â±r, as-built accuracy garanti edilemez. En iyi yaklaÃ…Å¸Ã„Â±m: Critical areas iÃƒÂ§in point cloud, non-critical iÃƒÂ§in 2D CAD. Typical teslimat sÃƒÂ¼resi: 5,000 mÃ‚Â² plan iÃƒÂ§in 3-4 hafta LOD 300.
+</Callout>
+
+## 2D'den 3D'ye: Ne Zaman MÃƒÂ¼mkÃƒÂ¼n, Ne Zaman DeÃ„Å¸il?
+
+### MÃƒÂ¼mkÃƒÂ¼n OlduÃ„Å¸u Durumlar
+
+**Yeni TasarÃ„Â±m Projeleri:**
+- Mimari kat planlarÃ„Â± tam ve tutarlÃ„Â±
+- Kesitler ve gÃƒÂ¶rÃƒÂ¼nÃƒÂ¼Ã…Å¸ler mevcut
+- Teknik detaylar yeterli
+- **SonuÃƒÂ§:** [LOD 200-300](/blog/lod-levels-differences) BIM model
+
+**DokÃƒÂ¼man Kalitesi YÃƒÂ¼ksek Olan Eski Projeler:**
+- As-built ÃƒÂ§izimler gÃƒÂ¼venilir
+- TÃƒÂ¼m disiplinler (mimari, statik, MEP) mevcut
+- Malzeme spesifikasyonlarÃ„Â± belirtilmiÃ…Å¸
+- **SonuÃƒÂ§:** LOD 200-250 model, verification ÃƒÂ¶nerilir
+
+---
+
+### Zor/Ã„Â°mkansÃ„Â±z OlduÃ„Å¸u Durumlar
+
+**Eksik/Ãƒâ€¡eliÃ…Å¸kili Ãƒâ€¡izimler:**
+- Sadece kat planlarÃ„Â± var, kesit yok
+- FarklÃ„Â± revisyonlar karÃ„Â±Ã…Å¸mÃ„Â±Ã…Å¸
+- MEP sistem yÃƒÂ¼kseklikleri belirsiz
+- **Ãƒâ€¡ÃƒÂ¶zÃƒÂ¼m:** Site survey veya point cloud Ã…Å¸art
+
+**KarmaÃ…Å¸Ã„Â±k Geometri:**
+- Organik formlar (curves, double surfaces)
+- Free-form mimari
+- KarmaÃ…Å¸Ã„Â±k MEP routing
+- **Ãƒâ€¡ÃƒÂ¶zÃƒÂ¼m:** [3D lazer tarama](/cozumler/lazer-tarama) recommended
+
+---
+
+## SÃƒÂ¼recin 5 AdÃ„Â±mÃ„Â±
+
+### 1. DokÃƒÂ¼man Audit ve HazÃ„Â±rlÃ„Â±k
+
+#### Checklist:
+
+- [ ] TÃƒÂ¼m kat planlarÃ„Â± mevcut mu? (B+Zemin+Normal katlar)
+- [ ] Kesitler var mÃ„Â±? (Minimum 2 adet kesit)
+- [ ] GÃƒÂ¶rÃƒÂ¼nÃƒÂ¼Ã…Å¸ler (faÃƒÂ§ades) var mÃ„Â±?
+- [ ] MEP planlarÃ„Â± mevcut mu?
+- [ ] Malzeme/finish schedules mevcut mu?
+- [ ] Structural grid belirgin mi?
+
+**Eksik bilgiler iÃƒÂ§in:**
+- MÃƒÂ¼Ã…Å¸teriden ek dokÃƒÂ¼man talep edin
+- Benzer projelerden referans alÃ„Â±n
+- VarsayÃ„Â±mlar yapÃ„Â±p belgelendirin
+
+---
+
+### 2. CAD Import ve Referans Setup
+
+**Best Practice:**
+```
+1. DWG files Revit'e import edilir (Link olarak, NOT import as elements)
+2. Her kat planÃ„Â± ilgili Level'a pin lenir
+3. Grid/Level sistemÃ„Â± oluÃ…Å¸turulur (first priority)
+4. Units verify edilir (mm vs. m problem yaygÃ„Â±ndÃ„Â±r)
+```
+
+<Callout type="warning">
+**YaygÃ„Â±n Hata:** DWG'yi explode edip elements import etmek. Bu Revit model size'Ã„Â± 10x Ã…Å¸iÃ…Å¸irir ve performance sorunlarÃ„Â±na yol aÃƒÂ§ar. Always link, never import elements.
+</Callout>
+
+---
+
+### 3. Geometrik Modelleme
+
+#### Ãƒâ€“ncelik SÃ„Â±rasÃ„Â±:
+
+**A. Structural Grid & Levels (1-2 gÃƒÂ¼n)**
+- Grid lines (A, B, C... / 1, 2, 3...)
+- Levels (elevation heights)
+- Foundation level
+
+**B. Structural Elements (3-5 gÃƒÂ¼n)**
+- Kolonlar (DWG'de kesit boyutu okunur)
+- KiriÃ…Å¸ler (kesitlerden yÃƒÂ¼kseklik belirlenir)
+- Perdeler
+- Temeller (varsa)
+
+**C. Architectural Shell (5-7 gÃƒÂ¼n)**
+- DÃ„Â±Ã…Å¸ duvarlar
+- Ã„Â°ÃƒÂ§ bÃƒÂ¶lme duvarlar
+- DÃƒÂ¶Ã…Å¸emeler (slab)
+- Merdiven, asansÃƒÂ¶r
+- Pencere, kapÃ„Â±lar
+
+**D. MEP Systems (10-15 gÃƒÂ¼n)**
+- Ã¢Å¡Â Ã¯Â¸Â En zor kÃ„Â±sÃ„Â±m: YÃƒÂ¼kseklik bilgisi %80 varsayÃ„Â±m
+- Ana daÃ„Å¸Ã„Â±tÃ„Â±m hatlarÃ„Â± (risers)
+- Horizontal routing (kesitlerden ÃƒÂ§Ã„Â±karsanÃ„Â±r)
+- Equipment locations
+
+---
+
+### 4. Attribute & Data Entry
+
+2D ÃƒÂ§izimlerden geometri oluÃ…Å¸turuldu, Ã…Å¸imdi **semantic information** eklenir:
+
+| Element | Data Source | GÃƒÂ¼venilirlik |
+|---------|-------------|--------------|
+| Wall Type | Plan legend | YÃƒÂ¼ksek |
+| Material | Specification docs | Orta |
+| Equipment Capacity | Schedules | YÃƒÂ¼ksek |
+| Pipe Diameter | Plan annotation | YÃƒÂ¼ksek |
+| Pipe Elevation | Ã¢Å¡Â Ã¯Â¸Â VarsayÃ„Â±m | DÃƒÂ¼Ã…Å¸ÃƒÂ¼k |
+
+---
+
+### 5. QA/QC ve Validation
+
+2D ÃƒÂ§izimlerden oluÃ…Å¸turulan modellerde **validation zorlu**dur:
+
+**Validation Stratejisi:**
+- Plan gÃƒÂ¶rÃƒÂ¼nÃƒÂ¼mlerini DWG ile overlay edip compare edin
+- 3D view'da mantÃ„Â±k hatalarÃ„Â±nÃ„Â± (floating walls, unconnected pipes) arayÃ„Â±n
+- Clash detection ÃƒÂ§alÃ„Â±Ã…Å¸tÃ„Â±rÃ„Â±n (Navisworks)
+- Area schedules ile ÃƒÂ§izim ÃƒÂ¼zerindeki notlarÃ„Â± karÃ…Å¸Ã„Â±laÃ…Å¸tÃ„Â±rÃ„Â±n
+
+<ExpertQuote author="UÃ„Å¸ur Bilen" role="Eos Proje">
+Varyap Meridian projesinde 2D CAD ve eski fotoÃ„Å¸raflardan LOD 200 model oluÃ…Å¸turduk. Model, renovation design iÃƒÂ§in yeterliydi ama critical MEP areas'Ã„Â± scan ile verify ettik. Hybrid approach hem maliyet hem accuracy saÃ„Å¸ladÃ„Â±.
+</ExpertQuote>
+
+---
+
+## 2D vs. Point Cloud: KarÃ…Å¸Ã„Â±laÃ…Å¸tÃ„Â±rma
+
+| FaktÃƒÂ¶r | 2D CAD | Point Cloud |
+|--------|---------|-------------|
+| **Accuracy** | Ã¢Å¡Â Ã¯Â¸Â Orta (Ã‚Â±50-100mm) | Ã¢Å“â€¦ YÃƒÂ¼ksek (Ã‚Â±5-10mm) |
+| **Data Source** | Ãƒâ€¡izimler (as-planned) | GerÃƒÂ§ek durum (as-built) |
+| **Maliyet** | ÄŸÅ¸â€™Â° DÃƒÂ¼Ã…Å¸ÃƒÂ¼k | ÄŸÅ¸â€™Â°ÄŸÅ¸â€™Â° Orta-YÃƒÂ¼ksek |
+| **SÃƒÂ¼re** | Ã¢ÂÂ±Ã¯Â¸Â KÃ„Â±sa | Ã¢ÂÂ±Ã¯Â¸Â Orta |
+| **Best For** | Yeni tasarÃ„Â±m, simple geometry | Existing buildings, complex geometry |
+| **Risk** | As-built farklÃ„Â±lÃ„Â±klarÃ„Â± | Scan quality issues |
+
+---
+
+## SÃ„Â±kÃƒÂ§a Sorulan Sorular
+
+<FAQSection>
+
+<FAQ question="2D CAD ÃƒÂ§izimlerinden BIM modeli ne kadar doÃ„Å¸ru olur?">
+DoÃ„Å¸ruluk **source quality'ye** baÃ„Å¸lÃ„Â±dÃ„Â±r. EÃ„Å¸er:
+- Ã¢Å“â€¦ As-built ÃƒÂ§izimler gÃƒÂ¼ncel (son 5 yÃ„Â±l) Ã¢â€ â€™ %80-85 doÃ„Å¸ruluk
+- Ã¢Å¡Â Ã¯Â¸Â 10+ yÃ„Â±llÃ„Â±k ÃƒÂ§izimler Ã¢â€ â€™ %60-70 doÃ„Å¸ruluk (renovasyonlar nedeniyle)
+- Ã¢ÂÅ’ Sadece as-planned (imalat ÃƒÂ¶ncesi) Ã¢â€ â€™ %50-60 doÃ„Å¸ruluk
+
+MEP sistemleri iÃƒÂ§in yÃƒÂ¼kseklik bilgisi %80 varsayÃ„Â±mdÃ„Â±r, risk yÃƒÂ¼ksektir.
+</FAQ>
+
+<FAQ question="PDF ÃƒÂ§izimlerden BIM modeli yapÃ„Â±labilir mi?">
+Evet, mÃƒÂ¼mkÃƒÂ¼ndÃƒÂ¼r ancak DWG'ye gÃƒÂ¶re %30-40 daha uzun sÃƒÂ¼rer ÃƒÂ§ÃƒÂ¼nkÃƒÂ¼:
+- PDF vector data manuel trace edilmeli
+- Ãƒâ€“lÃƒÂ§ek verification gerekli
+- Text annotations manuel okunmalÃ„Â±
+
+**Recommended:** PDF'yi AutoCAD'de DWG'ye convert edin ÃƒÂ¶nce (Able2Extract, PDF2CAD gibi toollar).
+</FAQ>
+
+<FAQ question="Hangi LOD seviyesi ulaÃ…Å¸Ã„Â±labilir 2D ÃƒÂ§izimlerden?">
+- **LOD 200:** Kesinlikle mÃƒÂ¼mkÃƒÂ¼n
+- **LOD 300:** MÃƒÂ¼mkÃƒÂ¼n (kesit ve detaylar varsa)
+- **LOD 350-400:** Ã¢ÂÅ’ MÃƒÂ¼mkÃƒÂ¼n deÃ„Å¸il - fabrication detail yok
+
+2D ÃƒÂ§izimlerden LOD 300'ÃƒÂ¼n ÃƒÂ¼stÃƒÂ¼ne ÃƒÂ§Ã„Â±kmak non-realistic'tir.
+</FAQ>
+
+<FAQ question="Maliyet farkÃ„Â± nedir 2D vs. Point Cloud kaynaklÃ„Â± modelleme?">
+mÃ‚Â² baÃ…Å¸Ã„Â±na maliyet karÃ…Å¸Ã„Â±laÃ…Å¸tÃ„Â±rmasÃ„Â± (LOD 300):
+- **2D CAD source:** 15-25 TL/mÃ‚Â²
+- **Point Cloud source:** 30-50 TL/mÃ‚Â² (scan maliyeti dahil)
+
+Ancak **accuracy ve risk** aÃƒÂ§Ã„Â±sÃ„Â±ndan point cloud ÃƒÂ§ok daha gÃƒÂ¼venilirdir. Hybrid approach optimal: Critical areas point cloud, rest 2D CAD.
+</FAQ>
+
+<FAQ question="Eski bir bina iÃƒÂ§in sadece 2D planlar var, ne yapmalÃ„Â±yÃ„Â±m?">
+**Risk Assessment** yapÃ„Â±n:
+1. **Low Risk Project** (ofis renovasyonu, basit layout) Ã¢â€ â€™ 2D CAD'den model oluÃ…Å¸tur, site verification yap
+2. **High Risk Project** (MEP coordination critical, complex) Ã¢â€ â€™ En azÃ„Â±ndan critical areas'Ã„Â± scan et
+3. **Critical Project** (hospital, data center) Ã¢â€ â€™ Full scan Ã…Å¸art
+
+Hybrid approach ÃƒÂ§oÃ„Å¸u zaman optimum: 2D+Scan kombine.
+</FAQ>
+
+</FAQSection>
+
+---
+
+## Best Practices: 10 Tavsiye
+
+1. **DWG quality check first:** Import ÃƒÂ¶ncesi ÃƒÂ§izim kalitesini deÃ„Å¸erlendirin
+2. **Grid system ÃƒÂ¶nce:** Ãƒâ€“ncelikle grid ve level oluÃ…Å¸turun
+3. **Link, not import:** DWG'leri always link olarak ÃƒÂ§alÃ„Â±Ã…Å¸Ã„Â±n
+4. **Assumptions log tutun:** VarsayÃ„Â±mlarÃ„Â±nÃ„Â±zÃ„Â± belgeleyin
+5. **Phased approach:** Ãƒâ€“nce architectural, sonra MEP
+6. **3D view check:** SÃƒÂ¼rekli 3D view'da model mantÃ„Â±Ã„Å¸Ã„Â±nÃ„Â± kontrol edin
+7. **Clash detection:** Navisworks ile early clash detection yapÃ„Â±n
+8. **Client review checkpoints:** %25-%50-%75 milestone'larda review
+9. **Hybrid strategy:** 2D CAD + critical area scan kombine edin
+10. **Realistic LOD:** LOD 300'ÃƒÂ¼n ÃƒÂ¼zerine ÃƒÂ§Ã„Â±kmayÃ„Â±n (fabrication detail yok)
+
+---
+
+**Ã„Â°lgili YazÃ„Â±lar:**
+- [Point Cloud to BIM SÃƒÂ¼recinde Dikkat Edilmesi Gerekenler](/blog/point-cloud-to-bim-process)
+- [LOD Seviyeleri: 200, 300 ve 400 ArasÃ„Â±ndaki Farklar](/blog/lod-levels-differences)
+
+---
+
+Eski 2D projelerinizi modern BIM standartlarÃ„Â±na dÃƒÂ¶nÃƒÂ¼Ã…Å¸tÃƒÂ¼rmek iÃƒÂ§in [teknik ekibimizden destek alÃ„Â±n](/iletisim).
+
+---
+
+**Son GÃƒÂ¼ncelleme:** 25 Ocak 2026  
+**Yazar:** [Ãƒâ€“ykÃƒÂ¼ Hun](https://linkedin.com/in/oykuhun) - Operasyon DirektÃƒÂ¶rÃƒÂ¼, Eos Proje  
+**Kategori:** 3D Modelleme SÃƒÂ¼reÃƒÂ§leri | **Okuma SÃƒÂ¼resi:** ~7 dakika

@@ -1,16 +1,16 @@
-import SectorListClient from "./SectorListClient";
+﻿import SectorListClient from "./SectorListClient";
 import { getAllMDXMetadata } from "@/lib/mdx";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hizmet Verdiğimiz Sektörler - İnşaat, Endüstri, Mimari | EosProje",
-  description: "Endüstriyel tesisler, inşaat şantiyeleri, mimari rölöve, tarihi eser restorasyonu ve enerji sektörü için özel lazer tarama ve BIM çözümleri.",
+  title: "Hizmet VerdiÃ„Å¸imiz SektÃƒÂ¶rler - Ã„Â°nÃ…Å¸aat, EndÃƒÂ¼stri, Mimari | EosProje",
+  description: "EndÃƒÂ¼striyel tesisler, inÃ…Å¸aat Ã…Å¸antiyeleri, mimari rÃƒÂ¶lÃƒÂ¶ve, tarihi eser restorasyonu ve enerji sektÃƒÂ¶rÃƒÂ¼ iÃƒÂ§in ÃƒÂ¶zel lazer tarama ve BIM ÃƒÂ§ÃƒÂ¶zÃƒÂ¼mleri.",
   alternates: {
     canonical: "https://www.eosproje.com/sektorler",
   },
   openGraph: {
-    title: "Hizmet Verdiğimiz Sektörler | EosProje",
-    description: "Hangi sektörlerde hizmet veriyoruz? Endüstri, İnşaat, Mimari, Restorasyon.",
+    title: "Hizmet VerdiÃ„Å¸imiz SektÃƒÂ¶rler | EosProje",
+    description: "Hangi sektÃƒÂ¶rlerde hizmet veriyoruz? EndÃƒÂ¼stri, Ã„Â°nÃ…Å¸aat, Mimari, Restorasyon.",
     url: "https://www.eosproje.com/sektorler",
     images: [{ url: "/images/og/sektorler-og.webp", width: 1200, height: 630 }],
     type: "website",

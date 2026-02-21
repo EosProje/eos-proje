@@ -1,11 +1,11 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
 import { getRandomPosts } from "@/data/blog-posts";
 import PricingCalculator from "@/components/PricingCalculator";
 import Hero from "@/components/Hero";
-import Image from "next/image";
+import SmartImage from "@/components/ui/SmartImage";
 import { motion } from "framer-motion";
 import { EASE_CURVES } from "@/lib/animations";
 import {
@@ -79,7 +79,7 @@ export default function HomeClient() {
                                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1-1q4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
                                 ),
                                 image: "/images/EosProje-Endustriyel-Tesis-3B-Lazer-Tarama-Fabrika.webp",
-                                href: "/cozumler/as-built-modelleme"
+                                href: "/cozumler/as-built-modeling"
                             },
                             {
                                 title: "2D to 3D Dönüşüm",
@@ -88,7 +88,7 @@ export default function HomeClient() {
                                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" /></svg>
                                 ),
                                 image: "/images/EosProje-Lazer-Tarama-Sistemleri-3D-Model.webp",
-                                href: "/cozumler/2d-to-3d-bim-donusum"
+                                href: "/cozumler/2d-to-3d-bim-conversion"
                             },
                             {
                                 title: "MEP & Ekipman",
@@ -97,12 +97,12 @@ export default function HomeClient() {
                                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                                 ),
                                 image: "/images/eosproje-iskenderun-yazici-celik-trafo-bina-scan-to-mep.webp",
-                                href: "/cozumler/endustriyel-ekipman-modelleme"
+                                href: "/cozumler/industrial-equipment-modeling"
                             }
                         ].map((item, idx) => (
                             <Link key={idx} href={item.href} className="group relative bg-[#F8FAFC] rounded-[3rem] border border-slate-100 p-3 hover:bg-white hover:border-red-100/50 hover-lift transition-all duration-500 overflow-hidden block">
                                 <div className="relative aspect-[4/3] rounded-[2.5rem] overflow-hidden mb-8 shadow-lg border border-slate-100 bg-white">
-                                    <Image src={item.image} alt={`EosProje - ${item.title} Hizmeti Uygulama Örneği`} fill className="object-cover object-top transition-transform duration-1000 group-hover:scale-110" />
+                                    <SmartImage src={item.image} alt={`EosProje - ${item.title} Hizmeti Uygulama Örneği`} fill className="object-cover object-top transition-transform duration-1000 group-hover:scale-110" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 </div>
                                 <div className="px-6 pb-8 flex-grow flex flex-col">
@@ -167,7 +167,7 @@ export default function HomeClient() {
                                 className="group relative w-24 h-24 md:w-32 md:h-32 flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-500"
                             >
                                 <div className="relative w-full h-full p-4">
-                                    <Image
+                                    <SmartImage
                                         src={client.logo}
                                         alt={`${client.name} - EosProje Referans Müşteri`}
                                         fill
@@ -335,7 +335,7 @@ export default function HomeClient() {
                         {[
                             { src: "/images/case-studies/eosproje-endustriyel-tesis-lazer-tarama-scan-to-bim-fabrika.webp", title: "Fabrika Scan-to-BIM", tag: "Endüstriyel" },
                             { src: "/images/case-studies/eosproje-migros-magaza-scan-to-bim-revit-modelleme.webp", title: "Migros Mağaza BIM", tag: "Perakende" },
-                            { src: "/images/case-studies/eosproje-fabrika-3d-lazer-tarama-as-built-modelleme.webp", title: "Dijital İkiz Denetimi", tag: "Endüstriyel" },
+                            { src: "/images/case-studies/eosproje-fabrika-3d-lazer-tarama-as-built-modeling.webp", title: "Dijital İkiz Denetimi", tag: "Endüstriyel" },
                             { src: "/images/case-studies/eosproje-linde-teknokon-kazan-dairesi-point-cloud-to-bim.webp", title: "Linde Kazan Dairesi", tag: "MEP" },
                             { src: "/images/case-studies/eosproje-cevahir-avm-lazer-tarama-scan-to-bim-istanbul.webp", title: "Cevahir AVM Rölöve", tag: "Ticari" },
                             { src: "/images/case-studies/eosproje-lazer-tarama-sistemleri-bim-modelleme-hizmetleri.webp", title: "BIM Analiz Süreci", tag: "Teknik" },
@@ -350,7 +350,7 @@ export default function HomeClient() {
                                 transition={{ duration: 0.6, delay: idx * 0.1 }}
                                 className="group relative aspect-[4/3] rounded-[2.5rem] overflow-hidden shadow-lg shadow-slate-900/5 bg-slate-50 border border-slate-100 hover-lift"
                             >
-                                <Image src={img.src} alt={`EosProje - ${img.title} (${img.tag}) Proje Uygulaması`} fill className="object-cover transition-transform duration-1000 group-hover:scale-110" />
+                                <SmartImage src={img.src} alt={`EosProje - ${img.title} (${img.tag}) Proje Uygulaması`} fill className="object-cover transition-transform duration-1000 group-hover:scale-110" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
                                     <span className="text-[10px] font-black text-red-500 uppercase tracking-[0.2em] mb-3 bg-white/10 w-fit px-3 py-1 rounded-full backdrop-blur-sm border border-white/10">{img.tag}</span>
                                     <h4 className="text-white font-black text-xl leading-tight tracking-tight">{img.title}</h4>
@@ -387,7 +387,7 @@ export default function HomeClient() {
                                 desc: "Fabrika ve enerji santrali P&ID süreçlerinde yüksek hassasiyetli dijital ikizler.",
                                 benefit: "-%30 Duruş Süresi",
                                 icon: <Warehouse className="w-6 h-6" />,
-                                slug: "endustriyel-ekipman-modelleme"
+                                slug: "industrial-equipment-modeling"
                             },
                             {
                                 title: "Restorasyon",
@@ -476,7 +476,7 @@ export default function HomeClient() {
                                 <Link href={`/blog/${post.slug}`} className="group h-full block">
                                     <div className="bg-[#F8FAFC] rounded-[3rem] border border-slate-100 hover:bg-white hover:border-red-100/50 hover-lift transition-all duration-500 overflow-hidden flex flex-col h-full hover:shadow-2xl hover:shadow-slate-200/50">
                                         <div className="relative aspect-video overflow-hidden">
-                                            <Image src={post.image} alt={`EosProje Blog: ${post.title}`} fill className="object-cover transition-transform duration-1000 group-hover:scale-110" />
+                                            <SmartImage src={post.image} alt={`EosProje Blog: ${post.title}`} fill className="object-cover transition-transform duration-1000 group-hover:scale-110" />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                         </div>
                                         <div className="p-10 flex-grow">
@@ -548,18 +548,20 @@ export default function HomeClient() {
             <section className="bg-slate-50 py-32 px-4 relative overflow-hidden">
                 <script
                     type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            { "@type": "Question", "name": "Point Cloud to BIM dönüşümü ne kadar sürer?", "acceptedAnswer": { "@type": "Answer", "text": "Proje büyüklüğü ve LOD seviyesine bağlı olarak; standart projeler için genellikle 5 ile 15 iş günü arasında değişmektedir." } },
-                            { "@type": "Question", "name": "Hangi lazer tarama formatlarını destekliyorsunuz?", "acceptedAnswer": { "@type": "Answer", "text": "E57, RCP, RCS, PTX, LAS ve LAZ dahil tüm endüstri standardı ham veri formatlarını işleyebiliyoruz." } },
-                            { "@type": "Question", "name": "LOD 200, 300 ve 400 arasındaki fark nedir?", "acceptedAnswer": { "@type": "Answer", "text": "LOD 200 kütlesel gösterimi, LOD 300 detaylı mimari/statik yapıyı, LOD 400 ise imalata hazır teknik detayları ve bileşenleri ifade eder." } },
-                            { "@type": "Question", "name": "Birincil teslimat formatlarınız nelerdir?", "acceptedAnswer": { "@type": "Answer", "text": "Autodesk Revit (.rvt), IFC (2x3 veya 4), AutoCAD (.dwg) ve Graphisoft ArchiCAD (.pla) formatlarında doğrudan teslimat sağlıyoruz." } },
-                            { "@type": "Question", "name": "Hassasiyet garantisini nasıl veriyorsunuz?", "acceptedAnswer": { "@type": "Answer", "text": "Özel QA/QC protokolümüz ile model ve nokta bulutu arasında otomatik sapma analizi yaparak milimetrik doğruluğu teknik raporla belgeliyoruz." } },
-                            { "@type": "Question", "name": "Endüstriyel tesisler için MEP modelleme yapıyor musunuz?", "acceptedAnswer": { "@type": "Answer", "text": "Evet; karmaşık borulama, HVAC sistemleri ve elektriksel altyapı dahil yüksek detaylı MEP modelleme uzmanlık alanımızdır." } }
-                        ]
-                    }) }}
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "FAQPage",
+                            "mainEntity": [
+                                { "@type": "Question", "name": "Point Cloud to BIM dönüşümü ne kadar sürer?", "acceptedAnswer": { "@type": "Answer", "text": "Proje büyüklüğü ve LOD seviyesine bağlı olarak; standart projeler için genellikle 5 ile 15 iş günü arasında değişmektedir." } },
+                                { "@type": "Question", "name": "Hangi lazer tarama formatlarını destekliyorsunuz?", "acceptedAnswer": { "@type": "Answer", "text": "E57, RCP, RCS, PTX, LAS ve LAZ dahil tüm endüstri standardı ham veri formatlarını işleyebiliyoruz." } },
+                                { "@type": "Question", "name": "LOD 200, 300 ve 400 arasındaki fark nedir?", "acceptedAnswer": { "@type": "Answer", "text": "LOD 200 kütlesel gösterimi, LOD 300 detaylı mimari/statik yapıyı, LOD 400 ise imalata hazır teknik detayları ve bileşenleri ifade eder." } },
+                                { "@type": "Question", "name": "Birincil teslimat formatlarınız nelerdir?", "acceptedAnswer": { "@type": "Answer", "text": "Autodesk Revit (.rvt), IFC (2x3 veya 4), AutoCAD (.dwg) ve Graphisoft ArchiCAD (.pla) formatlarında doğrudan teslimat sağlıyoruz." } },
+                                { "@type": "Question", "name": "Hassasiyet garantisini nasıl veriyorsunuz?", "acceptedAnswer": { "@type": "Answer", "text": "Özel QA/QC protokolümüz ile model ve nokta bulutu arasında otomatik sapma analizi yaparak milimetrik doğruluğu teknik raporla belgeliyoruz." } },
+                                { "@type": "Question", "name": "Endüstriyel tesisler için MEP modelleme yapıyor musunuz?", "acceptedAnswer": { "@type": "Answer", "text": "Evet; karmaşık borulama, HVAC sistemleri ve elektriksel altyapı dahil yüksek detaylı MEP modelleme uzmanlık alanımızdır." } }
+                            ]
+                        })
+                    }}
                 />
                 <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
 

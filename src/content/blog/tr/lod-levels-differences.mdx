@@ -1,0 +1,358 @@
+﻿---
+title: "LOD Seviyeleri: 200, 300 ve 400 ArasÃ„Â±ndaki Farklar | Eos Proje"
+description: "BIM projelerinde LOD (Level of Development) seviyelerinin ÃƒÂ¶nemi, 200-300-400 farklarÃ„Â± ve proje gereksinimlerine gÃƒÂ¶re doÃ„Å¸ru LOD seviyesi seÃƒÂ§im kriterleri."
+keywords: ["lod seviyeleri", "bim lod 200 300 400", "level of development", "bim detay seviyeleri", "lod nedir"]
+author: "UÃ„Å¸ur Bilen"
+authorLinkedIn: "https://linkedin.com/in/ugur-bilen"
+date: "2026-01-18"
+lastUpdated: "2026-01-25"
+category: "Standartlar ve QA/QC"
+tags: ["LOD 200", "LOD 300", "LOD 400", "BIM Standards"]
+featured: true
+locale: "tr"
+alternates:
+  en: "/en/blog/lod-levels-differences"
+schema:
+  type: "Article"
+  faq: true
+images:
+  hero: "/images/EosProje-Lazer-Tarama-Sistemleri-3D-Model.webp"
+---
+
+# LOD Seviyeleri: 200, 300 ve 400 ArasÃ„Â±ndaki Farklar
+
+<Callout type="summary">
+**TL;DR:** LOD (Level of Development), BIM modelinin ne kadar detaylÃ„Â± olduÃ„Å¸unu gÃƒÂ¶sterir. LOD 200 Ã…Å¸ematik tasarÃ„Â±m, LOD 300 detaylÃ„Â± tasarÃ„Â±m ve koordinasyon, LOD 400 ise imalat seviyesidir. DoÃ„Å¸ru LOD seÃƒÂ§imi hem maliyet hem sÃƒÂ¼re optimizasyonu saÃ„Å¸lar - tÃƒÂ¼m modeli LOD 400 yapmak %60 gereksiz maliyettir.
+</Callout>
+
+## LOD Nedir ve Neden Ãƒâ€“nemlidir?
+
+LOD (Level of Development - GeliÃ…Å¸im Seviyesi), AIA (American Institute of Architects) tarafÃ„Â±ndan tanÃ„Â±mlanmÃ„Â±Ã…Å¸ bir standarttÃ„Â±r ve BIM modelindeki elemanlarÃ„Â±n **geometrik detay** ve **semantik bilgi** seviyesini belirtir.
+
+BirÃƒÂ§ok kiÃ…Å¸i LOD'u yanlÃ„Â±Ã…Å¸ anlar sadece "ne kadar detaylÃ„Â±" olarak dÃƒÂ¼Ã…Å¸ÃƒÂ¼nÃƒÂ¼r ama LOD Ã…Å¸unu ifade eder:
+1. **Geometrik DoÃ„Å¸ruluk:** ElemanÃ„Â±n boyutlarÃ„Â± ne kadar kesin?
+2. **Bilgi ZenginliÃ„Å¸i:** Eleman hakkÃ„Â±nda ne kadar data var? (malzeme, performans, maliyet vb.)
+3. **GÃƒÂ¼venilirlik:** Bu bilgiye ne kadar gÃƒÂ¼venebiliriz?
+
+<ExpertQuote author="UÃ„Å¸ur Bilen" role="BIM UzmanÃ„Â±, Eos Proje">
+Polyol Thyssenkrupp projesinde mÃƒÂ¼Ã…Å¸teri baÃ…Å¸ta tÃƒÂ¼m tesisin LOD 400'de modellenmesini istedi. Ancak proje analizi sonrasÃ„Â± critical MEP areas iÃƒÂ§in LOD 400, diÃ„Å¸er alanlar iÃƒÂ§in LOD 300 yeterli olduÃ„Å¸unu gÃƒÂ¶sterdik. Bu strateji 6 hafta ve %55 maliyet tasarrufu saÃ„Å¸ladÃ„Â±.
+</ExpertQuote>
+
+---
+
+## LOD Seviyeleri DetaylÃ„Â± KarÃ…Å¸Ã„Â±laÃ…Å¸tÃ„Â±rma
+
+### LOD 100 - Kavramsal TasarÃ„Â±m
+
+**KullanÃ„Â±m:** Konsept fazÃ„Â±, feasibility studies  
+**Geometri:** Sembolik gÃƒÂ¶sterimler, hacim ÃƒÂ§alÃ„Â±Ã…Å¸malarÃ„Â±  
+**Bilgi:** Minimal - sadece genel kategori (duvar, dÃƒÂ¶Ã…Å¸eme vb.)
+
+**Ãƒâ€“rnek:** Bir kolon LOD 100'de sadece bir dikdÃƒÂ¶rtgen kutu ile gÃƒÂ¶sterilir.
+
+---
+
+### LOD 200 - Ã…Âematik TasarÃ„Â±m
+
+**KullanÃ„Â±m:** Preliminary design, alan hesaplamalarÃ„Â±, initial coordination  
+**Geometri:** YaklaÃ…Å¸Ã„Â±k boyutlar, genel konum  
+**Bilgi:** Element tipi, genel malzeme, yaklaÃ…Å¸Ã„Â±k boyutlar
+
+#### LOD 200 Karakteristikleri:
+
+| Element | GÃƒÂ¶sterim | Bilgi |
+|---------|----------|-------|
+| Kolon | GerÃƒÂ§ek kesit boyutu (400x400mm) | Malzeme: Betonarme |
+| Duvar | KalÃ„Â±nlÃ„Â±k doÃ„Å¸ru (250mm) | Tip: TaÃ…Å¸Ã„Â±yÃ„Â±cÃ„Â± |
+| Boru | Nominal ÃƒÂ§ap (DN150) | Sistem: SoÃ„Å¸utma Suyu |
+| Ekipman | 3D Placeholder box | Kapasite, alan |
+
+<Callout type="info">
+**LOD 200 Ne Zaman Yeterli?**  
+Mimari as-built modelleme, ÃƒÂ¶n tasarÃ„Â±m koordinasyonu, alan hesaplamalarÃ„Â± iÃƒÂ§in LOD 200 yeterlidir. Ãƒâ€“zellikle tarihi yapÃ„Â± restorasyon projelerinde structural elements iÃƒÂ§in LOD 200-250 tercih edilir.
+</Callout>
+
+---
+
+### LOD 300 - DetaylÃ„Â± TasarÃ„Â±m
+
+**En yaygÃ„Â±n kullanÃ„Â±lan LOD seviyesi** - %70 BIM projesinde LOD 300 hedeflenir.
+
+**KullanÃ„Â±m:** Detailed design, coordination (clash detection), construction planning  
+**Geometri:** Kesin boyutlar, form, konum  
+**Bilgi:** Eksiksiz teknik spesifikasyonlar, malzeme, performans
+
+#### LOD 300 DetaylarÃ„Â±:
+
+**Structural Element Ãƒâ€“rneÃ„Å¸i:**
+- Kolon: Kesin kesit (400x400mm), donatÃ„Â± tipi (B420C), beton sÃ„Â±nÃ„Â±fÃ„Â± (C30)
+- KiriÃ…Å¸-kolon baÃ„Å¸lantÃ„Â±sÃ„Â±: Connection type modellenir
+
+**MEP Element Ãƒâ€“rneÃ„Å¸i:**
+- Boru: Kesin ÃƒÂ§ap (DN150), malzeme (GGG40), basÃ„Â±nÃƒÂ§ sÃ„Â±nÃ„Â±fÃ„Â± (PN16)
+- BaÃ„Å¸lantÃ„Â± elemanlarÃ„Â±: FlanÃ…Å¸lar, redÃƒÂ¼ksiyonlar modellenir
+- Destek sistemi: Pipe supports locations
+
+**Equipment Ãƒâ€“rneÃ„Å¸i:**
+- GerÃƒÂ§ek 3D geometri (satÃ„Â±cÃ„Â± verisi veya katalog)
+- Connections (inlet/outlet) modellenir
+- Performans data: 150 kW, 80 mÃ‚Â³/h vb.
+
+<Callout type="tip">
+**LOD 300 Sweet Spot:**  
+As-built documantation, renovation projects, MEP coordination, clash detection iÃƒÂ§in LOD 300 optimum seviyedir. LOD 400'e geÃƒÂ§menin ek maliyeti Ã‚Â±%40 iken, ek deÃ„Å¸er sadece %10'dur.
+</Callout>
+
+---
+
+### LOD 350 - Koordinasyon ve Montaj
+
+LOD 350, traditional AIA standard'da yoktur - pratik ihtiyaÃƒÂ§ ÃƒÂ¼zerine geliÃ…Å¸tirilmiÃ…Å¸tir.
+
+**KullanÃ„Â±m:** DetaylÃ„Â± MEP coordination, clash-free design  
+**Geometri:** LOD 300 + Interface points (baÃ„Å¸lantÃ„Â± noktalarÃ„Â±) kesin  
+**Bilgi:** LOD 300 + Coordination data
+
+LOD 350, ÃƒÂ¶zellikle **yoÃ„Å¸un MEP sistemleri** olan projelerde (hospital, data center, industrial) kritik ÃƒÂ¶neme sahiptir.
+
+---
+
+### LOD 400 - Ã„Â°malat ve Montaj
+
+**KullanÃ„Â±m:** Fabrication, shop drawings, manufacturing  
+**Geometri:** Ã„Â°malat detaylarÃ„Â±, kaynak noktalarÃ„Â±, montaj toleranslarÃ„Â±  
+**Bilgi:** Eksiksiz fabrication data + assembly sequences
+
+#### LOD 400 Ãƒâ€“rnekleri:
+
+**Ãƒâ€¡elik StrÃƒÂ¼ktÃƒÂ¼r:**
+- TÃƒÂ¼m kaynak detaylarÃ„Â±
+- CÃ„Â±vata tipi, pozisyonu, sÃ„Â±kma torku
+- Montaj sÃ„Â±rasÃ„Â± numaralarÃ„Â±
+
+**MEP Fabrication:**
+- Sheet metal kesim ÃƒÂ§izimleri
+- Hanger locations Ã‚Â±10mm tolerans ile
+- Spool drawings
+
+**Ãƒâ€“n Ã„Â°malat (Prefab):**
+- ModÃƒÂ¼ler panel imalat ÃƒÂ§izimleri
+- Transport detaylarÃ„Â±
+
+<Callout type="warning">
+**LOD 400 Maliyeti:**  
+LOD 300'den LOD 400'e geÃƒÂ§iÃ…Å¸ ortalama %40-60 ek maliyet yaratÃ„Â±r. Sadece critical fabrication elements iÃƒÂ§in LOD 400 kullanÃ„Â±n. Ãƒâ€“rneÃ„Å¸in: BÃƒÂ¼yÃƒÂ¼k bir fabrikada process piping LOD 400, utility piping LOD 300 olabilir.
+</Callout>
+
+---
+
+### LOD 500 - As-Operated (Ã„Â°Ã…Å¸letme)
+
+**KullanÃ„Â±m:** Facility Management, Digital Twin, O&M  
+**Geometri:** LOD 400 + gerÃƒÂ§ek montaj durumu  
+**Bilgi:** Commissioning data, warranty info, O&M manuals
+
+LOD 500, genellikle as-built verification sonrasÃ„Â± facility management iÃƒÂ§in kullanÃ„Â±lÃ„Â±r.
+
+---
+
+## Proje Tipine GÃƒÂ¶re LOD SeÃƒÂ§im Matrisi
+
+### Renovasyon / As-Built Projects
+
+| Disiplin | Ãƒâ€“nerilen LOD | Sebep |
+|----------|--------------|-------|
+| Architectural | 200-300 | General layout yeterli |
+| Structural | 200-250 | Structural grid ve main members |
+| MEP (Main Systems) | 300 | Coordination iÃƒÂ§in gerekli |
+| MEP (Secondary) | 200 | Sadece route bilgisi |
+| Equipment | 300 | Connections gerekli |
+
+---
+
+### Yeni Ã„Â°nÃ…Å¸aat - Design Phase
+
+| Faz | Architectural | Structural | MEP |
+|-----|---------------|------------|-----|
+| Schematic Design | 200 | 200 | 200 |
+| Design Development | 300 | 300 | 300 |
+| Construction Docs | 300 | 300-350 | 350 |
+
+---
+
+### EndÃƒÂ¼striyel Tesis - Process Plant
+
+| Sistem | LOD | Kritiklik |
+|--------|-----|-----------|
+| Process Piping | 400 | Ã¢Å¡Â Ã¯Â¸Â Kritik |
+| Instrument Tubing | 350-400 | Ã¢Å¡Â Ã¯Â¸Â Kritik |
+| Structural Steel | 300-350 | Orta |
+| Utility Piping | 300 | DÃƒÂ¼Ã…Å¸ÃƒÂ¼k |
+| HVAC | 300 | DÃƒÂ¼Ã…Å¸ÃƒÂ¼k |
+| Cable Tray | 300 | DÃƒÂ¼Ã…Å¸ÃƒÂ¼k |
+| Equipment (Major) | 350-400 | Ã¢Å¡Â Ã¯Â¸Â Kritik |
+| Equipment (Minor) | 300 | Orta |
+
+---
+
+## LOD vs. LOI (Level of Information)
+
+BazÃ„Â± ÃƒÂ¼lkeler (ÃƒÂ¶zellikle UK, ISO 19650) **LOD yerine LOI** (Level of Information) kullanÃ„Â±r.
+
+**Fark:**
+- **LOD (AIA):** Geometry + Information birlikte
+- **LOG + LOI (ISO 19650):** 
+  - **LOG** (Level of Geometry): Sadece geometrik detay
+  - **LOI** (Level of Information): Sadece data
+
+LOD 300 Ã¢â€°Ë† LOG 3 + LOI 3
+
+---
+
+## LOD SeÃƒÂ§iminde 7 Kritik FaktÃƒÂ¶r
+
+### 1. Proje AmacÃ„Â±
+
+**As-Built Documentation** Ã¢â€ â€™ LOD 300 yeterli  
+**Fabrication** Ã¢â€ â€™ LOD 400 gerekli  
+**Facility Management** Ã¢â€ â€™ LOD 300-350
+
+### 2. Discipline
+
+**Architectural** Ã¢â€ â€™ Genellikle LOD 200-300  
+**MEP** Ã¢â€ â€™ Coordination iÃƒÂ§in LOD 300-350  
+**Steel Fabrication** Ã¢â€ â€™
+
+ LOD 400
+
+### 3. KarmaÃ…Å¸Ã„Â±klÃ„Â±k
+
+**Basit geometri** Ã¢â€ â€™ DÃƒÂ¼Ã…Å¸ÃƒÂ¼k LOD  
+**KarmaÃ…Å¸Ã„Â±k baÃ„Å¸lantÃ„Â±lar, yoÃ„Å¸un sistemler** Ã¢â€ â€™ YÃƒÂ¼ksek LOD
+
+### 4. Maliyet-Fayda Analizi
+
+Her LOD level artÃ„Â±Ã…Å¸Ã„Â± %20-40 maliyet artÃ„Â±rÃ„Â±r:
+- LOD 200 Ã¢â€ â€™ 300: +%25-35
+- LOD 300 Ã¢â€ â€™ 350: +%15-20
+- LOD 350 Ã¢â€ â€™ 400: +%40-60
+
+### 5. Timeline
+
+YÃƒÂ¼ksek LOD = Uzun sÃƒÂ¼re  
+LOD 400 modeling, LOD 300'e gÃƒÂ¶re 2-2.5x sÃƒÂ¼re alÃ„Â±r.
+
+### 6. Data Availability
+
+Point cloud varsa Ã¢â€ â€™ LOD 300-400 mÃƒÂ¼mkÃƒÂ¼n  
+2D CAD only Ã¢â€ â€™ LOD 200-300 realistic
+
+### 7. Downstream Usage
+
+Model fabrication'da mÃ„Â± kullanÃ„Â±lacak Ã¢â€ â€™ LOD 400  
+Sadece coordination Ã¢â€ â€™ LOD 300 yeterli
+
+---
+
+## Hybrid LOD Stratejisi (Best Practice)
+
+**TÃƒÂ¼m projeyi aynÃ„Â± LOD'da modellemek biggest mistake'tir.**
+
+### Ãƒâ€“rnek: 20,000 mÃ‚Â² EndÃƒÂ¼striyel Tesis
+
+```
+Critical Areas (Process Units):
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Process Piping Ã¢â€ â€™ LOD 400
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Critical Equipment Ã¢â€ â€™ LOD 400
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Instrumentation Ã¢â€ â€™ LOD 350
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Structural (Main) Ã¢â€ â€™ LOD 300
+
+Non-Critical Areas (Utilities):
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Utility Piping Ã¢â€ â€™ LOD 300
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ HVAC Ã¢â€ â€™ LOD 300
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Cable Tray Ã¢â€ â€™ LOD 300
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Architectural Ã¢â€ â€™ LOD 200
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Civil/Site Ã¢â€ â€™ LOD 200
+```
+
+**SonuÃƒÂ§:**  
+- Average LOD: 320 (weighted)
+- Maliyet: %45 azalma (vs. all LOD 400)
+- Quality: AynÃ„Â± (critical areas tam detaylÃ„Â±)
+
+---
+
+## SÃ„Â±kÃƒÂ§a Sorulan Sorular
+
+<FAQSection>
+
+<FAQ question="LOD 200 ile LOD 300 arasÃ„Â±ndaki en ÃƒÂ¶nemli fark nedir?">
+En kritik fark **kesinlik ve gÃƒÂ¼venilirlik**tir. LOD 200'de boyutlar ve konumlar "yaklaÃ…Å¸Ã„Â±k"tÃ„Â±r, LOD 300'de ise "kesin"tir. Ãƒâ€“rneÃ„Å¸in LOD 200'de bir boru DN150 olarak gÃƒÂ¶sterilir ama tam rotasÃ„Â± belirsizdir. LOD 300'de ise hem ÃƒÂ§ap hem rota hem de elevation kesindir (Ã‚Â±10mm tolerans).
+</FAQ>
+
+<FAQ question="TÃƒÂ¼m projeyi LOD 400 yapmak neden tavsiye edilmez?">
+Ã„Â°ki sebep: (1) **Maliyet** - LOD 400, LOD 300'e gÃƒÂ¶re %60-80 daha pahalÃ„Â±dÃ„Â±r ve ÃƒÂ§oÃ„Å¸u element iÃƒÂ§in bu detay gereksizdir. (2) **SÃƒÂ¼re** - LOD 400 modeling 2-3x daha uzun sÃƒÂ¼rer. Hybrid approach (critical areas LOD 400, rest LOD 300) hem maliyet hem sÃƒÂ¼re optimizasyonu saÃ„Å¸lar.
+</FAQ>
+
+<FAQ question="As-built modelleme iÃƒÂ§in hangi LOD yeterlidir?">
+Ãƒâ€¡oÃ„Å¸u as-built documentation projesi iÃƒÂ§in **LOD 300 yeterli ve optimal**dir. LOD 300'de:
+- Kesin boyutlar ve konumlar var
+- MEP coordination iÃƒÂ§in yeterli detay
+- Clash detection yapÃ„Â±labilir
+- Renovation planning iÃƒÂ§in eksiksiz bilgi
+
+LOD 400 sadece fabrication gerekliyse (prefab, modÃƒÂ¼ler yapÃ„Â±) ihtiyaÃƒÂ§ duyulur.
+</FAQ>
+
+<FAQ question="LOD ile LOI farkÃ„Â± nedir?">
+**LOD** (AIA standardÃ„Â±): Geometri + Bilgi birlikte seviye  
+**LOG + LOI** (ISO 19650 standardÃ„Â±): Geometri (LOG) ve Bilgi (LOI) ayrÃ„Â±
+
+Ãƒâ€“rnek: LOD 300 Ã¢â€°Ë† LOG 3 + LOI 3
+
+UK ve Avrupa projeleri genellikle ISO 19650 kullanÃ„Â±r, ABD ve TÃƒÂ¼rkiye'de AIA LOD yaygÃ„Â±ndÃ„Â±r.
+</FAQ>
+
+<FAQ question="LOD seÃƒÂ§imi kim tarafÃ„Â±ndan yapÃ„Â±lÃ„Â±r?">
+LOD requirement, **BIM Execution Plan (BEP)** iÃƒÂ§inde tanÃ„Â±mlanmalÃ„Â± ve proje paydaÃ…Å¸larÃ„Â± tarafÃ„Â±ndan onaylanmalÃ„Â±dÃ„Â±r:
+- **Owner/Client:** Ã„Â°htiyacÃ„Â±nÃ„Â± belirtir
+- **Design Team:** Teknik feasibility deÃ„Å¸erlendirir
+- **Contractor:** Fabrication ihtiyacÃ„Â±nÃ„Â± belirtir
+- **BIM Manager:** Optimize LOD strategy ÃƒÂ¶nerir
+
+Her disiplin ve proje faz iÃƒÂ§in ayrÃ„Â± LOD tanÃ„Â±mlanabilir.
+</FAQ>
+
+</FAQSection>
+
+---
+
+## SonuÃƒÂ§: Smart LOD Strategy
+
+### 5 AltÃ„Â±n Kural:
+
+1. **TÃƒÂ¼m projeyi aynÃ„Â± LOD yapmayÃ„Â±n** - Hybrid approach kullanÃ„Â±n
+2. **Critical areas'a focus edin** - Process, connection points LOD 400
+3. **BEP'de tanÃ„Â±mlayÃ„Â±n** - LOD requirements yazÃ„Â±lÃ„Â± olsun
+4. **Timeline realistic olsun** - LOD 400 = 2-3x sÃƒÂ¼re
+5. **ROI hesaplayÃ„Â±n** - Her LOD artÃ„Â±Ã…Å¸Ã„Â±nÃ„Â±n value'sunu sorgulayÃ„Â±n
+
+<Callout type="tip">
+**Eos Proje Best Practice:**  
+Proje baÃ…Å¸Ã„Â±nda "LOD Matrix" hazÃ„Â±rlÃ„Â±yoruz - her discipline ve proje zone iÃƒÂ§in LOD requirement. Bu matrix hem maliyet hem sÃƒÂ¼re hem quality optimize eder. [Toyota projesi](/referanslar/toyota-fabrikasi) 88 gÃƒÂ¼n yerine 62 gÃƒÂ¼nde tamamlandÃ„Â± bu strateji ile.
+</Callout>
+
+---
+
+**Ã„Â°lgili YazÃ„Â±lar:**
+- [Point Cloud to BIM SÃƒÂ¼recinde Dikkat Edilmesi Gerekenler](#)
+- [BIM Execution Plan (BEP) HazÃ„Â±rlama Rehberi](#)
+- [QA/QC SÃƒÂ¼recinde Cloud-to-Model Sapma KontrolÃƒÂ¼](#)
+
+---
+
+**Son GÃƒÂ¼ncelleme:** 25 Ocak 2026  
+**Yazar:** [UÃ„Å¸ur Bilen](https://linkedin.com/in/ugur-bilen) - BIM Modelleme UzmanÃ„Â±  
+**Kategori:** Standartlar ve QA/QC | **Okuma SÃƒÂ¼resi:** ~9 dakika
+
+LOD standardÃ„Â±nÃ„Â±zÃ„Â± belirlemek ve projelendirme hizmeti almak iÃƒÂ§in [teklif formunu](/iletisim) doldurun.

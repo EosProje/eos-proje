@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import SubPageHero from "@/components/SubPageHero";
 import { Calculator, CheckCircle2, DollarSign, Clock, HelpCircle, ArrowRight } from "lucide-react";
@@ -74,8 +74,8 @@ export default function Page() {
                         }
                     ].map((model, idx) => (
                         <div key={idx} className={`relative flex flex-col h-full rounded-[3rem] p-10 transition-all duration-500 ${model.featured
-                                ? "bg-slate-900 text-white shadow-[0_30px_100px_rgba(15,23,42,0.2)] scale-105 z-10 border border-white/10"
-                                : "bg-white border border-slate-100 hover:border-red-100/50 hover:shadow-2xl hover:shadow-slate-200/50"
+                            ? "bg-slate-900 text-white shadow-[0_30px_100px_rgba(15,23,42,0.2)] scale-105 z-10 border border-white/10"
+                            : "bg-white border border-slate-100 hover:border-red-100/50 hover:shadow-2xl hover:shadow-slate-200/50"
                             }`}>
                             {model.featured && (
                                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[var(--color-primary-red)] text-white text-[10px] font-black tracking-[0.2em] px-6 py-2 rounded-full shadow-xl uppercase">
@@ -109,8 +109,8 @@ export default function Page() {
                             <Link
                                 href={model.href}
                                 className={`w-full py-5 rounded-2xl font-black text-center text-xs uppercase tracking-widest transition-all ${model.featured
-                                        ? "bg-[var(--color-primary-red)] hover:bg-red-800 text-white shadow-xl shadow-red-900/40"
-                                        : "bg-slate-50 hover:bg-red-50 hover:text-[var(--color-primary-red)] text-slate-900 border border-slate-100"
+                                    ? "bg-[var(--color-primary-red)] hover:bg-red-800 text-white shadow-xl shadow-red-900/40"
+                                    : "bg-slate-50 hover:bg-red-50 hover:text-[var(--color-primary-red)] text-slate-900 border border-slate-100"
                                     }`}
                             >
                                 {model.cta}

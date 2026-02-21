@@ -1,4 +1,4 @@
-import { MetadataRoute } from 'next'
+﻿import { MetadataRoute } from 'next'
 import { getAllMDXMetadata } from '@/lib/mdx'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -17,9 +17,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         { url: `${baseUrl}/ekip`, priority: 0.7, changeFrequency: 'monthly' as const },
         { url: `${baseUrl}/cozumler`, priority: 0.9, changeFrequency: 'monthly' as const },
         { url: `${baseUrl}/cozumler/point-cloud-to-bim`, priority: 0.9, changeFrequency: 'monthly' as const },
-        { url: `${baseUrl}/cozumler/as-built-modelleme`, priority: 0.8, changeFrequency: 'monthly' as const },
-        { url: `${baseUrl}/cozumler/2d-to-3d-bim-donusum`, priority: 0.8, changeFrequency: 'monthly' as const },
-        { url: `${baseUrl}/cozumler/endustriyel-ekipman-modelleme`, priority: 0.8, changeFrequency: 'monthly' as const },
+        { url: `${baseUrl}/cozumler/as-built-modeling`, priority: 0.8, changeFrequency: 'monthly' as const },
+        { url: `${baseUrl}/cozumler/2d-to-3d-bim-conversion`, priority: 0.8, changeFrequency: 'monthly' as const },
+        { url: `${baseUrl}/cozumler/industrial-equipment-modeling`, priority: 0.8, changeFrequency: 'monthly' as const },
         { url: `${baseUrl}/sektorler`, priority: 0.8, changeFrequency: 'monthly' as const },
         { url: `${baseUrl}/referanslar`, priority: 0.9, changeFrequency: 'weekly' as const },
         { url: `${baseUrl}/blog`, priority: 0.7, changeFrequency: 'weekly' as const },

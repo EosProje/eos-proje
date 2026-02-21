@@ -60,7 +60,7 @@ export default function Page() {
             items: [
                 "Internal control: Revit Warnings cleaning",
                 "Independent QC: Geometric validation",
-                "Point cloud overlay analysis (±2mm)",
+                "Point cloud overlay analysis (Â±2mm)",
                 "Clash detection (Navisworks)",
                 "IFC export testing",
                 "Revision cycle (if necessary)"

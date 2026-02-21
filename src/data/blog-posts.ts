@@ -1,4 +1,4 @@
-export interface BlogPost {
+﻿export interface BlogPost {
     id: string;
     title: string;
     excerpt: string;
@@ -16,9 +16,9 @@ export const blogPosts: BlogPost[] = [
         excerpt: 'Lazer tarama verilerinden BIM modeli oluştururken kalite ve doğruluk için önemli noktalar.',
         date: '2026-01-15',
         category: 'BIM',
-        slug: 'point-cloud-to-bim-sureci',
+        slug: 'point-cloud-to-bim-process',
         author: 'Eos Proje Ekibi',
-        image: '/images/EosProje-point-cloud-to-bim-modelleme.png'
+        image: '/images/EosProje-point-cloud-to-bim-modelleme.webp'
     },
     {
         id: '2',
@@ -26,9 +26,9 @@ export const blogPosts: BlogPost[] = [
         excerpt: 'BIM projelerinde LOD seviyelerinin önemi ve proje gereksinimlerine göre doğru seviye seçimi.',
         date: '2026-01-10',
         category: 'Standartlar',
-        slug: 'lod-seviyeleri-farklari',
+        slug: 'lod-levels-differences',
         author: 'Eos Proje Ekibi',
-        image: '/images/EosProje-Lazer-Tarama-Sistemleri-3D-Model.jpeg'
+        image: '/images/EosProje-Lazer-Tarama-Sistemleri-3D-Model.webp'
     },
     {
         id: '3',
@@ -36,29 +36,29 @@ export const blogPosts: BlogPost[] = [
         excerpt: 'Fabrika ve enerji santrallerinde mevcut durum tespiti için lazer tarama ve BIM entegrasyonu.',
         date: '2026-01-05',
         category: 'Endüstri',
-        slug: 'endustriyel-as-built-modelleme',
+        slug: 'industrial-as-built-modeling',
         author: 'Eos Proje Ekibi',
-        image: '/images/EosProje-Endustriyel-Tesis-3B-Lazer-Tarama-Fabrika.jpg'
+        image: '/images/EosProje-Endustriyel-Tesis-3B-Lazer-Tarama-Fabrika.webp'
     },
     {
         id: '4',
-        title: 'QA/QC Sürecinde Cloud-to-Model Sapma Kontrolü',
-        excerpt: 'Kalite güvencesi için nokta bulutu ile model arasındaki sapmaların ölçülmesi ve raporlanması.',
+        title: 'Çakışma Analizi (Clash Detection) ile Maliyet Tasarrufu',
+        excerpt: 'Kalite güvencesi için nokta bulutu ile model arasındaki çakışmaların analizi ve raporlanması.',
         date: '2025-12-28',
         category: 'QA/QC',
-        slug: 'cloud-to-model-sapma-kontrolu',
+        slug: 'cakisma-analizi-maliyet',
         author: 'Eos Proje Ekibi',
-        image: '/images/EosProje-migros-3d-lazer-tarama-bim-model.png'
+        image: '/images/EosProje-migros-3d-lazer-tarama-bim-model.webp'
     },
     {
         id: '5',
-        title: 'Restorasyon Projelerinde Dijital Dokümantasyon',
+        title: 'Tarihi Yapılarda Lazer Tarama (HBIM) Teknolojisi',
         excerpt: 'Tarihi yapıların lazer tarama ile belgelenmesi ve koruma kurulu dosyası hazırlığı.',
         date: '2025-12-20',
         category: 'Restorasyon',
-        slug: 'restorasyon-dijital-dokumantasyon',
+        slug: 'tarihi-eser-hbim',
         author: 'Eos Proje Ekibi',
-        image: '/images/EosProje-Lazer-Tarama-Sistemleri-Cevahir-Avm-3D-Mimari-Rolove.jpeg'
+        image: '/images/EosProje-Lazer-Tarama-Sistemleri-Cevahir-Avm-3D-Mimari-Rolove.webp'
     },
     {
         id: '6',
@@ -66,9 +66,9 @@ export const blogPosts: BlogPost[] = [
         excerpt: 'Mevcut DWG ve PDF çizimlerinden parametrik 3D BIM modeli oluşturma süreci.',
         date: '2025-12-15',
         category: 'BIM',
-        slug: '2d-cad-3d-bim-gecis',
+        slug: '2d-cad-to-3d-bim-transition',
         author: 'Eos Proje Ekibi',
-        image: '/images/EosProje-sokak-siluet-3d-model-calismasi.jpg'
+        image: '/images/EosProje-sokak-siluet-3d-model-calismasi.webp'
     }
 ];
 

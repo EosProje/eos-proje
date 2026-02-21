@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -22,8 +22,8 @@ export default function FaqClient() {
       a: "Revit native (.rvt) dosyası, IFC 2x3 veya IFC4 açık BIM formatı, AutoCAD DWG planları, Navisworks (.nwc) dosyası ve nokta bulutu ham verisi (E57, RCS, RCP) formatlarında teslimat yapıyoruz. İstek üzerine PDF A0 çizimler ve COBie tabloları da sunabiliyoruz."
     },
     {
-      q: "Lazer tarama sıraında tesis operasyonları durur mu?",
-      a: "Hayır, çoğu durumda tesis operasyonu devam ederken tarama yapıyoruz. Sadece kritik güvenlik alanlarında (yükseklik çalışması, tehlikeli kimyasal bölgeler) kısa süreli erişim izni gerekebilir. Tarama planını  üretim programınıza uygun şekilde ayarlıyoruz; genellikle vardiya aralarında veya hafta sonlarında çalışıyoruz."
+      q: "Lazer tarama sırasında tesis operasyonları durur mu?",
+      a: "Hayır, çoğu durumda tesis operasyonu devam ederken tarama yapıyoruz. Sadece kritik güvenlik alanlarında (yükseklik çalışması, tehlikeli kimyasal bölgeler) kısa süreli erişim izni gerekebilir. Tarama planını üretim programınıza uygun şekilde ayarlıyoruz; genellikle vardiya aralarında veya hafta sonlarında çalışıyoruz."
     },
     {
       q: "Modelleme doğruluğu nasıl garanti ediliyor?",
@@ -38,7 +38,7 @@ export default function FaqClient() {
       a: "Evet, tarihi yapıların as-built dokümantasyonunda uzmanız. Kültür varlığı statüsündeki binalarda hassas lazer tarama yapıyor, orijinal yapı elemanlarını (taş işçiliği, ahşap detaylar, süslemeler) yüksek çözünürlükte modelleyip koruma kuruluna sunulmak üzere raporluyoruz."
     },
     {
-      q: "2D CAD çifizimlerimi BIM'e çevirmem neden gerekli?",
+      q: "2D CAD çizimlerimi BIM'e çevirmem neden gerekli?",
       a: "Eski 2D planlarla çalışmak birçok soruna yol açar: Plan, kesit ve görünüşler senkronize değil, değişiklikler manuel yapılıyor, miktar çıkarmak çok zaman alıyor ve clash detection yapılamıyor. BIM modeline geçtiğinizde tüm bu sorunlar çözülür, projeler %30-40 daha hızlı ilerler ve hata oranları düşer."
     },
     {
@@ -51,7 +51,7 @@ export default function FaqClient() {
     },
     {
       q: "NDA (Gizlilik Sözleşmesi) yapıyor musunuz?",
-      a: "Elbette. Müşteri talep etmese bile standart olarak NDA imzalıyoruz. Tüm proje dosyaları şifreli serverlerde saklanıyor, proje bitiminden 6 ay sonra silinyor (istek halinde arşivliyoruz). Ekip üyeleri gizlilik taahhütnamesi imzalıyor. ISO 27001 bilgi güvenliği standardına uyum sağlıyoruz."
+      a: "Elbette. Müşteri talep etmese bile standart olarak NDA imzalıyoruz. Tüm proje dosyaları şifreli serverlerde saklanıyor, proje bitiminden 6 ay sonra siliniyor (istek halinde arşivliyoruz). Ekip üyeleri gizlilik taahhütnamesi imzalıyor. ISO 27001 bilgi güvenliği standardına uyum sağlıyoruz."
     },
     {
       q: "Hangi sektörlerde deneyiminiz var?",

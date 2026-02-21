@@ -1,8 +1,8 @@
----
+﻿---
 title: "Transitioning from 2D CAD Drawings to 3D BIM Model | Eos Proje"
 description: "Process of creating parametric 3D BIM models from DWG and PDF drawings, best practices, and critical considerations."
 keywords: ["2d to 3d conversion", "cad bim conversion", "dwg revit", "pdf to bim", "2d drawing 3d model"]
-author: "Uğur Bilen"
+author: "UÃ„Å¸ur Bilen"
 authorLinkedIn: "https://linkedin.com/in/ugur-bilen"  
 date: "2026-01-15"
 lastUpdated: "2026-01-25"
@@ -11,18 +11,18 @@ tags: ["2D to 3D Conversion", "Revit Modeling", "BIM Standards"]
 featured: false
 locale: "en"
 alternates:
-  tr: "/blog/2d-cad-3d-bim-gecis"
+  tr: "/blog/2d-cad-to-3d-bim-transition"
 schema:
   type: "Article"
   faq: true
 images:
-  hero: "/images/blog/2d-to-3d-conversion.jpg"
+  hero: "/images/EosProje-sokak-siluet-3d-model-calismasi.webp"
 ---
 
 # Transitioning from 2D CAD Drawings to 3D BIM Model
 
 <Callout type="summary">
-**TL;DR:** Creating BIM models from 2D CAD (DWG/PDF) drawings is possible but has limitations: If elevation information is missing, assumptions are made; as-built accuracy cannot be guaranteed. Best approach: Point cloud for critical areas, 2D CAD for non-critical. Typical delivery: 3-4 weeks for 5,000 m² plan at LOD 300.
+**TL;DR:** Creating BIM models from 2D CAD (DWG/PDF) drawings is possible but has limitations: If elevation information is missing, assumptions are made; as-built accuracy cannot be guaranteed. Best approach: Point cloud for critical areas, 2D CAD for non-critical. Typical delivery: 3-4 weeks for 5,000 mÃ‚Â² plan at LOD 300.
 </Callout>
 
 ## From 2D to 3D: When Possible, When Not?
@@ -67,7 +67,7 @@ images:
 
 - [ ] All floor plans available? (Basement+Ground+Typical floors)
 - [ ] Sections available? (Minimum 2 sections)
-- [ ] Elevations (façades) available?
+- [ ] Elevations (faÃƒÂ§ades) available?
 - [ ] MEP plans available?
 - [ ] Material/finish schedules available?
 - [ ] Structural grid clear?
@@ -118,7 +118,7 @@ images:
 - Windows, doors
 
 **D. MEP Systems (10-15 days)**
-- ⚠️ Most difficult part: 80% elevation information is assumption
+- Ã¢Å¡Â Ã¯Â¸Â Most difficult part: 80% elevation information is assumption
 - Main distribution lines (risers)
 - Horizontal routing (inferred from sections)
 - Equipment locations
@@ -135,7 +135,7 @@ Geometry created from 2D drawings, now add **semantic information**:
 | Material | Specification docs | Medium |
 | Equipment Capacity | Schedules | High |
 | Pipe Diameter | Plan annotation | High |
-| Pipe Elevation | ⚠️ Assumption | Low |
+| Pipe Elevation | Ã¢Å¡Â Ã¯Â¸Â Assumption | Low |
 
 ---
 
@@ -149,7 +149,7 @@ Geometry created from 2D drawings, now add **semantic information**:
 - Run clash detection (Navisworks)
 - Compare area schedules with notes on drawings
 
-<ExpertQuote author="Uğur Bilen" role="Eos Proje">
+<ExpertQuote author="UÃ„Å¸ur Bilen" role="Eos Proje">
 On the Varyap Meridian project, we created an LOD 200 model from 2D CAD and old photos. The model was sufficient for renovation design, but we verified critical MEP areas with scans. Hybrid approach provided both cost and accuracy.
 </ExpertQuote>
 
@@ -159,10 +159,10 @@ On the Varyap Meridian project, we created an LOD 200 model from 2D CAD and old 
 
 | Factor | 2D CAD | Point Cloud |
 |--------|---------|-------------|
-| **Accuracy** | ⚠️ Medium (±50-100mm) | ✅ High (±5-10mm) |
+| **Accuracy** | Ã¢Å¡Â Ã¯Â¸Â Medium (Ã‚Â±50-100mm) | Ã¢Å“â€¦ High (Ã‚Â±5-10mm) |
 | **Data Source** | Drawings (as-planned) | Actual condition (as-built) |
-| **Cost** | 💰 Low | 💰💰 Medium-High |
-| **Time** | ⏱️ Short | ⏱️ Medium |
+| **Cost** | ÄŸÅ¸â€™Â° Low | ÄŸÅ¸â€™Â°ÄŸÅ¸â€™Â° Medium-High |
+| **Time** | Ã¢ÂÂ±Ã¯Â¸Â Short | Ã¢ÂÂ±Ã¯Â¸Â Medium |
 | **Best For** | New design, simple geometry | Existing buildings, complex geometry |
 | **Risk** | As-built differences | Scan quality issues |
 
@@ -174,9 +174,9 @@ On the Varyap Meridian project, we created an LOD 200 model from 2D CAD and old 
 
 <FAQ question="How accurate is BIM model from 2D CAD drawings?">
 Accuracy depends on **source quality**. If:
-- ✅ As-built drawings current (last 5 years) → 80-85% accuracy
-- ⚠️ 10+ year old drawings → 60-70% accuracy (due to renovations)
-- ❌ Only as-planned (before construction) → 50-60% accuracy
+- Ã¢Å“â€¦ As-built drawings current (last 5 years) Ã¢â€ â€™ 80-85% accuracy
+- Ã¢Å¡Â Ã¯Â¸Â 10+ year old drawings Ã¢â€ â€™ 60-70% accuracy (due to renovations)
+- Ã¢ÂÅ’ Only as-planned (before construction) Ã¢â€ â€™ 50-60% accuracy
 
 For MEP systems, elevation information is 80% assumption, risk is high.
 </FAQ>
@@ -193,24 +193,24 @@ Yes, possible but takes 30-40% longer than DWG because:
 <FAQ question="Which LOD level is achievable from 2D drawings?">
 - **LOD 200:** Definitely possible
 - **LOD 300:** Possible (if sections and details available)
-- **LOD 350-400:** ❌ Not possible - no fabrication detail
+- **LOD 350-400:** Ã¢ÂÅ’ Not possible - no fabrication detail
 
 Going above LOD 300 from 2D drawings is unrealistic.
 </FAQ>
 
 <FAQ question="What is the cost difference between 2D vs. Point Cloud sourced modeling?">
-Cost per m² comparison (LOD 300):
-- **2D CAD source:** $0.80-1.30/m²
-- **Point Cloud source:** $1.50-2.60/m² (scan cost included)
+Cost per mÃ‚Â² comparison (LOD 300):
+- **2D CAD source:** $0.80-1.30/mÃ‚Â²
+- **Point Cloud source:** $1.50-2.60/mÃ‚Â² (scan cost included)
 
 However, in terms of **accuracy and risk**, point cloud is much more reliable. Hybrid approach is optimal: Critical areas point cloud, rest 2D CAD.
 </FAQ>
 
 <FAQ question="For an old building with only 2D plans, what should I do?">
 Do **Risk Assessment**:
-1. **Low Risk Project** (office renovation, simple layout) → Create model from 2D CAD, do site verification
-2. **High Risk Project** (MEP coordination critical, complex) → Scan at least critical areas
-3. **Critical Project** (hospital, data center) → Full scan mandatory
+1. **Low Risk Project** (office renovation, simple layout) Ã¢â€ â€™ Create model from 2D CAD, do site verification
+2. **High Risk Project** (MEP coordination critical, complex) Ã¢â€ â€™ Scan at least critical areas
+3. **Critical Project** (hospital, data center) Ã¢â€ â€™ Full scan mandatory
 
 Hybrid approach is often optimal: 2D+Scan combined.
 </FAQ>
@@ -226,5 +226,5 @@ Hybrid approach is often optimal: 2D+Scan combined.
 ---
 
 **Last Updated:** January 25, 2026  
-**Author:** [Uğur Bilen](https://linkedin.com/in/ugur-bilen)  
+**Author:** [UÃ„Å¸ur Bilen](https://linkedin.com/in/ugur-bilen)  
 **Category:** 3D Modeling Processes | **Reading Time:** ~7 minutes

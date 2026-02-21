@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { getAllMDXMetadata } from "@/lib/mdx";
 import type { Metadata } from 'next';
 import Image from 'next/image';
@@ -72,7 +72,7 @@ export default function BlogListingPageEN() {
                                 <div className="p-8 flex-grow flex flex-col">
                                     <div className="flex items-center gap-2 mb-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                                         <span>{new Date(post.date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
-                                        <span>•</span>
+                                        <span>Ã¢â‚¬Â¢</span>
                                         <span>{post.readingTime}</span>
                                     </div>
                                     <h3 className="text-xl font-black mb-4 text-slate-900 group-hover:text-[var(--color-primary-red)] transition-colors leading-tight">

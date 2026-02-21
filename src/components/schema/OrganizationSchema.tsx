@@ -1,4 +1,4 @@
-import { generateOrganizationSchema } from "@/lib/schema";
+﻿import { generateOrganizationSchema } from "@/lib/schema";
 
 export default function OrganizationSchema() {
     const schema = generateOrganizationSchema();

@@ -3,7 +3,7 @@
 import SubPageHero from "@/components/SubPageHero";
 import { Linkedin, Mail, Users } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import SmartImage from "@/components/ui/SmartImage";
 
 export default function Page() {
     const team = [
@@ -11,56 +11,56 @@ export default function Page() {
             name: "Uğur Bilen",
             role: "Founder & Senior 3D Specialist",
             bio: "Graduate of YTÜ Geomatics Engineering. Managed 50+ large-scale as-built projects with 20 years of sector experience. Expert in Laser Scanning, Drones, and Revit.",
-            image: "/images/blog/team-1.jpg",
+            image: "/images/blog/team-1.webp",
             email: "ugur@eosproje.com"
         },
         {
             name: "Öykü Hun",
             role: "Operations Director",
             bio: "Graduate of İTÜ MSc Geomatics Engineering. Expert in Modeling, Six Sigma, and Planning. Manages laser scanning and photogrammetry processes.",
-            image: "/images/blog/team-2.jpg",
+            image: "/images/blog/team-2.webp",
             email: "oyku@eosproje.com"
         },
         {
             name: "Kamil Serin",
             role: "Data & Quality Coordinator",
             bio: "20 years of sector experience. Engineering expertise specialized in Laser Scanning, Data Processing, and modeling processes.",
-            image: "/images/blog/team-3.jpg",
+            image: "/images/blog/team-3.webp",
             email: "kamil@eosproje.com"
         },
         {
             name: "Utku Karaman",
             role: "MEP Modeling Specialist",
             bio: "Graduate of İTÜ Mechanical Engineering. Specialist in Scan-to-MEP and MEP Modeling. Manages 3D drawing and modeling processes in industrial projects.",
-            image: "/images/blog/team-7.jpg",
+            image: "/images/blog/team-7.webp",
             email: "utku@eosproje.com"
         },
         {
             name: "Melis Melike Begdeş",
             role: "Modeling Specialist",
             bio: "Graduate of Işık University Architecture. Specialist in historical building restoration projects. Manages Point Cloud, photogrammetry, and 2D & 3D drafting processes.",
-            image: "/images/blog/team-4.jpg",
+            image: "/images/blog/team-4.webp",
             email: "melis@eosproje.com"
         },
         {
             name: "Yasin Demirci",
             role: "Point Cloud Processing Specialist",
             bio: "Graduate of Geodesy and Photogrammetry. Competent in cloud-to-cloud registration and data cleaning in Faro Scene and ReCap software. Modeling specialist.",
-            image: "/images/blog/team-5.jpg",
+            image: "/images/blog/team-5.webp",
             email: "yasin@eosproje.com"
         },
         {
             name: "Emir Demirci",
             role: "Measurement and Evaluation Specialist",
             bio: "Graduate of Geodesy and Photogrammetry. Competent in Laser Scanning and Drones. Measurement and evaluation specialist.",
-            image: "/images/blog/team-8.jpg",
+            image: "/images/blog/team-8.webp",
             email: "emir@eosproje.com"
         },
         {
             name: "Cafer Saygılı",
             role: "Finance and Accounting Manager",
             bio: "Responsible for all finance and accounting affairs of Eos Proje since 2007.",
-            image: "/images/blog/team-6.jpg",
+            image: "/images/blog/team-6.webp",
             email: "cafer@eosproje.com"
         }
     ];
@@ -89,10 +89,12 @@ export default function Page() {
                     {team.map((member, idx) => (
                         <div key={idx} className="group bg-white rounded-3xl overflow-hidden border border-slate-100 hover:border-red-100 shadow-sm hover:shadow-2xl transition-all duration-300">
                             <div className="h-64 bg-slate-200 relative overflow-hidden">
-                                <div className="absolute inset-0 flex items-center justify-center text-slate-400">
-                                    <span className="text-sm font-medium">Image Not Uploaded</span>
-                                </div>
-                                {/* <Image src={member.image} alt={member.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" /> */}
+                                <SmartImage
+                                    src={member.image}
+                                    alt={member.name}
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
                             </div>
                             <div className="p-8">
                                 <div className="mb-4">

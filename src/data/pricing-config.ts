@@ -1,9 +1,9 @@
-export interface LODPricing {
+﻿export interface LODPricing {
     level: string;
     description: string;
-    minRate: number; // TL per m²
-    maxRate: number; // TL per m²
-    avgRate: number; // TL per m²
+    minRate: number; // TL per mÃ‚Â²
+    maxRate: number; // TL per mÃ‚Â²
+    avgRate: number; // TL per mÃ‚Â²
 }
 
 export interface PricingCalculation {
@@ -24,21 +24,21 @@ export interface PricingCalculation {
 export const LOD_LEVELS: LODPricing[] = [
     {
         level: "100",
-        description: "Kütle/hacim (konsept)",
+        description: "KÃƒÂ¼tle/hacim (konsept)",
         minRate: 40,
         maxRate: 60,
         avgRate: 50,
     },
     {
         level: "200",
-        description: "Jenerik elemanlar (şematik)",
+        description: "Jenerik elemanlar (Ã…Å¸ematik)",
         minRate: 75,
         maxRate: 110,
         avgRate: 92.5,
     },
     {
         level: "300",
-        description: "Ölçü tabanlı as-built (standart)",
+        description: "Ãƒâ€“lÃƒÂ§ÃƒÂ¼ tabanlÃ„Â± as-built (standart)",
         minRate: 140,
         maxRate: 190,
         avgRate: 165,
@@ -52,7 +52,7 @@ export const LOD_LEVELS: LODPricing[] = [
     },
     {
         level: "400",
-        description: "İmalat/shop drawing (özel)",
+        description: "Ã„Â°malat/shop drawing (ÃƒÂ¶zel)",
         minRate: 300,
         maxRate: 425,
         avgRate: 362.5,
@@ -60,11 +60,11 @@ export const LOD_LEVELS: LODPricing[] = [
 ];
 
 export const EXTRA_SERVICES = [
-    { id: "drone", label: "Drone Çekimi", price: 20000, type: "fixed" },
-    { id: "ortofoto", label: "Ortofoto Üretimi", price: 11500, type: "fixed" },
+    { id: "drone", label: "Drone Ãƒâ€¡ekimi", price: 20000, type: "fixed" },
+    { id: "ortofoto", label: "Ortofoto ÃƒÅ“retimi", price: 11500, type: "fixed" },
     { id: "animasyon", label: "Animasyon/Walkthrough Video", price: 22500, type: "fixed" },
     { id: "sapma", label: "Sapma Analizi Raporu", price: 10000, type: "fixed" },
-    { id: "revizyon", label: "Revizyon Hakkı", price: 2000, type: "fixed" },
+    { id: "revizyon", label: "Revizyon HakkÃ„Â±", price: 2000, type: "fixed" },
 ];
 
 export const FIELD_WORK_DAILY_RATE = 40000; // TL per day
@@ -78,7 +78,7 @@ export function estimateFieldWorkDays(area: number): number {
     if (area <= 1000) return 2;
     if (area <= 2000) return 3;
     if (area <= 3000) return 4;
-    return Math.ceil(area / 800); // ~800 m² per day
+    return Math.ceil(area / 800); // ~800 mÃ‚Â² per day
 }
 
 // Get LOD pricing by level
@@ -161,9 +161,9 @@ export function calculatePrice(
 }
 
 export const SECTORS = [
-    { value: "mimarlik", label: "Mimarlık" },
+    { value: "mimarlik", label: "MimarlÃ„Â±k" },
     { value: "renovasyon", label: "Renovasyon Projeleri" },
-    { value: "insaat", label: "İnşaat & Taahhüt" },
-    { value: "endustriyel", label: "Endüstriyel Tesis" },
-    { value: "restorasyon", label: "Restorasyon & Kültürel Miras" },
+    { value: "insaat", label: "Ã„Â°nÃ…Å¸aat & TaahhÃƒÂ¼t" },
+    { value: "endustriyel", label: "EndÃƒÂ¼striyel Tesis" },
+    { value: "restorasyon", label: "Restorasyon & KÃƒÂ¼ltÃƒÂ¼rel Miras" },
 ];

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import { ChevronDown, Info, AlertTriangle, Lightbulb, FileText, Quote } from "lucide-react";
@@ -32,7 +32,7 @@ export const FAQSection = ({ children }: { children: React.ReactNode }) => (
             <span className="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center">
                 <FileText className="w-5 h-5 text-[var(--color-primary-red)]" />
             </span>
-            <h3 className="text-2xl font-black text-slate-900 uppercase tracking-tight">Sıkça Sorulan Sorular</h3>
+            <h3 className="text-2xl font-black text-slate-900 uppercase tracking-tight">SÃ„Â±kÃƒÂ§a Sorulan Sorular</h3>
         </div>
         <div className="space-y-2">
             {children}
@@ -66,7 +66,7 @@ export const Callout = ({ children, type = "info" }: { children: React.ReactNode
             {type === 'summary' && (
                 <div className="flex items-center gap-3 mb-6 text-[var(--color-primary-red)] text-xs font-black uppercase tracking-[0.3em]">
                     <span className="w-2 h-2 bg-[var(--color-primary-red)] rounded-full animate-pulse shadow-[0_0_10px_rgba(255,0,0,0.5)]"></span>
-                    Analitik Özet
+                    Analitik Ãƒâ€“zet
                 </div>
             )}
 

@@ -44,7 +44,7 @@ export default function AsBuiltClient() {
                             </div>
                             <h3 className="text-2xl font-black text-slate-900 mb-4">Millimetric Accuracy Guarantee</h3>
                             <p className="text-slate-600 leading-relaxed">
-                                We achieve a ±2mm accuracy standard in measurements carried out with Leica and Faro brand laser scanners. Every point cloud data is verified with independent control points and delivered with deviation analysis reports. This level of precision is critical, especially for equipment layout planning and MEP system clash control in industrial facilities.
+                                We achieve a Â±2mm accuracy standard in measurements carried out with Leica and Faro brand laser scanners. Every point cloud data is verified with independent control points and delivered with deviation analysis reports. This level of precision is critical, especially for equipment layout planning and MEP system clash control in industrial facilities.
                             </p>
                         </motion.div>
 
@@ -60,7 +60,7 @@ export default function AsBuiltClient() {
                             </div>
                             <h3 className="text-2xl font-black text-slate-900 mb-4">Fast Delivery and Efficiency</h3>
                             <p className="text-slate-600 leading-relaxed">
-                                We provide up to 70% time savings compared to traditional measurement methods. On average, scanning a 5,000 m² industrial facility takes 2-3 days, and the modeling process is completed in 7-10 business days. We affect facility operations at a minimum level during the data collection process; in most cases, scanning operations can be performed without stopping production.
+                                We provide up to 70% time savings compared to traditional measurement methods. On average, scanning a 5,000 mÂ² industrial facility takes 2-3 days, and the modeling process is completed in 7-10 business days. We affect facility operations at a minimum level during the data collection process; in most cases, scanning operations can be performed without stopping production.
                             </p>
                         </motion.div>
 

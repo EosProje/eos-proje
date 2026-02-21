@@ -1,5 +1,6 @@
-import FaqClient from "./FaqClient";
+﻿import FaqClient from "./FaqClient";
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
     title: "Sıkça Sorulan Sorular (SSS) - Lazer Tarama ve BIM | Eos Proje",
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Sıkça Sorulan Sorular (SSS) - Lazer Tarama ve BIM | Eos Proje",
         description: "Point Cloud to BIM, lazer tarama, as-built modelleme ve dijital ikiz süreçleri hakkında sıkça sorulan soruların cevapları.",
-        url: "https://www.eosproje.com/sss",
+        url: `${SITE_URL}/sss`,
         siteName: "Eos Proje",
         locale: "tr_TR",
         type: "website",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
         description: "Profesyonel lazer tarama ve BIM çözümleri hakkında merak edilenler.",
     },
     alternates: {
-        canonical: "https://www.eosproje.com/sss",
+        canonical: `${SITE_URL}/sss`,
     },
 };
 

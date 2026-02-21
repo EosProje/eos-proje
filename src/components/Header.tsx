@@ -5,12 +5,13 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, Cpu, ChevronDown, ArrowRight, Phone, Mail, MapPin } from "lucide-react";
 import { EASE_CURVES } from "@/lib/animations";
+import { I18N_PATH_MAPPINGS, I18N_PATH_MAPPINGS_REV, CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/constants";
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const pathname = usePathname();
-    const isEn = pathname?.startsWith("/en") ?? false;
+    const pathname = usePathname() || "/";
+    const isEn = pathname.startsWith("/en");
 
     useEffect(() => {
         const handleScroll = () => {
@@ -19,6 +20,24 @@ export default function Header() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const getTargetLocalePath = (isToEn: boolean) => {
+        if (isToEn) {
+            if (isEn) return pathname;
+            const mapped = I18N_PATH_MAPPINGS[pathname];
+            if (mapped) return mapped;
+            return "/en";
+        } else {
+            if (!isEn) return pathname;
+            const mapped = I18N_PATH_MAPPINGS_REV[pathname];
+            if (mapped) return mapped;
+            // Handle subpages like /en/solutions/xyz
+            if (pathname.startsWith("/en/solutions/")) return "/cozumler/" + pathname.replace("/en/solutions/", "");
+            if (pathname.startsWith("/en/blog/")) return "/blog/" + pathname.replace("/en/blog/", "");
+            if (pathname.startsWith("/en/references/")) return "/referanslar/" + pathname.replace("/en/references/", "");
+            return "/";
+        }
+    };
 
     const menuItems = isEn ? {
         home: "Home",
@@ -67,9 +86,9 @@ export default function Header() {
         solutions: "Çözümler",
         solutionsItems: [
             { label: "Point Cloud to BIM", href: "/cozumler/point-cloud-to-bim" },
-            { label: "As-built Modelleme", href: "/cozumler/as-built-modelleme" },
-            { label: "2D to 3D/BIM Dönüşüm", href: "/cozumler/2d-to-3d-bim-donusum" },
-            { label: "Endüstriyel Ekipman", href: "/cozumler/endustriyel-ekipman-modelleme" },
+            { label: "As-built Modelleme", href: "/cozumler/as-built-modeling" },
+            { label: "2D to 3D/BIM Dönüşüm", href: "/cozumler/2d-to-3d-bim-conversion" },
+            { label: "Endüstriyel Ekipman", href: "/cozumler/industrial-equipment-modeling" },
             { label: "Tüm Çözümler", href: "/cozumler" }
         ],
         sectors: "Sektörler",
@@ -136,13 +155,13 @@ export default function Header() {
             <div className="bg-[var(--color-deep-charcoal)] text-white/80 py-2.5 px-4 sm:px-6 lg:px-8 border-b border-white/5 relative z-[60]">
                 <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center text-[10px] font-black uppercase tracking-[0.2em]">
                     <div className="flex items-center gap-8">
-                        <a href="https://wa.me/905306642263" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 hover:text-white transition-colors">
+                        <a href={`https://wa.me/${CONTACT_PHONE.replace(/\s+/g, '')}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 hover:text-white transition-colors">
                             <Phone className="w-3.5 h-3.5 text-[var(--color-primary-red)]" />
-                            <span>+90 530 664 2263</span>
+                            <span>{CONTACT_PHONE}</span>
                         </a>
                         <div className="hidden sm:flex items-center gap-2.5 hover:text-white transition-colors">
                             <Mail className="w-3.5 h-3.5 text-[var(--color-primary-red)]" />
-                            <span className="lowercase">info@eosproje.com</span>
+                            <span className="lowercase">{CONTACT_EMAIL}</span>
                         </div>
                     </div>
 
@@ -154,9 +173,9 @@ export default function Header() {
                             </div>
                         </div>
                         <div className="flex items-center gap-3 border-l border-white/10 pl-8">
-                            <Link href={pathname.replace("/en", "") || "/"} className={`transition-colors ${!isEn ? "text-white" : "text-white/40 hover:text-white"}`}>TR</Link>
+                            <Link href={getTargetLocalePath(false)} className={`transition-colors ${!isEn ? "text-white" : "text-white/40 hover:text-white"}`}>TR</Link>
                             <span className="text-white/10 font-light">|</span>
-                            <Link href={isEn ? pathname : "/en" + pathname} className={`transition-colors ${isEn ? "text-white" : "text-white/40 hover:text-white"}`}>EN</Link>
+                            <Link href={getTargetLocalePath(true)} className={`transition-colors ${isEn ? "text-white" : "text-white/40 hover:text-white"}`}>EN</Link>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import EnHomeClient from './EnHomeClient';
 import JsonLd from '@/components/JsonLd';
 

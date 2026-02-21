@@ -1,16 +1,17 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import SolutionsClient from "./SolutionsClient";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
     title: "Mühendislik Çözümleri & BIM Hizmetleri | EosProje",
     description: "Point Cloud to BIM, As-built Modelleme, Scan-to-CAD ve Dijital İkiz çözümlerimiz. Endüstriyel tesisler ve mimari projeler için hassas rölöve ve modelleme hizmetleri.",
     alternates: {
-        canonical: "https://www.eosproje.com/cozumler",
+        canonical: `${SITE_URL}/cozumler`,
     },
     openGraph: {
         title: "Mühendislik Çözümleri & BIM Hizmetleri | EosProje",
         description: "Point Cloud to BIM, As-built Modelleme, Scan-to-CAD ve Dijital İkiz çözümlerimiz.",
-        url: "https://www.eosproje.com/cozumler",
+        url: `${SITE_URL}/cozumler`,
         images: [{ url: "/images/og/cozumler-og.webp", width: 1200, height: 630 }],
         locale: "tr_TR",
         type: "website",

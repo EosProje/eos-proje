@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -80,7 +80,7 @@ export default function CADtoBimPage() {
         description="Çizgisel veriden akıllı yapı yönetimine geçiş yapın. Düz .DWG dosyalarınızı bilgi yüklü parametrik modellere dönüştürüyoruz."
         breadcrumb={[
           { label: "Çözümler", href: "/cozumler" },
-          { label: "2D to 3D BIM Dönüşüm", href: "/cozumler/2d-to-3d-bim-donusum" }
+          { label: "2D to 3D BIM Dönüşüm", href: "/cozumler/2d-to-3d-bim-conversion" }
         ]}
       />
 

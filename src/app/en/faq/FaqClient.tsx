@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -11,7 +11,7 @@ export default function FaqClient() {
     const faqs = [
         {
             q: "How long does the Point Cloud to BIM process take?",
-            a: "It depends on the project size. For an average 3,000-5,000 m² industrial facility, scanning takes 2-3 days, and modeling takes 10-15 business days. Including shipping time, we deliver within 3-4 weeks in total. An express option is available for urgent projects."
+            a: "It depends on the project size. For an average 3,000-5,000 mÃ‚Â² industrial facility, scanning takes 2-3 days, and modeling takes 10-15 business days. Including shipping time, we deliver within 3-4 weeks in total. An express option is available for urgent projects."
         },
         {
             q: "What LOD (Level of Development) levels do you work with?",
@@ -27,7 +27,7 @@ export default function FaqClient() {
         },
         {
             q: "How is modeling accuracy guaranteed?",
-            a: "We have a three-stage QA/QC process: 1) Internal check by the modeling team. 2) Geometric verification by an independent quality control specialist. 3) Point cloud-model overlay comparison (deviation analysis) with CloudCompare. We provide a ±2mm accuracy report in the delivery package. Additionally, all Revit Warnings are cleared, and clash detection is performed."
+            a: "We have a three-stage QA/QC process: 1) Internal check by the modeling team. 2) Geometric verification by an independent quality control specialist. 3) Point cloud-model overlay comparison (deviation analysis) with CloudCompare. We provide a Ã‚Â±2mm accuracy report in the delivery package. Additionally, all Revit Warnings are cleared, and clash detection is performed."
         },
         {
             q: "Do you perform remote (offshore) modeling?",
@@ -43,7 +43,7 @@ export default function FaqClient() {
         },
         {
             q: "How is pricing determined?",
-            a: "We provide project-based quotes. Factors affecting the price: Area to be scanned (m²), model LOD level, number of disciplines (only architectural or including MEP), project urgency, and delivery formats. We conduct a free preliminary exploration meeting and offer you a detailed custom quote. We have a fixed price guarantee; we do not request additional fees unless the project scope changes."
+            a: "We provide project-based quotes. Factors affecting the price: Area to be scanned (mÃ‚Â²), model LOD level, number of disciplines (only architectural or including MEP), project urgency, and delivery formats. We conduct a free preliminary exploration meeting and offer you a detailed custom quote. We have a fixed price guarantee; we do not request additional fees unless the project scope changes."
         },
         {
             q: "Do you provide post-delivery support?",

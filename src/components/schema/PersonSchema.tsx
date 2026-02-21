@@ -1,4 +1,4 @@
-import { generatePersonSchema } from "@/lib/schema";
+﻿import { generatePersonSchema } from "@/lib/schema";
 
 interface PersonSchemaProps {
     locale?: "tr" | "en";

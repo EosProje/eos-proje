@@ -1,4 +1,4 @@
-import { MDXFrontmatter } from "./mdx";
+﻿import { MDXFrontmatter } from "./mdx";
 import { authorProfile } from "@/data/author";
 
 /**
@@ -69,7 +69,7 @@ export function generateOrganizationSchema() {
         "@type": "Organization",
         name: "Eos Proje",
         description:
-            "Point Cloud to BIM dönüşüm, 3D modelleme, As-Built modelleme uzmanı",
+            "Point Cloud to BIM dÃƒÂ¶nÃƒÂ¼Ã…Å¸ÃƒÂ¼m, 3D modelleme, As-Built modelleme uzmanÃ„Â±",
         url: process.env.NEXT_PUBLIC_SITE_URL,
         logo: "https://www.eosproje.com/images/EosProje-Lazer-Tarama-Sistemleri.webp",
         contactPoint: {

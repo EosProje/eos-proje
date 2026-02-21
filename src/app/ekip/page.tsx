@@ -1,9 +1,9 @@
-"use client";
+﻿"use client";
 
 import SubPageHero from "@/components/SubPageHero";
 import { Linkedin, Mail, Twitter, Users, Award, Briefcase } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+import SmartImage from "@/components/ui/SmartImage";
 
 export default function Page() {
     const team = [
@@ -11,56 +11,56 @@ export default function Page() {
             name: "Uğur Bilen",
             role: "Kurucu & Kıdemli 3D Specialist",
             bio: "YTÜ Harita Mühendisliği mezunu. 20 yıllık sektör tecrübesiyle 50+ büyük ölçekli as-built projesini yönetti. Lazer Tarama, Drone ve Revit uzmanı.",
-            image: "/images/blog/team-1.jpg",
+            image: "/images/blog/team-1.webp",
             email: "ugur@eosproje.com"
         },
         {
             name: "Öykü Hun",
             role: "Operasyon Direktörü",
             bio: "İTÜ Yüksek Geomatik Mühendisliği mezunu. Modelleme, Six Sigma ve Planlama uzmanı. Lazer tarama ve fotogrametri süreçlerini yönetiyor.",
-            image: "/images/blog/team-2.jpg",
+            image: "/images/blog/team-2.webp",
             email: "oyku@eosproje.com"
         },
         {
             name: "Kamil Serin",
             role: "Veri & Kalite Koordinatörü",
             bio: "20 yıl sektör tecrübesi. Lazer Tarama, Data Proses ve modelleme süreçlerinde uzmanlaşmış Mühendislik tecrübesi.",
-            image: "/images/blog/team-3.jpg",
+            image: "/images/blog/team-3.webp",
             email: "kamil@eosproje.com"
         },
         {
             name: "Utku Karaman",
             role: "MEP Modelleme Uzmanı",
             bio: "İTÜ Makina Mühendisliği mezunu. Scan to MEP ve MEP Modelleme uzmanı. Endüstriyel projelerde 3D çizim modelleme süreçlerini yönetiyor.",
-            image: "/images/blog/team-7.jpg",
+            image: "/images/blog/team-7.webp",
             email: "utku@eosproje.com"
         },
         {
             name: "Melis Melike Begdeş",
             role: "Modelleme Uzmanı",
             bio: "Işık Üniversitesi Mimarlık mezunu. Tarihi yapı restorasyon projelerinde uzman. Nokta Bulutu, fotogrametri 2D & 3D çizim modelleme süreçlerini yönetiyor.",
-            image: "/images/blog/team-4.jpg",
+            image: "/images/blog/team-4.webp",
             email: "melis@eosproje.com"
         },
         {
             name: "Yasin Demirci",
             role: "Nokta Bulutu İşleme Uzmanı",
             bio: "Jeodezi ve Fotogrametri mezunu. Faro Scene ve ReCap yazılımlarında cloud-to-cloud registration ve veri temizliği konusunda yetkin. Modelleme uzmanı.",
-            image: "/images/blog/team-5.jpg",
+            image: "/images/blog/team-5.webp",
             email: "yasin@eosproje.com"
         },
         {
             name: "Emir Demirci",
             role: "Ölçme ve Değerlendirme Uzmanı",
             bio: "Jeodezi ve Fotogrametri mezunu. Lazer Tarama ve Drone konusunda yetkin. Ölçme ve değerlendirme uzmanı.",
-            image: "/images/blog/team-8.jpg",
+            image: "/images/blog/team-8.webp",
             email: "emir@eosproje.com"
         },
         {
             name: "Cafer Saygılı",
             role: "Finans ve Mali İşler Sorumlusu",
             bio: "2007 yılından beri Eos Projenin tüm finans ve mali işler sorumlusu olarak görev almaktadır.",
-            image: "/images/blog/team-6.jpg",
+            image: "/images/blog/team-6.webp",
             email: "cafer@eosproje.com"
         }
     ];
@@ -89,11 +89,12 @@ export default function Page() {
                     {team.map((member, idx) => (
                         <div key={idx} className="group bg-white rounded-3xl overflow-hidden border border-slate-100 hover:border-red-100 shadow-sm hover:shadow-2xl transition-all duration-300">
                             <div className="h-64 bg-slate-200 relative overflow-hidden">
-                                {/* Fallback for image until user uploads */}
-                                <div className="absolute inset-0 flex items-center justify-center text-slate-400">
-                                    <span className="text-sm font-medium">Görsel Yüklenmedi</span>
-                                </div>
-                                {/* <Image src={member.image} alt={member.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" /> */}
+                                <SmartImage
+                                    src={member.image}
+                                    alt={member.name}
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
                             </div>
                             <div className="p-8">
                                 <div className="mb-4">
@@ -104,9 +105,6 @@ export default function Page() {
                                     {member.bio}
                                 </p>
                                 <div className="flex gap-4">
-                                    {/* <button className="p-2 rounded-full bg-slate-50 text-slate-600 hover:bg-blue-50 hover:text-blue-600 transition-colors">
-                                        <Linkedin className="w-5 h-5" />
-                                    </button> */}
                                     <a href={`mailto:${member.email}`} className="flex items-center gap-2 p-2 rounded-lg bg-slate-50 text-slate-600 hover:bg-red-50 hover:text-[var(--color-primary-red)] transition-all text-xs font-bold w-full justify-center">
                                         <Mail className="w-4 h-4" />
                                         {member.email}

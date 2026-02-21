@@ -1,4 +1,4 @@
-import { generateArticleSchema } from "@/lib/schema";
+﻿import { generateArticleSchema } from "@/lib/schema";
 import { MDXFrontmatter } from "@/lib/mdx";
 
 interface ArticleSchemaProps {

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { MDXFrontmatter } from "./mdx";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://eosproje.com";

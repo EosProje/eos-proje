@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
@@ -26,7 +26,7 @@ export default function BeforeAfterSlider({
     const [isResizing, setIsResizing] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
 
-    // Mouse/Touch olaylarını dinle
+    // Mouse/Touch olaylarÃ„Â±nÃ„Â± dinle
     const handleMove = (clientX: number) => {
         if (!containerRef.current) return;
 
@@ -83,7 +83,7 @@ export default function BeforeAfterSlider({
                 </span>
             </div>
 
-            {/* Üst Katman: Before Image (Point Cloud) - Clip Path ile maskeleme */}
+            {/* ÃƒÅ“st Katman: Before Image (Point Cloud) - Clip Path ile maskeleme */}
             <div
                 className="absolute inset-0 overflow-hidden"
                 style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)` }}
@@ -112,10 +112,10 @@ export default function BeforeAfterSlider({
                 </div>
             </div>
 
-            {/* Etkileşim İpucu (Sadece başta görünür, sonra kaybolabilir veya sürekli kalabilir - sade tuttum) */}
+            {/* EtkileÃ…Å¸im Ã„Â°pucu (Sadece baÃ…Å¸ta gÃƒÂ¶rÃƒÂ¼nÃƒÂ¼r, sonra kaybolabilir veya sÃƒÂ¼rekli kalabilir - sade tuttum) */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 pointer-events-none opacity-60">
                 <span className="text-[10px] font-black uppercase text-white drop-shadow-md tracking-[0.2em] bg-black/20 px-3 py-1 rounded-full backdrop-blur-sm">
-                    Karşılaştırmak için Sürükleyin
+                    KarÃ…Å¸Ã„Â±laÃ…Å¸tÃ„Â±rmak iÃƒÂ§in SÃƒÂ¼rÃƒÂ¼kleyin
                 </span>
             </div>
         </div>

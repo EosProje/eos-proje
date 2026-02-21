@@ -94,7 +94,7 @@ export default function PointToBimClient() {
                                 </div>
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-50">
-                                        <span className="block text-2xl font-black text-[var(--color-primary-red)] mb-1">±10mm</span>
+                                        <span className="block text-2xl font-black text-[var(--color-primary-red)] mb-1">Â±10mm</span>
                                         <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Accuracy Guarantee</span>
                                     </div>
                                     <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-50">
@@ -202,8 +202,8 @@ export default function PointToBimClient() {
                             title="Traditional Survey vs. 3D Laser Scanning"
                             headers={["Criterion", "Traditional Method (Tape Measure)", "3D Laser Scanning (LiDAR)"]}
                             data={[
-                                { feature: "Accuracy (Error Margin)", traditional: "±5 - 10 cm (Prone to human error)", modern: "±1 - 3 mm (Millimetric precision)" },
-                                { feature: "Data Collection Speed", traditional: "500 m² / day", modern: "10,000 m² / day (Leica RTC360)" },
+                                { feature: "Accuracy (Error Margin)", traditional: "Â±5 - 10 cm (Prone to human error)", modern: "Â±1 - 3 mm (Millimetric precision)" },
+                                { feature: "Data Collection Speed", traditional: "500 mÂ² / day", modern: "10,000 mÂ² / day (Leica RTC360)" },
                                 { feature: "Level of Detail", traditional: "Only main measurements, details missing", modern: "All surfaces, deformations, curvatures" },
                                 { feature: "Cost / Efficiency", traditional: "Low initial cost, High Revision Cost", modern: "High initial cost, Zero Revision" },
                                 { feature: "Output Formats", traditional: "2D CAD Drawing", modern: "3D Point Cloud, BIM Model, Digital Twin" }
@@ -242,7 +242,7 @@ export default function PointToBimClient() {
                                     <li className="flex justify-between"><span>Scanner:</span> <span className="text-slate-900 font-bold">Leica RTC360</span></li>
                                     <li className="flex justify-between"><span>Speed:</span> <span className="text-slate-900 font-bold">2 Million points/sec</span></li>
                                     <li className="flex justify-between"><span>Range:</span> <span className="text-slate-900 font-bold">130 meters</span></li>
-                                    <li className="flex justify-between"><span>HDR Image:</span> <span className="text-slate-900 font-bold">5 Bracket 360°</span></li>
+                                    <li className="flex justify-between"><span>HDR Image:</span> <span className="text-slate-900 font-bold">5 Bracket 360Â°</span></li>
                                 </ul>
                             </div>
 
@@ -356,7 +356,7 @@ export default function PointToBimClient() {
                 <div className="max-w-5xl mx-auto">
                     <div className="bg-[var(--color-deep-charcoal)] rounded-[4rem] p-12 md:p-20 text-center relative overflow-hidden">
                         <div className="relative z-10">
-                            <h2 className="text-3xl md:text-5xl font-black text-white mb-8">🚀 Don't Risk Your Project, Digitize It</h2>
+                            <h2 className="text-3xl md:text-5xl font-black text-white mb-8">?? Don't Risk Your Project, Digitize It</h2>
                             <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto font-medium">
                                 Trust EOS Proje expertise to prevent surprise construction site costs and document the real state of your existing structure.
                             </p>

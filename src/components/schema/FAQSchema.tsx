@@ -1,4 +1,4 @@
-import { FAQItem, generateFAQSchema } from "@/lib/schema";
+﻿import { FAQItem, generateFAQSchema } from "@/lib/schema";
 
 interface FAQSchemaProps {
     faqs: FAQItem[];

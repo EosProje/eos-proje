@@ -93,7 +93,7 @@ export default function QAQCClient() {
                                     <ul className="space-y-3">
                                         {[
                                             { title: "Deviation Map Generation", desc: "The distance between each point of the model and the nearest point cloud point is calculated. A colored deviation map is produced (green: within tolerance, yellow-red: outside tolerance)." },
-                                            { title: "Acceptance Criteria", desc: "We target ±5mm for general field work and ±2mm for industrial facilities. We provide ±1mm precision for critical equipment mounting points." },
+                                            { title: "Acceptance Criteria", desc: "We target Â±5mm for general field work and Â±2mm for industrial facilities. We provide Â±1mm precision for critical equipment mounting points." },
                                             { title: "Revision Cycle", desc: "Out-of-tolerance areas are corrected in the model and the check is repeated. The entire deviation report is added to the delivery package." }
                                         ].map((item, i) => (
                                             <li key={i} className="border-l-4 border-orange-500 pl-4">
@@ -113,7 +113,7 @@ export default function QAQCClient() {
                     <h2 className="text-3xl font-black mb-8">Our Quality Metrics</h2>
                     <div className="grid md:grid-cols-3 gap-8">
                         <div>
-                            <div className="text-5xl font-black text-red-400 mb-2">±2mm</div>
+                            <div className="text-5xl font-black text-red-400 mb-2">Â±2mm</div>
                             <div className="text-lg font-bold text-slate-300 mb-2">Accuracy Standard</div>
                             <p className="text-slate-400 text-sm">The level of geometric precision we guarantee in industrial facilities</p>
                         </div>

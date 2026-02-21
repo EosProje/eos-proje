@@ -1,4 +1,4 @@
-
+﻿
 import Image from 'next/image';
 
 interface MediaItem {
@@ -54,7 +54,7 @@ export default function ContentInjector({ content, videoUrl, images, type = 'pag
 
     // 3. Injection Logic
     // Strategy: 
-    // - Video: At the top (for Sectors/Pages) or Middle? User said "Video en başta olabilir bazen". Let's put it at Top for now for impact.
+    // - Video: At the top (for Sectors/Pages) or Middle? User said "Video en baÃ…Å¸ta olabilir bazen". Let's put it at Top for now for impact.
     // - Image 1: After 1/3 of content.
     // - Image 2: After 2/3 of content.
 

@@ -1,6 +1,7 @@
-import QuoteForm from "@/components/QuoteForm";
+﻿import QuoteForm from "@/components/QuoteForm";
 import { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import { SITE_URL, CONTACT_PHONE, CONTACT_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "İletişim - Lazer Tarama ve BIM Teklif Alın | Eos Proje",
@@ -12,9 +13,9 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "EOS Proje",
-    "image": "https://www.eosproje.com/images/logo.png",
-    "telephone": "+90 530 664 2263",
-    "email": "info@eosproje.com",
+    "image": `${SITE_URL}/images/logo.png`,
+    "telephone": CONTACT_PHONE,
+    "email": CONTACT_EMAIL,
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Murat Reis mah Teyyareci Muammer sok No:10/4",
@@ -25,10 +26,10 @@ export default function Page() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 41.0256, // Approximate, update with real coordinates if known
+      "latitude": 41.0256,
       "longitude": 29.0426
     },
-    "url": "https://www.eosproje.com/iletisim",
+    "url": `${SITE_URL}/iletisim`,
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
@@ -72,8 +73,8 @@ export default function Page() {
                 <div>
                   <h3 className="font-bold text-lg mb-2 text-[var(--color-deep-charcoal)]">İstanbul Ofis</h3>
                   <p className="text-sm text-slate-600 mb-2">Murat Reis mah Teyyareci Muammer sok No:10/4<br />34664 Üsküdar/İstanbul, Türkiye</p>
-                  <p className="text-sm text-slate-600"><strong>Tel:</strong> +90 530 664 2263</p>
-                  <p className="text-sm text-slate-600"><strong>Email:</strong> info@eosproje.com</p>
+                  <p className="text-sm text-slate-600"><strong>Tel:</strong> {CONTACT_PHONE}</p>
+                  <p className="text-sm text-slate-600"><strong>Email:</strong> {CONTACT_EMAIL}</p>
                 </div>
               </div>
             </div>
@@ -90,7 +91,7 @@ export default function Page() {
                 <div>
                   <h3 className="font-bold text-lg mb-2 text-[var(--color-deep-charcoal)]">İskenderun Ofis</h3>
                   <p className="text-sm text-slate-600 mb-2">Piri Reis, Barbaros Cd. No:20<br />31200 İskenderun/Hatay</p>
-                  <p className="text-sm text-slate-600"><strong>Tel:</strong> +90 530 664 2263</p>
+                  <p className="text-sm text-slate-600"><strong>Tel:</strong> {CONTACT_PHONE}</p>
                   <p className="text-sm text-slate-600"><strong>Email:</strong> ugur@eosproje.com</p>
                 </div>
               </div>

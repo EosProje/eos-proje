@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 @theme {
   --font-sans: var(--font-outfit);
@@ -148,7 +148,7 @@ body {
 }
 
 .prose blockquote::before {
-  content: "“";
+  content: "â€œ";
   position: absolute;
   top: 1rem;
   left: 2rem;

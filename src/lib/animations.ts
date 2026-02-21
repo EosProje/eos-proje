@@ -1,4 +1,4 @@
-// Type definition for Framer Motion custom easing curves
+﻿// Type definition for Framer Motion custom easing curves
 export type CustomEasingArray = [number, number, number, number];
 
 // Common easing curves used throughout the app

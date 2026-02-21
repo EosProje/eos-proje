@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -38,7 +38,7 @@ const clientLogos = [
         sector: "Chemistry & Industry",
     },
     {
-        name: "Şişecam",
+        name: "Ã…ÂiÃ…Å¸ecam",
         logo: "/images/case-studies/eosproje-sisecam-cam-fabrikasi-kaposvar-rolove-survey-logo.webp",
         sector: "Glass Manufacturing",
     },
@@ -48,7 +48,7 @@ const clientLogos = [
         sector: "Commercial",
     },
     {
-        name: "Yüksel Proje",
+        name: "YÃƒÂ¼ksel Proje",
         logo: "/images/case-studies/eosproje-yuksel-proje-metro-halihazir-harita-bim.webp",
         sector: "Construction",
     },
@@ -73,7 +73,7 @@ const featuredProjects = [
         title: "Cevahir Shopping Mall",
         subtitle: "Commercial Area As-Built Modeling",
         description:
-            "Measuring 25,000 m² of mall area during night shifts using laser scanning and generating GLA area verification reports.",
+            "Measuring 25,000 mÃ‚Â² of mall area during night shifts using laser scanning and generating GLA area verification reports.",
         image: "/images/case-studies/eosproje-cevahir-avm-lazer-tarama-scan-to-bim-istanbul.webp",
         sector: "Commercial",
         location: "Istanbul, Turkey",
@@ -97,9 +97,9 @@ const featuredProjects = [
     {
         slug: "toyota-fabrikasi",
         title: "Toyota Factory",
-        subtitle: "50,000 m² Point Cloud to BIM",
+        subtitle: "50,000 mÃ‚Â² Point Cloud to BIM",
         description:
-            "LOD 300 structural and MEP modeling for a 50,000 m² area at the Toyota production facility. ±8mm accuracy, 320% ROI.",
+            "LOD 300 structural and MEP modeling for a 50,000 mÃ‚Â² area at the Toyota production facility. Ã‚Â±8mm accuracy, 320% ROI.",
         image: "/images/case-studies/eosproje-endustriyel-tesis-lazer-tarama-scan-to-bim-fabrika.webp",
         sector: "Automotive",
         location: "Turkey",
@@ -145,7 +145,7 @@ export default function ReferencesClient() {
                 breadcrumb={[{ label: "References", href: "/en/references" }]}
             />
 
-            {/* Trusted Clients — Logo Grid */}
+            {/* Trusted Clients Ã¢â‚¬â€ Logo Grid */}
             <section className="py-20 px-4 bg-slate-50 border-b border-slate-100">
                 <div className="max-w-7xl mx-auto">
                     <motion.div

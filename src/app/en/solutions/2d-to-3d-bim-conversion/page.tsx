@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://www.eosproje.com/en/solutions/2d-to-3d-bim-conversion',
         languages: {
-            "tr": "https://www.eosproje.com/cozumler/2d-to-3d-bim-donusum",
+            "tr": "https://www.eosproje.com/cozumler/2d-to-3d-bim-conversion",
             "en": "https://www.eosproje.com/en/solutions/2d-to-3d-bim-conversion",
         },
     },

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -303,7 +303,7 @@ export default function PointCloudToBimPage() {
 
             <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
-                { lod: "LOD 200", title: "Konsept Tasarım", desc: "Genel kütle, yaklaşık boyutlar. Hızlı hacim etüdleri ve ruhsat projeleri için ideal." },
+                { lod: "LOD 200", title: "Konsept Tasarım", desc: "Genel kütle, yaklaşık boyutlar. Hızlı hacim etütleri ve ruhsat projeleri için ideal." },
                 { lod: "LOD 300", title: "Kesin Proje", desc: "Spesifik sistemler, doğru miktar ve boyutlar. Standart mimari ve statik projeler." },
                 { lod: "LOD 350", title: "Koordinasyon", desc: "Yapı elemanlarının diğer sistemlerle etkileşimi. Çakışma analizleri için gereklidir." },
                 { lod: "LOD 400", title: "İmalat Detayı", desc: "Montaj detayları, imalat verisi. Karmaşık MEP ve endüstriyel tesisler için üretim altlığı." },
@@ -394,7 +394,7 @@ export default function PointCloudToBimPage() {
         <div className="max-w-5xl mx-auto">
           <div className="bg-[var(--color-deep-charcoal)] rounded-[4rem] p-12 md:p-20 text-center relative overflow-hidden">
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-5xl font-black text-white mb-8">🚀 Projenizi Riske Atmayın, Dijitalleştirin</h2>
+              <h2 className="text-3xl md:text-5xl font-black text-white mb-8">Projenizi Riske Atmayın, Dijitalleştirin</h2>
               <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto font-medium">
                 Sürpriz şantiye maliyetlerini önlemek ve mevcut yapınızın gerçek durumunu belgelemek için EOS Proje uzmanlığına güvenin.
               </p>

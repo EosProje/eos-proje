@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Simple utility for mobile haptic feedback
  * Uses high-priority vibration if supported by device
  */

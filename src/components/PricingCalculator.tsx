@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { calculatePrice, LOD_LEVELS, SECTORS, EXTRA_SERVICES, PricingCalculation } from "@/data/pricing-config";

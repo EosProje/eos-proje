@@ -97,7 +97,7 @@ export default function AboutClient() {
                     <h2 className="text-3xl font-black text-slate-900 mb-12 text-center">Our Working Values</h2>
                     <div className="grid md:grid-cols-3 gap-8">
                         {[
-                            { icon: <Award className="w-6 h-6" />, title: "Quality and Precision", desc: "We maintain a ±2mm accuracy standard in every project. We target zero errors with our three-stage QA/QC process." },
+                            { icon: <Award className="w-6 h-6" />, title: "Quality and Precision", desc: "We maintain a Â±2mm accuracy standard in every project. We target zero errors with our three-stage QA/QC process." },
                             { icon: <CheckCircle2 className="w-6 h-6" />, title: "Reliability", desc: "We achieve 100% compliance with delivery dates. We do not request additional fees outside the scope of the contract." },
                             { icon: <Users className="w-6 h-6" />, title: "Customer Orientation", desc: "We conduct comprehensive exploration at the beginning of the project, understand your needs, and offer special solutions." },
                             { icon: <Globe className="w-6 h-6" />, title: "Continuous Development", desc: "We follow new software and hardware technologies. We provide regular training to our team." },

@@ -1,4 +1,4 @@
-import SubPageHero from "@/components/SubPageHero";
+﻿import SubPageHero from "@/components/SubPageHero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function Page() {
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 mb-8">
                     <h3 className="text-xl font-black text-slate-900 mb-4">1. Identity of the Data Controller</h3>
                     <p className="mb-4">
-                        In accordance with the Law No. 6698 on the Protection of Personal Data (“KVKK”), your personal data may be processed by <strong>EOS Proje</strong> as the data controller within the scope described below.
+                        In accordance with the Law No. 6698 on the Protection of Personal Data (Ã¢â‚¬Å“KVKKÃ¢â‚¬Â), your personal data may be processed by <strong>EOS Proje</strong> as the data controller within the scope described below.
                     </p>
                     <div className="grid md:grid-cols-2 gap-4 text-sm">
                         <div>
@@ -29,7 +29,7 @@ export default function Page() {
                         </div>
                         <div>
                             <span className="block font-bold text-slate-900">Address:</span>
-                            <span>Murat Reis mah Teyyareci Muammer sok No:10/4 Üsküdar/İstanbul</span>
+                            <span>Murat Reis mah Teyyareci Muammer sok No:10/4 ÃƒÅ“skÃƒÂ¼dar/Ã„Â°stanbul</span>
                         </div>
                         <div>
                             <span className="block font-bold text-slate-900">Phone:</span>
@@ -87,7 +87,7 @@ export default function Page() {
                 <div className="pt-8 border-t border-slate-200">
                     <h3 className="text-2xl font-black text-slate-900 mb-4">Contact</h3>
                     <p>
-                        To exercise your rights under the KVKK, you can submit your requests in writing to <strong>Murat Reis mah Teyyareci Muammer sok No:10/4 Üsküdar/İstanbul</strong> or send them to the <strong>info@eosproje.com</strong> e-mail address.
+                        To exercise your rights under the KVKK, you can submit your requests in writing to <strong>Murat Reis mah Teyyareci Muammer sok No:10/4 ÃƒÅ“skÃƒÂ¼dar/Ã„Â°stanbul</strong> or send them to the <strong>info@eosproje.com</strong> e-mail address.
                     </p>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import QAQCClient from './QAQCClient';
 
 export const metadata: Metadata = {

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import SubPageHero from "@/components/SubPageHero";
@@ -17,21 +17,21 @@ const solutions = [
     title: "As-built Modelleme",
     desc: "Mevcut yapıların güncel durumunu milimetrik doğrulukla dijitalleştiriyoruz. Mevcut durum tespiti.",
     icon: <Layers className="w-8 h-8" />,
-    href: "/cozumler/as-built-modelleme",
+    href: "/cozumler/as-built-modeling",
     tags: ["DWG", "PDF", "RCS"]
   },
   {
     title: "2D to 3D/BIM Dönüşüm",
     desc: "Kağıt veya CAD ortamındaki arşiv projelerini modern BIM standartlarına dönüştürüyoruz.",
     icon: <Database className="w-8 h-8" />,
-    href: "/cozumler/2d-to-3d-bim-donusum",
+    href: "/cozumler/2d-to-3d-bim-conversion",
     tags: ["Legacy to BIM"]
   },
   {
     title: "Endüstriyel Ekipman",
     desc: "Fabrika ve tesislerdeki karmaşık MEP sistemleri ve makineler için detaylı ekipman kütüphaneleri.",
     icon: <Settings className="w-8 h-8" />,
-    href: "/cozumler/endustriyel-ekipman-modelleme",
+    href: "/cozumler/industrial-equipment-modeling",
     tags: ["MEP", "Equipment"]
   }
 ];

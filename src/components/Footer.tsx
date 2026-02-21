@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Mail, Phone, MapPin, Linkedin, Instagram, Youtube, ArrowRight, Cpu } from "lucide-react";
+import { CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/constants";
 
 const Footer = () => {
     const pathname = usePathname() || "";
@@ -40,9 +41,9 @@ const Footer = () => {
         solutions: "Mühendislik Çözümleri",
         solutionsLinks: [
             { label: "Point Cloud to BIM", href: "/cozumler/point-cloud-to-bim" },
-            { label: "As-built Modelleme", href: "/cozumler/as-built-modelleme" },
-            { label: "2D to 3D Dönüşüm", href: "/cozumler/2d-to-3d-bim-donusum" },
-            { label: "Endüstriyel Ekipman", href: "/cozumler/endustriyel-ekipman-modelleme" },
+            { label: "As-built Modelleme", href: "/cozumler/as-built-modeling" },
+            { label: "2D to 3D Dönüşüm", href: "/cozumler/2d-to-3d-bim-conversion" },
+            { label: "Endüstriyel Ekipman", href: "/cozumler/industrial-equipment-modeling" },
             { label: "QA/QC Süreci", href: "/qa-qc" }
         ],
         corporate: "Kurumsal",
@@ -61,7 +62,7 @@ const Footer = () => {
             { label: "İletişim", href: "/iletisim" }
         ],
         contact: "Küresel İletişim",
-        rights: "Tüm hakları saklıdır. Mühendislikte Mükemmellik."
+        rights: "Tüm haklar saldırıdır. Mühendislikte Mükemmellik."
     };
 
     return (
@@ -169,13 +170,13 @@ const Footer = () => {
                                 </div>
                             ))}
                             <div className="space-y-4 pt-8 border-t border-white/5">
-                                <a href="tel:+905306642263" className="flex items-center gap-4 text-sm font-bold text-slate-400 hover:text-white transition-colors group">
+                                <a href={`tel:${CONTACT_PHONE.replace(/\s+/g, '')}`} className="flex items-center gap-4 text-sm font-bold text-slate-400 hover:text-white transition-colors group">
                                     <Phone className="w-5 h-5 text-[var(--color-primary-red)]" />
-                                    <span>+90 530 664 2263</span>
+                                    <span>{CONTACT_PHONE}</span>
                                 </a>
-                                <a href="mailto:info@eosproje.com" className="flex items-center gap-4 text-sm font-bold text-slate-400 hover:text-white transition-colors group">
+                                <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-4 text-sm font-bold text-slate-400 hover:text-white transition-colors group">
                                     <Mail className="w-5 h-5 text-[var(--color-primary-red)]" />
-                                    <span className="lowercase">info@eosproje.com</span>
+                                    <span className="lowercase">{CONTACT_EMAIL}</span>
                                 </a>
                             </div>
                         </div>

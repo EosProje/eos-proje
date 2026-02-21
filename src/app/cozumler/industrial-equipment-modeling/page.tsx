@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import SubPageHero from "@/components/SubPageHero";
 import { Settings, Cpu, ArrowRight, Factory, Gauge, Wrench, CheckCircle2, AlertTriangle } from "lucide-react";
@@ -14,7 +14,7 @@ export default function Page() {
         category="Çözümlerimiz"
         breadcrumb={[
           { label: "Çözümler", href: "/cozumler" },
-          { label: "Endüstriyel Ekipman", href: "/cozumler/endustriyel-ekipman-modelleme" }
+          { label: "Endüstriyel Ekipman", href: "/cozumler/industrial-equipment-modeling" }
         ]}
       />
 
@@ -28,7 +28,7 @@ export default function Page() {
             montaj sırası planlayamama ve bakım erişim noktalarını belirleyememe gibi ciddi operasyonel risklere yol açar.
           </p>
           <p className="text-lg text-slate-700 leading-relaxed">
-            Lazer tarama teknolojisi ve Revit MEP/Plant 3D yazılımlarının birle şimiyle, fabrika içindeki tüm ekipmanlar
+            Lazer tarama teknolojisi ve Revit MEP/Plant 3D yazılımlarının birleşimiyle, fabrika içindeki tüm ekipmanlar
             milimetrik hassasiyette 3D modellere dönüştürülür. Bu modeller, sadece görsel temsil değil; her ekipmanın teknik
             şartnamesi, bakım periyodu, üretici bilgisi gibi verileri de içeren akıllı dijital varlıklardır.
           </p>
@@ -200,7 +200,7 @@ export default function Page() {
               <Link href="/iletisim" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white text-orange-700 font-black rounded-2xl hover:bg-slate-100 transition-all shadow-2xl">
                 Ücretsiz Keşif Talep Edin <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link href="/sektorler/endustriyel-tesis" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white/10 backdrop-blur text-white font-black rounded-2xl hover:bg-white/20 transition-all border-2 border-white/30">
+              <Link href="/sektorler#endustriyel-tesis" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white/10 backdrop-blur text-white font-black rounded-2xl hover:bg-white/20 transition-all border-2 border-white/30">
                 Endüstriyel Sektör Projelerimiz
               </Link>
             </div>

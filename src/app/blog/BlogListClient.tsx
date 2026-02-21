@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
@@ -29,7 +29,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
     const selectedTag = searchParams.get("tag");
     const [searchQuery, setSearchQuery] = useState("");
 
-    // URL güncelleme fonksiyonu
+    // URL gÃƒÂ¼ncelleme fonksiyonu
     const updateFilter = (type: "category" | "tag", value: string | null) => {
         const params = new URLSearchParams(searchParams.toString());
 
@@ -53,7 +53,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
         router.push(pathname, { scroll: false });
     };
 
-    // Benzersiz kategorileri ve etiketleri çıkar
+    // Benzersiz kategorileri ve etiketleri ÃƒÂ§Ã„Â±kar
     const categories = useMemo(() => {
         const cats = new Set(posts.map((p) => p.category).filter(Boolean));
         return Array.from(cats) as string[];
@@ -65,7 +65,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
         return Array.from(tags);
     }, [posts]);
 
-    // Filtreleme mantığı
+    // Filtreleme mantÃ„Â±Ã„Å¸Ã„Â±
     const filteredPosts = useMemo(() => {
         return posts.filter((post) => {
             const matchesCategory = selectedCategory ? post.category === selectedCategory : true;
@@ -80,15 +80,15 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
         <div className="min-h-screen bg-white">
             <SubPageHero
                 title="Blog & Makaleler"
-                description="BIM teknolojileri, lazer tarama süreçleri ve endüstriyel dijitalleşme üzerine teknik rehberler."
-                category="Bilgi Bankası"
+                description="BIM teknolojileri, lazer tarama sÃƒÂ¼reÃƒÂ§leri ve endÃƒÂ¼striyel dijitalleÃ…Å¸me ÃƒÂ¼zerine teknik rehberler."
+                category="Bilgi BankasÃ„Â±"
                 breadcrumb={[{ label: "Blog", href: "/blog" }]}
             />
 
             <div className="max-w-7xl mx-auto px-4 py-16">
                 <div className="flex flex-col lg:flex-row gap-12">
 
-                    {/* ── SOL SIDEBAR (Filtreler) ── */}
+                    {/* Ã¢â€â‚¬Ã¢â€â‚¬ SOL SIDEBAR (Filtreler) Ã¢â€â‚¬Ã¢â€â‚¬ */}
                     <aside className="lg:w-1/4 space-y-10">
 
                         {/* Arama */}
@@ -117,7 +117,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
                                         : "bg-white text-slate-600 hover:bg-slate-50 border border-slate-100"
                                         }`}
                                 >
-                                    Tümü
+                                    TÃƒÂ¼mÃƒÂ¼
                                     <ChevronRight className={`w-4 h-4 ${selectedCategory === null ? "text-white" : "text-slate-300"}`} />
                                 </button>
                                 {categories.map((cat) => (
@@ -140,7 +140,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
                         <div>
                             <h3 className="font-black text-slate-900 mb-6 flex items-center gap-2">
                                 <Tag className="w-4 h-4 text-[var(--color-primary-red)]" />
-                                Popüler Etiketler
+                                PopÃƒÂ¼ler Etiketler
                             </h3>
                             <div className="flex flex-wrap gap-2">
                                 {allTags.map((tag) => (
@@ -169,7 +169,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
                         )}
                     </aside>
 
-                    {/* ── SAĞ İÇERİK (Grid) ── */}
+                    {/* Ã¢â€â‚¬Ã¢â€â‚¬ SAÃ„Â Ã„Â°Ãƒâ€¡ERÃ„Â°K (Grid) Ã¢â€â‚¬Ã¢â€â‚¬ */}
                     <main className="lg:w-3/4">
                         <div className="grid md:grid-cols-2 gap-8">
                             <AnimatePresence>
@@ -185,7 +185,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
                                         <Link href={`/blog/${post.slug}`} className="group block h-full">
                                             <div className="bg-white rounded-[2rem] border border-slate-100 hover:border-red-100/50 hover:shadow-2xl hover:shadow-slate-200/50 transition-all duration-500 overflow-hidden flex flex-col h-full hover:-translate-y-1">
 
-                                                {/* Görsel */}
+                                                {/* GÃƒÂ¶rsel */}
                                                 <div className="relative h-60 overflow-hidden bg-slate-100">
                                                     {post.image || post.images?.hero ? (
                                                         <Image
@@ -197,8 +197,8 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
                                                     ) : (
                                                         <div className="w-full h-full flex items-center justify-center text-slate-300 bg-slate-50">
                                                             <div className="text-center">
-                                                                <span className="block text-4xl mb-2">📄</span>
-                                                                <span className="text-xs font-black uppercase tracking-widest">Görsel Yok</span>
+                                                                <span className="block text-4xl mb-2">ÄŸÅ¸â€œâ€</span>
+                                                                <span className="text-xs font-black uppercase tracking-widest">GÃƒÂ¶rsel Yok</span>
                                                             </div>
                                                         </div>
                                                     )}
@@ -213,7 +213,7 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
                                                     )}
                                                 </div>
 
-                                                {/* İçerik */}
+                                                {/* Ã„Â°ÃƒÂ§erik */}
                                                 <div className="p-8 flex-grow flex flex-col">
                                                     <div className="flex items-center gap-4 mb-4 text-[10px] font-black text-slate-400 uppercase tracking-widest">
                                                         <span className="flex items-center gap-1">
@@ -254,8 +254,8 @@ export default function BlogListClient({ posts }: { posts: BlogPost[] }) {
                         {filteredPosts.length === 0 && (
                             <div className="text-center py-20 bg-slate-50 rounded-[2rem] border border-slate-100">
                                 <Search className="w-12 h-12 text-slate-300 mx-auto mb-4" />
-                                <h3 className="text-xl font-black text-slate-400">Sonuç Bulunamadı</h3>
-                                <p className="text-slate-400 mt-2 text-sm">Arama kriterlerinizi değiştirip tekrar deneyin.</p>
+                                <h3 className="text-xl font-black text-slate-400">SonuÃƒÂ§ BulunamadÃ„Â±</h3>
+                                <p className="text-slate-400 mt-2 text-sm">Arama kriterlerinizi deÃ„Å¸iÃ…Å¸tirip tekrar deneyin.</p>
                                 <button
                                     onClick={clearFilters}
                                     className="mt-6 px-6 py-3 bg-white text-slate-700 font-bold text-sm rounded-xl border border-slate-200 hover:border-slate-300 transition-all shadow-sm"

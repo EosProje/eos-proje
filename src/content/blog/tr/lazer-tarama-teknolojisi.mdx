@@ -1,55 +1,55 @@
----
+﻿---
 title: "Lazer Tarama Teknolojileri: Yersel (TLS) vs Mobil (SLAM)"
-excerpt: "Projeniz için hangi tarama teknolojisi daha uygun? Yersel lazer tarayıcıların hassasiyeti mi, mobil tarayıcıların hızı mı? Karşılaştırmalı analiz."
+excerpt: "Projeniz iÃƒÂ§in hangi tarama teknolojisi daha uygun? Yersel lazer tarayÃ„Â±cÃ„Â±larÃ„Â±n hassasiyeti mi, mobil tarayÃ„Â±cÃ„Â±larÃ„Â±n hÃ„Â±zÃ„Â± mÃ„Â±? KarÃ…Å¸Ã„Â±laÃ…Å¸tÃ„Â±rmalÃ„Â± analiz."
 date: "2024-04-05"
 author: "Yasin Demirci"
 authorLinkedIn: "https://www.linkedin.com/company/eos-proje"
 category: "Teknoloji"
-tags: ["Lazer Tarama", "SLAM", "TLS", "Leica RTC360", "BLK2GO", "Donanım"]
-image: "/images/blog/lidar-tech.jpg"
+tags: ["Lazer Tarama", "SLAM", "TLS", "Leica RTC360", "BLK2GO", "DonanÃ„Â±m"]
+image: "/images/blog/lidar-tech.webp"
 ---
 
-# Lazer Tarama Teknolojileri: Hangisini Seçmelisiniz?
+# Lazer Tarama Teknolojileri: Hangisini SeÃƒÂ§melisiniz?
 
-3D ölçüm ve belgeleme sektöründe son yıllarda büyük bir donanım çeşitliliği oluştu. Proje sahipleri ve mühendisler olarak, "Hangi cihazı kullanmalıyım?" sorusunu sıkça soruyoruz. Temelde teknolojileri ikiye ayırabiliriz: **Yersel Lazer Tarama (TLS)** ve **Mobil Haritalama (SLAM)**.
+3D ÃƒÂ¶lÃƒÂ§ÃƒÂ¼m ve belgeleme sektÃƒÂ¶rÃƒÂ¼nde son yÃ„Â±llarda bÃƒÂ¼yÃƒÂ¼k bir donanÃ„Â±m ÃƒÂ§eÃ…Å¸itliliÃ„Å¸i oluÃ…Å¸tu. Proje sahipleri ve mÃƒÂ¼hendisler olarak, "Hangi cihazÃ„Â± kullanmalÃ„Â±yÃ„Â±m?" sorusunu sÃ„Â±kÃƒÂ§a soruyoruz. Temelde teknolojileri ikiye ayÃ„Â±rabiliriz: **Yersel Lazer Tarama (TLS)** ve **Mobil Haritalama (SLAM)**.
 
 ## 1. Yersel Lazer Tarama (Terrestrial Laser Scanning - TLS)
 
-Tripod üzerine kurulan, sabit durarak 360 derece tarama yapan cihazlardır (Örn: [Leica RTC360](/blog/lazer-tarama-nedir), Faro Focus).
+Tripod ÃƒÂ¼zerine kurulan, sabit durarak 360 derece tarama yapan cihazlardÃ„Â±r (Ãƒâ€“rn: [Leica RTC360](/blog/lazer-tarama-nedir), Faro Focus).
 
-*   **Hassasiyet:** Çok Yüksek (±1mm - ±3mm)
+*   **Hassasiyet:** Ãƒâ€¡ok YÃƒÂ¼ksek (Ã‚Â±1mm - Ã‚Â±3mm)
 *   **Menzil:** Uzun (100m - 300m)
-*   **Veri Kalitesi:** Çok temiz, düşük gürültü (noise)
-*   **Hız:** İstasyon başına 2-5 dakika. (Günde ~50-80 tarama)
-*   **Kullanım Alanı:** Endüstriyel tesisler, tarihi eser restorasyonu, cephe rölöveleri, deformasyon analizi.
+*   **Veri Kalitesi:** Ãƒâ€¡ok temiz, dÃƒÂ¼Ã…Å¸ÃƒÂ¼k gÃƒÂ¼rÃƒÂ¼ltÃƒÂ¼ (noise)
+*   **HÃ„Â±z:** Ã„Â°stasyon baÃ…Å¸Ã„Â±na 2-5 dakika. (GÃƒÂ¼nde ~50-80 tarama)
+*   **KullanÃ„Â±m AlanÃ„Â±:** EndÃƒÂ¼striyel tesisler, tarihi eser restorasyonu, cephe rÃƒÂ¶lÃƒÂ¶veleri, deformasyon analizi.
 
-## 2. Mobil Haritalama (SLAM Tabanlı)
+## 2. Mobil Haritalama (SLAM TabanlÃ„Â±)
 
-Elde taşınan veya sırta takılan, yürürken tarama yapan cihazlardır (Örn: Leica BLK2GO, NavVis VLX). **SLAM (Simultaneous Localization and Mapping)** algoritmasını kullanırlar.
+Elde taÃ…Å¸Ã„Â±nan veya sÃ„Â±rta takÃ„Â±lan, yÃƒÂ¼rÃƒÂ¼rken tarama yapan cihazlardÃ„Â±r (Ãƒâ€“rn: Leica BLK2GO, NavVis VLX). **SLAM (Simultaneous Localization and Mapping)** algoritmasÃ„Â±nÃ„Â± kullanÃ„Â±rlar.
 
-*   **Hassasiyet:** Orta/Düşük (±6mm - ±20mm)
-*   **Menzil:** Kısa/Orta (20m - 50m)
-*   **Veri Kalitesi:** "Drift" (kayma) riski vardır, nokta bulutu daha gürültülüdür.
-*   **Hız:** Yürüme hızında tarama. (Günde ~5.000 - 10.000 m²)
-*   **Kullanım Alanı:** Büyük kapalı alanlar (AVM, Havalimanı), varlık envanteri, kaba rölöve, emlak pazarlama.
+*   **Hassasiyet:** Orta/DÃƒÂ¼Ã…Å¸ÃƒÂ¼k (Ã‚Â±6mm - Ã‚Â±20mm)
+*   **Menzil:** KÃ„Â±sa/Orta (20m - 50m)
+*   **Veri Kalitesi:** "Drift" (kayma) riski vardÃ„Â±r, nokta bulutu daha gÃƒÂ¼rÃƒÂ¼ltÃƒÂ¼lÃƒÂ¼dÃƒÂ¼r.
+*   **HÃ„Â±z:** YÃƒÂ¼rÃƒÂ¼me hÃ„Â±zÃ„Â±nda tarama. (GÃƒÂ¼nde ~5.000 - 10.000 mÃ‚Â²)
+*   **KullanÃ„Â±m AlanÃ„Â±:** BÃƒÂ¼yÃƒÂ¼k kapalÃ„Â± alanlar (AVM, HavalimanÃ„Â±), varlÃ„Â±k envanteri, kaba rÃƒÂ¶lÃƒÂ¶ve, emlak pazarlama.
 
-## Karşılaştırma Tablosu
+## KarÃ…Å¸Ã„Â±laÃ…Å¸tÃ„Â±rma Tablosu
 
-| Özellik | Yersel Tarayıcı (TLS) | Mobil Tarayıcı (SLAM) |
+| Ãƒâ€“zellik | Yersel TarayÃ„Â±cÃ„Â± (TLS) | Mobil TarayÃ„Â±cÃ„Â± (SLAM) |
 |---------|-----------------------|-----------------------|
-| **Doğruluk** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
-| **Hız (Saha)** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Görüntü Kalitesi** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
-| **Maliyet** | Yüksek | Düşük (Birim m² başına) |
+| **DoÃ„Å¸ruluk** | Ã¢Â­ÂÃ¢Â­ÂÃ¢Â­ÂÃ¢Â­ÂÃ¢Â­Â | Ã¢Â­ÂÃ¢Â­ÂÃ¢Â­Â |
+| **HÃ„Â±z (Saha)** | Ã¢Â­ÂÃ¢Â­ÂÃ¢Â­Â | Ã¢Â­ÂÃ¢Â­ÂÃ¢Â­ÂÃ¢Â­ÂÃ¢Â­Â |
+| **GÃƒÂ¶rÃƒÂ¼ntÃƒÂ¼ Kalitesi** | Ã¢Â­ÂÃ¢Â­ÂÃ¢Â­ÂÃ¢Â­ÂÃ¢Â­Â | Ã¢Â­ÂÃ¢Â­ÂÃ¢Â­Â |
+| **Maliyet** | YÃƒÂ¼ksek | DÃƒÂ¼Ã…Å¸ÃƒÂ¼k (Birim mÃ‚Â² baÃ…Å¸Ã„Â±na) |
 
-## Eos Proje Yaklaşımı: Hibrit Çözüm
+## Eos Proje YaklaÃ…Å¸Ã„Â±mÃ„Â±: Hibrit Ãƒâ€¡ÃƒÂ¶zÃƒÂ¼m
 
-Biz tek bir teknolojiye bağlı kalmıyoruz. Projelerimizde genellikle **Hibrit Yöntem** kullanıyoruz:
-*   Projenin "iskeletini" ve hassas detaylarını (kolon aksları, cephe süsleri, teknik odalar) **Yersel Tarayıcı** ile sabitliyoruz.
-*   Aradaki bağlantı koridorlarını, depoları veya genel hacimleri **Mobil Tarayıcı** ile hızla dolduruyoruz.
+Biz tek bir teknolojiye baÃ„Å¸lÃ„Â± kalmÃ„Â±yoruz. Projelerimizde genellikle **Hibrit YÃƒÂ¶ntem** kullanÃ„Â±yoruz:
+*   Projenin "iskeletini" ve hassas detaylarÃ„Â±nÃ„Â± (kolon akslarÃ„Â±, cephe sÃƒÂ¼sleri, teknik odalar) **Yersel TarayÃ„Â±cÃ„Â±** ile sabitliyoruz.
+*   Aradaki baÃ„Å¸lantÃ„Â± koridorlarÃ„Â±nÃ„Â±, depolarÃ„Â± veya genel hacimleri **Mobil TarayÃ„Â±cÃ„Â±** ile hÃ„Â±zla dolduruyoruz.
 
-Böylece hem Yersel taramanın milimetrik doğruluğunu koruyor hem de Mobil taramanın hız avantajından faydalanarak maliyetleri optimize ediyoruz.
+BÃƒÂ¶ylece hem Yersel taramanÃ„Â±n milimetrik doÃ„Å¸ruluÃ„Å¸unu koruyor hem de Mobil taramanÃ„Â±n hÃ„Â±z avantajÃ„Â±ndan faydalanarak maliyetleri optimize ediyoruz.
 
 ---
 
-İhtiyacınıza en uygun tarama yöntemini belirlemek için [ücretsiz ön keşif formu](/iletisim) doldurun.
+Ã„Â°htiyacÃ„Â±nÃ„Â±za en uygun tarama yÃƒÂ¶ntemini belirlemek iÃƒÂ§in [ÃƒÂ¼cretsiz ÃƒÂ¶n keÃ…Å¸if formu](/iletisim) doldurun.

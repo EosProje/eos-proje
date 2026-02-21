@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import SubPageHero from "@/components/SubPageHero";
 import { Layers, CheckCircle2, ArrowRight, Building2, Factory, Ruler, Clock, FileCheck, Shield } from "lucide-react";
@@ -14,7 +14,7 @@ export default function Page() {
         category="Çözümlerimiz"
         breadcrumb={[
           { label: "Çözümler", href: "/cozumler" },
-          { label: "As-built Modelleme", href: "/cozumler/as-built-modelleme" }
+          { label: "As-built Modelleme", href: "/cozumler/as-built-modeling" }
         ]}
       />
 
@@ -27,7 +27,7 @@ export default function Page() {
             restorasyon projelerinde, güncel zemin durumunun bilinmesi projenin başarısı açısından hayati öneme sahiptir.
           </p>
           <p className="text-lg text-slate-700 leading-relaxed mb-6">
-            Geleneksel ölçüm yöntemleriyle yapılan as-built çalışmalarında insan kaynaklı hatalar, tamamlanmamış
+            Geleneksel ölçüm yöntemleriyle yapılan as-built çalışmalarda insan kaynaklı hatalar, tamamlanmamış
             veriler ve zaman kayıpları sıklıkla karşılaşılan sorunlardır. Lazer tarama teknolojisi ve BIM metodolojilerinin
             bir araya geldiği modern as-built süreçlerde ise, yapının her detayı milimetrik doğrulukla kaydedilir ve
             üç boyutlu parametrik modellere dönüştürülür. Bu sayede proje ekipleri, tasarım aşamasından bakım-onarıma
@@ -175,7 +175,7 @@ export default function Page() {
                     sistemlerine entegre edilebilir.
                   </p>
                   <p className="text-slate-600 leading-relaxed">
-                    Periyodik tarama yapılan tesislerde, değişimlerin takibi de mümkün oluyor. Altı ay veya bir yıl arayla yapılan
+                    Periyodik tarama yapılan tesislerde, değişimin takibi de mümkün oluyor. Altı ay veya bir yıl arayla yapılan
                     taramaların karşılaştırılmasıyla, yapılan ilaveler, kaldırılan elemanlar ve değişen işlevler otomatik olarak tespit edilebilir.
                   </p>
                 </div>

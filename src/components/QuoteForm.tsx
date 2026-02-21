@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 
@@ -19,15 +19,15 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
 
     const labels = isEn ? {
         title: "Request a Quote",
-        success: "✓ Your quote request has been sent successfully!",
+        success: "Ã¢Å“â€œ Your quote request has been sent successfully!",
         successDetail: "We will get back to you as soon as possible.",
-        error: "✗ An error occurred.",
+        error: "Ã¢Å“â€” An error occurred.",
         errorDetail: "Please try again or contact us directly.",
         projectName: "Project Name *",
         projectNamePlaceholder: "e.g. Factory Expansion Project",
         description: "Project Details *",
         descriptionPlaceholder: "Provide detailed information about your project...",
-        area: "Area (m²) *",
+        area: "Area (mÃ‚Â²) *",
         lod: "Requested LOD Level *",
         lodOptions: [
             { value: "", label: "Select" },
@@ -45,30 +45,30 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
         submitting: "Sending..."
     } : {
         title: "Teklif Talep Formu",
-        success: "✓ Teklif talebiniz başarıyla gönderildi!",
-        successDetail: "En kısa sürede size dönüş yapacağız.",
-        error: "✗ Bir hata oluştu.",
-        errorDetail: "Lütfen tekrar deneyin veya bize doğrudan ulaşın.",
-        projectName: "Proje Adı *",
-        projectNamePlaceholder: "Örn: Fabrika Genişletme Projesi",
-        description: "Proje Detayları *",
-        descriptionPlaceholder: "Projeniz hakkında detaylı bilgi verin...",
-        area: "Alan (m²) *",
-        lod: "İstenen LOD Seviyesi *",
+        success: "Ã¢Å“â€œ Teklif talebiniz baÃ…Å¸arÃ„Â±yla gÃƒÂ¶nderildi!",
+        successDetail: "En kÃ„Â±sa sÃƒÂ¼rede size dÃƒÂ¶nÃƒÂ¼Ã…Å¸ yapacaÃ„Å¸Ã„Â±z.",
+        error: "Ã¢Å“â€” Bir hata oluÃ…Å¸tu.",
+        errorDetail: "LÃƒÂ¼tfen tekrar deneyin veya bize doÃ„Å¸rudan ulaÃ…Å¸Ã„Â±n.",
+        projectName: "Proje AdÃ„Â± *",
+        projectNamePlaceholder: "Ãƒâ€“rn: Fabrika GeniÃ…Å¸letme Projesi",
+        description: "Proje DetaylarÃ„Â± *",
+        descriptionPlaceholder: "Projeniz hakkÃ„Â±nda detaylÃ„Â± bilgi verin...",
+        area: "Alan (mÃ‚Â²) *",
+        lod: "Ã„Â°stenen LOD Seviyesi *",
         lodOptions: [
-            { value: "", label: "Seçiniz" },
+            { value: "", label: "SeÃƒÂ§iniz" },
             { value: "200", label: "LOD 200 - Konsept" },
-            { value: "300", label: "LOD 300 - Detaylı Tasarım" },
-            { value: "400", label: "LOD 400 - Üretim/İmalat" }
+            { value: "300", label: "LOD 300 - DetaylÃ„Â± TasarÃ„Â±m" },
+            { value: "400", label: "LOD 400 - ÃƒÅ“retim/Ã„Â°malat" }
         ],
         address: "Proje Adresi *",
-        addressPlaceholder: "Şehir, İlçe, Mahalle",
+        addressPlaceholder: "Ã…Âehir, Ã„Â°lÃƒÂ§e, Mahalle",
         email: "E-posta *",
         phone: "Telefon",
-        fileLabel: "Dosya Ekle (PDF, Fotoğraf, CAD Çizimleri)",
-        fileHint: "Dosya seçmek için tıklayın",
+        fileLabel: "Dosya Ekle (PDF, FotoÃ„Å¸raf, CAD Ãƒâ€¡izimleri)",
+        fileHint: "Dosya seÃƒÂ§mek iÃƒÂ§in tÃ„Â±klayÃ„Â±n",
         submit: "Teklif Talep Et",
-        submitting: "Gönderiliyor..."
+        submitting: "GÃƒÂ¶nderiliyor..."
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -104,7 +104,15 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
                 formDataToSend.append("files", file);
             });
 
-            await new Promise((resolve) => setTimeout(resolve, 2000));
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                body: formDataToSend,
+            });
+
+            if (!response.ok) {
+                throw new Error("Form submission failed");
+            }
+
             setSubmitStatus("success");
 
             setFormData({

@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { getAllMDXMetadata } from "@/lib/mdx";
 import BlogListClient from "./BlogListClient";
 import { Suspense } from "react";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Blog & Makaleler - Lazer Tarama ve BIM Teknolojileri | EosProje",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.eosproje.com/blog",
+    canonical: `${SITE_URL}/blog`,
   },
 };
 

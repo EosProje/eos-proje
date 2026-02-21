@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import SubPageHero from "@/components/SubPageHero";
 import { ShieldCheck, Lock, Scale, Leaf, FileCheck } from "lucide-react";

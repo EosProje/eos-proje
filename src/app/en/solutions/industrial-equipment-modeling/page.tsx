@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     alternates: {
         canonical: 'https://www.eosproje.com/en/solutions/industrial-equipment-modeling',
         languages: {
-            "tr": "https://www.eosproje.com/cozumler/endustriyel-ekipman-modelleme",
+            "tr": "https://www.eosproje.com/cozumler/industrial-equipment-modeling",
             "en": "https://www.eosproje.com/en/solutions/industrial-equipment-modeling",
         },
     },
