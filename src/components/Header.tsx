@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, Cpu, ChevronDown, ArrowRight, Phone, Mail, MapPin } from "lucide-react";
 import { EASE_CURVES } from "@/lib/animations";
-import { I18N_PATH_MAPPINGS, I18N_PATH_MAPPINGS_REV, CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/constants";
+import { CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/constants";
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,24 +20,6 @@ export default function Header() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
-    const getTargetLocalePath = (isToEn: boolean) => {
-        if (isToEn) {
-            if (isEn) return pathname;
-            const mapped = I18N_PATH_MAPPINGS[pathname];
-            if (mapped) return mapped;
-            return "/en";
-        } else {
-            if (!isEn) return pathname;
-            const mapped = I18N_PATH_MAPPINGS_REV[pathname];
-            if (mapped) return mapped;
-            // Handle subpages like /en/solutions/xyz
-            if (pathname.startsWith("/en/solutions/")) return "/cozumler/" + pathname.replace("/en/solutions/", "");
-            if (pathname.startsWith("/en/blog/")) return "/blog/" + pathname.replace("/en/blog/", "");
-            if (pathname.startsWith("/en/references/")) return "/referanslar/" + pathname.replace("/en/references/", "");
-            return "/";
-        }
-    };
 
     const menuItems = isEn ? {
         home: "Home",
@@ -173,9 +155,27 @@ export default function Header() {
                             </div>
                         </div>
                         <div className="flex items-center gap-3 border-l border-white/10 pl-8">
-                            <Link href={getTargetLocalePath(false)} className={`transition-colors ${!isEn ? "text-white" : "text-white/40 hover:text-white"}`}>TR</Link>
+                            <a
+                                href="/"
+                                className={`transition-colors ${!isEn ? "text-white" : "text-white/40 hover:text-white"}`}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href = "/";
+                                }}
+                            >
+                                TR
+                            </a>
                             <span className="text-white/10 font-light">|</span>
-                            <Link href={getTargetLocalePath(true)} className={`transition-colors ${isEn ? "text-white" : "text-white/40 hover:text-white"}`}>EN</Link>
+                            <a
+                                href="/en"
+                                className={`transition-colors ${isEn ? "text-white" : "text-white/40 hover:text-white"}`}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href = "/en";
+                                }}
+                            >
+                                EN
+                            </a>
                         </div>
                     </div>
                 </div>
