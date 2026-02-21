@@ -1,8 +1,8 @@
 ﻿---
-title: "Point Cloud to BIM SÃƒÂ¼recinde Dikkat Edilmesi Gerekenler | Eos Proje"
-description: "Lazer tarama verilerinden BIM modeli oluÃ…Å¸tururken kalite ve doÃ„Å¸ruluk iÃƒÂ§in kritik faktÃƒÂ¶rler. LOD seviyeleri, doÃ„Å¸ruluk toleranslarÃ„Â± ve QA/QC sÃƒÂ¼reÃƒÂ§leri."
-keywords: ["point cloud to bim", "nokta bulutu bim dÃƒÂ¶nÃƒÂ¼Ã…Å¸ÃƒÂ¼m", "lazer tarama modelleme", "revit point cloud", "bÃ„Â±m modelleme kalitesi"]
-author: "UÃ„Å¸ur Bilen"
+title: "Point Cloud to BIM Sürecinde Dikkat Edilmesi Gerekenler | Eos Proje"
+description: "Lazer tarama verilerinden BIM modeli oluştururken kalite ve doğruluk için kritik faktörler. LOD seviyeleri, doğruluk toleransları ve QA/QC süreçleri."
+keywords: ["point cloud to bim", "nokta bulutu bim dönüşüm", "lazer tarama modelleme", "revit point cloud", "bım modelleme kalitesi"]
+author: "Uğur Bilen"
 authorLinkedIn: "https://linkedin.com/in/ugur-bilen"
 date: "2026-01-20"
 lastUpdated: "2026-01-25"
@@ -19,79 +19,79 @@ images:
   hero: "/images/EosProje-point-cloud-to-bim-modelleme.webp"
 ---
 
-# Point Cloud to BIM SÃƒÂ¼recinde Dikkat Edilmesi Gerekenler
+# Point Cloud to BIM Sürecinde Dikkat Edilmesi Gerekenler
 
 <Callout type="summary">
-**TL;DR:** Point Cloud to BIM dÃƒÂ¶nÃƒÂ¼Ã…Å¸ÃƒÂ¼mÃƒÂ¼nde baÃ…Å¸arÃ„Â± iÃƒÂ§in 3 temel faktÃƒÂ¶r kritik: (1) YÃƒÂ¼ksek kaliteli lazer tarama verisi, (2) DoÃ„Å¸ru LOD seviyesi seÃƒÂ§imi, (3) Sistematik QA/QC sÃƒÂ¼reci. Bu makalede endÃƒÂ¼striyel tesislerden tarihi yapÃ„Â±lara kadar 10+ yÃ„Â±llÃ„Â±k deneyimimizle ÃƒÂ¶Ã„Å¸rendiÃ„Å¸imiz en ÃƒÂ¶nemli noktalarÃ„Â± paylaÃ…Å¸Ã„Â±yoruz.
+**TL;DR:** Point Cloud to BIM dönüşümünde başarı için 3 temel faktör kritik: (1) Yüksek kaliteli lazer tarama verisi, (2) Doğru LOD seviyesi seçimi, (3) Sistematik QA/QC süreci. Bu makalede endüstriyel tesislerden tarihi yapılara kadar 10+ yıllık deneyimimizle öğrendiğimiz en önemli noktaları paylaşıyoruz.
 </Callout>
 
-## GiriÃ…Å¸: Point Cloud to BIM Nedir?
+## Giriş: Point Cloud to BIM Nedir?
 
-Point Cloud to BIM (Nokta Bulutu'ndan BIM'e dÃƒÂ¶nÃƒÂ¼Ã…Å¸ÃƒÂ¼m), lazer tarayÃ„Â±cÃ„Â±lar veya fotogrametri ile elde edilen milyonlarca 3D nokta verisinin, parametrik BIM modeline dÃƒÂ¶nÃƒÂ¼Ã…Å¸tÃƒÂ¼rÃƒÂ¼lmesi sÃƒÂ¼recidir. Bu sÃƒÂ¼reÃƒÂ§ ÃƒÂ¶zellikle **mevcut yapÃ„Â±larÃ„Â±n dijital ikizi** oluÃ…Å¸turmak, **restorasyon projeleri**, **endÃƒÂ¼striyel tesislerin modernizasyonu** ve **as-built dokÃƒÂ¼mantasyon** iÃƒÂ§in vazgeÃƒÂ§ilmezdir.
+Point Cloud to BIM (Nokta Bulutu'ndan BIM'e dönüşüm), lazer tarayıcılar veya fotogrametri ile elde edilen milyonlarca 3D nokta verisinin, parametrik BIM modeline dönüştürülmesi sürecidir. Bu süreç özellikle **mevcut yapıların dijital ikizi** oluşturmak, **restorasyon projeleri**, **endüstriyel tesislerin modernizasyonu** ve **as-built dokümantasyon** için vazgeçilmezdir.
 
-Modern yapÃ„Â±larda bile inÃ…Å¸aat sonrasÃ„Â± ÃƒÂ§izimler (as-built) ile gerÃƒÂ§ek durum arasÃ„Â±nda %15-20 oranÃ„Â±nda fark bulunabilir. Point Cloud to BIM, bu farkÃ„Â± elimine ederek **mm hassasiyetinde dijital modeller** ÃƒÂ¼retir.
+Modern yapılarda bile inşaat sonrası çizimler (as-built) ile gerçek durum arasında %15-20 oranında fark bulunabilir. Point Cloud to BIM, bu farkı elimine ederek **mm hassasiyetinde dijital modeller** üretir.
 
-## SÃƒÂ¼recin 4 Ana AÃ…Å¸amasÃ„Â±
+## Sürecin 4 Ana Aşaması
 
-### 1. Veri Toplama ve KayÃ„Â±t (Registration)
+### 1. Veri Toplama ve Kayıt (Registration)
 
-Ã„Â°lk adÃ„Â±m, lazer tarayÃ„Â±cÃ„Â± ile sahadan **nokta bulutu verisi** toplamaktÃ„Â±r. Ancak bu aÃ…Å¸amada yapÃ„Â±lan hatalar, tÃƒÂ¼m projeyi etkileyebilir.
+İlk adım, lazer tarayıcı ile sahadan **nokta bulutu verisi** toplamaktır. Ancak bu aşamada yapılan hatalar, tüm projeyi etkileyebilir.
 
-#### Kritik Dikkat NoktalarÃ„Â±:
+#### Kritik Dikkat Noktaları:
 
-- **Scan YoÃ„Å¸unluÃ„Å¸u:** Minimum 5-10mm nokta aralÃ„Â±Ã„Å¸Ã„Â± hedeflenmeli (karmaÃ…Å¸Ã„Â±k geometrilerde 3mm'ye inebilir)
-- **Overlap OranÃ„Â±:** KomÃ…Å¸u taramalar arasÃ„Â±nda minimum %30 ÃƒÂ¶rtÃƒÂ¼Ã…Å¸me saÃ„Å¸lanmalÃ„Â±
-- **KayÃ„Â±t HatasÃ„Â±:** Global kayÃ„Â±t hatasÃ„Â±nÃ„Â± Ã‚Â±5mm altÃ„Â±nda tutmak kritik
+- **Scan Yoğunluğu:** Minimum 5-10mm nokta aralığı hedeflenmeli (karmaşık geometrilerde 3mm'ye inebilir)
+- **Overlap Oranı:** Komşu taramalar arasında minimum %30 örtüşme sağlanmalı
+- **Kayıt Hatası:** Global kayıt hatasını ±5mm altında tutmak kritik
 
-<ExpertQuote author="UÃ„Å¸ur Bilen" role="BIM Modelleme UzmanÃ„Â±, Eos Proje">
-Toyota FabrikasÃ„Â± projesinde 250+ scan pozisyonunu 3mm global hata ile kaydetmek, sonraki modelleme aÃ…Å¸amasÃ„Â±nda %40 zaman tasarrufu saÃ„Å¸ladÃ„Â±. Ã„Â°yi kayÃ„Â±t, iyi modelin temelidir.
+<ExpertQuote author="Uğur Bilen" role="BIM Modelleme Uzmanı, Eos Proje">
+Toyota Fabrikası projesinde 250+ scan pozisyonunu 3mm global hata ile kaydetmek, sonraki modelleme aşamasında %40 zaman tasarrufu sağladı. İyi kayıt, iyi modelin temelidir.
 </ExpertQuote>
 
 ---
 
-### 2. Nokta Bulutu Ã„Â°Ã…Å¸leme (Point Cloud Processing)
+### 2. Nokta Bulutu İşleme (Point Cloud Processing)
 
-Ham tarama verisi genellikle Ã…Å¸unlarÃ„Â± iÃƒÂ§erir:
-- **GÃƒÂ¼rÃƒÂ¼ltÃƒÂ¼** (noise): Lazer Ã„Â±Ã…Å¸Ã„Â±nÃ„Â±n yansÃ„Â±ma hatalarÃ„Â±
-- **Outliers:** HatalÃ„Â± noktalar
-- **Gereksiz objeler:** Ã„Â°Ã…Å¸ÃƒÂ§iler, araÃƒÂ§lar, geÃƒÂ§ici yapÃ„Â±lar
+Ham tarama verisi genellikle şunları içerir:
+- **Gürültü** (noise): Lazer ışınının yansıma hataları
+- **Outliers:** Hatalı noktalar
+- **Gereksiz objeler:** İşçiler, araçlar, geçici yapılar
 
-#### Ã„Â°Ã…Å¸leme AdÃ„Â±mlarÃ„Â±:
+#### İşleme Adımları:
 
-| AdÃ„Â±m | AmaÃƒÂ§ | AraÃƒÂ§ |
+| Adım | Amaç | Araç |
 |------|------|------|
-| Noise Removal | GÃƒÂ¼rÃƒÂ¼ltÃƒÂ¼ temizleme | ReCap, CloudCompare |
+| Noise Removal | Gürültü temizleme | ReCap, CloudCompare |
 | Decimation | Veri boyutu optimizasyonu | ReCap, Cyclone |
-| Segmentation | Disiplin bazlÃ„Â± ayÃ„Â±rma | Manual/AI-assisted |
+| Segmentation | Disiplin bazlı ayırma | Manual/AI-assisted |
 | Colorization | Renk bilgisi ekleme | Photogrammetry |
 
 ---
 
 ### 3. BIM Modelleme (Modeling)
 
-Bu aÃ…Å¸amada nokta bulutu, Revit veya ArchiCAD gibi BIM yazÃ„Â±lÃ„Â±mlarÃ„Â±nda **parametrik elemanlara** dÃƒÂ¶nÃƒÂ¼Ã…Å¸tÃƒÂ¼rÃƒÂ¼lÃƒÂ¼r.
+Bu aşamada nokta bulutu, Revit veya ArchiCAD gibi BIM yazılımlarında **parametrik elemanlara** dönüştürülür.
 
-#### LOD Seviyesi SeÃƒÂ§imi
+#### LOD Seviyesi Seçimi
 
-LOD (Level of Development) seÃƒÂ§imi, projenin kullanÃ„Â±m amacÃ„Â±na gÃƒÂ¶re yapÃ„Â±lmalÃ„Â±dÃ„Â±r:
+LOD (Level of Development) seçimi, projenin kullanım amacına göre yapılmalıdır:
 
-- **LOD 200:** Ã…Âematik tasarÃ„Â±m, genel boyut ve konum
-- **LOD 300:** [DetaylÃ„Â± tasarÃ„Â±m](/blog/lod-levels-differences), kesin boyutlar, sistem baÃ„Å¸lantÃ„Â±larÃ„Â±
-- **LOD 400:** Ã„Â°malat ve montaj, tÃƒÂ¼m detaylar
+- **LOD 200:** Şematik tasarım, genel boyut ve konum
+- **LOD 300:** [Detaylı tasarım](/blog/lod-levels-differences), kesin boyutlar, sistem bağlantıları
+- **LOD 400:** İmalat ve montaj, tüm detaylar
 
 <Callout type="info">
-**Ãƒâ€“nemli:** EndÃƒÂ¼striyel tesislerde MEP sistemleri iÃƒÂ§in LOD 300, yapÃ„Â±sal elemanlar iÃƒÂ§in LOD 200 bile yeterli olabilir. TÃƒÂ¼m modeli LOD 400 yapmak gereksiz maliyet yaratÃ„Â±r.
+**Önemli:** Endüstriyel tesislerde MEP sistemleri için LOD 300, yapısal elemanlar için LOD 200 bile yeterli olabilir. Tüm modeli LOD 400 yapmak gereksiz maliyet yaratır.
 </Callout>
 
 #### Modelleme Stratejisi
 
 ```
-1. YapÃ„Â±sal Elemanlar (Structural Grid, Kolonlar, KiriÃ…Å¸ler)
-   Ã¢â€ â€œ
-2. Mimari KabuÃ„Å¸u (Duvarlar, DÃƒÂ¶Ã…Å¸emeler, Ãƒâ€¡atÃ„Â±)
-   Ã¢â€ â€œ
+1. Yapısal Elemanlar (Structural Grid, Kolonlar, Kirişler)
+   ↓
+2. Mimari Kabuğu (Duvarlar, Döşemeler, Çatı)
+   ↓
 3. MEP Sistemleri (Boru, Kanal, Kablolama)
-   Ã¢â€ â€œ
+   ↓
 4. Ekipmanlar (Makineler, Tanklar, Pompa)
 ```
 
@@ -99,53 +99,53 @@ LOD (Level of Development) seÃƒÂ§imi, projenin kullanÃ„Â±m amacÃ„Â�
 
 ### 4. Kalite Kontrol (QA/QC)
 
-Point Cloud to BIM'in en kritik aÃ…Å¸amasÃ„Â± **doÃ„Å¸rulama**dÃ„Â±r. Model, gerÃƒÂ§ek durumu ne kadar temsil ediyor?
+Point Cloud to BIM'in en kritik aşaması **doğrulama**dır. Model, gerçek durumu ne kadar temsil ediyor?
 
 #### Cloud-to-Model Sapma Analizi
 
-OluÃ…Å¸turulan BIM modeli, orijinal nokta bulutu ile karÃ…Å¸Ã„Â±laÃ…Å¸tÃ„Â±rÃ„Â±larak sapma analizi yapÃ„Â±lÃ„Â±r:
+Oluşturulan BIM modeli, orijinal nokta bulutu ile karşılaştırılarak sapma analizi yapılır:
 
-- **Ã‚Â±10mm:** Kabul edilebilir (industrial)
-- **Ã‚Â±5mm:** Ã„Â°yi
-- **Ã‚Â±3mm:** MÃƒÂ¼kemmel
+- **±10mm:** Kabul edilebilir (industrial)
+- **±5mm:** İyi
+- **±3mm:** Mükemmel
 
 #### QA/QC Checklist:
 
-- [ ] Nokta bulutu ile model sapmasÃ„Â± kontrol edildi
-- [ ] TÃƒÂ¼m critical dimensions doÃ„Å¸rulandÃ„Â±
-- [ ] MEP sistem baÃ„Å¸lantÃ„Â±larÃ„Â± kontrol edildi
-- [ ] Clash detection tamamlandÃ„Â±
+- [ ] Nokta bulutu ile model sapması kontrol edildi
+- [ ] Tüm critical dimensions doğrulandı
+- [ ] MEP sistem bağlantıları kontrol edildi
+- [ ] Clash detection tamamlandı
 - [ ] Family parametreleri dolduruldu
-- [ ] Model export/import testi yapÃ„Â±ldÃ„Â±
+- [ ] Model export/import testi yapıldı
 
 ---
 
-## YaygÃ„Â±n Hatalar ve Ãƒâ€¡ÃƒÂ¶zÃƒÂ¼mler
+## Yaygın Hatalar ve Çözümler
 
 ### Hata 1: Yetersiz Tarama Coverage
 
-**Problem:** BazÃ„Â± alanlar taranmamÃ„Â±Ã…Å¸, model eksik kalÃ„Â±yor  
-**Ãƒâ€¡ÃƒÂ¶zÃƒÂ¼m:** Site ziyareti ÃƒÂ¶ncesi scan plan hazÃ„Â±rlayÃ„Â±n, kritik alanlarÃ„Â± iÃ…Å¸aretleyin
+**Problem:** Bazı alanlar taranmamış, model eksik kalıyor  
+**Çözüm:** Site ziyareti öncesi scan plan hazırlayın, kritik alanları işaretleyin
 
-### Hata 2: YanlÃ„Â±Ã…Å¸ LOD Seviyesi
+### Hata 2: Yanlış LOD Seviyesi
 
-**Problem:** Proje ihtiyacÃ„Â±ndan fazla veya az detay  
-**Ãƒâ€¡ÃƒÂ¶zÃƒÂ¼m:** MÃƒÂ¼Ã…Å¸teri ile BEP (BIM Execution Plan) hazÃ„Â±rlayÃ„Â±n, her disiplin iÃƒÂ§in LOD tanÃ„Â±mlayÃ„Â±n
+**Problem:** Proje ihtiyacından fazla veya az detay  
+**Çözüm:** Müşteri ile BEP (BIM Execution Plan) hazırlayın, her disiplin için LOD tanımlayın
 
-### Hata 3: QA/QC EksikliÃ„Å¸i
+### Hata 3: QA/QC Eksikliği
 
-**Problem:** Model teslim edildi ama gerÃƒÂ§ek durumu yansÃ„Â±tmÃ„Â±yor  
-**Ãƒâ€¡ÃƒÂ¶zÃƒÂ¼m:** Cloud-to-model deviation analysis zorunlu kÃ„Â±lÃ„Â±n, rapor isteyin
+**Problem:** Model teslim edildi ama gerçek durumu yansıtmıyor  
+**Çözüm:** Cloud-to-model deviation analysis zorunlu kılın, rapor isteyin
 
 ---
 
 ## Point Cloud to BIM Proje Timeline
 
-Tipik bir 10,000 mÃ‚Â² endÃƒÂ¼striyel tesis projesi:
+Tipik bir 10,000 m² endüstriyel tesis projesi:
 
-| Faz | SÃƒÂ¼re | Deliverable |
+| Faz | Süre | Deliverable |
 |-----|------|-------------|
-| Scanning (Partner) | 3-5 gÃƒÂ¼n | Raw Point Cloud |
+| Scanning (Partner) | 3-5 gün | Raw Point Cloud |
 | Registration & Processing | 1 hafta | Registered & Cleaned Point Cloud |
 | Structural Modeling | 2 hafta | LOD 300 Structural Model |
 | MEP Modeling | 3 hafta | LOD 300 MEP Model |
@@ -154,103 +154,103 @@ Tipik bir 10,000 mÃ‚Â² endÃƒÂ¼striyel tesis projesi:
 
 ---
 
-## Hangi SektÃƒÂ¶rlerde Point Cloud to BIM KullanÃ„Â±lÃ„Â±r?
+## Hangi Sektörlerde Point Cloud to BIM Kullanılır?
 
-### 1. [EndÃƒÂ¼striyel Tesisler](/sektorler/endustriyel-tesis)
-- Petrokimya fabrikalarÃ„Â±
+### 1. [Endüstriyel Tesisler](/sektorler/endustriyel-tesis)
+- Petrokimya fabrikaları
 - Enerji santralleri
-- ÃƒÅ“retim tesisleri ([Toyota](/referanslar/toyota-fabrikasi), Ã…ÂiÃ…Å¸ecam gibi)
+- Üretim tesisleri ([Toyota](/referanslar/toyota-fabrikasi), Şişecam gibi)
 
-### 2. Tarihi YapÃ„Â±lar
+### 2. Tarihi Yapılar
 - Restorasyon projeleri
-- KÃƒÂ¼ltÃƒÂ¼r varlÃ„Â±klarÃ„Â± dokÃƒÂ¼mantasyonu
-- Koruma kurulu dosyasÃ„Â± hazÃ„Â±rlÃ„Â±Ã„Å¸Ã„Â±
+- Kültür varlıkları dokümantasyonu
+- Koruma kurulu dosyası hazırlığı
 
 ### 3. Ticari Binalar
 - AVM'ler ([Cevahir AVM](/referanslar/cevahir-avm))
 - Otel'ler (Hyatt, Conrad)
-- Ofis binalarÃ„Â± (Trump Towers)
+- Ofis binaları (Trump Towers)
 
-### 4. AltyapÃ„Â±
-- Metro ve tÃƒÂ¼nel projeleri
-- KÃƒÂ¶prÃƒÂ¼ler ve viyadÃƒÂ¼kler
-- HavalimanÃ„Â± terminalleri
+### 4. Altyapı
+- Metro ve tünel projeleri
+- Köprüler ve viyadükler
+- Havalimanı terminalleri
 
 ---
 
-## SÃ„Â±kÃƒÂ§a Sorulan Sorular
+## Sıkça Sorulan Sorular
 
 <FAQSection>
 
-<FAQ question="Point Cloud to BIM dÃƒÂ¶nÃƒÂ¼Ã…Å¸ÃƒÂ¼mÃƒÂ¼ ne kadar sÃƒÂ¼rer?">
-Proje bÃƒÂ¼yÃƒÂ¼klÃƒÂ¼Ã„Å¸ÃƒÂ¼ne baÃ„Å¸lÃ„Â± olarak deÃ„Å¸iÃ…Å¸ir. Tipik bir 5,000 mÃ‚Â² bina iÃƒÂ§in 4-6 hafta, 50,000 mÃ‚Â² endÃƒÂ¼striyel tesis iÃƒÂ§in 8-12 hafta sÃƒÂ¼rebilir. Scan quality ve LOD level doÃ„Å¸rudan sÃƒÂ¼reyi etkiler.
+<FAQ question="Point Cloud to BIM dönüşümü ne kadar sürer?">
+Proje büyüklüğüne bağlı olarak değişir. Tipik bir 5,000 m² bina için 4-6 hafta, 50,000 m² endüstriyel tesis için 8-12 hafta sürebilir. Scan quality ve LOD level doğrudan süreyi etkiler.
 </FAQ>
 
-<FAQ question="Hangi LOD seviyesini seÃƒÂ§meliyim?">
-KullanÃ„Â±m amacÃ„Â±nÃ„Â±za gÃƒÂ¶re:
-- **Renovasyon planlamasÃ„Â±:** LOD 200-300
+<FAQ question="Hangi LOD seviyesini seçmeliyim?">
+Kullanım amacınıza göre:
+- **Renovasyon planlaması:** LOD 200-300
 - **Clash detection ve koordinasyon:** LOD 300
-- **Ã„Â°malat ve montaj:** LOD 350-400
+- **İmalat ve montaj:** LOD 350-400
 - **Facility management:** LOD 300
 
-TÃƒÂ¼m modeli yÃƒÂ¼ksek LOD yapmak gereksiz maliyet yaratÃ„Â±r.
+Tüm modeli yüksek LOD yapmak gereksiz maliyet yaratır.
 </FAQ>
 
 <FAQ question="Point Cloud to BIM maliyeti nedir?">
-mÃ‚Â² baÃ…Å¸Ã„Â±na maliyet LOD seviyesi, kompleksite ve disiplinlere gÃƒÂ¶re deÃ„Å¸iÃ…Å¸ir. Genel olarak:
-- **LOD 200-300 Architectural:** 15-25 TL/mÃ‚Â²
-- **LOD 300 MEP dahil:** 30-50 TL/mÃ‚Â²
-- **LOD 400 Full detail:** 60-100 TL/mÃ‚Â²
+m² başına maliyet LOD seviyesi, kompleksite ve disiplinlere göre değişir. Genel olarak:
+- **LOD 200-300 Architectural:** 15-25 TL/m²
+- **LOD 300 MEP dahil:** 30-50 TL/m²
+- **LOD 400 Full detail:** 60-100 TL/m²
 
-EndÃƒÂ¼striyel tesisler pipe density nedeniyle %30-50 daha maliyetlidir.
+Endüstriyel tesisler pipe density nedeniyle %30-50 daha maliyetlidir.
 </FAQ>
 
-<FAQ question="DoÃ„Å¸ruluk toleransÃ„Â± ne olmalÃ„Â±?">
-Proje tipine gÃƒÂ¶re:
-- **Mimari:** Ã‚Â±10-15mm
-- **YapÃ„Â±sal:** Ã‚Â±10mm
-- **MEP (Genel):** Ã‚Â±10-15mm
-- **MEP (Kritik baÃ„Å¸lantÃ„Â±lar):** Ã‚Â±5mm
-- **Hassas ekipman montajÃ„Â±:** Ã‚Â±3mm
+<FAQ question="Doğruluk toleransı ne olmalı?">
+Proje tipine göre:
+- **Mimari:** ±10-15mm
+- **Yapısal:** ±10mm
+- **MEP (Genel):** ±10-15mm
+- **MEP (Kritik bağlantılar):** ±5mm
+- **Hassas ekipman montajı:** ±3mm
 </FAQ>
 
-<FAQ question="Point cloud verisi olmadan BIM modeli yapÃ„Â±labilir mi?">
-2D CAD ÃƒÂ§izimlerinden veya PDF'lerden de BIM modeli yapÃ„Â±labilir, ancak:
-- DoÃ„Å¸ruluk garanti edilemez (ÃƒÂ§izimler as-built olmayabilir)
-- Geometrik karmaÃ…Å¸Ã„Â±klÃ„Â±k yakalanmaz
-- QA/QC sÃƒÂ¼reci zayÃ„Â±ftÃ„Â±r
+<FAQ question="Point cloud verisi olmadan BIM modeli yapılabilir mi?">
+2D CAD çizimlerinden veya PDF'lerden de BIM modeli yapılabilir, ancak:
+- Doğruluk garanti edilemez (çizimler as-built olmayabilir)
+- Geometrik karmaşıklık yakalanmaz
+- QA/QC süreci zayıftır
 
-Mevcut yapÃ„Â±larda point cloud kullanmak always best practice'tir.
+Mevcut yapılarda point cloud kullanmak always best practice'tir.
 </FAQ>
 
 </FAQSection>
 
 ---
 
-## SonuÃƒÂ§: BaÃ…Å¸arÃ„Â±lÃ„Â± Point Cloud to BIM iÃƒÂ§in 10 Tavsiye
+## Sonuç: Başarılı Point Cloud to BIM için 10 Tavsiye
 
-1. **Kalite scanning ile baÃ…Å¸lar:** Ucuz tarama sonrasÃ„Â± pahalÃ„Â± modelleme gereksizdir
-2. **LOD'u fazla artÃ„Â±rmayÃ„Â±n:** Proje ihtiyacÃ„Â±na gÃƒÂ¶re optimize edin
-3. **QA/QC atlamayÃ„Â±n:** Model validation mutlaka yapÃ„Â±n
-4. **Parametric families kullanÃ„Â±n:** Generic models yerine system families
-5. **Discipline coordination:** Architectural, Structural, MEP arasÃ„Â±nda clash detection
-6. **Documentation:** Modelleme kriterleri ve varsayÃ„Â±mlarÃ„Â± belgeleyin
-7. **File size management:** BÃƒÂ¼yÃƒÂ¼k projeleri workset'lere bÃƒÂ¶lÃƒÂ¼n
-8. **Standard nomenclature:** TutarlÃ„Â± isimlendirme convensionu kullanÃ„Â±n
-9. **Deliverable format:** IFC, NWC, PDF gibi exchange formatlarÃ„Â± planlayÃ„Â±n
-10. **Experience matters:** Deneyimli modelleme ekibi ile ÃƒÂ§alÃ„Â±Ã…Å¸Ã„Â±n
-
----
-
-**Ã„Â°lgili YazÃ„Â±lar:**
-- [LOD Seviyeleri: 200, 300 ve 400 ArasÃ„Â±ndaki Farklar](#)
-- [QA/QC SÃƒÂ¼recinde Cloud-to-Model Sapma KontrolÃƒÂ¼](#)
-- [EndÃƒÂ¼striyel Tesislerde As-Built Modelleme](#)
+1. **Kalite scanning ile başlar:** Ucuz tarama sonrası pahalı modelleme gereksizdir
+2. **LOD'u fazla artırmayın:** Proje ihtiyacına göre optimize edin
+3. **QA/QC atlamayın:** Model validation mutlaka yapın
+4. **Parametric families kullanın:** Generic models yerine system families
+5. **Discipline coordination:** Architectural, Structural, MEP arasında clash detection
+6. **Documentation:** Modelleme kriterleri ve varsayımları belgeleyin
+7. **File size management:** Büyük projeleri workset'lere bölün
+8. **Standard nomenclature:** Tutarlı isimlendirme convensionu kullanın
+9. **Deliverable format:** IFC, NWC, PDF gibi exchange formatları planlayın
+10. **Experience matters:** Deneyimli modelleme ekibi ile çalışın
 
 ---
 
-**Son GÃƒÂ¼ncelleme:** 25 Ocak 2026  
-**Yazar:** [UÃ„Å¸ur Bilen](https://linkedin.com/in/ugur-bilen) - BIM Modelleme UzmanÃ„Â±, Eos Proje  
-**Kategori:** BIM Teknolojileri | **Okuma SÃƒÂ¼resi:** ~8 dakika
+**İlgili Yazılar:**
+- [LOD Seviyeleri: 200, 300 ve 400 Arasındaki Farklar](#)
+- [QA/QC Sürecinde Cloud-to-Model Sapma Kontrolü](#)
+- [Endüstriyel Tesislerde As-Built Modelleme](#)
 
-Point Cloud to BIM projelerinizde profesyonel destek almak iÃƒÂ§in [bize ulaÃ…Å¸Ã„Â±n](/iletisim).
+---
+
+**Son Güncelleme:** 25 Ocak 2026  
+**Yazar:** [Uğur Bilen](https://linkedin.com/in/ugur-bilen) - BIM Modelleme Uzmanı, Eos Proje  
+**Kategori:** BIM Teknolojileri | **Okama Süresi:** ~8 dakika
+
+Point Cloud to BIM projelerinizde profesyonel destek almak için [bize ulaşın](/iletisim).

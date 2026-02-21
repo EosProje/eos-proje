@@ -7,7 +7,7 @@ export const primaryKeywords = {
         "BIM Modelleme Hizmeti",
         "Lazer Tarama 3D Model",
         "As-Built Modelleme",
-        "2D CAD 3D BIM DÃƒÂ¶nÃƒÂ¼Ã…Å¸ÃƒÂ¼m",
+        "2D CAD 3D BIM Dönüşüm",
         "LOD 200 300 400",
         "Revit Modelleme",
         "QA/QC BIM",
@@ -28,9 +28,9 @@ export const primaryKeywords = {
 export const longTailKeywords = {
     bimConversion: {
         tr: [
-            "nokta bulutu verilerinden revit modeli nasÃ„Â±l oluÃ…Å¸turulur",
-            "lazer tarama verisinden bim modeli yapÃ„Â±mÃ„Â±",
-            "endÃƒÂ¼striyel tesis iÃƒÂ§in point cloud to bim",
+            "nokta bulutu verilerinden revit modeli nasıl oluşturulur",
+            "lazer tarama verisinden bim modeli yapımı",
+            "endüstriyel tesis için point cloud to bim",
             "fabrika 3d modelleme hizmeti istanbul",
         ],
         en: [
@@ -42,9 +42,9 @@ export const longTailKeywords = {
     },
     cadConversion: {
         tr: [
-            "2d cad ÃƒÂ§izimlerinden 3d model oluÃ…Å¸turma",
-            "pdf ÃƒÂ§izimlerden revit modeli yapÃ„Â±mÃ„Â±",
-            "dwg dosyalarÃ„Â±ndan bim modeline geÃƒÂ§iÃ…Å¸",
+            "2d cad çizimlerinden 3d model oluşturma",
+            "pdf çizimlerden revit modeli yapımı",
+            "dwg dosyalarından bim modeline geçiş",
         ],
         en: [
             "convert 2d autocad drawings to 3d bim model",
@@ -54,11 +54,11 @@ export const longTailKeywords = {
     },
     sectorSpecific: {
         tr: [
-            "otel restorasyon iÃƒÂ§in as-built modelleme",
+            "otel restorasyon için as-built modelleme",
             "avm 3d modelleme bim hizmeti",
             "fabrika mevcut durum lazer tarama modelleme",
-            "tarihi bina dijital dokÃƒÂ¼mantasyon bim",
-            "metro hattÃ„Â± 3d modelleme projesi",
+            "tarihi bina dijital dokümantasyon bim",
+            "metro hattı 3d modelleme projesi",
         ],
         en: [
             "hotel renovation as-built bim modeling",
@@ -72,7 +72,7 @@ export const longTailKeywords = {
         tr: [
             "bim model kalite kontrol hizmeti",
             "cloud to model sapma analizi",
-            "revit model doÃ„Å¸ruluk kontrolÃƒÂ¼",
+            "revit model doğruluk kontrolü",
         ],
         en: [
             "bim qa qc service turkey",
@@ -82,9 +82,9 @@ export const longTailKeywords = {
     },
     standards: {
         tr: [
-            "lod 200 300 400 farklarÃ„Â± nedir",
-            "bim lod seviyeleri aÃƒÂ§Ã„Â±klamasÃ„Â±",
-            "iso 19650 bim standartlarÃ„Â±",
+            "lod 200 300 400 farkları nedir",
+            "bim lod seviyeleri açıklaması",
+            "iso 19650 bim standartları",
         ],
         en: [
             "what is lod in bim modeling",
@@ -97,8 +97,8 @@ export const longTailKeywords = {
 export const categoryTaxonomy = {
     tr: [
         "BIM Teknolojileri",
-        "3D Modelleme SÃƒÂ¼reÃƒÂ§leri",
-        "SektÃƒÂ¶rel Uygulamalar",
+        "3D Modelleme Süreçleri",
+        "Sektörel Uygulamalar",
         "Standartlar ve QA/QC",
         "Vaka Analizleri",
     ],

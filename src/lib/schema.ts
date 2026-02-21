@@ -69,7 +69,7 @@ export function generateOrganizationSchema() {
         "@type": "Organization",
         name: "Eos Proje",
         description:
-            "Point Cloud to BIM dÃƒÂ¶nÃƒÂ¼Ã…Å¸ÃƒÂ¼m, 3D modelleme, As-Built modelleme uzmanÃ„Â±",
+            "Point Cloud to BIM dönüşüm, 3D modelleme, As-Built modelleme uzmanı",
         url: process.env.NEXT_PUBLIC_SITE_URL,
         logo: "https://www.eosproje.com/images/EosProje-Lazer-Tarama-Sistemleri.webp",
         contactPoint: {
@@ -166,16 +166,20 @@ export function generateLocalBusinessSchema() {
         description:
             "Point Cloud to BIM, 3D Modelleme, As-Built Modelleme Hizmetleri",
         url: process.env.NEXT_PUBLIC_SITE_URL,
-        telephone: "+90-XXX-XXX-XXXX", // Add actual phone
+        telephone: "+90-530-664-2263",
         email: "info@eosproje.com",
         address: {
             "@type": "PostalAddress",
             addressCountry: "TR",
-            addressLocality: "Istanbul", // Add actual location if available
+            addressLocality: "Istanbul",
+            streetAddress: "Murat Reis mah Teyyareci Muammer sok No:10/4",
+            postalCode: "34664",
+            addressRegion: "Üsküdar"
         },
         geo: {
             "@type": "GeoCoordinates",
-            // Add coordinates if available
+            latitude: 41.0256,
+            longitude: 29.0426
         },
         openingHoursSpecification: {
             "@type": "OpeningHoursSpecification",

@@ -8,41 +8,41 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-white">
       <SubPageHero
-        title="QA/QC - Kalite GÃƒÂ¼vence ve Kontrol"
-        description="TÃƒÂ¼m projelerimizde uygulanan ÃƒÂ¼ÃƒÂ§ aÃ…Å¸amalÃ„Â±k kalite kontrol sÃƒÂ¼recimiz ve doÃ„Å¸ruluk garantilerimiz. BIM modelleme ve lazer tarama hizmetlerinde sÃ„Â±fÃ„Â±r hata hedefiyle ÃƒÂ§alÃ„Â±Ã…Å¸Ã„Â±yoruz."
-        category="SÃƒÂ¼reÃƒÂ§ & Kalite"
+        title="QA/QC - Kalite Güvence ve Kontrol"
+        description="Tüm projelerimizde uygulanan üç aşamalık kalite kontrol sürecimiz ve doğruluk garantilerimiz. BIM modelleme ve lazer tarama hizmetlerinde sıfır hata hedefiyle çalışıyoruz."
+        category="Süreç & Kalite"
         breadcrumb={[{ label: "QA/QC", href: "/qa-qc" }]}
       />
 
       <div className="max-w-7xl mx-auto px-4 py-20">
-        {/* Genel BakÃ„Â±Ã…Å¸ */}
+        {/* Genel Bakış */}
         <div className="mb-24">
           <p className="text-lg text-slate-700 leading-relaxed mb-6">
-            Kalite gÃƒÂ¼vencesi (Quality Assurance) ve kalite kontrolÃƒÂ¼ (Quality Control), BIM modelleme sÃƒÂ¼reÃƒÂ§lerinde en kritik aÃ…Å¸amalardan biridir.
-            Bir modelin %99 doÃ„Å¸ru olmasÃ„Â± yeterli deÃ„Å¸ildir; %1'lik hata renovasyon sÃ„Â±rasÃ„Â±nda bÃƒÂ¼yÃƒÂ¼k maliyet artÃ„Â±Ã…Å¸larÃ„Â±na veya montaj problemlerine
-            yol aÃƒÂ§abilir. Bu nedenle tÃƒÂ¼m projelerimizde sistematik bir QA/QC protokolÃƒÂ¼ uyguluyoruz.
+            Kalite güvencesi (Quality Assurance) ve kalite kontrolü (Quality Control), BIM modelleme süreçlerinde en kritik aşamalardan biridir.
+            Bir modelin %99 doğru olması yeterli değildir; %1'lik hata renovasyon sırasında büyük maliyet artışlarına veya montaj problemlerine
+            yol açabilir. Bu nedenle tüm projelerimizde sistematik bir QA/QC protokolü uyguluyoruz.
           </p>
         </div>
 
-        {/* 3 AÃ…Å¸amalÃ„Â± SÃƒÂ¼reÃƒÂ§ */}
+        {/* 3 Aşamalı Süreç */}
         <div className="mb-24">
-          <h2 className="text-3xl font-black text-slate-900 mb-12">ÃƒÅ“ÃƒÂ§ AÃ…Å¸amalÃ„Â± Kalite Kontrol SÃƒÂ¼rec jimiz</h2>
+          <h2 className="text-3xl font-black text-slate-900 mb-12">Üç Aşamalı Kalite Kontrol Sürecimiz</h2>
           <div className="space-y-8">
             <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-10 rounded-3xl border-2 border-blue-200">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white font-black text-2xl flex-shrink-0">1</div>
                 <div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-4">Ã„Â°ÃƒÂ§ Kontrol (Internal QC)</h3>
+                  <h3 className="text-2xl font-black text-slate-900 mb-4">İç Kontrol (Internal QC)</h3>
                   <p className="text-slate-700 leading-relaxed mb-4">
-                    Modelleme sÃƒÂ¼recini tamamlayan teknik eleman, kendi ÃƒÂ§alÃ„Â±Ã…Å¸masÃ„Â±nÃ„Â± ISO 19650 BIM standardÃ„Â±na gÃƒÂ¶re kontrol eder. Bu aÃ…Å¸amada:
+                    Modelleme sürecini tamamlayan teknik eleman, kendi çalışmasını ISO 19650 BIM standardına göre kontrol eder. Bu aşamada:
                   </p>
                   <ul className="grid md:grid-cols-2 gap-3">
                     {[
-                      "Revit Warnings listesini sÃ„Â±fÃ„Â±rlar",
-                      "TÃƒÂ¼m elemanlarÃ„Â±n doÃ„Å¸ru Category'ye atandÃ„Â±Ã„Å¸Ã„Â±nÃ„Â± doÃ„Å¸rular",
-                      "Family parametrelerinin dolu olduÃ„Å¸unu kontrol eder",
-                      "Naming convention'a uygunluÃ„Å¸u test eder",
-                      "View Template'lerin doÃ„Å¸ru uygulandÃ„Â±Ã„Å¸Ã„Â±nÃ„Â± gÃƒÂ¶z den geÃƒÂ§irir",
+                      "Revit Warnings listesini sıfırlar",
+                      "Tüm elemanların doğru Category'ye atandığını doğrular",
+                      "Family parametrelerinin dolu olduğunu kontrol eder",
+                      "Naming convention'a uygunluğu test eder",
+                      "View Template'lerin doğru uygulandığını gözden geçirir",
                       "IFC export kalitesini test eder"
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-slate-700">
@@ -59,18 +59,18 @@ export default function Page() {
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center text-white font-black text-2xl flex-shrink-0">2</div>
                 <div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-4">BaÃ„Å¸Ã„Â±msÃ„Â±z Geometrik DoÃ„Å¸rulama (Independent Validation)</h3>
+                  <h3 className="text-2xl font-black text-slate-900 mb-4">Bağımsız Geometrik Doğrulama (Independent Validation)</h3>
                   <p className="text-slate-700 leading-relaxed mb-4">
-                    Modelleme ekibinden tamamen baÃ„Å¸Ã„Â±msÃ„Â±z bir QC uzmanÃ„Â±, modelin geometrik doÃ„Å¸ruluÃ„Å¸unu ve standartlara uygunluÃ„Å¸unu kontrol eder:
+                    Modelleme ekibinden tamamen bağımsız bir QC uzmanı, modelin geometrik doğruluğunu ve standartlara uygunluğunu kontrol eder:
                   </p>
                   <ul className="grid md:grid-cols-2 gap-3">
                     {[
-                      "Kritik boyutlarÃ„Â±n (aks mesafeleri, kat yÃƒÂ¼kseklikleri) doÃ„Å¸ruluÃ„Å¸u",
-                      "Eleman baÃ„Å¸lantÃ„Â± noktalarÃ„Â±nÃ„Â±n (join, constraint) kontrolÃƒÂ¼",
-                      "Modelin farklÃ„Â± Revit ver siyonlarÃ„Â±nda aÃƒÂ§Ã„Â±labilirliÃ„Å¸i",
+                      "Kritik boyutların (aks mesafeleri, kat yükseklikleri) doğruluğu",
+                      "Eleman bağlantı noktalarının (join, constraint) kontrolü",
+                      "Modelin farklı Revit versiyonlarında açılabilirliği",
                       "Navisworks'te clash detection testi",
-                      "Schedule doÃ„Å¸ruluÃ„Å¸u (miktar ÃƒÂ§Ã„Â±karmalarÃ„Â±)",
-                      "PDF export kalitesi ve gÃƒÂ¶rÃƒÂ¼nÃƒÂ¼rlÃƒÂ¼k kontrolÃƒÂ¼"
+                      "Schedule doğruluğu (miktar çıkarmaları)",
+                      "PDF export kalitesi ve görünürlük kontrolü"
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-slate-700">
                         <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
@@ -86,15 +86,15 @@ export default function Page() {
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-orange-600 rounded-2xl flex items-center justify-center text-white font-black text-2xl flex-shrink-0">3</div>
                 <div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-4">Nokta Bulutu Overlay DoÃ„Å¸rulamasÃ„Â± (Cloud-to-Model Validation)</h3>
+                  <h3 className="text-2xl font-black text-slate-900 mb-4">Nokta Bulutu Overlay Doğrulaması (Cloud-to-Model Validation)</h3>
                   <p className="text-slate-700 leading-relaxed mb-4">
-                    As-built projelerinde en kritik aÃ…Å¸ama budur. CloudCompare yazÃ„Â±lÃ„Â±mÃ„Â±nda model ile nokta bulutu karÃ…Å¸Ã„Â±laÃ…Å¸tÃ„Â±rÃ„Â±lÃ„Â±r:
+                    As-built projelerinde en kritik aşama budur. CloudCompare yazılımında model ile nokta bulutu karşılaştırılır:
                   </p>
                   <ul className="space-y-3">
                     {[
-                      { title: "Deviation Map OluÃ…Å¸turma", desc: "Modelin her noktasÃ„Â± ile en yakÃ„Â±n nokta bulutu noktasÃ„Â±nÃ„Â±n mesafesi hesaplanÃ„Â±r. Renkli sapma haritasÃ„Â± ÃƒÂ¼retilir (yeÃ…Å¸il: tolerans iÃƒÂ§inde, sarÃ„Â±-kÃ„Â±rmÃ„Â±zÃ„Â±: tolerans dÃ„Â±Ã…Å¸Ã„Â±)." },
-                      { title: "Kabul Kriteri", desc: "Genel saha ÃƒÂ§alÃ„Â±Ã…Å¸malarÃ„Â±nda Ã‚Â±5mm, endÃƒÂ¼striyel tesislerde Ã‚Â±2mm hedefliyoruz. Kritik ekipman montaj noktalarÃ„Â±nda Ã‚Â±1mm hassasiyet saÃ„Å¸lÃ„Â±yoruz." },
-                      { title: "Revizyon DÃƒÂ¶ngÃƒÂ¼sÃƒÂ¼", desc: "Tolerans dÃ„Â±Ã…Å¸Ã„Â± alanlar modelde dÃƒÂ¼zeltilir ve kontrol tekrarlanÃ„Â±r. TÃƒÂ¼m sapma raporu teslimat paketine eklenir." }
+                      { title: "Deviation Map Oluşturma", desc: "Modelin her noktası ile en yakın nokta bulutu noktasının mesafesi hesaplanır. Renkli sapma haritası üretilir (yeşil: tolerans içinde, sarı-kırmızı: tolerans dışı)." },
+                      { title: "Kabul Kriteri", desc: "Genel saha çalışmalarında ±5mm, endüstriyel tesislerde ±2mm hedefliyoruz. Kritik ekipman montaj noktalarında ±1mm hassasiyet sağlıyoruz." },
+                      { title: "Revizyon Döngüsü", desc: "Tolerans dışı alanlar modelde düzeltilir ve kontrol tekrarlanır. Tüm sapma raporu teslimat paketine eklenir." }
                     ].map((item, i) => (
                       <li key={i} className="border-l-4 border-orange-500 pl-4">
                         <strong className="text-slate-900 block mb-1">{item.title}:</strong>
@@ -113,32 +113,32 @@ export default function Page() {
           <h2 className="text-3xl font-black mb-8">Kalite Metriklerimiz</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="text-5xl font-black text-red-400 mb-2">Ã‚Â±2mm</div>
-              <div className="text-lg font-bold text-slate-300 mb-2">DoÃ„Å¸ruluk StandardÃ„Â±</div>
-              <p className="text-slate-400 text-sm">EndÃƒÂ¼striyel tesislerde garanti ettiÃ„Å¸imiz geometrik hassasiyet seviyesi</p>
+              <div className="text-5xl font-black text-red-400 mb-2">±2mm</div>
+              <div className="text-lg font-bold text-slate-300 mb-2">Doğruluk Standardı</div>
+              <p className="text-slate-400 text-sm">Endüstriyel tesislerde garanti ettiğimiz geometrik hassasiyet seviyesi</p>
             </div>
             <div>
               <div className="text-5xl font-black text-green-400 mb-2">0</div>
               <div className="text-lg font-bold text-slate-300 mb-2">Revit Warnings</div>
-              <p className="text-slate-400 text-sm">Teslimat ÃƒÂ¶ncesi tÃƒÂ¼m bÃƒÂ¼tÃƒÂ¼nlÃƒÂ¼k uyarÃ„Â±larÃ„Â± temizlenir</p>
+              <p className="text-slate-400 text-sm">Teslimat öncesi tüm bütünlük uyarıları temizlenir</p>
             </div>
             <div>
               <div className="text-5xl font-black text-blue-400 mb-2">100%</div>
-              <div className="text-lg font-bold text-slate-300 mb-2">IFC UyumluluÃ„Å¸u</div>
-              <p className="text-slate-400 text-sm">Open BIM standartlarÃ„Â±na tam uyum, diÃ„Å¸er yazÃ„Â±lÃ„Â±mlarda sorunsuz aÃƒÂ§Ã„Â±lma</p>
+              <div className="text-lg font-bold text-slate-300 mb-2">IFC Uyumluluğu</div>
+              <p className="text-slate-400 text-sm">Open BIM standartlarına tam uyum, diğer yazılımlarda sorunsuz açılma</p>
             </div>
           </div>
         </div>
 
-        {/* YaygÃ„Â±n Hatalar */}
+        {/* Yaygın Hatalar */}
         <div className="mb-24">
-          <h2 className="text-3xl font-black text-slate-900 mb-8">QC SÃƒÂ¼recinde Tespit EttiÃ„Å¸imiz YaygÃ„Â±n Hatalar</h2>
+          <h2 className="text-3xl font-black text-slate-900 mb-8">QC Sürecinde Tespit Ettiğimiz Yaygın Hatalar</h2>
           <div className="space-y-4">
             {[
-              { icon: <AlertTriangle className="w-6 h-6" />, title: "Overlapping Walls", desc: "Ã„Â°ki duvarÃ„Â±n iÃƒÂ§iÃƒÂ§e geÃƒÂ§mesi. Miktar ÃƒÂ§Ã„Â±ksÃ„Â±nda hata yaratÃ„Â±r. Join geometry ile dÃƒÂ¼zeltilir." },
-              { icon: <AlertTriangle className="w-6 h-6" />, title: "Unplaced Elements", desc: "Room, Space gibi elemanlarÃ„Â±n view'da gÃƒÂ¶runmemesi. Filter ayarlarÃ„Â±yla ÃƒÂ§ÃƒÂ¶zÃƒÂ¼lÃƒÂ¼r." },
-              { icon: <AlertTriangle className="w-6 h-6" />, title: "Incorrect Constraints", desc: "ElemanlarÃ„Â±n yanlÃ„Â±Ã…Å¸ Levels veya Grids'e kilitlenmesi. Tek tek dÃƒÂ¼zeltilir." },
-              { icon: <AlertTriangle className="w-6 h-6" />, title: "Missing Parameters", desc: "Family'lerde Fire Rating, Material gibi kritik parametrelerin boÃ…Å¸ kalmasÃ„Â±. Manuel doldurulur." }
+              { icon: <AlertTriangle className="w-6 h-6" />, title: "Overlapping Walls", desc: "İki duvarın içiçe geçmesi. Miktar çıkışında hata yaratır. Join geometry ile düzeltilir." },
+              { icon: <AlertTriangle className="w-6 h-6" />, title: "Unplaced Elements", desc: "Room, Space gibi elemanların view'da görünmemesi. Filter ayarlarıyla çözülür." },
+              { icon: <AlertTriangle className="w-6 h-6" />, title: "Incorrect Constraints", desc: "Elemanların yanlış Levels veya Grids'e kilitlenmesi. Tek tek düzeltilir." },
+              { icon: <AlertTriangle className="w-6 h-6" />, title: "Missing Parameters", desc: "Family'lerde Fire Rating, Material gibi kritik parametrelerin boş kalması. Manuel doldurulur." }
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-4 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-2xl">
                 <div className="text-yellow-600">{item.icon}</div>
@@ -158,10 +158,10 @@ export default function Page() {
           </div>
           <h2 className="text-3xl font-black mb-6">Kalite Garantili BIM Modelleme</h2>
           <p className="text-green-100 mb-10 max-w-2xl mx-auto text-lg">
-            ÃƒÅ“ÃƒÂ§ aÃ…Å¸amalÃ„Â± QA/QC sÃƒÂ¼recimiz ve sapma analiz raporlarÃ„Â±mÃ„Â±zla hatasÃ„Â±z teslimat garantisi veriyoruz.
+            Üç aşamalı QA/QC sürecimiz ve sapma analiz raporlarımızla hatasız teslimat garantisi veriyoruz.
           </p>
           <Link href="/iletisim" className="inline-flex items-center gap-2 px-10 py-5 bg-white text-green-700 font-black rounded-2xl hover:bg-slate-100 transition-all">
-            Kalite SertifikalarÃ„Â±mÃ„Â±zÃ„Â± GÃƒÂ¶rÃƒÂ¼n
+            Kalite Sertifikalarımızı Görün
           </Link>
         </div>
       </div>

@@ -7,28 +7,28 @@ import Link from "next/link";
 export default function Page() {
     const documents = [
         {
-            category: "Ãƒâ€“rnek Proje DosyalarÃ„Â±",
+            category: "Örnek Proje Dosyaları",
             items: [
-                { name: "Sample_Architecture_LOD300.rvt", size: "45 MB", type: "RVT", desc: "Ãƒâ€“rnek mimari Revit modeli (2024)" },
-                { name: "Sample_MEP_PlantRoom_LOD350.ifc", size: "28 MB", type: "IFC", desc: "IFC 2x3 formatÃ„Â±nda endÃƒÂ¼striyel tesisat ÃƒÂ¶rneÃ„Å¸i" },
-                { name: "Sample_FloorPlan_Level1.pdf", size: "4.2 MB", type: "PDF", desc: "BIM modelinden ÃƒÂ¼retilmiÃ…Å¸ kat planÃ„Â± paftasÃ„Â±" },
-                { name: "Sample_Cloud_Compare_Report.pdf", size: "8.5 MB", type: "PDF", desc: "Nokta bulutu sapma analiz raporu ÃƒÂ¶rneÃ„Å¸i" }
+                { name: "Sample_Architecture_LOD300.rvt", size: "45 MB", type: "RVT", desc: "Örnek mimari Revit modeli (2024)" },
+                { name: "Sample_MEP_PlantRoom_LOD350.ifc", size: "28 MB", type: "IFC", desc: "IFC 2x3 formatında endüstriyel tesisat örneği" },
+                { name: "Sample_FloorPlan_Level1.pdf", size: "4.2 MB", type: "PDF", desc: "BIM modelinden üretilmiş kat planı paftası" },
+                { name: "Sample_Cloud_Compare_Report.pdf", size: "8.5 MB", type: "PDF", desc: "Nokta bulutu sapma analiz raporu örneği" }
             ]
         },
         {
-            category: "Teknik Ã…Âartnameler ve Standartlar",
+            category: "Teknik Şartnameler ve Standartlar",
             items: [
-                { name: "EosProje_BIM_Execution_Plan_Template.docx", size: "1.2 MB", type: "DOCX", desc: "Standart BEP (BIM Uygulama PlanÃ„Â±) Ã…Å¸ablonumuz" },
+                { name: "EosProje_BIM_Execution_Plan_Template.docx", size: "1.2 MB", type: "DOCX", desc: "Standart BEP (BIM Uygulama Planı) şablonumuz" },
                 { name: "LOD_Specification_Matrix_2024.xlsx", size: "0.5 MB", type: "XLSX", desc: "LOD 200-400 detay seviyesi matrisi" },
-                { name: "Laser_Scanning_Method_Statement.pdf", size: "2.1 MB", type: "PDF", desc: "Saha tarama metodolojisi ve gÃƒÂ¼venlik prosedÃƒÂ¼rÃƒÂ¼" }
+                { name: "Laser_Scanning_Method_Statement.pdf", size: "2.1 MB", type: "PDF", desc: "Saha tarama metodolojisi ve güvenlik prosedürü" }
             ]
         },
         {
-            category: "Kurumsal DÃƒÂ¶kÃƒÂ¼manlar",
+            category: "Kurumsal Dökümanlar",
             items: [
-                { name: "EosProje_Company_Profile_TR.pdf", size: "5.4 MB", type: "PDF", desc: "Genel Ã…Å¸irket tanÃ„Â±tÃ„Â±m kataloÃ„Å¸u" },
-                { name: "ISO_9001_14001_Certificates.pdf", size: "1.8 MB", type: "PDF", desc: "Kalite ve ÃƒÂ§evre yÃƒÂ¶netim sistemi sertifikalarÃ„Â±mÃ„Â±z" },
-                { name: "Referans_Listesi_2025.pdf", size: "0.8 MB", type: "PDF", desc: "Tamamlanan projeler ve mÃƒÂ¼Ã…Å¸teri listesi" }
+                { name: "EosProje_Company_Profile_TR.pdf", size: "5.4 MB", type: "PDF", desc: "Genel şirket tanıtım kataloğu" },
+                { name: "ISO_9001_14001_Certificates.pdf", size: "1.8 MB", type: "PDF", desc: "Kalite ve çevre yönetim sistemi sertifikalarımız" },
+                { name: "Referans_Listesi_2025.pdf", size: "0.8 MB", type: "PDF", desc: "Tamamlanan projeler ve müşteri listesi" }
             ]
         }
     ];
@@ -36,10 +36,10 @@ export default function Page() {
     return (
         <div className="min-h-screen bg-white">
             <SubPageHero
-                title="Teknik DÃƒÂ¶kÃƒÂ¼manlar"
-                description="Ãƒâ€“rnek proje dosyalarÃ„Â±, teknik Ã…Å¸artnameler, BIM uygulama planlarÃ„Â± ve Ã…Å¸irket kataloglarÃ„Â±mÃ„Â±za buradan eriÃ…Å¸ebilirsiniz."
+                title="Teknik Dökümanlar"
+                description="Örnek proje dosyaları, teknik şartnameler, BIM uygulama planları ve şirket kataloglarımıza buradan erişebilirsiniz."
                 category="Kaynaklar"
-                breadcrumb={[{ label: "Teknik DÃƒÂ¶kÃƒÂ¼manlar", href: "/teknik-dokumanlar" }]}
+                breadcrumb={[{ label: "Teknik Dökümanlar", href: "/teknik-dokumanlar" }]}
             />
 
             <div className="max-w-7xl mx-auto px-4 py-20">
@@ -66,7 +66,7 @@ export default function Page() {
                                                 <span className="bg-slate-200 px-2 py-1 rounded text-slate-600">{doc.type}</span>
                                                 <span>{doc.size}</span>
                                                 <button className="flex items-center gap-1 text-[var(--color-primary-red)] hover:underline ml-auto">
-                                                    <Download className="w-4 h-4" /> Ã„Â°ndir
+                                                    <Download className="w-4 h-4" /> İndir
                                                 </button>
                                             </div>
                                         </div>
@@ -79,10 +79,10 @@ export default function Page() {
 
                 {/* Access Request CTA */}
                 <div className="mt-24 bg-slate-900 rounded-[3rem] p-12 md:p-16 text-white text-center">
-                    <h2 className="text-3xl font-black mb-6">Ãƒâ€“zel Dosya Talebi</h2>
+                    <h2 className="text-3xl font-black mb-6">Özel Dosya Talebi</h2>
                     <p className="text-slate-300 mb-10 max-w-2xl mx-auto text-lg">
-                        Spesifik bir sektÃƒÂ¶r ÃƒÂ¶rneÃ„Å¸i veya teknik dÃƒÂ¶kÃƒÂ¼man arÃ„Â±yorsanÃ„Â±z, lÃƒÂ¼tfen talep formunu doldurun.
-                        Teknik ekibimiz size uygun ÃƒÂ¶rnek dosyalarÃ„Â± iÃƒÂ§eren bir WeTransfer linki paylaÃ…Å¸acaktÃ„Â±r.
+                        Spesifik bir sektör örneği veya teknik döküman arıyorsanız, lütfen talep formunu doldurun.
+                        Teknik ekibimiz size uygun örnek dosyaları içeren bir WeTransfer linki paylaşacaktır.
                     </p>
                     <Link href="/iletisim" className="inline-flex items-center gap-2 px-10 py-5 bg-[var(--color-primary-red)] text-white font-black rounded-2xl hover:bg-red-700 transition-all">
                         Dosya Talep Edin <ArrowRight className="w-5 h-5" />

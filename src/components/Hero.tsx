@@ -22,22 +22,22 @@ export default function Hero() {
     const t = isEn ? {
         badge: "Professional Reality Capture Center",
         title1: "LOD 200-400",
-        title2: "Point Cloud â€º BIM",
+        title2: "Point Cloud › BIM",
         subtitle: "We produce parametric models with millimeter precision from point cloud data.",
         cta1: "Get Free Quote",
         cta2: "Case Studies"
     } : {
         badge: "Professional Reality Capture Center",
         title1: "LOD 200-400",
-        title2: "Point Cloud â€º BIM",
-        subtitle: "Nokta bulutu verilerinden milimetrik hassasiyette parametrik modeller Ã¼retiyoruz.",
-        cta1: "Ãœcretsiz Teklif AlÄ±n",
+        title2: "Point Cloud › BIM",
+        subtitle: "Nokta bulutu verilerinden milimetrik hassasiyette parametrik modeller üretiyoruz.",
+        cta1: "Ücretsiz Teklif Alın",
         cta2: "Vaka Analizleri"
     };
 
     const subtitle = isEn
         ? "We produce parametric models with millimeter precision from point cloud data for Turkey and Europe."
-        : "TÃ¼rkiye ve Avrupa genelinde, nokta bulutu verilerinden milimetrik hassasiyette parametrik modeller Ã¼retiyoruz.";
+        : "Türkiye ve Avrupa genelinde, nokta bulutu verilerinden milimetrik hassasiyette parametrik modeller üretiyoruz.";
 
     return (
         <section className="relative bg-[var(--color-soft-bg)] overflow-hidden pt-32 pb-24 md:pt-52 md:pb-40">
@@ -46,7 +46,7 @@ export default function Hero() {
                 <div className="relative w-full h-full">
                     <Image
                         src="/images/case-studies/eosproje-iskenderun-yazici-celik-trafo-bina-scan-to-bim.webp"
-                        alt="EosProje Lazer Tarama Scan-to-BIM EndÃ¼striyel Tesis"
+                        alt="EosProje Lazer Tarama Scan-to-BIM Endüstriyel Tesis"
                         fill
                         priority
                         className="object-cover object-left opacity-[0.14] filter grayscale contrast-[1.1] brightness-[1.1]"
@@ -142,7 +142,7 @@ export default function Hero() {
                             <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden">
                                 <Image
                                     src="/images/case-studies/eosproje-migros-magazasi-3d-bim-model-scan-to-bim.webp"
-                                    alt="EosProje - Migros MaÄŸazasÄ± 3B Lazer Tarama ve Revit Modelleme UygulamasÄ±"
+                                    alt="EosProje - Migros Mağazası 3B Lazer Tarama ve Revit Modelleme Uygulaması"
                                     fill
                                     className="object-cover scale-110"
                                     priority
@@ -167,7 +167,7 @@ export default function Hero() {
 
                         {/* Floating Decorative Elements */}
                         <div className="absolute -top-4 -right-4 bg-white p-4 rounded-2xl shadow-xl border border-slate-50 animate-bounce-slow">
-                            <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest text-center">Nokta YoÄŸunluÄŸu</div>
+                            <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest text-center">Nokta Yoğunluğu</div>
                             <div className="text-lg font-black text-[var(--color-primary-red)] text-center">2M pts/sec</div>
                         </div>
                     </div>

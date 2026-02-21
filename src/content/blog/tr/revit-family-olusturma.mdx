@@ -1,45 +1,45 @@
 ﻿---
-title: "Etkili BIM Modelleme iÃƒÂ§in Parametrik Revit Family OluÃ…Å¸turma"
-excerpt: "Point Cloud to BIM sÃƒÂ¼reÃƒÂ§lerinde doÃ„Å¸ru family yÃƒÂ¶netimi projenin kaderini belirler. Parametrik, hafif ve akÃ„Â±llÃ„Â± nesneler oluÃ…Å¸turmanÃ„Â±n ipuÃƒÂ§larÃ„Â±."
+title: "Etkili BIM Modelleme için Parametrik Revit Family Oluşturma"
+description: "Point Cloud to BIM süreçlerinde doğru family yönetimi projenin kaderini belirler. Parametrik, hafif ve akıllı nesneler oluşturmanın ipuçları."
 date: "2024-04-15"
-author: "Ãƒâ€“ykÃƒÂ¼"
+author: "Öykü"
 authorLinkedIn: "https://www.linkedin.com/company/eos-proje"
-category: "EÃ„Å¸itim"
-tags: ["Revit", "BIM", "Family Creation", "Modelleme", "Parametrik TasarÃ„Â±m"]
+category: "Eğitim"
+tags: ["Revit", "BIM", "Family Creation", "Modelleme", "Parametrik Tasarım"]
 image: "/images/blog/revit-family.webp"
 ---
 
-# Revit Family YÃƒÂ¶netimi ve Parametrik GÃƒÂ¼ÃƒÂ§
+# Revit Family Yönetimi ve Parametrik Güç
 
-BIM (YapÃ„Â± Bilgi Modellemesi) sÃƒÂ¼recinin yapÃ„Â± taÃ…Å¸Ã„Â± "Family" (Aile) dosyalarÃ„Â±dÃ„Â±r. Bir Revit modeli, aslÃ„Â±nda binlerce familyanÃ„Â±n bir araya gelmiÃ…Å¸ halidir. Ãƒâ€“zellikle **[Point Cloud to BIM](/cozumler/point-cloud-to-bim)** projelerinde, standart kÃƒÂ¼tÃƒÂ¼phaneler (out-of-the-box families) genellikle mevcut durumu temsil etmekte yetersiz kalÃ„Â±r.
+BIM (Yapı Bilgi Modellemesi) sürecinin yapı taşı "Family" (Aile) dosyalarıdır. Bir Revit modeli, aslında binlerce familyanın bir araya gelmiş halidir. Özellikle **[Point Cloud to BIM](/cozumler/point-cloud-to-bim)** projelerinde, standart kütüphaneler (out-of-the-box families) genellikle mevcut durumu temsil etmekte yetersiz kalır.
 
-## Ã„Â°yi Bir Revit Family NasÃ„Â±l OlmalÃ„Â±?
+## İyi Bir Revit Family Nasıl Olmalı?
 
-As-built modellemede kullanÃ„Â±lan familyalarÃ„Â±n 3 temel ÃƒÂ¶zelliÃ„Å¸i olmalÃ„Â±dÃ„Â±r:
+As-built modellemede kullanılan familyaların 3 temel özelliği olmalıdır:
 
 ### 1. Hafiflik (Dosya Boyutu)
-Gereksiz detaylardan arÃ„Â±ndÃ„Â±rÃ„Â±lmÃ„Â±Ã…Å¸ olmalÃ„Â±dÃ„Â±r. Ãƒâ€“rneÃ„Å¸in, bir vananÃ„Â±n iÃƒÂ§indeki vidalarÃ„Â± modellemek, binlerce vananÃ„Â±n olduÃ„Å¸u bir projede dosya boyutunu gigabyte'larca bÃƒÂ¼yÃƒÂ¼tebilir ve performansÃ„Â± ÃƒÂ¶ldÃƒÂ¼rÃƒÂ¼r.
-*   **Kural:** Sadece gÃƒÂ¶rÃƒÂ¼nen ve yÃƒÂ¶netilmesi gereken geometrileri modelleyin.
+Gereksiz detaylardan arındırılmış olmalıdır. Örneğin, bir vananın içindeki vidaları modellemek, binlerce vananın olduğu bir projede dosya boyutunu gigabyte'larca büyütebilir ve performansı öldürür.
+*   **Kural:** Sadece görünen ve yönetilmesi gereken geometrileri modelleyin.
 
 ### 2. Parametrik Esneklik
-Nokta bulutundan modelleme yaparken, sahada hiÃƒÂ§bir nesnenin "tam ÃƒÂ¶lÃƒÂ§ÃƒÂ¼sÃƒÂ¼nde" olmadÃ„Â±Ã„Å¸Ã„Â±nÃ„Â± gÃƒÂ¶rÃƒÂ¼rsÃƒÂ¼nÃƒÂ¼z. Ãƒâ€“rneÃ„Å¸in 400x400 olmasÃ„Â± gereken bir kolon, sÃ„Â±va farkÃ„Â±yla 412x405 gelebilir.
-*   **Kural:** Familyalar "Instance Parameter" ile boyutlandÃ„Â±rÃ„Â±labilir olmalÃ„Â±, bÃƒÂ¶ylece her bir obje sahadaki gerÃƒÂ§ek ÃƒÂ¶lÃƒÂ§ÃƒÂ¼sÃƒÂ¼ne adapte edilebilir.
+Nokta bulutundan modelleme yaparken, sahada hiçbir nesnenin "tam ölçüsünde" olmadığını görürsünüz. Örneğin 400x400 olması gereken bir kolon, sıva farkıyla 412x405 gelebilir.
+*   **Kural:** Familyalar "Instance Parameter" ile boyutlandırılabilir olmalı, böylece her bir obje sahadaki gerçek ölçüsüne adapte edilebilir.
 
 ### 3. Bilgi (Information)
-BIM'deki "I" harfi bilgiyi temsil eder. Geometri kadar, iÃƒÂ§indeki veri de ÃƒÂ¶nemlidir.
-*   **Shared Parameters:** Proje genelinde ortak parametreler kullanÃ„Â±lmalÃ„Â±dÃ„Â±r (Ãƒâ€“rn: `EOS_MontajTarihi`, `EOS_HasarDurumu`).
-*   **Konnectorler:** MEP ekipmanlarÃ„Â±nda boru ve kanal baÃ„Å¸lantÃ„Â± noktalarÃ„Â± (connectors) doÃ„Å¸ru tanÃ„Â±mlanmalÃ„Â±, sistem bÃƒÂ¼tÃƒÂ¼nlÃƒÂ¼Ã„Å¸ÃƒÂ¼ (flow propagation) saÃ„Å¸lanmalÃ„Â±dÃ„Â±r.
+BIM'deki "I" harfi bilgiyi temsil eder. Geometri kadar, içindeki veri de önemlidir.
+*   **Shared Parameters:** Proje genelinde ortak parametreler kullanılmalıdır (Örn: `EOS_MontajTarihi`, `EOS_HasarDurumu`).
+*   **Konnectorler:** MEP ekipmanlarında boru ve kanal bağlantı noktaları (connectors) doğru tanımlanmalı, sistem bütünlüğü (flow propagation) sağlanmalıdır.
 
 ## In-Place vs. Loadable Family
 
-SÃ„Â±kÃƒÂ§a yapÃ„Â±lan bir hata, her Ã…Å¸eyi "Model In-Place" komutuyla ÃƒÂ§izmektir.
-*   **Model In-Place:** Tekil ve benzersiz durumlar iÃƒÂ§in kullanÃ„Â±lmalÃ„Â±dÃ„Â±r (Ãƒâ€“rn: Yamuk bir tarihi duvar). Ãƒâ€¡ok kullanÃ„Â±lÃ„Â±rsa dosya boyutunu Ã…Å¸iÃ…Å¸irir.
-*   **Loadable Family (.rfa):** Tekrar eden her Ã…Å¸ey (Pencere, KapÃ„Â±, Kolon, Ekipman) harici familya olarak ÃƒÂ¼retilip projeye yÃƒÂ¼klenmelidir.
+Sıkça yapılan bir hata, her şeyi "Model In-Place" komutuyla çizmektir.
+*   **Model In-Place:** Tekil ve benzersiz durumlar için kullanılmalıdır (Örn: Yamuk bir tarihi duvar). Çok kullanılırsa dosya boyutunu şişirir.
+*   **Loadable Family (.rfa):** Tekrar eden her şey (Pencere, Kapı, Kolon, Ekipman) harici familya olarak üretilip projeye yüklenmelidir.
 
-## SonuÃƒÂ§
+## Sonuç
 
-DoÃ„Å¸ru kurgulanmÃ„Â±Ã…Å¸ bir Family kÃƒÂ¼tÃƒÂ¼phanesi, modelleme hÃ„Â±zÃ„Â±nÃ„Â± %50 artÃ„Â±rÃ„Â±r. Eos Proje olarak, her proje tipine (EndÃƒÂ¼striyel, Tarihi, Mimari) ÃƒÂ¶zel geliÃ…Å¸tirdiÃ„Å¸imiz 500+ parÃƒÂ§alÃ„Â±k parametrik kÃƒÂ¼tÃƒÂ¼phanemiz ile mÃƒÂ¼Ã…Å¸terilerimize standartlara uygun ve "yaÃ…Å¸ayan" modeller sunuyoruz.
+Doğru kurgulanmış bir Family kütüphanesi, modelleme hızını %50 artırır. Eos Proje olarak, her proje tipine (Endüstriyel, Tarihi, Mimari) özel geliştirdiğimiz 500+ parçalık parametrik kütüphanemiz ile müşterilerimize standartlara uygun ve "yaşayan" modeller sunuyoruz.
 
 ---
 
-Standartlara uygun Revit family kÃƒÂ¼tÃƒÂ¼phanesi ve modelleme hizmetlerimiz iÃƒÂ§in [bize ulaÃ…Å¸Ã„Â±n](/iletisim).
+Standartlara uygun Revit family kütüphanesi ve modelleme hizmetlerimiz için [bize ulaşın](/iletisim).

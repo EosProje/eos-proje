@@ -19,15 +19,15 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
 
     const labels = isEn ? {
         title: "Request a Quote",
-        success: "Ã¢Å“â€œ Your quote request has been sent successfully!",
+        success: "✓ Your quote request has been sent successfully!",
         successDetail: "We will get back to you as soon as possible.",
-        error: "Ã¢Å“â€” An error occurred.",
+        error: "✖ An error occurred.",
         errorDetail: "Please try again or contact us directly.",
         projectName: "Project Name *",
         projectNamePlaceholder: "e.g. Factory Expansion Project",
         description: "Project Details *",
         descriptionPlaceholder: "Provide detailed information about your project...",
-        area: "Area (mÃ‚Â²) *",
+        area: "Area (m²) *",
         lod: "Requested LOD Level *",
         lodOptions: [
             { value: "", label: "Select" },
@@ -45,30 +45,30 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
         submitting: "Sending..."
     } : {
         title: "Teklif Talep Formu",
-        success: "Ã¢Å“â€œ Teklif talebiniz baÃ…Å¸arÃ„Â±yla gÃƒÂ¶nderildi!",
-        successDetail: "En kÃ„Â±sa sÃƒÂ¼rede size dÃƒÂ¶nÃƒÂ¼Ã…Å¸ yapacaÃ„Å¸Ã„Â±z.",
-        error: "Ã¢Å“â€” Bir hata oluÃ…Å¸tu.",
-        errorDetail: "LÃƒÂ¼tfen tekrar deneyin veya bize doÃ„Å¸rudan ulaÃ…Å¸Ã„Â±n.",
-        projectName: "Proje AdÃ„Â± *",
-        projectNamePlaceholder: "Ãƒâ€“rn: Fabrika GeniÃ…Å¸letme Projesi",
-        description: "Proje DetaylarÃ„Â± *",
-        descriptionPlaceholder: "Projeniz hakkÃ„Â±nda detaylÃ„Â± bilgi verin...",
-        area: "Alan (mÃ‚Â²) *",
-        lod: "Ã„Â°stenen LOD Seviyesi *",
+        success: "✓ Teklif talebiniz başarıyla gönderildi!",
+        successDetail: "En kısa sürede size dönüş yapacağız.",
+        error: "✖ Bir hata oluştu.",
+        errorDetail: "Lütfen tekrar deneyin veya bize doğrudan ulaşın.",
+        projectName: "Proje Adı *",
+        projectNamePlaceholder: "Örn: Fabrika Genişletme Projesi",
+        description: "Proje Detayları *",
+        descriptionPlaceholder: "Projeniz hakkında detaylı bilgi verin...",
+        area: "Alan (m²) *",
+        lod: "İstenen LOD Seviyesi *",
         lodOptions: [
-            { value: "", label: "SeÃƒÂ§iniz" },
+            { value: "", label: "Seçiniz" },
             { value: "200", label: "LOD 200 - Konsept" },
-            { value: "300", label: "LOD 300 - DetaylÃ„Â± TasarÃ„Â±m" },
-            { value: "400", label: "LOD 400 - ÃƒÅ“retim/Ã„Â°malat" }
+            { value: "300", label: "LOD 300 - Detaylı Tasarım" },
+            { value: "400", label: "LOD 400 - Üretim/İmalat" }
         ],
         address: "Proje Adresi *",
-        addressPlaceholder: "Ã…Âehir, Ã„Â°lÃƒÂ§e, Mahalle",
+        addressPlaceholder: "Şehir, İlçe, Mahalle",
         email: "E-posta *",
         phone: "Telefon",
-        fileLabel: "Dosya Ekle (PDF, FotoÃ„Å¸raf, CAD Ãƒâ€¡izimleri)",
-        fileHint: "Dosya seÃƒÂ§mek iÃƒÂ§in tÃ„Â±klayÃ„Â±n",
+        fileLabel: "Dosya Ekle (PDF, Fotoğraf, CAD Çizimleri)",
+        fileHint: "Dosya seçmek için tıklayın",
         submit: "Teklif Talep Et",
-        submitting: "GÃƒÂ¶nderiliyor..."
+        submitting: "Gönderiliyor..."
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {

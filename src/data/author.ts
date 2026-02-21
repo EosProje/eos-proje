@@ -1,4 +1,4 @@
-﻿// Author profile for UÃ„Å¸ur Bilen - BIM Specialist
+﻿// Author profile for Uğur Bilen - BIM Specialist
 
 export interface AuthorProfile {
     name: string;
@@ -17,9 +17,9 @@ export interface AuthorProfile {
 }
 
 export const authorProfile: AuthorProfile = {
-    name: "UÃ„Å¸ur Bilen",
+    name: "Uğur Bilen",
     role: {
-        tr: "BIM Modelleme UzmanÃ„Â± & Kurucu",
+        tr: "BIM Modelleme Uzmanı & Kurucu",
         en: "BIM Modeling Specialist & Founder",
     },
     company: "Eos Proje",
@@ -33,7 +33,7 @@ export const authorProfile: AuthorProfile = {
         "LOD Standardization",
     ],
     bio: {
-        tr: "10+ yÃ„Â±llÃ„Â±k BIM modelleme deneyimine sahip UÃ„Å¸ur Bilen, TÃƒÂ¼rkiye'de Point Cloud to BIM dÃƒÂ¶nÃƒÂ¼Ã…Å¸ÃƒÂ¼m alanÃ„Â±nda ÃƒÂ¶ncÃƒÂ¼ ÃƒÂ§alÃ„Â±Ã…Å¸malar yÃƒÂ¼rÃƒÂ¼tmektedir. EndÃƒÂ¼striyel tesislerden tarihi yapÃ„Â±lara, AVM'lerden otel projelerine kadar geniÃ…Å¸ bir portfÃƒÂ¶yde LOD 200-400 seviyesinde profesyonel BIM modelleme hizmeti sunmaktadÃ„Â±r.",
-        en: "With over 10 years of BIM modeling experience, UÃ„Å¸ur Bilen is pioneering Point Cloud to BIM conversion services in Turkey. He delivers professional BIM modeling at LOD 200-400 standards across a diverse portfolio, from industrial facilities to historical buildings, shopping malls to hotel projects.",
+        tr: "10+ yıllık BIM modelleme deneyimine sahip Uğur Bilen, Türkiye'de Point Cloud to BIM dönüşüm alanında öncü çalışmalar yürütmektedir. Endüstriyel tesislerden tarihi yapılara, AVM'lerden otel projelerine kadar geniş bir portföyde LOD 200-400 seviyesinde profesyonel BIM modelleme hizmeti sunmaktadır.",
+        en: "With over 10 years of BIM modeling experience, Uğur Bilen is pioneering Point Cloud to BIM conversion services in Turkey. He delivers professional BIM modeling at LOD 200-400 standards across a diverse portfolio, from industrial facilities to historical buildings, shopping malls to hotel projects.",
     },
 };
