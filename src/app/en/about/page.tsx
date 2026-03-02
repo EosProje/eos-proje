@@ -5,10 +5,10 @@ export const metadata: Metadata = {
     title: "About Us | Leading Point Cloud to BIM Experts",
     description: "Learn about EOS Proje mission to provide millimetric precision digital twins for industrial and architectural projects using laser scanning and BIM methodologies.",
     alternates: {
-        canonical: 'https://www.eosproje.com/en/about',
+        canonical: 'https://eosproje.com/en/about',
         languages: {
-            "tr": "https://www.eosproje.com/hakkimizda",
-            "en": "https://www.eosproje.com/en/about",
+            "tr": "https://eosproje.com/hakkimizda",
+            "en": "https://eosproje.com/en/about",
         },
     },
 };

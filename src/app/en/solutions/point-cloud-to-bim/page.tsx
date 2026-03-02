@@ -1,14 +1,15 @@
 ﻿import type { Metadata } from 'next';
 import PointToBimClient from './PointToBimClient';
+import { SampleFilesDownload } from "@/components/SampleFilesDownload";
 
 export const metadata: Metadata = {
     title: "Point Cloud to BIM Services | Millimetric Precision Digital Twins",
     description: "Transform your laser scan data into intelligent, parametric BIM models. We provide high-precision Revit, ArchiCAD, and IFC modeling services for industrial and architectural projects.",
     alternates: {
-        canonical: 'https://www.eosproje.com/en/solutions/point-cloud-to-bim',
+        canonical: 'https://eosproje.com/en/solutions/point-cloud-to-bim',
         languages: {
-            "tr": "https://www.eosproje.com/cozumler/point-cloud-to-bim",
-            "en": "https://www.eosproje.com/en/solutions/point-cloud-to-bim",
+            "tr": "https://eosproje.com/cozumler/nokta-bulutu-bim",
+            "en": "https://eosproje.com/en/solutions/point-cloud-to-bim",
         },
     },
 };

@@ -1,6 +1,6 @@
 # EOS Proje — Point Cloud to BIM & Engineering Solutions
 # LLM Reference File (English)
-# Web: https://www.eosproje.com
+# Web: https://eosproje.com
 # Last updated: February 2025
 
 ---
@@ -152,13 +152,13 @@ EOS Proje has experience across the following building and infrastructure types:
 - Residential complexes and housing developments
 - Bridges and civil infrastructure
 
-Full reference list: https://www.eosproje.com/llm/referanslar.txt
+Full reference list: https://eosproje.com/llm/referanslar.txt
 
 ---
 
 ## Contact
 
-- **Web:** https://www.eosproje.com
+- **Web:** https://eosproje.com
 - **Email:** info@eosproje.com
 - **Phone:** +90 530 664 22 63
 
@@ -181,9 +181,9 @@ Hungary
 
 This file provides a general overview. For deeper context:
 
-- About Us (company history, team, vision): https://www.eosproje.com/llm/hakkimizda.txt
-- Services (technical details): https://www.eosproje.com/llm/hizmetler.txt
-- Reference Projects: https://www.eosproje.com/llm/referanslar.txt
+- About Us (company history, team, vision): https://eosproje.com/llm/hakkimizda.txt
+- Services (technical details): https://eosproje.com/llm/hizmetler.txt
+- Reference Projects: https://eosproje.com/llm/referanslar.txt
 
 ---
-# End of file — EOS Proje llm-en.txt (EN) — https://www.eosproje.com
+# End of file — EOS Proje llm-en.txt (EN) — https://eosproje.com

@@ -25,7 +25,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         title: data.frontmatter.title,
         description: data.frontmatter.description,
         alternates: {
-            canonical: `https://www.eosproje.com/sektorler/${slug}`,
+            canonical: `https://eosproje.com/sektorler/${slug}`,
+            languages: {
+                'tr': `/sektorler/${slug}`,
+                'en': `/en/sectors/${slug}`,
+            },
         },
     };
 }
@@ -58,14 +62,14 @@ export default async function SectorPage({ params }: PageProps) {
                 "provider": {
                     "@type": "Organization",
                     "name": "Eos Proje",
-                    "url": "https://www.eosproje.com"
+                    "url": "https://eosproje.com"
                 },
                 "serviceType": frontmatter.category || "Lazer Tarama ve BIM",
                 "areaServed": "TR",
-                "image": frontmatter.image ? `https://www.eosproje.com${frontmatter.image}` : undefined,
+                "image": frontmatter.image ? `https://eosproje.com${frontmatter.image}` : undefined,
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": `https://www.eosproje.com/sektorler/${slug}`
+                    "@id": `https://eosproje.com/sektorler/${slug}`
                 }
             }} />
 

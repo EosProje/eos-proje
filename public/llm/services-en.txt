@@ -1,6 +1,6 @@
 # EOS Proje — Services & Solutions
 # LLM Reference File (English)
-# Web: https://www.eosproje.com
+# Web: https://eosproje.com
 # Last updated: February 2025
 
 ---
@@ -159,7 +159,7 @@ Autodesk Revit, Autodesk ReCap, Navisworks Manage, AutoCAD, AutoCAD Plant 3D, Le
 
 ## Quote & Contact
 
-- **Web:** https://www.eosproje.com/cozumler
+- **Web:** https://eosproje.com/cozumler
 - **Email:** info@eosproje.com
 - **Phone:** +90 530 664 22 63
 
@@ -167,9 +167,9 @@ Autodesk Revit, Autodesk ReCap, Navisworks Manage, AutoCAD, AutoCAD Plant 3D, Le
 
 ## Related Resources
 
-- About Us: https://www.eosproje.com/llm/hakkimizda.txt
-- Reference Projects: https://www.eosproje.com/llm/referanslar.txt
-- General Overview: https://www.eosproje.com/llm-en.txt
+- About Us: https://eosproje.com/llm/hakkimizda.txt
+- Reference Projects: https://eosproje.com/llm/referanslar.txt
+- General Overview: https://eosproje.com/llm-en.txt
 
 ---
-# End of file — EOS Proje services-en.txt (EN) — https://www.eosproje.com
+# End of file — EOS Proje services-en.txt (EN) — https://eosproje.com

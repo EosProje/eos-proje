@@ -1,0 +1,100 @@
+# EOS Proje - BIM Modelleme Hizmetleri
+# LLM Referans Dosyası (Türkçe)
+# Web: https://eosproje.com/cozumler/bim-modelleme
+# Son güncelleme: Mart 2025
+
+---
+
+## Hizmet Tanımı
+
+BIM (Yapı Bilgi Modellemesi - Building Information Modeling), yapıların fiziksel ve fonksiyonel özelliklerini dijital olarak temsil eden akıllı 3D modelleme sürecidir. EOS Proje, mevcut yapıların BIM modelleme hizmetlerinde uzmanlaşmıştır.
+
+---
+
+## Hizmet Kapsamı
+
+### Mimari BIM Modelleme
+- Duvarlar, döşemeler, tavanlar
+- Kapı ve pencere aileleri
+- Cephe sistemleri
+- Merdiven ve korkuluklar
+- Detay çizimleri
+
+### Yapısal/Strüktürel Modelleme
+- Betonarme elemanlar (kolon, kiriş, döşeme)
+- Çelik konstrüksiyon
+- Temel sistemleri
+- Perde duvarlar
+- Yapısal analiz bağlantısı
+
+### MEP Modelleme
+- Mekanik sistemler (HVAC, iklimlendirme)
+- Elektrik tesisatları ve panolar
+- Sıhhi tesisat
+- Yangın söndürme sistemleri
+- Kablo tavaları ve borulama
+
+### Koordinasyon ve Çakışma Tespiti
+- Disiplinlerarası koordinasyon
+- Navisworks ile clash detection
+- Çatışma raporlama
+- Çözüm önerileri
+
+---
+
+## Kullanılan Yazılımlar
+
+- Autodesk Revit (ana modelleme platformu)
+- Autodesk Navisworks (koordinasyon ve clash detection)
+- AutoCAD (2D çıktılar)
+- Autodesk Plant 3D (endüstriyel modelleme)
+- BIM 360 / ACC (bulut işbirliği)
+
+---
+
+## Teslimat Formatları
+
+- .RVT (Revit native)
+- .IFC (openBIM standardı)
+- .DWG / .DXF (AutoCAD uyumlu)
+- .NWD / .NWC (Navisworks)
+- .FBX (3D görselleştirme)
+- 3D PDF (interaktif doküman)
+
+---
+
+## Revit Family Oluşturma
+
+- Özel parametrik family tasarımı
+- Nested family yapıları
+- Shared parameter kullanımı
+- Connector yerleştirme (MEP için)
+- Optimize dosya boyutu
+
+---
+
+## Kalite Standartları
+
+- ISO 19650 BIM standartları
+- UK BIM Framework uyumu
+- Şirket içi QA/QC prosedürleri
+- Sapma analizi ve raporlama
+
+---
+
+## Anahtar Kelimeler
+
+bim modelleme, revit modelleme, mimari bim, yapısal bim, mep modelleme, çakışma tespiti, clash detection, revit family, bim koordinasyon, as-built modelleme, bim danışmanlık, 3d bim model, ifc modelleme
+
+---
+
+## İlgili Sayfalar
+
+- Hizmet Sayfası: https://eosproje.com/cozumler/bim-modelleme
+- Çakışma Tespiti: https://eosproje.com/cozumler/cakisma-tespiti
+- Blog: https://eosproje.com/blog/revit-family-olusturma
+- İletişim: https://eosproje.com/iletisim
+
+---
+
+Son Güncelleme: Mart 2025

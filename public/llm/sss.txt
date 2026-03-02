@@ -1,6 +1,6 @@
 # EOS Proje — Sık Sorulan Sorular (SSS)
 # LLM Referans Dosyası (Türkçe)
-# Web: https://www.eosproje.com
+# Web: https://eosproje.com
 # Son güncelleme: Şubat 2025
 
 ---
@@ -99,7 +99,7 @@ C: .NWD veya .IFC formatını talep etmeniz yeterlidir. İsterseniz çakışma a
 
 ## İletişim
 
-- **Web:** https://www.eosproje.com
+- **Web:** https://eosproje.com
 - **Email:** info@eosproje.com
 - **Telefon:** +90 530 664 22 63
 - **İstanbul Ofisi:** Murat Reis Mah. Teyyareci Muammer Sok. No:10/4, 34664 Üsküdar / İstanbul
@@ -109,10 +109,10 @@ C: .NWD veya .IFC formatını talep etmeniz yeterlidir. İsterseniz çakışma a
 
 ## İlgili Kaynaklar
 
-- Hakkımızda: https://www.eosproje.com/llm/hakkimizda.txt
-- Hizmetler: https://www.eosproje.com/llm/hizmetler.txt
-- Referans Projeler: https://www.eosproje.com/llm/referanslar.txt
-- Genel Özet: https://www.eosproje.com/llm.txt
+- Hakkımızda: https://eosproje.com/llm/hakkimizda.txt
+- Hizmetler: https://eosproje.com/llm/hizmetler.txt
+- Referans Projeler: https://eosproje.com/llm/referanslar.txt
+- Genel Özet: https://eosproje.com/llm.txt
 
 ---
-# Dosya sonu — EOS Proje sss.txt (TR) — https://www.eosproje.com
+# Dosya sonu — EOS Proje sss.txt (TR) — https://eosproje.com

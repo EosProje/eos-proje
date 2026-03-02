@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, Cpu, ChevronDown, ArrowRight, Phone, Mail, MapPin } from "lucide-react";
 import { EASE_CURVES } from "@/lib/animations";
-import { CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/constants";
+import { CONTACT_EMAIL, CONTACT_PHONE, getLanguageEquivalentPath } from "@/lib/constants";
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -67,10 +67,10 @@ export default function Header() {
         home: "Ana Sayfa",
         solutions: "Çözümler",
         solutionsItems: [
-            { label: "Point Cloud to BIM", href: "/cozumler/point-cloud-to-bim" },
-            { label: "As-built Modelleme", href: "/cozumler/as-built-modeling" },
-            { label: "2D to 3D/BIM Dönüşüm", href: "/cozumler/2d-to-3d-bim-conversion" },
-            { label: "Endüstriyel Ekipman", href: "/cozumler/industrial-equipment-modeling" },
+            { label: "Point Cloud to BIM", href: "/cozumler/nokta-bulutu-bim" },
+            { label: "As-built Modelleme", href: "/cozumler/mevcut-durum-modelleme" },
+            { label: "2D to 3D/BIM Dönüşüm", href: "/cozumler/2d-3d-bim-donusum" },
+            { label: "Endüstriyel Ekipman", href: "/cozumler/endustriyel-ekipman-modelleme" },
             { label: "Tüm Çözümler", href: "/cozumler" }
         ],
         sectors: "Sektörler",
@@ -156,22 +156,22 @@ export default function Header() {
                         </div>
                         <div className="flex items-center gap-3 border-l border-white/10 pl-8">
                             <a
-                                href="/"
+                                href={getLanguageEquivalentPath(pathname, 'tr')}
                                 className={`transition-colors ${!isEn ? "text-white" : "text-white/40 hover:text-white"}`}
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    window.location.href = "/";
+                                    window.location.href = getLanguageEquivalentPath(pathname, 'tr');
                                 }}
                             >
                                 TR
                             </a>
                             <span className="text-white/10 font-light">|</span>
                             <a
-                                href="/en"
+                                href={getLanguageEquivalentPath(pathname, 'en')}
                                 className={`transition-colors ${isEn ? "text-white" : "text-white/40 hover:text-white"}`}
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    window.location.href = "/en";
+                                    window.location.href = getLanguageEquivalentPath(pathname, 'en');
                                 }}
                             >
                                 EN

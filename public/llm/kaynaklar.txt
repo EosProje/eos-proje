@@ -1,0 +1,62 @@
+# EOS Proje - Kaynaklar ve İndirilebilir Dökümanlar
+# LLM Referans Dosyası (Türkçe)
+# Web: https://eosproje.com/kaynaklar
+# Son güncelleme: Mart 2025
+
+---
+
+## İndirilebilir Dökümanlar
+
+### 1. Operasyon Playbook - Endüstriyel & Mimari
+**Dosya:** EOSPROJE_Operasyon_Playbook_Endustriyel_Mimari.pdf
+**Boyut:** 305 KB
+**İçerik:** Endüstriyel tesisler ve mimari projeler için kapsamlı operasyon kılavuzu. Süreç yönetimi, kalite kontrol ve proje teslimatı için en iyi uygulamalar.
+**URL:** https://eosproje.com/downloads/EOSPROJE_Operasyon_Playbook_Endustriyel_Mimari.pdf
+
+### 2. LOD Standartları - Mimari Projeler
+**Dosya:** EOSPROJE_LOD_Standartlari_Mimari_Projeler.pdf
+**Boyut:** 590 KB
+**İçerik:** Mimari BIM projeleri için LOD (Level of Development) standartları. LOD 100, 200, 300, 350 ve 400 seviyelerinde detaylı spesifikasyonlar.
+**URL:** https://eosproje.com/downloads/EOSPROJE_LOD_Standartlari_Mimari_Projeler.pdf
+
+### 3. LOD Standartları - Endüstriyel Tesis
+**Dosya:** EOSPROJE_LOD_Standartlari_Endustriyel_Tesis.pdf
+**Boyut:** 869 KB
+**İçerik:** Endüstriyel tesis ve MEP modelleme için LOD standartları. Borulama, HVAC, elektrik ve mekanik sistemler için detay seviyeleri.
+**URL:** https://eosproje.com/downloads/EOSPROJE_LOD_Standartlari_Endustriyel_Tesis.pdf
+
+### 4. Kurumsal Kimlik Kılavuzu
+**Dosya:** eosproje-kurumsal-kimlik.pdf
+**Boyut:** 5 MB
+**İçerik:** EOS Proje kurumsal kimlik kılavuzu. Logo kullanımı, renk paleti, tipografi ve marka standartları.
+**URL:** https://eosproje.com/downloads/eosproje-kurumsal-kimlik.pdf
+
+### 5. Fiyatlandırma ve Sözleşme Şablonu
+**Dosya:** EOSPROJE_Fiyatlandirma_Sozlesme_Sablonu.docx
+**Boyut:** 43 KB
+**İçerik:** BIM modelleme ve lazer tarama projeleri için fiyatlandırma rehberi ve sözleşme şablonu.
+**URL:** https://eosproje.com/downloads/EOSPROJE_Fiyatlandirma_Sozlesme_Sablonu.docx
+
+---
+
+## İnfografikler
+
+Blog yazılarında kullanılan özgün infografikler:
+
+1. eosproje-scan-to-bim-sureci.png - Scan to BIM 5 adımlı süreç
+2. eosproje-lazer-tarama-teknolojileri-karsilastirma.png - TLS vs SLAM karşılaştırması
+3. eosproje-bim-cakisma-tespiti-sureci.png - Clash detection süreci
+4. eosproje-dijital-ikiz-mimarisi.png - Digital twin katmanları
+5. eosproje-hbim-tarihi-yapi-is-akisi.png - HBIM iş akışı
+
+---
+
+## İlgili Sayfalar
+
+- Kaynaklar Sayfası: https://eosproje.com/kaynaklar
+- Blog: https://eosproje.com/blog
+- İletişim: https://eosproje.com/iletisim
+
+---
+
+Son Güncelleme: Mart 2025

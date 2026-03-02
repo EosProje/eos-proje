@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "en_US",
-        url: "https://www.eosproje.com/en",
+        url: "https://eosproje.com/en",
         title: "EOSPROJE | Point Cloud to BIM & Digital Twin",
         description: "We produce millimeter-precise 3D BIM models and as-built projects from reality capture data.",
         siteName: "EOS Proje",

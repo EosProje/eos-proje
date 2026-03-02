@@ -12,13 +12,28 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL('https://www.eosproje.com'),
   title: {
-    default: "EOSPROJE | Lazer Tarama, BIM Modelleme & Dijital İkiz",
-    template: "%s | EOSPROJE"
+    template: '%s | EOS Proje',
+    default: 'EOS Proje | Lazer Tarama ve BIM Modelleme Çözümleri',
   },
-  description: "Lazer tarama (Point Cloud) verilerini yüksek hassasiyetli BIM modellerine, 2D rölöve çizimlerine ve 3D dijital ikizlere dönüştüren mühendislik firması.",
-  keywords: ["Point Cloud to BIM", "Lazer Tarama", "Scan to BIM", "3D Modelleme", "Rölöve", "Restorasyon", "Endüstriyel Tesis", "Dijital İkiz", "Revit Modelleme", "As-Built"],
+  description: "Lazer tarama, Scan to BIM, nokta bulutu modelleme, rölöve ve dijital ikiz hizmetleri. Cephe rölöve, mimari rölöve, eski eser rölöve, drone ile halihazır harita. İstanbul ve Budapeşte.",
+  keywords: [
+    // Ana hizmetler
+    "Point Cloud to BIM", "Scan to BIM", "Lazer Tarama", "3D Lazer Tarama", "LiDAR Tarama",
+    // Rölöve hizmetleri
+    "Rölöve", "Cephe Rölöve", "Mimari Rölöve", "Eski Eser Rölöve", "Restorasyon Rölövesi",
+    // Harita hizmetleri
+    "Halihazır Harita", "Drone ile Halihazır Harita", "Harita Ölçme",
+    // BIM ve modelleme
+    "BIM Modelleme", "Revit Modelleme", "As-Built Modelleme", "Nokta Bulutu BIM Modeli",
+    // Dijital ikiz ve HBIM
+    "Dijital İkiz", "Digital Twin", "HBIM", "Heritage BIM", "Tarihi Yapı Modelleme",
+    // Endüstriyel
+    "Endüstriyel Tesis Modelleme", "MEP Modelleme", "Çakışma Tespiti", "Clash Detection",
+    // Firma aramaları
+    "Lazer Tarama Firmaları", "BIM Danışmanlık", "3D Tarama Hizmeti"
+  ],
   authors: [{ name: "EOS Proje", url: SITE_URL }],
   creator: "EOS Proje",
   publisher: "EOS Proje",
@@ -33,9 +48,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: "google-site-verification=BURAYA_GSC_KODUNUZU_GIRIN", // Google Search Console'dan aldığınız kodu buraya yapıştırın.
-  },
+  // Google Search Console doğrulama DNS ile yapıldı - meta tag gerekli değil
   openGraph: {
     type: "website",
     locale: "tr_TR",

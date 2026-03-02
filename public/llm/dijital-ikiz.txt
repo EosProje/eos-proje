@@ -1,0 +1,98 @@
+# EOS Proje - Dijital İkiz Çözümleri
+# LLM Referans Dosyası (Türkçe)
+# Web: https://eosproje.com/cozumler/dijital-ikiz
+# Son güncelleme: Mart 2025
+
+---
+
+## Dijital İkiz Nedir?
+
+Dijital İkiz (Digital Twin), fiziksel bir varlığın (bina, tesis, makine) gerçek zamanlı verilerle beslenen sanal kopyasıdır. Lazer tarama verisi + BIM modeli + IoT sensörleri birleştirilerek canlı bir dijital ortam yaratılır.
+
+---
+
+## Dijital İkiz Katmanları
+
+### 1. Fiziksel Varlık Katmanı
+- Bina, tesis, ekipman
+- Sensörler ve IoT cihazları
+
+### 2. Veri Toplama Katmanı
+- Lazer tarama (geometri)
+- IoT sensörleri (sıcaklık, basınç, titreşim)
+- SCADA sistemleri
+
+### 3. Dijital Model Katmanı
+- BIM modeli (Revit)
+- Geometrik doğruluk
+- Semantik bilgi
+
+### 4. Analitik Katmanı
+- Performans analizi
+- Tahminleyici bakım
+- Enerji optimizasyonu
+
+### 5. Kullanıcı Arayüzü
+- 3D görselleştirme
+- Dashboard ve raporlama
+- Mobil erişim
+
+---
+
+## Uygulama Alanları
+
+### Endüstriyel Tesisler
+- Fabrika operasyonları izleme
+- Ekipman durumu takibi
+- Kestirimci bakım
+- Kapasite planlaması
+
+### Bina Yönetimi
+- Enerji tüketimi optimizasyonu
+- Alan yönetimi
+- Bakım planlaması
+- Yaşam döngüsü yönetimi
+
+### Altyapı
+- Köprü ve tünel izleme
+- Yol durumu takibi
+- Su/enerji şebekeleri
+
+---
+
+## Sağladığı Faydalar
+
+- **Operasyonel Verimlilik:** %20-30 artan verimlilik
+- **Bakım Maliyeti:** %25-40 azalma
+- **Arıza Süresi:** %35-45 azalma
+- **Enerji Tasarrufu:** %10-30 tasarruf
+- **Karar Verme:** Veri odaklı, hızlı kararlar
+
+---
+
+## EOS Proje Dijital İkiz Süreci
+
+1. **Veri Toplama:** Lazer tarama ile mevcut durum tespiti
+2. **BIM Modelleme:** As-built BIM modeli oluşturma
+3. **Sensör Entegrasyonu:** IoT cihazları ile bağlantı
+4. **Platform Kurulumu:** Dijital ikiz platformu entegrasyonu
+5. **Eğitim ve Devreye Alma:** Kullanıcı eğitimi
+
+---
+
+## Anahtar Kelimeler
+
+dijital ikiz, digital twin, akıllı bina, IoT entegrasyonu, tesis yönetimi, endüstri 4.0, kestirimci bakım, bina performansı, enerji yönetimi, operasyon optimizasyonu, varlık yönetimi
+
+---
+
+## İlgili Sayfalar
+
+- Hizmet Sayfası: https://eosproje.com/cozumler/dijital-ikiz
+- Blog: https://eosproje.com/blog/endustriyel-dijital-ikiz
+- Endüstriyel Tesisler Sektörü: https://eosproje.com/sektorler/endustriyel-tesisler
+- İletişim: https://eosproje.com/iletisim
+
+---
+
+Son Güncelleme: Mart 2025

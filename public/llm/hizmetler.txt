@@ -1,6 +1,6 @@
 # EOS Proje — Hizmetler ve Çözümler
 # LLM Referans Dosyası (Türkçe)
-# Web: https://www.eosproje.com
+# Web: https://eosproje.com
 # Son güncelleme: Şubat 2025
 
 ---
@@ -159,7 +159,7 @@ Autodesk Revit, Autodesk ReCap, Navisworks Manage, AutoCAD, AutoCAD Plant 3D, Le
 
 ## Teklif ve İletişim
 
-- **Web:** https://www.eosproje.com/cozumler
+- **Web:** https://eosproje.com/cozumler
 - **Email:** info@eosproje.com
 - **Telefon:** +90 530 664 22 63
 
@@ -167,9 +167,9 @@ Autodesk Revit, Autodesk ReCap, Navisworks Manage, AutoCAD, AutoCAD Plant 3D, Le
 
 ## İlgili Kaynaklar
 
-- Hakkımızda: https://www.eosproje.com/llm/hakkimizda.txt
-- Referans Projeler: https://www.eosproje.com/llm/referanslar.txt
-- Genel Özet: https://www.eosproje.com/llm.txt
+- Hakkımızda: https://eosproje.com/llm/hakkimizda.txt
+- Referans Projeler: https://eosproje.com/llm/referanslar.txt
+- Genel Özet: https://eosproje.com/llm.txt
 
 ---
-# Dosya sonu — EOS Proje hizmetler.txt (TR) — https://www.eosproje.com
+# Dosya sonu — EOS Proje hizmetler.txt (TR) — https://eosproje.com

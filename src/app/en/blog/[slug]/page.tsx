@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import { AUTHORS } from "@/lib/authors";
+import { I18N_PATH_MAPPINGS_REV } from "@/lib/constants";
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -32,16 +33,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const { slug } = await params;
     const data = await getMDXBySlug(slug, "blog", "en");
     if (!data) return {};
+    
+    // Get the Turkish equivalent path from reverse mappings
+    const enPath = `/en/blog/${slug}`;
+    const trPath = I18N_PATH_MAPPINGS_REV[enPath] || `/blog/${slug}`;
+    
     return {
         title: data.frontmatter.title,
         description: data.frontmatter.description,
         alternates: {
-            canonical: `https://www.eosproje.com/en/blog/${slug}`,
+            canonical: `https://eosproje.com/en/blog/${slug}`,
             languages: {
-                "tr": `https://www.eosproje.com/blog/${slug}`,
-                "en": `https://www.eosproje.com/en/blog/${slug}`,
+                "tr": `https://eosproje.com${trPath}`,
+                "en": `https://eosproje.com/en/blog/${slug}`,
             }
-        }
+        },
+        openGraph: {
+            title: data.frontmatter.title,
+            description: data.frontmatter.description,
+            images: data.frontmatter.image ? [data.frontmatter.image] : [],
+            type: "article",
+            publishedTime: data.frontmatter.date,
+            authors: [data.frontmatter.author || "EosProje"],
+        },
     };
 }
 
@@ -71,7 +85,7 @@ export default async function BlogPostPageEn({ params }: PageProps) {
                 "@type": "BlogPosting",
                 "headline": frontmatter.title,
                 "description": frontmatter.description,
-                "image": frontmatter.image ? `https://www.eosproje.com${frontmatter.image}` : undefined,
+                "image": frontmatter.image ? `https://eosproje.com${frontmatter.image}` : undefined,
                 "author": {
                     "@type": "Person",
                     "name": frontmatter.author || "Eos Proje"
@@ -83,7 +97,7 @@ export default async function BlogPostPageEn({ params }: PageProps) {
                 "datePublished": frontmatter.date,
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": `https://www.eosproje.com/en/blog/${slug}`
+                    "@id": `https://eosproje.com/en/blog/${slug}`
                 }
             }} />
 

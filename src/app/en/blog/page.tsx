@@ -7,10 +7,10 @@ export const metadata: Metadata = {
     title: "Engineering Blog | BIM & Laser Scanning Tech Insights",
     description: "Stay updated with the latest trends in Point Cloud to BIM, reality capture technologies, and industrial modeling standards. In-depth technical articles for AEC professionals.",
     alternates: {
-        canonical: 'https://www.eosproje.com/en/blog',
+        canonical: 'https://eosproje.com/en/blog',
         languages: {
-            "tr": "https://www.eosproje.com/blog",
-            "en": "https://www.eosproje.com/en/blog",
+            "tr": "https://eosproje.com/blog",
+            "en": "https://eosproje.com/en/blog",
         },
     },
 };

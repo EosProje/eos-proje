@@ -6,16 +6,16 @@ export const metadata: Metadata = {
     title: "Point Cloud to BIM & 3D Modeling Services | EOSPROJE",
     description: "Turkey's leading Point Cloud to BIM center. We transform laser scanning data into precise Revit (LOD 200-400), Archicad, and CAD models with millimeter accuracy. Get a quote today.",
     alternates: {
-        canonical: 'https://www.eosproje.com/en',
+        canonical: 'https://eosproje.com/en',
         languages: {
-            "tr": "https://www.eosproje.com",
-            "en": "https://www.eosproje.com/en",
+            "tr": "https://eosproje.com",
+            "en": "https://eosproje.com/en",
         },
     },
     openGraph: {
         title: "Point Cloud to BIM & 3D Modeling Services | EOSPROJE",
         description: "Turkey's leading Point Cloud to BIM center. We transform laser scanning data into precise Revit (LOD 200-400), Archicad, and CAD models.",
-        url: "https://www.eosproje.com/en",
+        url: "https://eosproje.com/en",
         siteName: "Eos Proje",
         images: [{ url: "/images/og/ana-sayfa-og.webp", width: 1200, height: 630 }],
         locale: "en_US",
@@ -34,10 +34,10 @@ export default function HomeEn() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "EOS Proje",
-        "url": "https://www.eosproje.com/en",
+        "url": "https://eosproje.com/en",
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://www.eosproje.com/en/search?q={search_term_string}",
+            "target": "https://eosproje.com/en/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
         }
     };
@@ -46,9 +46,9 @@ export default function HomeEn() {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "EOS Proje",
-        "image": "https://www.eosproje.com/logo.png",
-        "@id": "https://www.eosproje.com/en/#organization",
-        "url": "https://www.eosproje.com/en",
+        "image": "https://eosproje.com/logo.png",
+        "@id": "https://eosproje.com/en/#organization",
+        "url": "https://eosproje.com/en",
         "telephone": "+905306642263",
         "address": {
             "@type": "PostalAddress",

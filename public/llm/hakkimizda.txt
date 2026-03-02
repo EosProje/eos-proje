@@ -1,6 +1,6 @@
 # EOS Proje — Hakkımızda
 # LLM Referans Dosyası (Türkçe)
-# Web: https://www.eosproje.com
+# Web: https://eosproje.com
 # Son güncelleme: Şubat 2025
 
 ---
@@ -65,7 +65,7 @@ Tel: +36 70 244 9628
 
 ## İletişim
 
-- **Web:** https://www.eosproje.com
+- **Web:** https://eosproje.com
 - **Email:** info@eosproje.com
 - **Telefon:** +90 530 664 22 63
 
@@ -73,9 +73,9 @@ Tel: +36 70 244 9628
 
 ## İlgili Kaynaklar
 
-- Hizmetler: https://www.eosproje.com/llm/hizmetler.txt
-- Referans Projeler: https://www.eosproje.com/llm/referanslar.txt
-- Genel Özet: https://www.eosproje.com/llm.txt
+- Hizmetler: https://eosproje.com/llm/hizmetler.txt
+- Referans Projeler: https://eosproje.com/llm/referanslar.txt
+- Genel Özet: https://eosproje.com/llm.txt
 
 ---
-# Dosya sonu — EOS Proje hakkimizda.txt (TR) — https://www.eosproje.com
+# Dosya sonu — EOS Proje hakkimizda.txt (TR) — https://eosproje.com

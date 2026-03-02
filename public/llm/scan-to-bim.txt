@@ -1,0 +1,109 @@
+# EOS Proje - Scan to BIM Hizmeti
+# LLM Referans Dosyası (Türkçe)
+# Web: https://eosproje.com/cozumler/scan-to-bim
+# Son güncelleme: Mart 2025
+
+---
+
+## Hizmet Tanımı
+
+Scan to BIM (Point Cloud to BIM), lazer tarama veya fotogrametri ile elde edilen nokta bulutu verilerinin Autodesk Revit ortamında BIM (Yapı Bilgi Modeli) modeline dönüştürülmesi sürecidir.
+
+---
+
+## LOD (Level of Development) Seviyeleri
+
+### LOD 100 - Kavramsal
+- Genel kütle ve hacim
+- Temel mimari form
+- Tahmini alan hesapları
+
+### LOD 200 - Şematik
+- Yaklaşık boyut ve konum
+- Genel sistem dağılımı
+- Planlama amaçlı
+
+### LOD 300 - Detaylı Tasarım
+- Kesin boyut, şekil, konum
+- Inşaat dökümantasyonu için uygun
+- Çelişki tespiti yapılabilir
+
+### LOD 350 - Koordinasyon
+- Diğer disiplinlerle bağlantılar
+- Detaylı bağlantı noktaları
+- MEP koordinasyonu
+
+### LOD 400 - Fabrikasyon
+- İmalat düzeyinde detay
+- Montaj bilgileri
+- Üretim hazır
+
+---
+
+## Model Disiplinleri
+
+### Mimari (Architectural)
+- Duvarlar, kapılar, pencereler
+- Döşemeler, tavanlar, çatılar
+- Merdivenler, korkuluklar
+- Cephe elemanları
+
+### Strüktürel (Structural)
+- Betonarme elemanlar
+- Çelik konstrüksiyon
+- Temel sistemleri
+- Taşıyıcı duvarlar
+
+### MEP (Mekanik-Elektrik-Tesisat)
+- HVAC sistemleri
+- Borulama (piping)
+- Elektrik tesisatları
+- Yangın tesisatları
+
+---
+
+## Süreç Adımları
+
+1. **Veri Alımı:** Müşteriden nokta bulutu verisi (.E57, .RCP, .RCS, .LAS)
+2. **Kalite Kontrol:** Veri yoğunluğu ve kapsam kontrolü
+3. **Koordinat Sistemi:** Projeye uygun koordinat yerleştirme
+4. **Modelleme:** Revit'te belirlenen LOD ve disipline göre modelleme
+5. **QA/QC:** Sapma analizi ve kalite kontrol
+6. **Teslimat:** .RVT, .IFC, .DWG, .NWD formatlarında
+
+---
+
+## Kullanım Alanları
+
+- Tadilat ve yenileme projeleri
+- As-built dokümantasyonu
+- Ruhsat süreçleri
+- Proje koordinasyonu
+- Tesis yönetimi
+- Mülkiyet dokümantasyonu
+
+---
+
+## Hassasiyet
+
+Tipik doğruluk aralığı: ±2mm ila ±5mm
+(Kaynak verinin kalitesine bağlı)
+
+---
+
+## Anahtar Kelimeler
+
+scan to bim, nokta bulutu bim modeli, point cloud to revit, lazer tarama bim, as-built modelleme, revit modelleme hizmeti, bim dönüşüm, 3d tarama bim, mimari bim modelleme, mep modelleme, yapısal bim
+
+---
+
+## İlgili Sayfalar
+
+- Ana Sayfa: https://eosproje.com
+- Hizmet Sayfası: https://eosproje.com/cozumler/scan-to-bim
+- İletişim: https://eosproje.com/iletisim
+- Blog: https://eosproje.com/blog/scan-to-bim-rehberi
+
+---
+
+Son Güncelleme: Mart 2025

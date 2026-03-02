@@ -1,0 +1,103 @@
+# EOS Proje - Lazer Tarama Hizmetleri
+# LLM Referans Dosyası (Türkçe)
+# Web: https://eosproje.com/cozumler/lazer-tarama
+# Son güncelleme: Mart 2025
+
+---
+
+## Hizmet Tanımı
+
+Lazer tarama (LiDAR), yapıların, tesislerin ve arazilerin yüksek hassasiyetli 3D dijital veriye dönüştürülmesini sağlayan temassız ölçüm teknolojisidir. Saniyede milyonlarca nokta ölçümü ile nokta bulutu (point cloud) verisi oluşturulur.
+
+---
+
+## Tarama Teknolojileri
+
+### Karasal Lazer Tarama (TLS - Terrestrial Laser Scanning)
+- Sabit istasyondan yüksek yoğunluklu tarama
+- Hassasiyet: ±1-2mm
+- Menzil: 350m+'a kadar
+- Kullanım: Bina içi, cephe, detaylı ölçüm
+- Ekipman: Leica RTC360, FARO Focus
+
+### Mobil Tarama (SLAM - Simultaneous Localization and Mapping)
+- El tipi veya sırt çantası ile hareketli tarama
+- Hassasiyet: ±5-10mm
+- Hız: Karasala göre 10x daha hızlı
+- Kullanım: Büyük alanlar, hızlı dokumantasyon
+- Ekipman: Leica BLK2GO, NavVis VLX
+
+### Drone (IHA) ile Tarama
+- Hava tabanlı lazer ve fotogrametri
+- Geniş alan kapsamı
+- Kullanım: Halihazır harita, çatı tarama, arazi ölçümü
+- Ekipman: DJI Matrice 300, Leica ALS
+
+### Fotogrametri
+- Fotoğraflardan 3D model oluşturma
+- Düşük maliyetli alternatif
+- Kullanım: Cephe dokümantasyonu, küçük objeler
+
+---
+
+## Uygulama Alanları
+
+### Mimari ve Inşaat
+- Cephe röleve
+- Mimari röleve
+- As-built dokümantasyonu
+- Tadilat öncesi ölçüm
+
+### Endüstriyel Tesisler
+- Fabrika modelleme
+- Boru hattı dokümantasyonu
+- Retrofit projeleri
+- Güvenlik ve ruhsat
+
+### Tarihi Yapılar
+- Eski eser röleve
+- Restorasyon rölevesi
+- Koruma dokümantasyonu
+- Deformasyon analizi
+
+### Altyapı
+- Tünel tarama
+- Köprü dokümantasyonu
+- Yol ve demiryolu
+
+---
+
+## Avantajlar
+
+- **Hassasiyet:** ±1-2mm doğruluk
+- **Hız:** Geleneksel yöntemlere göre %80 daha hızlı
+- **Güvenlik:** Erişilmesi zor alanlarda uzaktan ölçüm
+- **Kapsamlılık:** Tüm geometrik detayların yakalanması
+- **Dijital Arşiv:** Kalıcı dijital kayıt
+
+---
+
+## Çıktı Formatları
+
+- E57, RCP, RCS (nokta bulutu)
+- LAS, LAZ (LiDAR standart)
+- PTX, XYZ, PLY (genel format)
+
+---
+
+## Anahtar Kelimeler
+
+lazer tarama, 3d lazer tarama, lidar tarama, lazer tarama firmaları, nokta bulutu, point cloud, karasal lazer tarama, mobil tarama, drone lazer tarama, halihazır harita, drone ile halihazır harita, röleve, cephe röleve, mimari röleve, eski eser röleve, restorasyon rölevesi, harita ölçme
+
+---
+
+## İlgili Sayfalar
+
+- Hizmet Sayfası: https://eosproje.com/cozumler/lazer-tarama
+- Blog: https://eosproje.com/blog/lazer-tarama-nedir
+- Blog: https://eosproje.com/blog/lazer-tarama-teknolojileri
+- İletişim: https://eosproje.com/iletisim
+
+---
+
+Son Güncelleme: Mart 2025

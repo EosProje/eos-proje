@@ -1,0 +1,114 @@
+# EOS Proje - HBIM (Tarihi Yapı Bilgi Modellemesi)
+# LLM Referans Dosyası (Türkçe)
+# Web: https://eosproje.com/cozumler/hbim
+# Son güncelleme: Mart 2025
+
+---
+
+## HBIM Nedir?
+
+HBIM (Heritage Building Information Modeling), tarihi ve kültürel miras yapılarının dijital olarak belgelenmesi, korunması ve yönetilmesi için geliştirilmiş özel BIM metodolojisidir. Lazer tarama ve fotogrametri verileriyle birleştirilerek, tarihi yapıların tüm geometrik ve semantik bilgilerini içeren akıllı 3D modeller oluşturulur.
+
+---
+
+## HBIM'in Farklılıkları
+
+### Geleneksel BIM vs HBIM
+
+| Özellik | Geleneksel BIM | HBIM |
+|---------|----------------|------|
+| Geometri | Standart, düzgün | Düzensiz, organik |
+| Elemanlar | Parametrik, standart | Özel, benzersiz |
+| Malzeme | Modern | Tarihi, geleneksel |
+| Dokümantasyon | Teknik | Kültürel + Teknik |
+| Hasar Bilgisi | Sınırlı | Detaylı |
+
+---
+
+## Hizmet Kapsamı
+
+### Tarihi Yapı Rölevesi
+- Cephe rölevesi
+- İç mekan rölevesi
+- Detay rölevesi (profiller, süslemeler)
+- Kesit ve görünüşler
+
+### Deformasyon ve Hasar Analizi
+- Eğrilme ve çatlak tespiti
+- Malzeme bozulması haritalama
+- Yapısal deformasyon ölçümü
+- Zaman içinde değişim takibi
+
+### 3D Modelleme
+- LOD 300-400 seviyesinde modelleme
+- Özel tarihi family oluşturma
+- Malzeme ve doku haritalama
+- Semantik bilgi ekleme
+
+### Restorasyon Desteği
+- Restorasyon projesi altyapısı
+- Müdahale önerileri
+- Maliyet tahminleme
+- İş takibi
+
+---
+
+## Uygulama Alanları
+
+- Tarihi camiler ve kiliseler
+- Saraylar ve köşkler
+- Kaleler ve surlar
+- Tarihi köprüler
+- Sivil mimari yapılar
+- Arkeolojik alanlar
+- Müzeler
+
+---
+
+## Tarama Teknikleri
+
+### Lazer Tarama
+- Yüksek hassasiyetli TLS
+- Detaylı süslemeler için yakın menzil
+- Cephe için uzak menzil
+
+### Fotogrametri
+- Yüzey dokusu yakalama
+- Renk ve malzeme bilgisi
+- Erişilemeyen alanlar için drone
+
+### Entegre Yöntem
+- Lazer + fotogrametri birleşimi
+- Geometri + doku zenginliği
+
+---
+
+## Teslimat Çıktıları
+
+- 2D Röleve çizimleri (plan, kesit, görünüş)
+- 3D HBIM modeli (.RVT)
+- Nokta bulutu verisi (.E57, .RCP)
+- Ortofoto haritalar
+- Hasar haritası
+- Deformasyon raporu
+- Restorasyon önerileri
+
+---
+
+## Anahtar Kelimeler
+
+hbim, heritage bim, tarihi yapı modelleme, eski eser röleve, restorasyon rölevesi, kültürel miras, koruma, deformasyon analizi, tarihi bina tarama, cami rölevesi, saray rölevesi, antik yapı dokümantasyonu, arkeolojik tarama
+
+---
+
+## İlgili Sayfalar
+
+- Hizmet Sayfası: https://eosproje.com/cozumler/hbim
+- Restorasyon Sektörü: https://eosproje.com/sektorler/restorasyon
+- Blog: https://eosproje.com/blog/tarihi-yapilar-hbim
+- Blog: https://eosproje.com/blog/heritage-bim-restorasyon
+- İletişim: https://eosproje.com/iletisim
+
+---
+
+Son Güncelleme: Mart 2025

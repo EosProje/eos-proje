@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import { AUTHORS } from "@/lib/authors";
+import { I18N_PATH_MAPPINGS } from "@/lib/constants";
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -32,11 +33,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const { slug } = await params;
     const data = await getMDXBySlug(slug, "blog", "tr");
     if (!data) return {};
+    
+    // Get the English equivalent path from mappings
+    const trPath = `/blog/${slug}`;
+    const enPath = I18N_PATH_MAPPINGS[trPath] || `/en/blog/${slug}`;
+    
     return {
         title: data.frontmatter.title,
         description: data.frontmatter.description,
         alternates: {
-            canonical: `https://www.eosproje.com/blog/${slug}`,
+            canonical: `https://eosproje.com/blog/${slug}`,
+            languages: {
+                "tr": `https://eosproje.com/blog/${slug}`,
+                "en": `https://eosproje.com${enPath}`,
+            }
         },
         openGraph: {
             title: data.frontmatter.title,
@@ -77,7 +87,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 "@type": "BlogPosting",
                 "headline": frontmatter.title,
                 "description": frontmatter.description,
-                "image": frontmatter.image ? `https://www.eosproje.com${frontmatter.image}` : undefined,
+                "image": frontmatter.image ? `https://eosproje.com${frontmatter.image}` : undefined,
                 "author": {
                     "@type": "Person",
                     "name": frontmatter.author || "Eos Proje",
@@ -88,14 +98,14 @@ export default async function BlogPostPage({ params }: PageProps) {
                     "name": "Eos Proje",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://www.eosproje.com/images/EosProje-Lazer-Tarama-Sistemleri.webp"
+                        "url": "https://eosproje.com/images/EosProje-Lazer-Tarama-Sistemleri.webp"
                     }
                 },
                 "datePublished": frontmatter.date,
                 "dateModified": frontmatter.lastUpdated || frontmatter.date,
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": `https://www.eosproje.com/blog/${slug}`
+                    "@id": `https://eosproje.com/blog/${slug}`
                 }
             }} />
 

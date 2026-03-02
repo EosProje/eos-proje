@@ -10,28 +10,28 @@ const solutions = [
     title: "Point Cloud to BIM",
     desc: "Lazer tarama verilerinden akıllı Revit/IFC modelleri üretiyoruz. LOD 200-400 seviyesinde parametrik içerik.",
     icon: <Box className="w-8 h-8" />,
-    href: "/cozumler/point-cloud-to-bim",
+    href: "/cozumler/nokta-bulutu-bim",
     tags: ["RVT", "IFC", "E57"]
   },
   {
     title: "As-built Modelleme",
     desc: "Mevcut yapıların güncel durumunu milimetrik doğrulukla dijitalleştiriyoruz. Mevcut durum tespiti.",
     icon: <Layers className="w-8 h-8" />,
-    href: "/cozumler/as-built-modeling",
+    href: "/cozumler/mevcut-durum-modelleme",
     tags: ["DWG", "PDF", "RCS"]
   },
   {
     title: "2D to 3D/BIM Dönüşüm",
     desc: "Kağıt veya CAD ortamındaki arşiv projelerini modern BIM standartlarına dönüştürüyoruz.",
     icon: <Database className="w-8 h-8" />,
-    href: "/cozumler/2d-to-3d-bim-conversion",
+    href: "/cozumler/2d-3d-bim-donusum",
     tags: ["Legacy to BIM"]
   },
   {
     title: "Endüstriyel Ekipman",
     desc: "Fabrika ve tesislerdeki karmaşık MEP sistemleri ve makineler için detaylı ekipman kütüphaneleri.",
     icon: <Settings className="w-8 h-8" />,
-    href: "/cozumler/industrial-equipment-modeling",
+    href: "/cozumler/endustriyel-ekipman-modelleme",
     tags: ["MEP", "Equipment"]
   }
 ];

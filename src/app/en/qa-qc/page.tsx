@@ -5,10 +5,10 @@ export const metadata: Metadata = {
     title: "BIM Quality Assurance & Control (QA/QC) | Accuracy Guarantee",
     description: "Learn about our three-stage QA/QC protocol and millimeter accuracy guarantees in BIM modeling and reality capture projects.",
     alternates: {
-        canonical: 'https://www.eosproje.com/en/qa-qc',
+        canonical: 'https://eosproje.com/en/qa-qc',
         languages: {
-            "tr": "https://www.eosproje.com/qa-qc",
-            "en": "https://www.eosproje.com/en/qa-qc",
+            "tr": "https://eosproje.com/qa-qc",
+            "en": "https://eosproje.com/en/qa-qc",
         },
     },
 };

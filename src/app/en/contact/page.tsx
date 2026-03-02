@@ -5,10 +5,10 @@ export const metadata: Metadata = {
     title: "Contact Us | Get a Point Cloud to BIM Quote",
     description: "Contact our Istanbul and Budapest offices for your laser scanning and BIM modeling projects. Get a custom quote for your industrial or architectural structure digitalization.",
     alternates: {
-        canonical: 'https://www.eosproje.com/en/contact',
+        canonical: 'https://eosproje.com/en/contact',
         languages: {
-            "tr": "https://www.eosproje.com/iletisim",
-            "en": "https://www.eosproje.com/en/contact",
+            "tr": "https://eosproje.com/iletisim",
+            "en": "https://eosproje.com/en/contact",
         },
     },
 };

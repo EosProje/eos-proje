@@ -1,0 +1,79 @@
+# EOS Proje - Blog ve Bilgi Merkezi
+# LLM Referans Dosyası (Türkçe)
+# Web: https://eosproje.com/blog
+# Son güncelleme: Mart 2025
+
+---
+
+## Blog Kategorileri
+
+- Scan to BIM
+- Lazer Tarama
+- Dijital İkiz
+- HBIM / Tarihi Yapılar
+- BIM Modelleme
+- Tesis Yönetimi
+- Teknoloji
+- Sektörel İçerikler
+
+---
+
+## Öne Çıkan Yazılar
+
+### 1. Scan to BIM Rehberi: 5 Adımda Mevcut Yapıları Dijitalleştirme
+**URL:** https://eosproje.com/blog/scan-to-bim-rehberi
+**Konu:** Scan to BIM sürecinin adım adım açıklaması, veri toplama, modelleme, kalite kontrol.
+
+### 2. Lazer Tarama (LiDAR) Nedir? Inşaatta Devrimsel Teknoloji
+**URL:** https://eosproje.com/blog/lazer-tarama-nedir
+**Konu:** Lazer tarama teknolojisinin temelleri, çalışma prensibi, avantajları.
+
+### 3. Lazer Tarama Teknolojileri: Karasal (TLS) vs Mobil (SLAM)
+**URL:** https://eosproje.com/blog/lazer-tarama-teknolojileri
+**Konu:** Farklı tarama teknolojilerinin karşılaştırması, kullanım alanları.
+
+### 4. Scan to CAD Nedir? Geleneksel Röleveye Göre Avantajları
+**URL:** https://eosproje.com/blog/scan-to-cad-onemi
+**Konu:** Scan to CAD süreci, geleneksel yöntemlerle karşılaştırma.
+
+### 5. Çakışma Tespiti ile Inşaat Maliyetlerini Azaltın
+**URL:** https://eosproje.com/blog/cakisma-tespiti-maliyet
+**Konu:** BIM'de clash detection, maliyet tasarrufu, süreç optimizasyonu.
+
+### 6. Endüstriyel Tesislerde Dijital İkiz Uygulamaları
+**URL:** https://eosproje.com/blog/endustriyel-dijital-ikiz
+**Konu:** Dijital ikiz kavramı, endüstriyel uygulamalar, verimlilik kazancı.
+
+### 7. Tarihi Yapılarda Lazer Tarama (HBIM) Teknolojisi
+**URL:** https://eosproje.com/blog/tarihi-yapilar-hbim
+**Konu:** HBIM nedir, tarihi yapı dokümantasyonu, restorasyon desteği.
+
+### 8. Heritage BIM (HBIM): Kültürel Mirasın Dijital Koruyucusu
+**URL:** https://eosproje.com/blog/heritage-bim-restorasyon
+**Konu:** HBIM metodolojisi, restorasyon sürecine katkıları.
+
+### 9. BIM Tabanlı Tesis Yönetimi
+**URL:** https://eosproje.com/blog/bim-tesis-yonetimi
+**Konu:** As-built BIM ile tesis yönetimi, operasyon optimizasyonu.
+
+### 10. Parametrik Revit Family Oluşturma
+**URL:** https://eosproje.com/blog/revit-family-olusturma
+**Konu:** Revit family tasarımı, parametrik modelleme, en iyi uygulamalar.
+
+---
+
+## İngilizce Blog
+
+İngilizce içerikler için: https://eosproje.com/en/blog
+
+---
+
+## İlgili Sayfalar
+
+- Blog Ana Sayfası: https://eosproje.com/blog
+- SSS: https://eosproje.com/sss
+- İletişim: https://eosproje.com/iletisim
+
+---
+
+Son Güncelleme: Mart 2025

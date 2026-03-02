@@ -54,6 +54,33 @@ const nextConfig: NextConfig = {
   },
   // Ensure trailing slash is handled consistently
   trailingSlash: false,
+  
+  // 301 Redirects for old English slugs to new Turkish slugs
+  async redirects() {
+    return [
+      // Old English slugs in Turkish section -> New Turkish slugs
+      {
+        source: '/cozumler/as-built-modeling',
+        destination: '/cozumler/mevcut-durum-modelleme',
+        permanent: true,
+      },
+      {
+        source: '/cozumler/point-cloud-to-bim',
+        destination: '/cozumler/nokta-bulutu-bim',
+        permanent: true,
+      },
+      {
+        source: '/cozumler/2d-to-3d-bim-conversion',
+        destination: '/cozumler/2d-3d-bim-donusum',
+        permanent: true,
+      },
+      {
+        source: '/cozumler/industrial-equipment-modeling',
+        destination: '/cozumler/endustriyel-ekipman-modelleme',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

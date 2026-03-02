@@ -5,16 +5,16 @@ export const metadata: Metadata = {
     title: "Frequently Asked Questions (FAQ) | Point Cloud & BIM Support",
     description: "Find answers to your questions about Point Cloud to BIM timeline, LOD levels, accuracy guarantees, and delivery formats.",
     alternates: {
-        canonical: 'https://www.eosproje.com/en/faq',
+        canonical: 'https://eosproje.com/en/faq',
         languages: {
-            "tr": "https://www.eosproje.com/sss",
-            "en": "https://www.eosproje.com/en/faq",
+            "tr": "https://eosproje.com/sss",
+            "en": "https://eosproje.com/en/faq",
         },
     },
     openGraph: {
         title: "Frequently Asked Questions (FAQ) | Point Cloud & BIM Support",
         description: "Answers to your questions about Point Cloud to BIM, laser scanning, and as-built modeling processes.",
-        url: "https://www.eosproje.com/en/faq",
+        url: "https://eosproje.com/en/faq",
         images: [{ url: "/images/og/faq-og.webp", width: 1200, height: 630 }],
         locale: "en_US",
         type: "website",

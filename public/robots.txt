@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.eosproje.com/sitemap.xml
+Sitemap: https://eosproje.com/sitemap.xml
 
 # AI Search Engine Crawlers
 User-agent: GPTBot
@@ -16,4 +16,4 @@ User-agent: anthropic-ai
 Allow: /
 
 # AI-readable content
-# See: https://www.eosproje.com/llms.txt
+# See: https://eosproje.com/llms.txt

@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         title: data.frontmatter.title,
         description: data.frontmatter.description,
         alternates: {
-            canonical: `https://www.eosproje.com/referanslar/${slug}`,
+            canonical: `https://eosproje.com/referanslar/${slug}`,
         },
         openGraph: {
             title: data.frontmatter.title,
@@ -67,25 +67,25 @@ export default async function CaseStudyDetailPage({ params }: PageProps) {
                 "@type": "Article",
                 "headline": frontmatter.title,
                 "description": frontmatter.description,
-                "image": heroImage ? `https://www.eosproje.com${heroImage}` : undefined,
+                "image": heroImage ? `https://eosproje.com${heroImage}` : undefined,
                 "author": {
                     "@type": "Organization",
                     "name": "Eos Proje",
-                    "url": "https://www.eosproje.com"
+                    "url": "https://eosproje.com"
                 },
                 "publisher": {
                     "@type": "Organization",
                     "name": "Eos Proje",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://www.eosproje.com/images/logo.png"
+                        "url": "https://eosproje.com/images/logo.png"
                     }
                 },
                 "datePublished": frontmatter.date,
                 "dateModified": frontmatter.lastUpdated || frontmatter.date,
                 "mainEntityOfPage": {
                     "@type": "WebPage",
-                    "@id": `https://www.eosproje.com/referanslar/${slug}`
+                    "@id": `https://eosproje.com/referanslar/${slug}`
                 }
             }} />
 

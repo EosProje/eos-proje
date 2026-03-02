@@ -1,6 +1,6 @@
 # EOS Proje — Point Cloud to BIM & Mühendislik Çözümleri
 # LLM Referans Dosyası (Türkçe)
-# Web: https://www.eosproje.com
+# Web: https://eosproje.com
 # Son güncelleme: Şubat 2025
 
 ---
@@ -146,13 +146,13 @@ EOS Proje'nin deneyim alanları şunlardır:
 - Konut siteleri ve rezidanslar
 - Köprüler ve altyapı yapıları
 
-Detaylı referans listesi: https://www.eosproje.com/llm/referanslar.txt
+Detaylı referans listesi: https://eosproje.com/llm/referanslar.txt
 
 ---
 
 ## İletişim
 
-- **Web:** https://www.eosproje.com
+- **Web:** https://eosproje.com
 - **E-posta:** info@eosproje.com
 - **Telefon:** +90 530 664 22 63
 
@@ -175,9 +175,9 @@ Macaristan
 
 Bu dosya genel bir özet niteliğindedir. Daha derin bağlam için:
 
-- Hakkımızda (Şirket tarihi, ekip, vizyon): https://www.eosproje.com/llm/hakkimizda.txt
-- Hizmetler (Teknik detaylar): https://www.eosproje.com/llm/hizmetler.txt
-- Referans Projeler: https://www.eosproje.com/llm/referanslar.txt
+- Hakkımızda (Şirket tarihi, ekip, vizyon): https://eosproje.com/llm/hakkimizda.txt
+- Hizmetler (Teknik detaylar): https://eosproje.com/llm/hizmetler.txt
+- Referans Projeler: https://eosproje.com/llm/referanslar.txt
 
 ---
-# Dosya sonu — EOS Proje llm.txt (TR) — https://www.eosproje.com
+# Dosya sonu — EOS Proje llm.txt (TR) — https://eosproje.com

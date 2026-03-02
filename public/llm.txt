@@ -1,183 +1,102 @@
 # EOS Proje — Point Cloud to BIM & Mühendislik Çözümleri
 # LLM Referans Dosyası (Türkçe)
-# Web: https://www.eosproje.com
-# Son güncelleme: Şubat 2025
+# Web: https://eosproje.com
+# Son güncelleme: Mart 2025
 
 ---
 
 ## Şirket Kimliği
 
-EOS Proje, lazer tarama (LiDAR) verilerinden elde edilen nokta bulutu (point cloud) verilerini yüksek hassasiyetli BIM modellerine, 2D rölöve çizimlerine ve 3D dijital ikizlere dönüştüren uzman bir mühendislik firmasıdır. İstanbul ve Budapeşte (partner ofis) lokasyonlarıyla hem Türkiye hem de Avrupa genelinde hizmet vermektedir.
+EOS Proje, lazer tarama (LiDAR) verilerinden elde edilen nokta bulutu (point cloud) verilerini yüksek hassasiyetli BIM modellerine, 2D rölöve çizimlerine ve 3D dijital ikizlere dönüştüren uzman bir mühendislik firmasıdır.
 
-Hedef müşteri kitlesi: Mimarlar, inşaat mühendisleri, tesis yöneticileri, EPC müteahhitleri, restorasyon uzmanları ve endüstriyel tesis operatörleri.
+**Lokasyonlar:**
+- Merkez: İstanbul, Türkiye
+- Partner Ofis: Budapeşte, Macaristan
+
+**Hedef Müşteri Kitlesi:**
+Mimarlar, inşaat mühendisleri, tesis yöneticileri, EPC müteahhitleri, restorasyon uzmanları, endüstriyel tesis operatörleri, belediyeler, müteahhitler.
+
+**İletişim:**
+- Web: https://eosproje.com
+- E-posta: info@eosproje.com
+- Telefon: +90 539 669 96 06
 
 ---
 
-## Hizmetler
+## Hizmet Dosyaları (Alt LLM.txt Referansları)
+
+Detaylı hizmet bilgileri için aşağıdaki dosyalara bakınız:
+
+1. **Hakkımızda:** /llm/hakkimizda.txt
+2. **Scan to BIM:** /llm/scan-to-bim.txt
+3. **BIM Modelleme:** /llm/bim-modelleme.txt
+4. **Lazer Tarama:** /llm/lazer-tarama.txt
+5. **Dijital İkiz:** /llm/dijital-ikiz.txt
+6. **HBIM (Tarihi Yapı):** /llm/hbim.txt
+7. **İletişim:** /llm/iletisim.txt
+8. **Referanslar:** /llm/referanslar.txt
+9. **Blog:** /llm/blog.txt
+10. **Sektörler:** /llm/sektorler.txt
+11. **SSS:** /llm/sss.txt
+12. **Kaynaklar:** /llm/kaynaklar.txt
+
+---
+
+## Ana Hizmetler Özeti
 
 ### 1. Point Cloud to BIM (Scan to BIM)
+Lazer tarama verisinden Revit BIM modeli üretimi. LOD 100-400 seviyelerinde mimari, strüktürel ve MEP modelleme.
 
-Lazer tarama veya fotogrametri yoluyla elde edilen nokta bulutu verilerinden Autodesk Revit ortamında BIM modeli üretilmesidir.
+### 2. Lazer Tarama Hizmetleri
+Karasal (TLS), mobil (SLAM), drone (İHA) ve fotogrametri ile 3D veri toplama. ±2mm hassasiyet.
 
-**Detaylar:**
-- Desteklenen LOD seviyeleri: LOD 100, LOD 200, LOD 300, LOD 350, LOD 400
-- Model disiplinleri: Mimari (Architectural), Strüktürel/Statik (Structural), Mekanik-Elektrik-Tesisat (MEP)
-- Kullanım alanları: Tadilat ve yenileme projeleri, as-built doğrulama, ruhsat süreçleri, proje koordinasyonu
-- Tipik doğruluk aralığı: ±2mm ila ±5mm
+### 3. Endüstriyel Tesis Modelleme
+Fabrika, rafineri, enerji santrali modelleme. Borulama, HVAC, çelik konstrüksiyon, çakışma tespiti.
 
-**Süreç:**
-1. Müşteri nokta bulutu verisini (.E57, .RCP, .RCS, .LAS, .LAZ, .PTX) iletir
-2. Veri kalite kontrolü ve koordinat sistemine yerleştirme
-3. Revit'te modelleme (kararlaştırılan LOD ve disipline göre)
-4. Kalite kontrol ve sapma analizi
-5. Teslimat: .RVT, .IFC, .DWG, .NWD, 3D PDF
+### 4. Dijital İkiz Çözümleri
+Gerçek zamanlı veri entegrasyonu ile fiziksel varlıkların dijital kopyaları. IoT sensör entegrasyonu.
 
----
+### 5. HBIM - Tarihi Yapı Modelleme
+Tarihi yapılar için Heritage BIM. Restorasyon dokümantasyonu, deformasyon analizi.
 
-### 2. Endüstriyel Tesis ve MEP Modelleme
-
-Fabrika, rafineri, enerji santrali ve benzeri endüstriyel yapıların nokta bulutu verilerinden 3D modele dönüştürülmesidir.
-
-**Kapsam:**
-- Borulama (Piping) ve process ekipman modellemesi
-- HVAC sistemleri modelleme
-- Çelik konstrüksiyon ve yapısal çerçeve modelleme
-- Çakışma tespiti (Clash detection) — Navisworks ile disiplinlerarası çakışma analizi
-- Revit veya AutoCAD Plant 3D çıktısı
-
-**Kullanım alanları:** Tesis modernizasyonu, genişleme projeleri, operasyonel risk azaltma, mevcut tesis dokümantasyonu.
+### 6. Rölöve ve Ölçüm Hizmetleri
+Cephe rölöve, mimari rölöve, eski eser rölöve, restorasyon rölövesi. 2D CAD ve 3D model çıktıları.
 
 ---
 
-### 3. Tarihi Eser ve Mimari Rölöve (3D Lazer Tarama)
+## Anahtar Kelimeler
 
-Kültürel miras yapıları, tarihi binalar ve arkeolojik alanların milimetrik hassasiyette ölçülmesi ve belgelenmesidir.
+**Türkçe:**
+scan to bim, nokta bulutu bim modeli, lazer tarama, 3d lazer tarama, lidar tarama, point cloud, dijital ikiz, hbim, tarihi yapı modelleme, rölöve, cephe rölöve, eski eser rölöve, mimari rölöve, restorasyon rölövesi, drone ile halihazır harita, lazer tarama firmaları, halihazır harita, harita ölçme, çakışma tespiti, clash detection, as-built modelleme, mep modelleme, revit modelleme, bim danışmanlık
 
-**Kapsam:**
-- Leica ve Trimble 3D lazer tarayıcılarla saha taraması
-- Nokta bulutu işleme ve temizleme (registration, noise filtering)
-- Mimari rölöve çizimlerinin üretimi: plan, kesit, cephe (.DWG)
-- Restorasyon ve tescil projelerine uygun 3D modelleme
-- Deformasyon ve yapısal sapma analizi
-
-**Hassasiyet:** Tarayıcı bazında ±1mm ila ±3mm arası saha doğruluğu.
+**İngilizce:**
+scan to bim, point cloud to bim, laser scanning, 3d laser scanning, lidar scanning, digital twin, heritage bim, hbim, as-built documentation, clash detection, mep modeling, revit modeling, bim consulting, industrial facility modeling
 
 ---
 
-### 4. As-Built Modelleme ve Dijital İkiz (Digital Twin)
+## Kalite ve Sertifikasyonlar
 
-Mevcut yapıların gerçek durumunun (as-is) dijital ortama aktarılması ve tesis yönetimi (Facility Management) için kullanılabilir hale getirilmesidir.
-
-**Kapsam:**
-- As-built BIM model üretimi (tasarım ile mevcut durum arasındaki fark analizi dahil)
-- COBie uyumlu veri çıktısı (tesis yönetim sistemleri için)
-- IoT entegrasyonuna hazır dijital ikiz altyapısı
-- IWMS / CAFM sistemlerine aktarım desteği
-
-**Faydaları:** Bakım maliyetlerinin düşürülmesi, enerji verimliliği analizi, acil durum planlaması, alan yönetimi optimizasyonu.
+- ISO 9001:2015 Kalite Yönetim Sistemi
+- ISO 27001 Bilgi Güvenliği
+- BIM Level 2 Yetkinlik
+- Autodesk Certified Professional
 
 ---
 
-## Teknik Kapasite
+## Teknolojiler ve Yazılımlar
 
-### Kabul Edilen Girdi Formatları
-| Format | Açıklama |
-|--------|----------|
-| .E57 | Standart nokta bulutu arşiv formatı |
-| .RCP / .RCS | Autodesk ReCap proje ve tarama dosyaları |
-| .LAS / .LAZ | LiDAR standart formatı (sıkıştırılmış/sıkıştırılmamış) |
-| .PTX | Leica tarayıcı ham çıktı formatı |
-
-### Üretilen Çıktı Formatları
-| Format | Kullanım |
-|--------|----------|
-| .RVT | Autodesk Revit modeli |
-| .IFC | Açık BIM standardı, yazılımdan bağımsız |
-| .DWG | AutoCAD 2D/3D çizim |
-| .NWD | Navisworks koordinasyon ve çakışma modeli |
-| 3D PDF | Görselleştirme ve müşteri sunumu |
-
-### Kullanılan Donanım ve Yazılımlar
-- **Tarayıcılar:** Leica RTC360, Leica BLK360, Trimble X7
-- **Yazılımlar:** Autodesk Revit, Autodesk ReCap, Navisworks Manage, AutoCAD, AutoCAD Plant 3D
+**Tarama:** Leica, FARO, Trimble, DJI Matrice
+**Modelleme:** Autodesk Revit, AutoCAD, Plant 3D, Navisworks
+**İşleme:** Cyclone, ReCap, CloudCompare
+**Koordinasyon:** BIM 360, ACC, BIM Track
 
 ---
 
-## Neden EOS Proje?
+## Desteklenen Formatlar
 
-- **Yüksek Hassasiyet:** ±2mm ila ±5mm doğruluk aralığında modelleme garantisi
-- **Hız:** Geleneksel manuel ölçüm yöntemlerine kıyasla %50 daha hızlı teslimat
-- **Deneyim:** 10+ yıl sektör tecrübesi; başarıyla tamamlanan 2.000.000 m²'den fazla alan
-- **Uluslararası Kapasite:** Türkiye ve Avrupa projelerine eş zamanlı hizmet
-- **Tam Süreç Kontrolü:** Sahadan teslimata kadar tüm süreç EOS Proje bünyesinde yönetilir
-- **IFC ve Açık BIM Uyumluluğu:** Yazılım bağımsız teslimat seçenekleri
+**Giriş:** E57, RCP, RCS, LAS, LAZ, PTX, XYZ, PLY
+**Çıkış:** RVT, IFC, DWG, DXF, NWD, FBX, 3D PDF
 
 ---
 
-## Sık Sorulan Sorular (SSS)
-
-**S: Nokta bulutu verisini nasıl iletebilirim?**
-C: Büyük dosyalar için WeTransfer, Google Drive veya FTP bağlantısı üzerinden güvenli aktarım sağlanmaktadır. Veri transferi için info@eosproje.com adresine ulaşabilirsiniz.
-
-**S: Hangi LOD seviyesini seçmeliyim?**
-C: Kullanım amacına göre değişir. Koordinasyon ve alan tespiti için LOD 200-300, müteahhit-düzeyinde uygulama detayı için LOD 350-400 uygundur. EOS Proje, projenizi değerlendirerek öneri sunar.
-
-**S: Sadece 2D rölöve çizimi alabilir miyim?**
-C: Evet. 3D model olmaksızın yalnızca .DWG formatında plan, kesit ve cephe rölöveleri de üretilebilir.
-
-**S: Tarama hizmeti de veriyor musunuz?**
-C: Evet. Leica ve Trimble tarayıcılarla Türkiye genelinde saha tarama hizmeti de sunulmaktadır. Yurt dışı projeler için Budapeşte partner ofis üzerinden koordinasyon sağlanmaktadır.
-
-**S: Proje teslim süresi ne kadar?**
-C: Proje büyüklüğüne ve LOD seviyesine bağlıdır. Küçük projeler (tek kat, <500 m²) genellikle 5-10 iş günü içinde teslim edilir. Büyük endüstriyel projeler için ayrıntılı bir zaman çizelgesi sunulmaktadır.
-
-**S: IFC dosyası alabilir miyim?**
-C: Evet. Tüm projeler için .IFC çıktısı standart olarak sunulmaktadır.
-
----
-
-## Referans Proje Alanları
-
-EOS Proje'nin deneyim alanları şunlardır:
-- Tarihi camiler, kiliseleler ve kültürel miras yapıları
-- Hastaneler ve sağlık tesisleri
-- Endüstriyel fabrikalar ve rafineriler
-- Alışveriş merkezleri ve ticari yapılar
-- Konut siteleri ve rezidanslar
-- Köprüler ve altyapı yapıları
-
-Detaylı referans listesi: https://www.eosproje.com/llm/referanslar.txt
-
----
-
-## İletişim
-
-- **Web:** https://www.eosproje.com
-- **E-posta:** info@eosproje.com
-- **Telefon:** +90 530 664 22 63
-
-**İstanbul Ofisi:**
-Murat Reis Mah. Teyyareci Muammer Sok. No:10/4
-34664 Üsküdar / İstanbul, Türkiye
-
-**İskenderun Ofisi:**
-Piri Reis Mah. Barbaros Cd. No:20
-31200 İskenderun / Hatay, Türkiye
-
-**Budapeşte Partner Ofisi:**
-Intera Survey
-1063 Budapest, Szinyei Merse utca 21. 1. em. 5. ajtó
-Macaristan
-
----
-
-## Alt Kaynak Dosyaları
-
-Bu dosya genel bir özet niteliğindedir. Daha derin bağlam için:
-
-- Hakkımızda (Şirket tarihi, ekip, vizyon): https://www.eosproje.com/llm/hakkimizda.txt
-- Hizmetler (Teknik detaylar): https://www.eosproje.com/llm/hizmetler.txt
-- Referans Projeler: https://www.eosproje.com/llm/referanslar.txt
-
----
-# Dosya sonu — EOS Proje llm.txt (TR) — https://www.eosproje.com
+Son Güncelleme: Mart 2025

@@ -1,6 +1,6 @@
 # EOS Proje — Referans Projeler
 # LLM Referans Dosyası (Türkçe)
-# Web: https://www.eosproje.com
+# Web: https://eosproje.com
 # Son güncelleme: Şubat 2025
 
 Not: Gizlilik sözleşmeleri gereği tüm projelerimizi burada listeleyemiyoruz. Detaylı referans listesi için info@eosproje.com adresine ulaşabilirsiniz.
@@ -278,16 +278,16 @@ Türkiye (İstanbul, İzmir, Sakarya, Hatay, Bursa, Gaziantep ve diğer iller) �
 ## Daha Fazla Referans
 
 - **Email:** info@eosproje.com
-- **Web:** https://www.eosproje.com/referanslar
+- **Web:** https://eosproje.com/referanslar
 - **Telefon:** +90 530 664 22 63
 
 ---
 
 ## İlgili Kaynaklar
 
-- Hakkımızda: https://www.eosproje.com/llm/hakkimizda.txt
-- Hizmetler: https://www.eosproje.com/llm/hizmetler.txt
-- Genel Özet: https://www.eosproje.com/llm.txt
+- Hakkımızda: https://eosproje.com/llm/hakkimizda.txt
+- Hizmetler: https://eosproje.com/llm/hizmetler.txt
+- Genel Özet: https://eosproje.com/llm.txt
 
 ---
-# Dosya sonu — EOS Proje referanslar.txt (TR) — https://www.eosproje.com
+# Dosya sonu — EOS Proje referanslar.txt (TR) — https://eosproje.com

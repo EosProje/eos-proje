@@ -1,13 +1,76 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Mail, Phone, MapPin, Linkedin, Instagram, Youtube, ArrowRight, Cpu } from "lucide-react";
-import { CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/constants";
+import { Mail, Phone, MapPin, Linkedin, Instagram, Youtube, ArrowRight, Cpu, ChevronDown, Globe, Download } from "lucide-react";
+import { CONTACT_EMAIL, CONTACT_PHONE, SAMPLE_FILES_URL } from "@/lib/constants";
+import { geoTargets } from "@/lib/keywords";
+import { useState } from "react";
+
+// Helper function to create location slug
+const createSlug = (location: string, lang: 'tr' | 'en'): string => {
+    return location
+        .toLowerCase()
+        .replace(/ı/g, 'i')
+        .replace(/ö/g, 'o')
+        .replace(/ü/g, 'u')
+        .replace(/ş/g, 's')
+        .replace(/ç/g, 'c')
+        .replace(/ğ/g, 'g')
+        .replace(/İ/g, 'i')
+        .replace(/\s+/g, '-');
+};
+
+// Location data grouped by region
+const getLocationGroups = (isEn: boolean) => {
+    const lang = isEn ? 'en' : 'tr';
+    const basePath = isEn ? '/en/location' : '/lokasyon';
+    
+    return {
+        europe: {
+            title: isEn ? 'Europe' : 'Avrupa',
+            locations: geoTargets.europe[lang].map(loc => ({
+                name: loc,
+                href: `${basePath}/${createSlug(loc, lang)}`
+            }))
+        },
+        turkey: {
+            title: isEn ? 'Turkey' : 'Türkiye',
+            locations: geoTargets.turkey[lang].map(loc => ({
+                name: loc,
+                href: `${basePath}/${createSlug(loc, lang)}`
+            }))
+        },
+        middleEast: {
+            title: isEn ? 'Middle East' : 'Orta Doğu',
+            locations: geoTargets.middleEast[lang].map(loc => ({
+                name: loc,
+                href: `${basePath}/${createSlug(loc, lang)}`
+            }))
+        },
+        gulf: {
+            title: isEn ? 'Gulf Region' : 'Körfez',
+            locations: geoTargets.gulf[lang].map(loc => ({
+                name: loc,
+                href: `${basePath}/${createSlug(loc, lang)}`
+            }))
+        },
+        northAfricaCentralAsia: {
+            title: isEn ? 'Africa & Central Asia' : 'Kuzey Afrika & Orta Asya',
+            locations: geoTargets.northAfricaCentralAsia[lang].map(loc => ({
+                name: loc,
+                href: `${basePath}/${createSlug(loc, lang)}`
+            }))
+        }
+    };
+};
 
 const Footer = () => {
     const pathname = usePathname() || "";
     const isEn = pathname.startsWith("/en");
+    const [isLocationsOpen, setIsLocationsOpen] = useState(false);
+
+    const locationGroups = getLocationGroups(isEn);
 
     const footerData = isEn ? {
         description: "LOD 100-400 Point Cloud to BIM modeling and High-Detail Industrial As-built services. Millimeter precision engineering solutions for the AEC industry.",
@@ -32,18 +95,21 @@ const Footer = () => {
             { label: "Engineering Blog", href: "/en/blog" },
             { label: "Technical Docs", href: "/en/technical-docs" },
             { label: "FAQ / Support", href: "/en/faq" },
-            { label: "Contact Us", href: "/en/contact" }
+            { label: "Contact Us", href: "/en/contact" },
+            { label: "Sample Files (Revit & IFC)", href: SAMPLE_FILES_URL, external: true }
         ],
         contact: "Global Presence",
-        rights: "All rights reserved. Engineering Excellence."
+        rights: "All rights reserved. Engineering Excellence.",
+        locations: "Service Areas",
+        viewAll: "View All Locations"
     } : {
         description: "LOD 100-400 Point Cloud to BIM modelleme ve Yüksek Detaylı Endüstriyel As-built hizmetleri. AEC endüstrisi için milimetrik hassasiyette mühendislik çözümleri.",
         solutions: "Mühendislik Çözümleri",
         solutionsLinks: [
-            { label: "Point Cloud to BIM", href: "/cozumler/point-cloud-to-bim" },
-            { label: "As-built Modelleme", href: "/cozumler/as-built-modeling" },
-            { label: "2D to 3D Dönüşüm", href: "/cozumler/2d-to-3d-bim-conversion" },
-            { label: "Endüstriyel Ekipman", href: "/cozumler/industrial-equipment-modeling" },
+            { label: "Point Cloud to BIM", href: "/cozumler/nokta-bulutu-bim" },
+            { label: "As-built Modelleme", href: "/cozumler/mevcut-durum-modelleme" },
+            { label: "2D to 3D Dönüşüm", href: "/cozumler/2d-3d-bim-donusum" },
+            { label: "Endüstriyel Ekipman", href: "/cozumler/endustriyel-ekipman-modelleme" },
             { label: "QA/QC Süreci", href: "/qa-qc" }
         ],
         corporate: "Kurumsal",
@@ -59,10 +125,13 @@ const Footer = () => {
             { label: "Mühendislik Blogu", href: "/blog" },
             { label: "Teknik Dökümanlar", href: "/teknik-dokumanlar" },
             { label: "SSS / Destek", href: "/sss" },
-            { label: "İletişim", href: "/iletisim" }
+            { label: "İletişim", href: "/iletisim" },
+            { label: "Örnek Dosyalar (Revit & IFC)", href: SAMPLE_FILES_URL, external: true }
         ],
         contact: "Küresel İletişim",
-        rights: "Tüm haklar saldırıdır. Mühendislikte Mükemmellik."
+        rights: "Tüm hakları saklıdır. Mühendislikte Mükemmellik.",
+        locations: "Hizmet Bölgelerimiz",
+        viewAll: "Tüm Lokasyonları Gör"
     };
 
     return (
@@ -72,7 +141,7 @@ const Footer = () => {
             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-red-500/20 to-transparent"></div>
 
             <div className="max-w-7xl mx-auto relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-24">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-16">
                     {/* Brand Section */}
                     <div className="space-y-10">
                         <Link href={isEn ? "/en" : "/"} className="flex items-center gap-3 group">
@@ -138,10 +207,22 @@ const Footer = () => {
                                 ))}
                                 {footerData.infoLinks.map((link, i) => (
                                     <li key={i + 10}>
-                                        <Link href={link.href} className="text-slate-400 hover:text-white text-sm font-bold transition-all flex items-center gap-3 group">
-                                            <ArrowRight className="w-3.5 h-3.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[var(--color-primary-red)]" />
-                                            {link.label}
-                                        </Link>
+                                        {(link as { external?: boolean }).external ? (
+                                            <a 
+                                                href={link.href} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="text-slate-400 hover:text-white text-sm font-bold transition-all flex items-center gap-3 group"
+                                            >
+                                                <Download className="w-3.5 h-3.5 text-[var(--color-primary-red)]" />
+                                                {link.label}
+                                            </a>
+                                        ) : (
+                                            <Link href={link.href} className="text-slate-400 hover:text-white text-sm font-bold transition-all flex items-center gap-3 group">
+                                                <ArrowRight className="w-3.5 h-3.5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[var(--color-primary-red)]" />
+                                                {link.label}
+                                            </Link>
+                                        )}
                                     </li>
                                 ))}
                             </ul>
@@ -183,6 +264,68 @@ const Footer = () => {
                     </div>
                 </div>
 
+                {/* Service Areas / Locations Section */}
+                <div className="border-t border-white/5 pt-12 mb-12">
+                    <button
+                        onClick={() => setIsLocationsOpen(!isLocationsOpen)}
+                        className="w-full flex items-center justify-between mb-8 group"
+                    >
+                        <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-[var(--color-primary-red)] flex items-center gap-3">
+                            <Globe className="w-4 h-4" />
+                            {footerData.locations}
+                            <span className="text-slate-500 font-normal">({Object.values(locationGroups).reduce((acc, group) => acc + group.locations.length, 0)} {isEn ? 'locations' : 'lokasyon'})</span>
+                        </h4>
+                        <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform duration-300 ${isLocationsOpen ? 'rotate-180' : ''}`} />
+                    </button>
+
+                    <div className={`transition-all duration-500 overflow-hidden ${isLocationsOpen ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                            {Object.entries(locationGroups).map(([key, group]) => (
+                                <div key={key}>
+                                    <h5 className="text-xs font-bold text-white mb-4 uppercase tracking-wider">{group.title}</h5>
+                                    <ul className="space-y-2">
+                                        {group.locations.map((loc, idx) => (
+                                            <li key={idx}>
+                                                <Link 
+                                                    href={loc.href} 
+                                                    className="text-slate-500 hover:text-[var(--color-primary-red)] text-xs font-medium transition-colors"
+                                                >
+                                                    {loc.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Quick Location Links (Always Visible) */}
+                    {!isLocationsOpen && (
+                        <div className="flex flex-wrap gap-2">
+                            {[
+                                ...locationGroups.europe.locations.slice(0, 3),
+                                ...locationGroups.turkey.locations.slice(0, 5),
+                                ...locationGroups.gulf.locations.slice(0, 2)
+                            ].map((loc, idx) => (
+                                <Link 
+                                    key={idx}
+                                    href={loc.href} 
+                                    className="text-slate-500 hover:text-white text-xs font-medium px-3 py-1.5 bg-white/5 rounded-full hover:bg-white/10 transition-all"
+                                >
+                                    {loc.name}
+                                </Link>
+                            ))}
+                            <button
+                                onClick={() => setIsLocationsOpen(true)}
+                                className="text-[var(--color-primary-red)] text-xs font-bold px-3 py-1.5 hover:underline"
+                            >
+                                +{Object.values(locationGroups).reduce((acc, group) => acc + group.locations.length, 0) - 10} {isEn ? 'more' : 'daha fazla'}
+                            </button>
+                        </div>
+                    )}
+                </div>
+
                 {/* Privacy Bar */}
                 <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="flex items-center gap-4">
@@ -193,12 +336,16 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-wrap justify-center gap-8 text-[10px] font-black uppercase tracking-[0.2em]">
-                        {[
+                        {(isEn ? [
+                            { label: "GDPR", href: "/en/gdpr" },
+                            { label: "Privacy", href: "/en/privacy-policy" },
+                            { label: "Cookies", href: "/en/cookie-policy" }
+                        ] : [
                             { label: "KVKK", href: "/kvkk" },
-                            { label: isEn ? "Privacy" : "Gizlilik", href: "/gizlilik" },
-                            { label: isEn ? "Cookies" : "Çerezler", href: "/cerez-politikasi" }
-                        ].map((legal, i) => (
-                            <Link key={i} href={isEn ? "/en" + legal.href : legal.href} className="text-slate-500 hover:text-[var(--color-primary-red)] transition-colors">
+                            { label: "Gizlilik", href: "/gizlilik" },
+                            { label: "Çerezler", href: "/cerez-politikasi" }
+                        ]).map((legal, i) => (
+                            <Link key={i} href={legal.href} className="text-slate-500 hover:text-[var(--color-primary-red)] transition-colors">
                                 {legal.label}
                             </Link>
                         ))}

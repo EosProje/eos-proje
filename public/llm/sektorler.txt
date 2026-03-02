@@ -1,0 +1,111 @@
+# EOS Proje - Hizmet Verdiğimiz Sektörler
+# LLM Referans Dosyası (Türkçe)
+# Web: https://eosproje.com/sektorler
+# Son güncelleme: Mart 2025
+
+---
+
+## Sektörel Uzmanlık Alanları
+
+### 1. Endüstriyel Tesisler
+**URL:** https://eosproje.com/sektorler/endustriyel-tesisler
+
+Fabrikalar, rafineriler, enerji santralleri, kimya tesisleri için lazer tarama ve BIM modelleme.
+
+**Hizmetler:**
+- Tesis modernizasyonu
+- Boru hattı dokümantasyonu
+- MEP modelleme
+- Çakışma tespiti
+- Retrofit projeleri
+
+**Anahtar Kelimeler:** endüstriyel tesis tarama, fabrika modelleme, rafineri bim, enerji santrali dokümantasyonu
+
+---
+
+### 2. İnşaat ve Müteahhitlik
+**URL:** https://eosproje.com/sektorler/insaat
+
+Inşaat firmaları ve müteahhitler için as-built dokümantasyonu ve proje koordinasyonu.
+
+**Hizmetler:**
+- As-built BIM modelleme
+- Çakışma analizi
+- 4D BIM (zamanlama)
+- Metraj çıkarımı
+- Saha kontrolü
+
+**Anahtar Kelimeler:** inşaat bim, müteahhit bim hizmeti, as-built dokümantasyon, clash detection inşaat
+
+---
+
+### 3. Mimarlık
+**URL:** https://eosproje.com/sektorler/mimarlik
+
+Mimarlar için mevcut yapı dokümantasyonu ve tasarım altyapısı.
+
+**Hizmetler:**
+- Cephe rölevesi
+- İç mekan tarama
+- Mimari BIM modelleme
+- Tasarım altyapısı
+- Ruhsat dokümantasyonu
+
+**Anahtar Kelimeler:** mimari röleve, cephe röleve, mimari bim, bina tarama, mimar için lazer tarama
+
+---
+
+### 4. Tadilat ve Yenileme
+**URL:** https://eosproje.com/sektorler/tadilat
+
+Tadilat, renovasyon ve dönüşüm projeleri için mevcut durum tespiti.
+
+**Hizmetler:**
+- Mevcut durum rölevesi
+- Değişiklik tespiti
+- Tadilat proje altyapısı
+- Önceki/sonraki karşılaştırması
+
+**Anahtar Kelimeler:** tadilat röleve, yenileme projesi, renovasyon bim, mevcut yapı tarama
+
+---
+
+### 5. Restorasyon ve Kültürel Miras
+**URL:** https://eosproje.com/sektorler/restorasyon
+
+Tarihi yapılar, eski eserler ve kültürel miras için özel dokümantasyon.
+
+**Hizmetler:**
+- HBIM modelleme
+- Eski eser rölevesi
+- Restorasyon rölevesi
+- Deformasyon analizi
+- Hasar haritalaması
+
+**Anahtar Kelimeler:** eski eser röleve, restorasyon rölevesi, tarihi yapı tarama, hbim, kültürel miras dokümantasyonu
+
+---
+
+### 6. Altyapı ve Ulaşım
+
+Tüneller, köprüler, metro hatları, karayolları için dokümantasyon.
+
+**Hizmetler:**
+- Tünel tarama
+- Köprü dokümantasyonu
+- Demiryolu ölçümü
+- Yol projesi altyapısı
+
+**Anahtar Kelimeler:** tünel tarama, köprü bim, altyapı modelleme, karayolu dokümantasyonu
+
+---
+
+## İlgili Sayfalar
+
+- Sektörler Ana Sayfası: https://eosproje.com/sektorler
+- Referanslar: https://eosproje.com/referanslar
+- İletişim: https://eosproje.com/iletisim
+
+---
+
+Son Güncelleme: Mart 2025

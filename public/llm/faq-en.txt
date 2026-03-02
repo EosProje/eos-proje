@@ -1,6 +1,6 @@
 # EOS Proje — Frequently Asked Questions (FAQ)
 # LLM Reference File (English)
-# Web: https://www.eosproje.com
+# Web: https://eosproje.com
 # Last updated: February 2025
 
 ---
@@ -99,7 +99,7 @@ A: Request .NWD or .IFC format. Alternatively, EOS Proje can carry out the clash
 
 ## Contact
 
-- **Web:** https://www.eosproje.com
+- **Web:** https://eosproje.com
 - **Email:** info@eosproje.com
 - **Phone:** +90 530 664 22 63
 - **Istanbul Office:** Murat Reis Mah. Teyyareci Muammer Sok. No:10/4, 34664 Üsküdar / Istanbul, Turkey
@@ -110,10 +110,10 @@ A: Request .NWD or .IFC format. Alternatively, EOS Proje can carry out the clash
 
 ## Related Resources
 
-- About Us: https://www.eosproje.com/llm/about-en.txt
-- Services: https://www.eosproje.com/llm/services-en.txt
-- Reference Projects: https://www.eosproje.com/llm/references-en.txt
-- General Overview: https://www.eosproje.com/llm-en.txt
+- About Us: https://eosproje.com/llm/about-en.txt
+- Services: https://eosproje.com/llm/services-en.txt
+- Reference Projects: https://eosproje.com/llm/references-en.txt
+- General Overview: https://eosproje.com/llm-en.txt
 
 ---
-# End of file — EOS Proje faq-en.txt (EN) — https://www.eosproje.com
+# End of file — EOS Proje faq-en.txt (EN) — https://eosproje.com

@@ -25,7 +25,7 @@ export function generateArticleSchema(
             name: "Eos Proje",
             logo: {
                 "@type": "ImageObject",
-                url: "https://www.eosproje.com/images/EosProje-Lazer-Tarama-Sistemleri.webp",
+                url: "https://eosproje.com/images/EosProje-Lazer-Tarama-Sistemleri.webp",
             },
         },
         image: frontmatter.images?.hero
@@ -71,7 +71,7 @@ export function generateOrganizationSchema() {
         description:
             "Point Cloud to BIM dönüşüm, 3D modelleme, As-Built modelleme uzmanı",
         url: process.env.NEXT_PUBLIC_SITE_URL,
-        logo: "https://www.eosproje.com/images/EosProje-Lazer-Tarama-Sistemleri.webp",
+        logo: "https://eosproje.com/images/EosProje-Lazer-Tarama-Sistemleri.webp",
         contactPoint: {
             "@type": "ContactPoint",
             contactType: "Customer Service",

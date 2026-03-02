@@ -6,10 +6,10 @@ export const metadata: Metadata = {
     title: "Sectors We Serve | Industrial, Architecture & Construction",
     description: "Specialized Point Cloud to BIM solutions for industrial plants, historical restoration, architectural surveys, and complex construction projects.",
     alternates: {
-        canonical: 'https://www.eosproje.com/en/sectors',
+        canonical: 'https://eosproje.com/en/sectors',
         languages: {
-            "tr": "https://www.eosproje.com/sektorler",
-            "en": "https://www.eosproje.com/en/sectors",
+            "tr": "https://eosproje.com/sektorler",
+            "en": "https://eosproje.com/en/sectors",
         },
     },
 };

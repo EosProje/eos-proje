@@ -1,6 +1,6 @@
 # EOS Proje — About Us
 # LLM Reference File (English)
-# Web: https://www.eosproje.com
+# Web: https://eosproje.com
 # Last updated: February 2025
 
 ---
@@ -65,7 +65,7 @@ Tel: +36 70 244 9628
 
 ## Contact
 
-- **Web:** https://www.eosproje.com
+- **Web:** https://eosproje.com
 - **Email:** info@eosproje.com
 - **Phone:** +90 530 664 22 63
 
@@ -73,9 +73,9 @@ Tel: +36 70 244 9628
 
 ## Related Resources
 
-- Services: https://www.eosproje.com/llm/hizmetler.txt
-- Reference Projects: https://www.eosproje.com/llm/referanslar.txt
-- General Overview: https://www.eosproje.com/llm-en.txt
+- Services: https://eosproje.com/llm/hizmetler.txt
+- Reference Projects: https://eosproje.com/llm/referanslar.txt
+- General Overview: https://eosproje.com/llm-en.txt
 
 ---
-# End of file — EOS Proje about-en.txt (EN) — https://www.eosproje.com
+# End of file — EOS Proje about-en.txt (EN) — https://eosproje.com

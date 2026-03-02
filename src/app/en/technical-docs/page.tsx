@@ -5,10 +5,10 @@ export const metadata: Metadata = {
     title: "BIM Project Sample Files & Technical Documents",
     description: "Download sample Point Cloud to BIM projects, Revit models, IFC files, and technical specifications for industrial and architectural modeling.",
     alternates: {
-        canonical: 'https://www.eosproje.com/en/technical-docs',
+        canonical: 'https://eosproje.com/en/technical-docs',
         languages: {
-            "tr": "https://www.eosproje.com/teknik-dokumanlar",
-            "en": "https://www.eosproje.com/en/technical-docs",
+            "tr": "https://eosproje.com/teknik-dokumanlar",
+            "en": "https://eosproje.com/en/technical-docs",
         },
     },
 };
