@@ -8,8 +8,11 @@ import { geoTargets } from "@/lib/keywords";
 import { useState } from "react";
 
 // Helper function to create location slug
+// IMPORTANT: Replace Turkish İ BEFORE toLowerCase() to avoid combining character issues
 const createSlug = (location: string, lang: 'tr' | 'en'): string => {
     return location
+        .replace(/İ/g, 'i')   // Turkish capital İ - MUST be before toLowerCase()
+        .replace(/I/g, 'i')    // Capital I (to avoid becoming ı in Turkish locale)
         .toLowerCase()
         .replace(/ı/g, 'i')
         .replace(/ö/g, 'o')
@@ -17,7 +20,6 @@ const createSlug = (location: string, lang: 'tr' | 'en'): string => {
         .replace(/ş/g, 's')
         .replace(/ç/g, 'c')
         .replace(/ğ/g, 'g')
-        .replace(/İ/g, 'i')
         .replace(/\s+/g, '-');
 };
 

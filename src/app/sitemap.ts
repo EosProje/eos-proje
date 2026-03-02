@@ -157,8 +157,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }))
 
     // TR Location pages
+    // IMPORTANT: Replace Turkish İ BEFORE toLowerCase() to avoid combining character issues
     const locationUrlsTr = allLocationsTr.map(location => ({
         url: `${baseUrl}/lokasyon/${location
+            .replace(/İ/g, 'i')   // Turkish capital İ - MUST be before toLowerCase()
+            .replace(/I/g, 'i')    // Capital I
             .toLowerCase()
             .replace(/ı/g, 'i')
             .replace(/ö/g, 'o')
