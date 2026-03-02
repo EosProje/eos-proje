@@ -1311,5 +1311,43 @@ export default {
     normalizeSlug,
     getRegionBySlug,
     getWhatsAppByRegion,
-    getWhatsAppByLocation
+    getWhatsAppByLocation,
+    testNormalizeSlug
 };
+
+/**
+ * Test normalizeSlug() function for Turkish character handling
+ * Run this to verify İstanbul, İzmir, İzmit slugs are correctly normalized
+ */
+export function testNormalizeSlug(): boolean {
+    const testCases = [
+        { input: 'İstanbul', expected: 'istanbul' },
+        { input: 'İzmir', expected: 'izmir' },
+        { input: 'İzmit', expected: 'izmit' },
+        { input: 'Ankara', expected: 'ankara' },
+        { input: 'Eskişehir', expected: 'eskisehir' },
+        { input: 'Balıkesir', expected: 'balikesir' },
+        { input: 'Kahramanmaraş', expected: 'kahramanmaras' },
+        { input: 'Çanakkale', expected: 'canakkale' },
+    ];
+    
+    console.log('=== normalizeSlug() Test ===');
+    let passed = 0;
+    let failed = 0;
+    
+    testCases.forEach(({ input, expected }) => {
+        const result = normalizeSlug(input);
+        const status = result === expected ? '✅' : '❌';
+        
+        if (result === expected) {
+            passed++;
+        } else {
+            failed++;
+        }
+        
+        console.log(`${status} "${input}" → "${result}" (expected: "${expected}")`);
+    });
+    
+    console.log(`\nSonuç: ${passed} başarılı, ${failed} başarısız`);
+    return failed === 0;
+}
