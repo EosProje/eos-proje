@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getAllGeoTargets, getLocalizedKeywords } from '@/lib/keywords';
+import { getAllGeoTargets, getLocalizedKeywords, normalizeSlug } from '@/lib/keywords';
 import { SITE_URL } from '@/lib/constants';
 import LocationClientEn from './LocationClient';
 
@@ -13,9 +13,7 @@ export async function generateStaticParams() {
   const allLocations = getAllGeoTargets('en');
   
   return allLocations.map((location) => ({
-    city: location
-      .toLowerCase()
-      .replace(/\s+/g, '-')
+    city: normalizeSlug(location)
   }));
 }
 
@@ -23,12 +21,8 @@ export async function generateStaticParams() {
 function findLocationBySlug(slug: string): string | null {
   const allLocations = getAllGeoTargets('en');
   
-  const normalizeSlug = (str: string) => str
-    .toLowerCase()
-    .replace(/\s+/g, '-');
-  
   return allLocations.find(
-    loc => normalizeSlug(loc) === slug.toLowerCase()
+    loc => normalizeSlug(loc) === normalizeSlug(slug)
   ) || null;
 }
 

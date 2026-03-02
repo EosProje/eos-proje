@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getAllGeoTargets, getLocalizedKeywords } from '@/lib/keywords';
+import { getAllGeoTargets, getLocalizedKeywords, normalizeSlug } from '@/lib/keywords';
 import { SITE_URL } from '@/lib/constants';
 import LocationClient from './LocationClient';
 
@@ -13,15 +13,7 @@ export async function generateStaticParams() {
   const allLocations = getAllGeoTargets('tr');
   
   return allLocations.map((location) => ({
-    sehir: location
-      .toLowerCase()
-      .replace(/ı/g, 'i')
-      .replace(/ö/g, 'o')
-      .replace(/ü/g, 'u')
-      .replace(/ş/g, 's')
-      .replace(/ç/g, 'c')
-      .replace(/ğ/g, 'g')
-      .replace(/\s+/g, '-')
+    sehir: normalizeSlug(location)
   }));
 }
 
@@ -29,18 +21,8 @@ export async function generateStaticParams() {
 function findLocationBySlug(slug: string): string | null {
   const allLocations = getAllGeoTargets('tr');
   
-  const normalizeSlug = (str: string) => str
-    .toLowerCase()
-    .replace(/ı/g, 'i')
-    .replace(/ö/g, 'o')
-    .replace(/ü/g, 'u')
-    .replace(/ş/g, 's')
-    .replace(/ç/g, 'c')
-    .replace(/ğ/g, 'g')
-    .replace(/\s+/g, '-');
-  
   return allLocations.find(
-    loc => normalizeSlug(loc) === slug.toLowerCase()
+    loc => normalizeSlug(loc) === normalizeSlug(slug)
   ) || null;
 }
 

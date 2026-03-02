@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ServiceSchema } from '@/components/schema/ServiceSchema';
 import LocalBusinessSchema from '@/components/schema/LocalBusinessSchema';
 import BreadcrumbSchema from '@/components/schema/BreadcrumbSchema';
+import { getWhatsAppByLocation } from '@/lib/keywords';
 import { 
   MapPin, 
   Building2, 
@@ -137,9 +138,10 @@ export default function LocationClient({ location, slug }: LocationClientProps) 
     { name: location, url: `/lokasyon/${slug}` }
   ];
 
-  const whatsappNumber = '905306642263';
+  // Bölgeye göre WhatsApp numarası belirle
+  const whatsappInfo = getWhatsAppByLocation(slug, 'tr');
   const whatsappMessage = encodeURIComponent(`Merhaba, ${location} bölgesindeki projemiz için teklif almak istiyorum.`);
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/${whatsappInfo.number}?text=${whatsappMessage}`;
 
   return (
     <>
@@ -387,11 +389,11 @@ export default function LocationClient({ location, slug }: LocationClientProps) 
               WhatsApp ile Mesaj Gönderin
             </a>
             <a
-              href="tel:+905306642263"
+              href={`tel:+${whatsappInfo.number}`}
               className="inline-flex items-center gap-3 bg-white text-red-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all shadow-lg"
             >
               <Phone className="w-5 h-5" />
-              +90 530 664 2263
+              {whatsappInfo.formatted}
             </a>
             <a
               href="mailto:info@eosproje.com"

@@ -450,6 +450,80 @@ export function getClusterKeywords(
 }
 
 // =============================================================================
+// REGION DETECTION FOR WHATSAPP NUMBERS
+// =============================================================================
+
+/**
+ * Normalize slug for comparison (Turkish character handling)
+ * IMPORTANT: Replace Turkish İ BEFORE toLowerCase() to avoid combining character issues
+ */
+export const normalizeSlug = (str: string): string => {
+    return str
+        .replace(/İ/g, 'i')  // Turkish capital İ - MUST be before toLowerCase()
+        .replace(/I/g, 'i')   // Capital I (to avoid becoming ı in Turkish locale)
+        .toLowerCase()
+        .replace(/ı/g, 'i')   // Turkish lowercase ı
+        .replace(/ö/g, 'o')
+        .replace(/ü/g, 'u')
+        .replace(/ş/g, 's')
+        .replace(/ç/g, 'c')
+        .replace(/ğ/g, 'g')
+        .replace(/i̇/g, 'i')   // Remove combining dot above (in case toLowerCase created it)
+        .normalize('NFD')      // Normalize Unicode to decomposed form
+        .replace(/[\u0300-\u036f]/g, '') // Remove all combining diacritical marks
+        .replace(/\s+/g, '-');
+};
+
+/**
+ * Get region by location slug
+ * Returns the region code for a given location
+ */
+export const getRegionBySlug = (slug: string, lang: 'tr' | 'en' = 'tr'): GeoRegion | null => {
+    const normalizedSlug = normalizeSlug(slug);
+    
+    const regions: GeoRegion[] = ['europe', 'turkey', 'middleEast', 'gulf', 'northAfricaCentralAsia'];
+    
+    for (const region of regions) {
+        const locations = geoTargets[region][lang];
+        for (const location of locations) {
+            if (normalizeSlug(location) === normalizedSlug) {
+                return region;
+            }
+        }
+    }
+    
+    return null;
+};
+
+/**
+ * Get WhatsApp number based on region
+ * Europe → Hungarian number (+36 70 244 9628)
+ * Others → Turkish number (+90 530 664 2263)
+ */
+export const getWhatsAppByRegion = (region: GeoRegion | null): { number: string; formatted: string } => {
+    if (region === 'europe') {
+        return {
+            number: '36702449628',
+            formatted: '+36 70 244 9628'
+        };
+    }
+    // Turkey, Middle East, Gulf, North Africa & Central Asia → Turkish number
+    return {
+        number: '905306642263',
+        formatted: '+90 530 664 2263'
+    };
+};
+
+/**
+ * Get WhatsApp number by location slug directly
+ * Convenience function combining getRegionBySlug and getWhatsAppByRegion
+ */
+export const getWhatsAppByLocation = (slug: string, lang: 'tr' | 'en' = 'tr'): { number: string; formatted: string } => {
+    const region = getRegionBySlug(slug, lang);
+    return getWhatsAppByRegion(region);
+};
+
+// =============================================================================
 // EXPORTS
 // =============================================================================
 
@@ -464,5 +538,9 @@ export default {
     getLocalizedKeywords,
     generateMetaKeywords,
     getGeoStats,
-    getRegionKeywordSuggestions
+    getRegionKeywordSuggestions,
+    normalizeSlug,
+    getRegionBySlug,
+    getWhatsAppByRegion,
+    getWhatsAppByLocation
 };
