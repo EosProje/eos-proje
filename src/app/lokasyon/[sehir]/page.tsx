@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getAllGeoTargets, getLocalizedKeywords, normalizeSlug } from '@/lib/keywords';
+import { getAllGeoTargets, getLocalizedKeywords, normalizeSlug, getLocationDataBySlug } from '@/lib/keywords';
 import { SITE_URL } from '@/lib/constants';
 import LocationClient from './LocationClient';
 
@@ -26,7 +26,7 @@ function findLocationBySlug(slug: string): string | null {
   ) || null;
 }
 
-// Dynamic metadata
+// Dynamic metadata - ŞEHRE ÖZEL BENZERSİZ META
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { sehir } = await params;
   const locationName = findLocationBySlug(sehir);
@@ -38,19 +38,30 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
   
+  // Get location-specific data for unique content
+  const locationData = getLocationDataBySlug(sehir, 'tr');
+  
   // Lokalize keywords al
   const keywords = getLocalizedKeywords(locationName, 'tr');
   
+  // Add location-specific industries to keywords
+  if (locationData?.industries?.tr) {
+    keywords.push(...locationData.industries.tr);
+  }
+  
   const title = `${locationName} Lazer Tarama, BIM Modelleme ve Harita Hizmetleri | EOS Proje`;
-  const description = `${locationName} için profesyonel 3D lazer tarama, BIM modelleme, Scan to BIM ve dijital ikiz hizmetleri. Endüstriyel tesisler, tarihi yapılar ve altyapı projeleri için uzman çözümler.`;
+  
+  // ŞEHRE ÖZEL BENZERSİZ DESCRIPTION
+  const description = locationData?.description?.tr || 
+    `${locationName} için profesyonel 3D lazer tarama, BIM modelleme, Scan to BIM ve dijital ikiz hizmetleri. Endüstriyel tesisler, tarihi yapılar ve altyapı projeleri için uzman çözümler.`;
   
   // İngilizce eşdeğeri için slug dönüşümü
-  const enSlug = sehir;
+  const enSlug = locationData?.slug?.en || sehir;
   
   return {
     title,
     description,
-    keywords: keywords.slice(0, 15).join(', '),
+    keywords: [...new Set(keywords)].slice(0, 20).join(', '),
     openGraph: {
       title,
       description,

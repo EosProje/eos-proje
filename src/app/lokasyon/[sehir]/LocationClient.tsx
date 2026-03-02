@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ServiceSchema } from '@/components/schema/ServiceSchema';
 import LocalBusinessSchema from '@/components/schema/LocalBusinessSchema';
 import BreadcrumbSchema from '@/components/schema/BreadcrumbSchema';
-import { getWhatsAppByLocation } from '@/lib/keywords';
+import { getWhatsAppByLocation, getLocationDataBySlug, LocationData } from '@/lib/keywords';
 import { 
   MapPin, 
   Building2, 
@@ -25,7 +25,10 @@ import {
   Clock,
   Target,
   Plane,
-  MessageCircle
+  MessageCircle,
+  Briefcase,
+  TrendingUp,
+  Star
 } from 'lucide-react';
 
 interface LocationClientProps {
@@ -64,7 +67,7 @@ const services = [
   }
 ];
 
-const sectors = [
+const defaultSectors = [
   {
     icon: Factory,
     title: 'Endüstriyel Tesisler',
@@ -124,7 +127,8 @@ const reasons = [
   }
 ];
 
-const stats = [
+// Default stats - will be overridden by location-specific data
+const defaultStats = [
   { value: '500+', label: 'Proje' },
   { value: '15+', label: 'Ülke' },
   { value: '10+', label: 'Yıl' },
@@ -138,17 +142,32 @@ export default function LocationClient({ location, slug }: LocationClientProps) 
     { name: location, url: `/lokasyon/${slug}` }
   ];
 
+  // Get location-specific data
+  const locationData = getLocationDataBySlug(slug, 'tr');
+
   // Bölgeye göre WhatsApp numarası belirle
   const whatsappInfo = getWhatsAppByLocation(slug, 'tr');
   const whatsappMessage = encodeURIComponent(`Merhaba, ${location} bölgesindeki projemiz için teklif almak istiyorum.`);
   const whatsappUrl = `https://wa.me/${whatsappInfo.number}?text=${whatsappMessage}`;
+
+  // Location-specific description
+  const locationDescription = locationData?.description?.tr || 
+    `${location} bölgesinde endüstriyel tesisler, mimari projeler ve tarihi yapılar için ISO 19650 standartlarında 3D lazer tarama, Scan to BIM ve dijital ikiz çözümleri sunuyoruz.`;
+
+  // Location-specific stats
+  const stats = locationData?.stats ? [
+    { value: `${locationData.stats.projects}+`, label: 'Tamamlanan Proje' },
+    { value: locationData.stats.experience, label: 'Deneyim' },
+    { value: '15+', label: 'Ülke' },
+    { value: '±2mm', label: 'Hassasiyet' }
+  ] : defaultStats;
 
   return (
     <>
       {/* Schema Markup */}
       <ServiceSchema
         name={`${location} Lazer Tarama ve BIM Modelleme Çözümleri`}
-        description={`${location} için profesyonel 3D lazer tarama, Scan to BIM, dijital ikiz ve HBIM hizmetleri. ±2mm hassasiyet, ISO 19650 standartları.`}
+        description={locationDescription}
         url={`/lokasyon/${slug}`}
         image="/images/EosProje-Lazer-Tarama-Sistemleri.webp"
       />
@@ -193,10 +212,9 @@ export default function LocationClient({ location, slug }: LocationClientProps) 
               Profesyonel 3D Tarama, BIM Modelleme ve Dijital Dokümantasyon Hizmetleri
             </p>
 
-            {/* Description */}
+            {/* ŞEHRE ÖZEL AÇIKLAMA - Benzersiz İçerik */}
             <p className="text-lg text-gray-400 mb-8 max-w-2xl">
-              {location} bölgesinde endüstriyel tesisler, mimari projeler ve tarihi yapılar için 
-              ISO 19650 standartlarında 3D lazer tarama, Scan to BIM ve dijital ikiz çözümleri sunuyoruz.
+              {locationDescription}
             </p>
 
             {/* CTA Buttons */}
@@ -232,7 +250,7 @@ export default function LocationClient({ location, slug }: LocationClientProps) 
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
-      {/* Stats Section */}
+      {/* ŞEHRE ÖZEL İSTATİSTİKLER */}
       <section className="py-12 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -245,6 +263,77 @@ export default function LocationClient({ location, slug }: LocationClientProps) 
           </div>
         </div>
       </section>
+
+      {/* ŞEHRE ÖZEL SEKTÖRLER - Benzersiz İçerik */}
+      {locationData?.industries && locationData.industries.tr.length > 0 && (
+        <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <span className="inline-block text-red-600 font-semibold text-sm uppercase tracking-wider mb-4">Uzmanlık Alanlarımız</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {location}&apos;da Hizmet Verdiğimiz Sektörler
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                {location} bölgesinde öne çıkan sektörlere özel lazer tarama ve BIM çözümleri sunuyoruz.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              {locationData.industries.tr.map((industry, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-red-200 hover:shadow-md transition-all text-center group"
+                >
+                  <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-red-100 transition-colors">
+                    <Briefcase className="w-6 h-6 text-red-600" />
+                  </div>
+                  <h3 className="font-semibold text-gray-900 text-sm">{industry}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ŞEHRE ÖZEL REFERANS PROJELERİ - Benzersiz İçerik */}
+      {locationData?.highlights && locationData.highlights.tr.length > 0 && (
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <span className="inline-block text-red-600 font-semibold text-sm uppercase tracking-wider mb-4">Referans Projeler</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                {location}&apos;da Tamamladığımız Önemli Projeler
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {locationData.highlights.tr.map((highlight, index) => (
+                <div 
+                  key={index} 
+                  className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-100 hover:border-red-200 transition-all"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Star className="w-4 h-4 text-red-600" />
+                    </div>
+                    <p className="text-gray-700 font-medium">{highlight}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <Link
+                href="/referanslar"
+                className="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-700 transition-colors"
+              >
+                Tüm Referanslarımızı İnceleyin
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Services Section */}
       <section className="py-20 bg-white">
@@ -337,21 +426,21 @@ export default function LocationClient({ location, slug }: LocationClientProps) 
         </div>
       </section>
 
-      {/* Sectors Section */}
+      {/* Sectors Section - Genel Sektörler */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block text-red-600 font-semibold text-sm uppercase tracking-wider mb-4">Sektörler</span>
+            <span className="inline-block text-red-600 font-semibold text-sm uppercase tracking-wider mb-4">Çözümlerimiz</span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Hizmet Verdiğimiz Sektörler
+              Tüm Sektörlere Özel Çözümler
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              {location} bölgesinde farklı sektörlere özel çözümler sunuyoruz.
+              {location} bölgesinde farklı sektörlere özel lazer tarama ve BIM çözümleri sunuyoruz.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {sectors.map((sector, index) => (
+            {defaultSectors.map((sector, index) => (
               <Link
                 key={index}
                 href={sector.link}

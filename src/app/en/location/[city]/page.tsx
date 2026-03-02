@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getAllGeoTargets, getLocalizedKeywords, normalizeSlug } from '@/lib/keywords';
+import { getAllGeoTargets, getLocalizedKeywords, normalizeSlug, getLocationDataBySlug } from '@/lib/keywords';
 import { SITE_URL } from '@/lib/constants';
 import LocationClientEn from './LocationClient';
 
@@ -26,7 +26,7 @@ function findLocationBySlug(slug: string): string | null {
   ) || null;
 }
 
-// Dynamic metadata
+// Dynamic metadata - LOCATION-SPECIFIC UNIQUE META
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { city } = await params;
   const locationName = findLocationBySlug(city);
@@ -38,19 +38,30 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
   
+  // Get location-specific data for unique content
+  const locationData = getLocationDataBySlug(city, 'en');
+  
   // Get localized keywords
   const keywords = getLocalizedKeywords(locationName, 'en');
   
+  // Add location-specific industries to keywords
+  if (locationData?.industries?.en) {
+    keywords.push(...locationData.industries.en);
+  }
+  
   const title = `${locationName} Laser Scanning, BIM Modeling & Surveying Services | EOS Proje`;
-  const description = `Professional 3D laser scanning, BIM modeling, Scan to BIM and digital twin services in ${locationName}. Expert solutions for industrial facilities, heritage buildings and infrastructure projects.`;
+  
+  // LOCATION-SPECIFIC UNIQUE DESCRIPTION
+  const description = locationData?.description?.en || 
+    `Professional 3D laser scanning, BIM modeling, Scan to BIM and digital twin services in ${locationName}. Expert solutions for industrial facilities, heritage buildings and infrastructure projects.`;
   
   // Turkish equivalent slug
-  const trSlug = city;
+  const trSlug = locationData?.slug?.tr || city;
   
   return {
     title,
     description,
-    keywords: keywords.slice(0, 15).join(', '),
+    keywords: [...new Set(keywords)].slice(0, 20).join(', '),
     openGraph: {
       title,
       description,

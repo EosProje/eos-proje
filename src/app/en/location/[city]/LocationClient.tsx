@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ServiceSchema } from '@/components/schema/ServiceSchema';
 import LocalBusinessSchema from '@/components/schema/LocalBusinessSchema';
 import BreadcrumbSchema from '@/components/schema/BreadcrumbSchema';
-import { getWhatsAppByLocation } from '@/lib/keywords';
+import { getWhatsAppByLocation, getLocationDataBySlug, LocationData } from '@/lib/keywords';
 import { 
   MapPin, 
   Building2, 
@@ -25,7 +25,10 @@ import {
   Clock,
   Target,
   Plane,
-  MessageCircle
+  MessageCircle,
+  Briefcase,
+  TrendingUp,
+  Star
 } from 'lucide-react';
 
 interface LocationClientProps {
@@ -64,7 +67,7 @@ const services = [
   }
 ];
 
-const sectors = [
+const defaultSectors = [
   {
     icon: Factory,
     title: 'Industrial Facilities',
@@ -124,7 +127,8 @@ const reasons = [
   }
 ];
 
-const stats = [
+// Default stats - will be overridden by location-specific data
+const defaultStats = [
   { value: '500+', label: 'Projects' },
   { value: '15+', label: 'Countries' },
   { value: '10+', label: 'Years' },
@@ -138,17 +142,32 @@ export default function LocationClientEn({ location, slug }: LocationClientProps
     { name: location, url: `/en/location/${slug}` }
   ];
 
+  // Get location-specific data
+  const locationData = getLocationDataBySlug(slug, 'en');
+
   // Determine WhatsApp number based on region
   const whatsappInfo = getWhatsAppByLocation(slug, 'en');
   const whatsappMessage = encodeURIComponent(`Hello, I would like to get a quote for our project in ${location}.`);
   const whatsappUrl = `https://wa.me/${whatsappInfo.number}?text=${whatsappMessage}`;
+
+  // Location-specific description
+  const locationDescription = locationData?.description?.en || 
+    `We provide ISO 19650 compliant 3D laser scanning, Scan to BIM and digital twin solutions for industrial facilities, architectural projects and heritage buildings in ${location}.`;
+
+  // Location-specific stats
+  const stats = locationData?.stats ? [
+    { value: `${locationData.stats.projects}+`, label: 'Completed Projects' },
+    { value: locationData.stats.experience, label: 'Experience' },
+    { value: '15+', label: 'Countries' },
+    { value: '±2mm', label: 'Accuracy' }
+  ] : defaultStats;
 
   return (
     <>
       {/* Schema Markup */}
       <ServiceSchema
         name={`${location} Laser Scanning and BIM Modeling Solutions`}
-        description={`Professional 3D laser scanning, Scan to BIM, digital twin and HBIM services for ${location}. ±2mm accuracy, ISO 19650 standards.`}
+        description={locationDescription}
         url={`/en/location/${slug}`}
         image="/images/EosProje-Lazer-Tarama-Sistemleri.webp"
       />
@@ -193,10 +212,9 @@ export default function LocationClientEn({ location, slug }: LocationClientProps
               Professional 3D Scanning, BIM Modeling and Digital Documentation Services
             </p>
 
-            {/* Description */}
+            {/* LOCATION-SPECIFIC DESCRIPTION - Unique Content */}
             <p className="text-lg text-gray-400 mb-8 max-w-2xl">
-              We provide ISO 19650 compliant 3D laser scanning, Scan to BIM and digital twin solutions 
-              for industrial facilities, architectural projects and heritage buildings in {location}.
+              {locationDescription}
             </p>
 
             {/* CTA Buttons */}
@@ -232,7 +250,7 @@ export default function LocationClientEn({ location, slug }: LocationClientProps
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
-      {/* Stats Section */}
+      {/* LOCATION-SPECIFIC STATS */}
       <section className="py-12 bg-white border-b border-gray-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -245,6 +263,77 @@ export default function LocationClientEn({ location, slug }: LocationClientProps
           </div>
         </div>
       </section>
+
+      {/* LOCATION-SPECIFIC INDUSTRIES - Unique Content */}
+      {locationData?.industries && locationData.industries.en.length > 0 && (
+        <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <span className="inline-block text-red-600 font-semibold text-sm uppercase tracking-wider mb-4">Our Expertise</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Industries We Serve in {location}
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                We provide specialized laser scanning and BIM solutions for leading industries in {location}.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              {locationData.industries.en.map((industry, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-red-200 hover:shadow-md transition-all text-center group"
+                >
+                  <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-red-100 transition-colors">
+                    <Briefcase className="w-6 h-6 text-red-600" />
+                  </div>
+                  <h3 className="font-semibold text-gray-900 text-sm">{industry}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* LOCATION-SPECIFIC HIGHLIGHTS - Unique Content */}
+      {locationData?.highlights && locationData.highlights.en.length > 0 && (
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <span className="inline-block text-red-600 font-semibold text-sm uppercase tracking-wider mb-4">Reference Projects</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Key Projects Completed in {location}
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {locationData.highlights.en.map((highlight, index) => (
+                <div 
+                  key={index} 
+                  className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 border border-gray-100 hover:border-red-200 transition-all"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Star className="w-4 h-4 text-red-600" />
+                    </div>
+                    <p className="text-gray-700 font-medium">{highlight}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <Link
+                href="/en/references"
+                className="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-700 transition-colors"
+              >
+                View All Our References
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Services Section */}
       <section className="py-20 bg-white">
@@ -337,21 +426,21 @@ export default function LocationClientEn({ location, slug }: LocationClientProps
         </div>
       </section>
 
-      {/* Sectors Section */}
+      {/* Sectors Section - General */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block text-red-600 font-semibold text-sm uppercase tracking-wider mb-4">Sectors</span>
+            <span className="inline-block text-red-600 font-semibold text-sm uppercase tracking-wider mb-4">Our Solutions</span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Industries We Serve
+              Solutions for All Industries
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We provide specialized solutions for different industries in {location}.
+              We provide specialized laser scanning and BIM solutions for various industries in {location}.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {sectors.map((sector, index) => (
+            {defaultSectors.map((sector, index) => (
               <Link
                 key={index}
                 href={sector.link}
