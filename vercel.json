@@ -5,10 +5,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.eosproje.com"
+          "value": "eosproje.com"
         }
       ],
-      "destination": "https://eosproje.com/:path*",
+      "destination": "https://www.eosproje.com/:path*",
       "permanent": true
     }
   ],

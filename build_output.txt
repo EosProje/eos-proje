@@ -1,0 +1,122 @@
+
+> eos-proje@0.1.0 build
+> next build
+
+▲ Next.js 16.1.4 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.3s
+  Running TypeScript ...
+  Collecting page data using 31 workers ...
+  Generating static pages using 31 workers (0/119) ...
+  Generating static pages using 31 workers (29/119) 
+  Generating static pages using 31 workers (59/119) 
+  Generating static pages using 31 workers (89/119) 
+✓ Generating static pages using 31 workers (119/119) in 2.0s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /[slug]
+├ ƒ /api/calculate-quote
+├ ƒ /api/contact
+├ ○ /blog
+├ ● /blog/[slug]
+│ ├ /blog/point-cloud-to-bim-process
+│ ├ /blog/lod-levels-differences
+│ ├ /blog/2d-cad-to-3d-bim-transition
+│ └ [+11 more paths]
+├ ○ /cerez-politikasi
+├ ○ /cozumler
+├ ○ /cozumler/2d-3d-bim-donusum
+├ ○ /cozumler/bim-modelleme
+├ ○ /cozumler/cakisma-tespiti
+├ ○ /cozumler/dijital-ikiz
+├ ○ /cozumler/endustriyel-ekipman-modelleme
+├ ○ /cozumler/hbim
+├ ○ /cozumler/lazer-tarama
+├ ○ /cozumler/mevcut-durum-modelleme
+├ ○ /cozumler/nokta-bulutu-bim
+├ ○ /cozumler/scan-to-bim
+├ ○ /ekip
+├ ○ /en
+├ ƒ /en/[slug]
+├ ○ /en/about
+├ ○ /en/blog
+├ ● /en/blog/[slug]
+│ ├ /en/blog/point-cloud-to-bim-process
+│ ├ /en/blog/lod-levels-differences
+│ ├ /en/blog/2d-cad-to-3d-bim-transition
+│ └ [+11 more paths]
+├ ○ /en/contact
+├ ○ /en/cookie-policy
+├ ○ /en/faq
+├ ○ /en/gdpr
+├ ○ /en/pricing
+├ ○ /en/privacy-policy
+├ ○ /en/process-and-standards
+├ ○ /en/qa-qc
+├ ○ /en/quality-policy
+├ ○ /en/references
+├ ● /en/references/[slug]
+│ ├ /en/references/toyota-factory
+│ ├ /en/references/migros-store-scan-to-bim
+│ ├ /en/references/turkcell-store-survey
+│ └ [+4 more paths]
+├ ○ /en/resources
+├ ○ /en/sectors
+├ ● /en/sectors/[slug]
+│ ├ /en/sectors/industrial-facilities
+│ ├ /en/sectors/construction
+│ ├ /en/sectors/architecture
+│ └ [+2 more paths]
+├ ○ /en/services/mapping-surveying
+├ ○ /en/services/survey-services
+├ ○ /en/solutions
+├ ○ /en/solutions/2d-to-3d-bim-conversion
+├ ○ /en/solutions/as-built-modeling
+├ ○ /en/solutions/bim-modeling
+├ ○ /en/solutions/clash-detection
+├ ○ /en/solutions/digital-twin
+├ ○ /en/solutions/hbim
+├ ○ /en/solutions/industrial-equipment-modeling
+├ ○ /en/solutions/laser-scanning
+├ ○ /en/solutions/point-cloud-to-bim
+├ ○ /en/solutions/scan-to-bim
+├ ○ /en/team
+├ ○ /en/technical-docs
+├ ○ /gizlilik
+├ ○ /hakkimizda
+├ ○ /hizmetler/harita-olcme
+├ ○ /hizmetler/rolove-hizmetleri
+├ ○ /iletisim
+├ ○ /kalite-politikamiz
+├ ○ /kaynaklar
+├ ○ /kvkk
+├ ○ /qa-qc
+├ ○ /referanslar
+├ ● /referanslar/[slug]
+│ ├ /referanslar/toyota-fabrikasi
+│ ├ /referanslar/migros-magaza-scan-to-bim
+│ ├ /referanslar/turkcell-magaza-rolove
+│ └ [+4 more paths]
+├ ○ /robots.txt
+├ ○ /sektorler
+├ ● /sektorler/[slug]
+│ ├ /sektorler/endustriyel-tesis
+│ ├ /sektorler/insaat-taahhut
+│ ├ /sektorler/mimarlik
+│ └ [+2 more paths]
+├ ○ /sitemap.xml
+├ ○ /sss
+├ ○ /surec-ve-standartlar
+├ ○ /teknik-dokumanlar
+└ ○ /ucretlendirme
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

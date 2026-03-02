@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Output export if needed, but keeping it standard for now as it's not specified
-  // output: 'export', 
+  // ✅ Görsel optimizasyonu
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
@@ -15,10 +14,11 @@ const nextConfig: NextConfig = {
         hostname: '**',
       }
     ],
-    // Fallback behavior is handled via components, but we can configure base path if needed
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
+  
+  // ✅ Güvenlik headers (CSP OLMADAN)
   async headers() {
     return [
       {
@@ -42,23 +42,19 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocations=(), interest-cohort=()',
+            value: 'camera=(), microphone=(), geolocation=()',
           },
-          {
-            key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https: http:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;",
-          },
+          // ❌ CSP KALDIRILDI - www vs non-www sorununa neden oluyordu
         ],
       },
     ];
   },
-  // Ensure trailing slash is handled consistently
+  
   trailingSlash: false,
   
-  // 301 Redirects for old English slugs to new Turkish slugs
+  // 301 Redirects
   async redirects() {
     return [
-      // Old English slugs in Turkish section -> New Turkish slugs
       {
         source: '/cozumler/as-built-modeling',
         destination: '/cozumler/mevcut-durum-modelleme',
