@@ -1,6 +1,9 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
+import { createWhatsAppURL, openWhatsApp } from "@/lib/whatsapp";
+
+const WHATSAPP_PHONE = "905306642263";
 
 export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
     const [formData, setFormData] = useState({
@@ -20,7 +23,7 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
     const labels = isEn ? {
         title: "Request a Quote",
         success: "✓ Your quote request has been sent successfully!",
-        successDetail: "We will get back to you as soon as possible.",
+        successDetail: "Redirecting to WhatsApp... We will get back to you as soon as possible.",
         error: "✖ An error occurred.",
         errorDetail: "Please try again or contact us directly.",
         projectName: "Project Name *",
@@ -46,7 +49,7 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
     } : {
         title: "Teklif Talep Formu",
         success: "✓ Teklif talebiniz başarıyla gönderildi!",
-        successDetail: "En kısa sürede size dönüş yapacağız.",
+        successDetail: "WhatsApp'a yönlendiriliyorsunuz... En kısa sürede size dönüş yapacağız.",
         error: "✖ Bir hata oluştu.",
         errorDetail: "Lütfen tekrar deneyin veya bize doğrudan ulaşın.",
         projectName: "Proje Adı *",
@@ -94,6 +97,9 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
         setIsSubmitting(true);
         setSubmitStatus("idle");
 
+        // Store form data before clearing
+        const submittedData = { ...formData };
+
         try {
             const formDataToSend = new FormData();
             Object.entries(formData).forEach(([key, value]) => {
@@ -115,6 +121,7 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
 
             setSubmitStatus("success");
 
+            // Clear form
             setFormData({
                 projectName: "",
                 description: "",
@@ -125,6 +132,13 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
                 phone: "",
             });
             setFiles([]);
+
+            // WhatsApp redirect after 1.5 seconds
+            setTimeout(() => {
+                const whatsappURL = createWhatsAppURL(WHATSAPP_PHONE, submittedData, isEn);
+                openWhatsApp(whatsappURL);
+            }, 1500);
+
         } catch (error) {
             console.error("Error submitting form:", error);
             setSubmitStatus("error");
@@ -139,15 +153,29 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
 
             {submitStatus === "success" && (
                 <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
-                    <p className="text-green-800 font-semibold">{labels.success}</p>
-                    <p className="text-green-600 text-sm mt-1">{labels.successDetail}</p>
+                    <div className="flex items-start">
+                        <svg className="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div>
+                            <p className="text-green-800 font-semibold">{labels.success}</p>
+                            <p className="text-green-600 text-sm mt-1">{labels.successDetail}</p>
+                        </div>
+                    </div>
                 </div>
             )}
 
             {submitStatus === "error" && (
                 <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-                    <p className="text-red-800 font-semibold">{labels.error}</p>
-                    <p className="text-red-600 text-sm mt-1">{labels.errorDetail}</p>
+                    <div className="flex items-start">
+                        <svg className="w-6 h-6 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div>
+                            <p className="text-red-800 font-semibold">{labels.error}</p>
+                            <p className="text-red-600 text-sm mt-1">{labels.errorDetail}</p>
+                        </div>
+                    </div>
                 </div>
             )}
 
@@ -328,9 +356,23 @@ export default function QuoteForm({ isEn = false }: { isEn?: boolean }) {
                         disabled={isSubmitting}
                         className="w-full px-8 py-4 bg-[var(--color-primary-red)] hover:bg-red-800 text-white font-bold rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                     >
-                        {isSubmitting ? labels.submitting : labels.submit}
+                        {isSubmitting ? (
+                            <span className="flex items-center justify-center">
+                                <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Loading_spinner.svg/960px-Loading_spinner.svg.png" fill="none" viewBox="0 0 24 24">
+                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                                {labels.submitting}
+                            </span>
+                        ) : labels.submit}
                     </button>
                 </div>
+
+                <p className="text-xs text-slate-500 text-center mt-4">
+                    {isEn 
+                        ? "After submitting, you can also contact us via WhatsApp."
+                        : "Form gönderildikten sonra WhatsApp üzerinden de iletişime geçebilirsiniz."}
+                </p>
             </form>
         </div>
     );
