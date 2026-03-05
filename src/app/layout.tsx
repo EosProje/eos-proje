@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
+import GoogleTagManager from "@/components/GoogleTagManager";
+import GoogleTagManagerNoscript from "@/components/GoogleTagManagerNoscript";
 import { DEFAULT_OG_IMAGE, SITE_URL } from "@/lib/constants";
 
 const outfit = Outfit({
@@ -127,9 +129,13 @@ export default function RootLayout({
 
   return (
     <html lang="tr">
+      <head>
+        <GoogleTagManager />
+      </head>
       <body
         className={`${outfit.variable} font-sans antialiased`}
       >
+        <GoogleTagManagerNoscript />
         <JsonLd data={organizationSchema} />
         <Header />
         {children}
