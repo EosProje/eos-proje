@@ -11,56 +11,56 @@ export default function Page() {
             name: "Uğur Bilen",
             role: "Founder & Senior 3D Specialist",
             bio: "Graduate of YTÜ Geomatics Engineering. Managed 50+ large-scale as-built projects with 20 years of sector experience. Expert in Laser Scanning, Drones, and Revit.",
-            image: "/images/blog/team-1.webp",
+            image: "/images/team/ugur-bilen.webp",
             email: "ugur@eosproje.com"
         },
         {
             name: "Öykü Hun",
             role: "Operations Director",
             bio: "Graduate of İTÜ MSc Geomatics Engineering. Expert in Modeling, Six Sigma, and Planning. Manages laser scanning and photogrammetry processes.",
-            image: "/images/blog/team-2.webp",
+            image: "/images/team/oyku-hun.webp",
             email: "oyku@eosproje.com"
         },
         {
             name: "Kamil Serin",
             role: "Data & Quality Coordinator",
             bio: "20 years of sector experience. Engineering expertise specialized in Laser Scanning, Data Processing, and modeling processes.",
-            image: "/images/blog/team-3.webp",
+            image: "/images/team/kamil-serin.webp",
             email: "kamil@eosproje.com"
         },
         {
             name: "Utku Karaman",
             role: "MEP Modeling Specialist",
             bio: "Graduate of İTÜ Mechanical Engineering. Specialist in Scan-to-MEP and MEP Modeling. Manages 3D drawing and modeling processes in industrial projects.",
-            image: "/images/blog/team-7.webp",
+            image: "/images/team/utku-karaman.webp",
             email: "utku@eosproje.com"
         },
         {
             name: "Melis Melike Begdeş",
             role: "Modeling Specialist",
             bio: "Graduate of Işık University Architecture. Specialist in historical building restoration projects. Manages Point Cloud, photogrammetry, and 2D & 3D drafting processes.",
-            image: "/images/blog/team-4.webp",
+            image: "/images/team/melis-melike-begdes.webp",
             email: "melis@eosproje.com"
         },
         {
             name: "Yasin Demirci",
             role: "Point Cloud Processing Specialist",
             bio: "Graduate of Geodesy and Photogrammetry. Competent in cloud-to-cloud registration and data cleaning in Faro Scene and ReCap software. Modeling specialist.",
-            image: "/images/blog/team-5.webp",
+            image: "/images/team/yasin-demirci.webp",
             email: "yasin@eosproje.com"
         },
         {
             name: "Emir Demirci",
             role: "Measurement and Evaluation Specialist",
             bio: "Graduate of Geodesy and Photogrammetry. Competent in Laser Scanning and Drones. Measurement and evaluation specialist.",
-            image: "/images/blog/team-8.webp",
+            image: "/images/team/emir-demirci.webp",
             email: "emir@eosproje.com"
         },
         {
             name: "Cafer Saygılı",
             role: "Finance and Accounting Manager",
             bio: "Responsible for all finance and accounting affairs of Eos Proje since 2007.",
-            image: "/images/blog/team-6.webp",
+            image: "/images/team/cafer-saygili.webp",
             email: "cafer@eosproje.com"
         }
     ];

@@ -11,56 +11,56 @@ export default function Page() {
             name: "Uğur Bilen",
             role: "Kurucu & Kıdemli 3D Specialist",
             bio: "YTÜ Harita Mühendisliği mezunu. 20 yıllık sektör tecrübesiyle 50+ büyük ölçekli as-built projesini yönetti. Lazer Tarama, Drone ve Revit uzmanı.",
-            image: "/images/blog/team-1.webp",
+            image: "/images/team/ugur-bilen.webp",
             email: "ugur@eosproje.com"
         },
         {
             name: "Öykü Hun",
             role: "Operasyon Direktörü",
             bio: "İTÜ Yüksek Geomatik Mühendisliği mezunu. Modelleme, Six Sigma ve Planlama uzmanı. Lazer tarama ve fotogrametri süreçlerini yönetiyor.",
-            image: "/images/blog/team-2.webp",
+            image: "/images/team/oyku-hun.webp",
             email: "oyku@eosproje.com"
         },
         {
             name: "Kamil Serin",
             role: "Veri & Kalite Koordinatörü",
             bio: "20 yıl sektör tecrübesi. Lazer Tarama, Data Proses ve modelleme süreçlerinde uzmanlaşmış Mühendislik tecrübesi.",
-            image: "/images/blog/team-3.webp",
+            image: "/images/team/kamil-serin.webp",
             email: "kamil@eosproje.com"
         },
         {
             name: "Utku Karaman",
             role: "MEP Modelleme Uzmanı",
             bio: "İTÜ Makina Mühendisliği mezunu. Scan to MEP ve MEP Modelleme uzmanı. Endüstriyel projelerde 3D çizim modelleme süreçlerini yönetiyor.",
-            image: "/images/blog/team-7.webp",
+            image: "/images/team/utku-karaman.webp",
             email: "utku@eosproje.com"
         },
         {
             name: "Melis Melike Begdeş",
             role: "Modelleme Uzmanı",
             bio: "Işık Üniversitesi Mimarlık mezunu. Tarihi yapı restorasyon projelerinde uzman. Nokta Bulutu, fotogrametri 2D & 3D çizim modelleme süreçlerini yönetiyor.",
-            image: "/images/blog/team-4.webp",
+            image: "/images/team/melis-melike-begdes.webp",
             email: "melis@eosproje.com"
         },
         {
             name: "Yasin Demirci",
             role: "Nokta Bulutu İşleme Uzmanı",
             bio: "Jeodezi ve Fotogrametri mezunu. Faro Scene ve ReCap yazılımlarında cloud-to-cloud registration ve veri temizliği konusunda yetkin. Modelleme uzmanı.",
-            image: "/images/blog/team-5.webp",
+            image: "/images/team/yasin-demirci.webp",
             email: "yasin@eosproje.com"
         },
         {
             name: "Emir Demirci",
             role: "Ölçme ve Değerlendirme Uzmanı",
             bio: "Jeodezi ve Fotogrametri mezunu. Lazer Tarama ve Drone konusunda yetkin. Ölçme ve değerlendirme uzmanı.",
-            image: "/images/blog/team-8.webp",
+            image: "/images/team/emir-demirci.webp",
             email: "emir@eosproje.com"
         },
         {
             name: "Cafer Saygılı",
             role: "Finans ve Mali İşler Sorumlusu",
             bio: "2007 yılından beri Eos Projenin tüm finans ve mali işler sorumlusu olarak görev almaktadır.",
-            image: "/images/blog/team-6.webp",
+            image: "/images/team/cafer-saygili.webp",
             email: "cafer@eosproje.com"
         }
     ];
